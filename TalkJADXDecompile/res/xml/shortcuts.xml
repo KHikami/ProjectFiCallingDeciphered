@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>>
+<shortcuts>
+    <shortcut android:icon="0x7f02066b" android:enabled="false">
+        <intent android:action="android.intent.action.VIEW" android:data="https://hangouts.google.com" />
+    </shortcut>
+    <shortcut android:icon="0x7f02066c" android:enabled="false">
+        <intent android:action="android.intent.action.VIEW" android:data="https://hangouts.google.com" />
+    </shortcut>
+    <shortcut android:icon="0x7f02066a" android:enabled="false">
+        <intent android:action="android.intent.action.VIEW" android:data="https://hangouts.google.com" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="0x7f0b0011" android:insetRight="0x7f0b0011" android:insetTop="0x7f0b0012" android:insetBottom="0x7f0b0012">
+    <shape android:shape="0">
+        <corners android:radius="0x7f0b0017" />
+        <solid android:color="0x106000b" />
+        <padding android:left="0x7f0b0013" android:top="0x7f0b0014" android:right="0x7f0b0013" android:bottom="0x7f0b0014" />
+    </shape>
+</inset>

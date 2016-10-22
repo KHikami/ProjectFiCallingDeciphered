@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="-1" android:layout_height="-1"
+    <FrameLayout android:id="@aq/M" android:layout_width="-1" android:layout_height="-1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:paddingStart="0x7f0b0108" android:paddingEnd="0x7f0b0107">
+        <com.android.dialer.app.list.PhoneFavoriteListView android:id="@aq/N" android:paddingTop="0x7f0b0109" android:paddingBottom="@buf/cR" android:fadingEdge="0" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-1" android:numColumns="0x7f0d000b" android:divider="@rl/c" android:nestedScrollingEnabled="true" />
+    </FrameLayout>
+    <com.android.dialer.app.widget.EmptyContentView android:layout_gravity="11" android:id="@aq/aq" android:visibility="2" android:layout_width="-1" android:layout_height="-2" />
+</FrameLayout>

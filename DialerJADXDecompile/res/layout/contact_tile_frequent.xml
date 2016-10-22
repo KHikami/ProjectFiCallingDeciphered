@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:background="?unknown_attr_ref: 101030e" android:focusable="true" class="com.android.contacts.common.list.ContactTileFrequentView">
+    <LinearLayout android:gravity="10" android:orientation="0" android:paddingTop="?unknown_attr_ref: 7f0100d1" android:paddingBottom="?unknown_attr_ref: 7f0100d3" android:layout_width="-1" android:layout_height="-2">
+        <com.android.contacts.common.widget.LayoutSuppressingImageView android:id="@cob/v" android:layout_width="?unknown_attr_ref: 7f0100d9" android:layout_height="?unknown_attr_ref: 7f0100d9" android:scaleType="6" android:layout_marginEnd="?unknown_attr_ref: 7f0100d5" />
+        <TextView android:textSize="@buf/cO" android:textColor="0x106000c" android:ellipsize="4" android:id="@cob/w" android:fadingEdge="1000" android:fadingEdgeLength="3dp" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" android:textAlignment="5" />
+    </LinearLayout>
+</view>

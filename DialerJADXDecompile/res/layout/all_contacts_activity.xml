@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="0x7f0c0093" android:layout_width="-1" android:layout_height="-1">
+    <fragment android:name="com.android.dialer.app.list.AllContactsFragment" android:id="0x7f0c0094" android:layout_width="-1" android:layout_height="-1" />
+</FrameLayout>

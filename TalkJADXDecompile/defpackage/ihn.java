@@ -1,0 +1,16 @@
+package defpackage;
+
+import android.content.Context;
+
+/* renamed from: ihn */
+public class ihn implements ihk {
+    public Context a;
+
+    public ihn(Context context) {
+        this.a = context;
+    }
+
+    public ihn(Context context, byte b) {
+        this(context);
+    }
+}

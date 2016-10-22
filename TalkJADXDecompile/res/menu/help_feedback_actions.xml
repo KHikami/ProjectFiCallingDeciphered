@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item hangouts:id="@ba/bi" hangouts:title="0x7f0a07f9" hangouts:showAsAction="6" />
+    <item hangouts:id="@ba/gi" hangouts:title="0x7f0a096e" hangouts:showAsAction="0" />
+    <item hangouts:id="@ba/dk" hangouts:title="0x7f0a066d" hangouts:showAsAction="0" />
+    <item hangouts:id="@ba/dj" hangouts:title="0x7f0a0760" hangouts:showAsAction="0" />
+    <item hangouts:id="@ba/dd" hangouts:visible="false" hangouts:title="0x7f0a096f" hangouts:showAsAction="0" />
+    <item hangouts:id="@ba/dg" hangouts:title="0x7f0a0970" hangouts:showAsAction="0" />
+    <item hangouts:id="@ba/dn" hangouts:title="0x7f0a066e" hangouts:showAsAction="0" />
+</menu>

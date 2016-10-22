@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.views.OverlayedAvatarView hangouts:background="0x7f020676" hangouts:paddingRight="8dp" hangouts:focusableInTouchMode="false" hangouts:layout_width="-2" hangouts:layout_height="-2">
+    <com.google.android.apps.hangouts.views.AvatarView hangouts:id="@bm/b" hangouts:layout_width="0x7f0b01e3" hangouts:layout_height="0x7f0b01e3" hangouts:layout_alignParentLeft="true" hangouts:avatarViewSize="tiny" />
+    <com.google.android.apps.hangouts.views.RichStatusView hangouts:orientation="0" hangouts:id="@ba/eQ" hangouts:visibility="2" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_toRightOf="@bm/b">
+        <FrameLayout hangouts:layout_gravity="11" hangouts:id="@ba/eR" hangouts:background="0x7f02068a" hangouts:visibility="2" hangouts:clipChildren="true" hangouts:layout_width="-2" hangouts:layout_height="@gwb/fm" hangouts:layout_marginLeft="4dp">
+            <ImageView hangouts:layout_gravity="11" hangouts:id="@ba/aS" hangouts:background="0x7f0200af" hangouts:layout_width="-2" hangouts:layout_height="0x7f0b0202" hangouts:contentDescription="0x7f0a082b" />
+        </FrameLayout>
+        <FrameLayout hangouts:layout_gravity="11" hangouts:id="@ba/eP" hangouts:background="0x7f0200bb" hangouts:visibility="2" hangouts:clipChildren="true" hangouts:layout_width="-2" hangouts:layout_height="@gwb/fm" hangouts:layout_marginLeft="4dp">
+            <ImageView hangouts:layout_gravity="11" hangouts:id="@ba/eO" hangouts:layout_width="0x7f0b0202" hangouts:layout_height="0x7f0b0202" hangouts:scaleType="5" hangouts:contentDescription="0x7f0a082c" />
+        </FrameLayout>
+        <FrameLayout hangouts:layout_gravity="11" hangouts:id="@ba/eN" hangouts:background="0x7f0200bb" hangouts:visibility="2" hangouts:clipChildren="true" hangouts:layout_width="-2" hangouts:layout_height="@gwb/fm" hangouts:layout_marginLeft="4dp">
+            <ImageView hangouts:layout_gravity="11" hangouts:id="@ba/eM" hangouts:layout_width="0x7f0b0202" hangouts:layout_height="0x7f0b0202" hangouts:scaleType="5" hangouts:importantForAccessibility="2" />
+        </FrameLayout>
+    </com.google.android.apps.hangouts.views.RichStatusView>
+</com.google.android.apps.hangouts.views.OverlayedAvatarView>

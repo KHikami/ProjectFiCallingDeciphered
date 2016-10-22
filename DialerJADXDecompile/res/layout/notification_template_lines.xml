@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="2dp" android:layout_width="-2" android:layout_height="-2" android:paddingEnd="8dp"
+    <LinearLayout android:orientation="0" android:id="0x7f0c016d" android:paddingTop="6dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="8dp" android:layout_marginStart="8dp">
+        <TextView android:textAppearance="0x7f100114" android:ellipsize="4" android:id="@buf/bF" android:fadingEdge="1000" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" android:layout_weight="1.0" />
+        <include android:layout_gravity="11" android:id="0x7f0c016e" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_weight="0.0" layout="0x7f04006b" />
+        <include android:layout_gravity="11" android:id="0x7f0c016f" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_weight="0.0" layout="0x7f04006a" />
+    </LinearLayout>
+    <TextView android:textAppearance="0x7f100112" android:ellipsize="4" android:id="@buf/lq" android:visibility="2" android:fadingEdge="1000" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="8dp" android:layout_marginTop="-2dp" android:layout_marginBottom="-2dp" android:singleLine="true" android:layout_marginStart="8dp" />
+    <LinearLayout android:gravity="10" android:orientation="0" android:id="0x7f0c0170" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="8dp" android:layout_marginStart="8dp">
+        <TextView android:textAppearance="0x7f100110" android:ellipsize="4" android:layout_gravity="11" android:id="@aq/bA" android:fadingEdge="1000" android:layout_width="0dp" android:layout_height="-2" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textAppearance="0x7f100111" android:gravity="11" android:layout_gravity="11" android:id="0x7f0c0171" android:paddingLeft="8dp" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:layout_weight="0.0" android:paddingStart="8dp" />
+    </LinearLayout>
+</LinearLayout>

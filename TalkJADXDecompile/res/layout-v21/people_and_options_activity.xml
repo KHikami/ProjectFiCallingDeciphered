@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="0x7f0e009e" android:layout_width="-1" android:layout_height="-1">
+    <android.support.v7.widget.Toolbar app:id="@ba/cm" app:background="@bc/uH" app:layout_width="-1" app:layout_height="-2" app:minHeight="?unknown_attr_ref: 7f0100ee" app:elevation="2dp" app:contentInsetStart="0x7f0b015c" app:contentInsetLeft="0x7f0b015c" app:popupTheme="0x7f0c01e5" app:theme="0x7f0c01e8" style="?unknown_attr_ref: 7f010113" logo="0x106000d" />
+    <fragment app:name="com.google.android.apps.hangouts.conversation.peopleandoptions.impl.PeopleAndOptionsFragment" app:id="0x7f0d0325" app:layout_width="-1" app:layout_height="-1" />
+</LinearLayout>

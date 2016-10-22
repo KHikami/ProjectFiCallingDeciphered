@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.peoplelistv2.impl.EditParticipantsView android:layout_gravity="13" android:id="0x7f0d0207" android:layout_width="-1" android:layout_height="-2">
+    <com.google.android.apps.hangouts.peoplelistv2.impl.ScrollViewCustom custom:orientation="1" custom:id="@bm/U" custom:background="0x106000d" custom:clipToPadding="false" custom:layout_width="-1" custom:layout_height="0x7f0b0024" custom:max_height="@gwb/st" custom:min_height="0x7f0b0024">
+        <LinearLayout custom:orientation="1" custom:paddingLeft="8dp" custom:paddingRight="8dp" custom:layout_width="-1" custom:layout_height="-2">
+            <com.google.android.apps.hangouts.views.MultiLineLayout custom:id="@bm/Z" custom:paddingLeft="4dp" custom:paddingTop="4dp" custom:paddingRight="4dp" custom:layout_width="-1" custom:layout_height="-2">
+                <com.google.android.apps.hangouts.peoplelistv2.impl.DeleteOnEmptyEditText custom:textSize="14sp" custom:textColor="@gwb/ec" custom:textColorHighlight="0x7f0e00fe" custom:textColorHint="0x7f0e00cd" custom:ellipsize="3" custom:layout_gravity="30" custom:id="@bm/T" custom:background="#00ffffff" custom:paddingLeft="0x7f0b0021" custom:paddingTop="0x7f0b001f" custom:paddingRight="0x7f0b0021" custom:paddingBottom="0x7f0b001f" custom:layout_width="-2" custom:layout_height="48dp" custom:layout_marginRight="72dp" custom:hint="@gwb/tj" custom:minEms="5" custom:singleLine="true" custom:inputType="80021" custom:imeOptions="10000000" custom:textCursorDrawable="0x7f020650" custom:layout_marginEnd="72dp" />
+            </com.google.android.apps.hangouts.views.MultiLineLayout>
+        </LinearLayout>
+    </com.google.android.apps.hangouts.peoplelistv2.impl.ScrollViewCustom>
+</com.google.android.apps.hangouts.peoplelistv2.impl.EditParticipantsView>

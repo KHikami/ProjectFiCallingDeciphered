@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_enabled="false" android:state_active="false" android:drawable="0x7f02052a" />
+    <item android:state_focused="true" android:state_enabled="true" android:state_active="false" android:drawable="0x7f020529" />
+    <item android:state_enabled="true" android:state_active="false" android:drawable="0x7f02052a" />
+    <item android:state_enabled="true" android:state_active="true" android:drawable="0x7f020529" />
+</selector>

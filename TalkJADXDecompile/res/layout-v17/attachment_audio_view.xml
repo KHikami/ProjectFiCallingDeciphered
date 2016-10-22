@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.conversation.messagelist.impl.AudioAttachmentView android:orientation="0" android:paddingTop="5dp" android:paddingBottom="6dp" android:clickable="true" android:longClickable="true" android:layout_width="-1" android:layout_height="-2">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:importantForAccessibility="2">
+        <RelativeLayout android:layout_width="-1" android:layout_height="-2">
+            <TextView android:id="@ba/x" android:layout_width="-2" android:layout_height="-2" android:layout_toLeftOf="@ba/w" android:layout_alignParentLeft="true" android:importantForAccessibility="2" android:layout_toStartOf="@ba/w" android:layout_alignParentStart="true" style="0x7f0c0047" />
+            <TextView android:id="@ba/w" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" android:importantForAccessibility="2" android:layout_alignParentEnd="true" style="0x7f0c0048" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="4dp" android:importantForAccessibility="2">
+            <ImageView android:id="@ba/ed" android:paddingLeft="0x7f0b00bd" android:paddingTop="0x7f0b00bc" android:paddingRight="0x7f0b00be" android:paddingBottom="0x7f0b00bc" android:layout_width="-2" android:layout_height="-2" android:src="@r$drawable/cj" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@bc/ip" android:importantForAccessibility="1" android:paddingStart="0x7f0b00bd" android:paddingEnd="0x7f0b00be" android:layout_alignParentStart="true" />
+            <ImageView android:id="@ba/fq" android:paddingLeft="0x7f0b00be" android:paddingTop="0x7f0b00bc" android:paddingRight="0x7f0b00bd" android:paddingBottom="0x7f0b00bc" android:layout_width="-2" android:layout_height="-2" android:src="@r$drawable/cn" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@bc/la" android:importantForAccessibility="1" android:paddingStart="0x7f0b00be" android:paddingEnd="0x7f0b00bd" android:layout_alignParentEnd="true" />
+            <SeekBar android:id="@ba/ec" android:layout_width="-2" android:layout_height="-2" android:layout_toLeftOf="@ba/fq" android:layout_toRightOf="@ba/ed" android:layout_centerVertical="true" android:importantForAccessibility="2" android:layout_toStartOf="@ba/fq" android:layout_toEndOf="@ba/ed" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.google.android.apps.hangouts.conversation.messagelist.impl.AudioAttachmentView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:gravity="5" app:layout_width="-2" app:layout_height="-2">
+    <ImageView app:id="@ba/cv" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="2dp" app:layout_centerInParent="true" app:contentDescription="@bc/cF" />
+    <com.google.android.apps.hangouts.views.FixedAspectRatioImageView app:id="@ba/cA" app:layout_width="-2" app:layout_height="-2" app:scaleType="6" app:maxWidth="@gwb/ey" />
+    <com.google.android.libraries.material.progress.MaterialProgressBar app:id="@ba/gd" app:background="@gwb/eu" app:visibility="2" app:layout_alignLeft="@ba/cA" app:layout_alignRight="@ba/cA" app:layout_alignBottom="@ba/cA" app:mtrlColor="0x106000b" app:mtrlLinearBarInset="0dp" style="0x7f0c00a1" />
+    <FrameLayout app:id="@ba/cz" app:layout_width="-2" app:layout_height="-2" app:layout_centerInParent="true">
+        <ImageView app:layout_gravity="11" app:id="@ba/cy" app:visibility="2" app:layout_width="44dp" app:layout_height="44dp" app:src="0x7f020690" />
+        <ImageView app:layout_gravity="11" app:id="@ba/cx" app:visibility="2" app:layout_width="-2" app:layout_height="-2" />
+    </FrameLayout>
+    <com.google.android.libraries.material.progress.MaterialProgressBar app:id="@ba/ei" app:background="0x7f020691" app:visibility="2" app:layout_centerInParent="true" app:mtrlColor="0x106000b" style="0x7f0c0097" />
+    <TextView app:id="@ba/u" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:minHeight="50dp" app:layout_alignLeft="@ba/cA" app:layout_alignRight="@ba/cA" app:layout_alignBottom="@ba/cA" style="0x7f0c025d" />
+    <FrameLayout app:id="0x7f0d02e2" app:visibility="2" app:layout_width="-2" app:layout_height="-2" />
+</RelativeLayout>

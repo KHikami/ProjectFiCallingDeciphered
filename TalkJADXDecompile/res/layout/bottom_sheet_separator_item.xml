@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="1" android:layout_width="-1" android:layout_height="0x7f0b009c">
+    <View android:layout_gravity="11" style="0x7f0c0039" />
+</FrameLayout>

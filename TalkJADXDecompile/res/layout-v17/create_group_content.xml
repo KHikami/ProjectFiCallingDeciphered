@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_margin="0x7f0b002d" android:layout_alignParentTop="true">
+        <EditText android:textColor="@gwb/mv" android:textColorHighlight="0x7f0e00fa" android:id="0x7f0d01c5" android:background="0x106000d" android:layout_width="-1" android:layout_height="-2" android:hint="0x7f0a007f" android:singleLine="true" android:inputType="4001" android:textCursorDrawable="@wi/w" />
+        <View android:background="0x7f0e01d0" android:layout_width="-1" android:layout_height="2dp" />
+    </LinearLayout>
+    <ImageButton android:id="@ba/eg" android:background="@bc/vf" android:layout_width="56dp" android:layout_height="56dp" android:layout_margin="0x7f0b002d" android:src="0x7f0205c4" android:scaleType="5" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:alpha="0.7" android:layout_alignParentEnd="true" style="0x7f0c00a7" />
+</RelativeLayout>

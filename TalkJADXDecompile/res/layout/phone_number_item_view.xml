@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="10" android:orientation="0" android:background="0x7f02006f" android:paddingLeft="0x7f0b002d" android:paddingTop="8dp" android:paddingRight="0x7f0b002d" android:paddingBottom="8dp" android:layout_width="-1" android:layout_height="-2" android:layout_centerVertical="true">
+    <TextView android:id="0x7f0d0339" android:layout_width="-2" android:layout_height="-2" android:importantForAccessibility="2" style="0x7f0c027e" />
+    <TextView android:textSize="14sp" android:id="@ba/dZ" android:layout_width="-2" android:layout_height="-2" android:layout_below="0x7f0d0339" android:importantForAccessibility="2" style="0x7f0c027f" />
+    <ImageView android:id="0x7f0d016d" android:layout_width="-2" android:layout_height="-2" android:src="0x7f020563" android:layout_centerVertical="true" android:importantForAccessibility="2" style="0x7f0c0276" />
+</RelativeLayout>

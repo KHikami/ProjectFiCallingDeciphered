@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <FrameLayout android:background="#ffffff" android:layout_width="-1" android:layout_height="72dp">
+        <RelativeLayout android:id="@gwb/zC" android:background="@gwb/yI" android:layout_width="-1" android:layout_height="-1">
+            <View android:id="@gwb/zF" android:background="#4285f4" android:visibility="1" android:layout_width="3dp" android:layout_height="-1" />
+            <com.google.android.libraries.social.avatars.ui.AvatarView android:id="@gwb/zB" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="16dp" android:layout_marginRight="20dp" android:layout_centerVertical="true" shape="round" size="small" />
+            <LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="16dp" android:layout_toRightOf="@gwb/zB" android:layout_centerVertical="true">
+                <TextView android:textSize="0x7f0b012e" android:textColor="0x7f0e0092" android:ellipsize="3" android:id="@gwb/zE" android:layout_width="-2" android:layout_height="-2" android:maxLines="1" android:singleLine="true" />
+                <TextView android:textSize="0x7f0b012d" android:textColor="0x7f0e008d" android:ellipsize="3" android:id="@gwb/zD" android:layout_width="-2" android:layout_height="-2" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

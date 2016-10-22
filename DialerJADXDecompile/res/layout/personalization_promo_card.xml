@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView card_view:gravity="10" card_view:orientation="1" card_view:id="0x7f0c0175" card_view:cardBackgroundColor="0x7f0a00d2" style="0x7f100099">
+    <LinearLayout card_view:orientation="1" card_view:id="0x7f0c0176" card_view:layout_width="-1" card_view:layout_height="-2"
+        <LinearLayout card_view:gravity="30" card_view:orientation="0" card_view:paddingTop="0x7f0b0156" card_view:paddingBottom="0x7f0b0153" card_view:layout_width="-1" card_view:layout_height="-2" card_view:paddingStart="0x7f0b0154" card_view:paddingEnd="0x7f0b0153">
+            <ImageView card_view:layout_gravity="30" card_view:id="0x7f0c0177" card_view:layout_width="0x7f0b0151" card_view:layout_height="0x7f0b0151" card_view:src="0x7f0200f3" />
+            <LinearLayout card_view:gravity="10" card_view:orientation="1" card_view:layout_width="-1" card_view:layout_height="-2" card_view:layout_marginStart="0x7f0b0153">
+                <TextView card_view:textSize="0x7f0b0081" card_view:textStyle="1" card_view:textColor="0x7f0a0012" card_view:layout_gravity="10" card_view:id="0x7f0c0178" card_view:layout_width="-2" card_view:layout_height="-2" card_view:layout_marginBottom="0x7f0b0155" card_view:text="0x7f0f0272" card_view:singleLine="false" />
+                <TextView card_view:textSize="0x7f0b0081" card_view:textColor="0x7f0a0012" card_view:id="0x7f0c0179" card_view:layout_width="-2" card_view:layout_height="-2" card_view:text="0x7f0f0271" card_view:singleLine="false" card_view:lineSpacingExtra="0x7f0b0152" />
+            </LinearLayout>
+        </LinearLayout>
+        <View card_view:background="0x7f0a00d3" card_view:layout_width="-1" card_view:layout_height="1dp" card_view:layout_weight="1.0" />
+        <LinearLayout card_view:gravity="800005" card_view:orientation="0" card_view:paddingTop="0x7f0b0150" card_view:paddingBottom="0x7f0b0150" card_view:layout_width="-1" card_view:layout_height="-2" card_view:paddingEnd="0x7f0b014f">
+            <TextView card_view:id="@aq/bo" card_view:background="?unknown_attr_ref: 101030e" card_view:nextFocusLeft="0x7f0c0175" card_view:nextFocusRight="@aq/aW" card_view:text="0x7f0f026f" card_view:paddingEnd="0x7f0b014e" style="0x7f1000c9" />
+            <TextView card_view:id="@aq/aW" card_view:background="?unknown_attr_ref: 101030e" card_view:nextFocusLeft="@aq/bo" card_view:nextFocusRight="0x7f0c0175" card_view:text="0x7f0f0270" style="0x7f1000c9" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

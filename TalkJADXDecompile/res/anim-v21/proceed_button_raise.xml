@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_pressed="true">
+        <objectAnimator android:duration="0x10e0000" android:valueFrom="@gwb/su" android:valueTo="0x7f0b002c" android:valueType="0" android:propertyName="translationZ" />
+    </item>
+    <item>
+        <objectAnimator android:duration="0x10e0000" android:valueFrom="0x7f0b002c" android:valueTo="@gwb/su" android:valueType="0" android:propertyName="translationZ" />
+    </item>
+</selector>

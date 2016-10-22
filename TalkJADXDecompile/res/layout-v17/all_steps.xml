@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:id="@bn/f" android:paddingLeft="0x7f0b001c" android:paddingTop="0x7f0b001c" android:paddingRight="0x7f0b001c" android:layout_width="-1" android:layout_height="-1" android:paddingStart="0x7f0b001c" android:paddingEnd="0x7f0b001c" /> />

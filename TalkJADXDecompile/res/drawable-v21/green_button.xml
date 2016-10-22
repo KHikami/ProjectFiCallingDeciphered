@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@gwb/qb">
+    <item>
+        <shape>
+            <solid android:color="@gwb/sj" />
+            <corners android:radius="0x7f0b0036" />
+        </shape>
+    </item>
+</ripple>

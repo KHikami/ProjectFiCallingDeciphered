@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <TextView android:ellipsize="3" android:layout_gravity="10" android:id="@co/e" android:paddingLeft="24dp" android:paddingTop="16dp" android:paddingRight="0dp" android:paddingBottom="16dp" android:layout_width="0dp" android:layout_height="-2" android:minHeight="16dp" android:maxLines="2" android:layout_weight="1.0" android:paddingStart="24dp" android:paddingEnd="0dp" style="0x7f0c00c1" />
+    <FrameLayout android:layout_gravity="10" android:layout_width="-2" android:layout_height="-2" android:minWidth="24dp">
+        <TextView android:gravity="800015" android:id="@gwb/yk" android:paddingLeft="24dp" android:paddingRight="24dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:minHeight="48dp" android:paddingStart="24dp" android:paddingEnd="24dp" style="0x7f0c0094" />
+    </FrameLayout>
+</merge>

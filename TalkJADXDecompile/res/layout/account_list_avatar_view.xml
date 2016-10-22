@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="-1" android:layout_height="-1">
+    <ImageView android:id="@bm/b" android:layout_width="-1" android:layout_height="-1" android:src="@gwb/xl" />
+    <ImageView android:id="@ba/E" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:src="0x7f020066" />
+    <ImageView android:layout_gravity="55" android:id="@ba/fk" android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingBottom="@gwb/fy" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:src="@r$drawable/aJ" />
+</merge>

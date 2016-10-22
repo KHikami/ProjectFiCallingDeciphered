@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="0x7f0b0173" android:insetRight="0x7f0b0173" android:insetTop="0x7f0b0172" android:insetBottom="0x7f0b0172">
+    <ripple android:color="?unknown_attr_ref: 101042c">
+        <item>
+            <selector>
+                <item android:state_enabled="false">
+                    <shape android:shape="0">
+                        <corners android:radius="0x7f0b0178" />
+                        <solid android:color="?unknown_attr_ref: 101042b" />
+                        <padding android:left="0x7f0b0175" android:top="0x7f0b0174" android:right="0x7f0b0175" android:bottom="0x7f0b0174" />
+                    </shape>
+                </item>
+                <item>
+                    <shape android:shape="0">
+                        <corners android:radius="0x7f0b0178" />
+                        <solid android:color="?unknown_attr_ref: 1010435" />
+                        <padding android:left="0x7f0b0175" android:top="0x7f0b0174" android:right="0x7f0b0175" android:bottom="0x7f0b0174" />
+                    </shape>
+                </item>
+            </selector>
+        </item>
+    </ripple>
+</inset>

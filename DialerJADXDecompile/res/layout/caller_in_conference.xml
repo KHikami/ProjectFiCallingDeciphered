@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="10" android:orientation="0" android:layout_width="-1" android:layout_height="64dp" android:paddingStart="16dp" android:paddingEnd="8dp"
+    <LinearLayout android:gravity="10" android:orientation="0" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0">
+        <ImageView android:id="@az/t" android:layout_width="@buf/cN" android:layout_height="@buf/cN" />
+        <LinearLayout android:gravity="10" android:orientation="1" android:paddingBottom="2dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginStart="16dp">
+            <TextView android:textAppearance="?unknown_attr_ref: 1010040" android:textSize="16sp" android:textColor="0x7f0a005c" android:id="@az/y" android:layout_width="-2" android:layout_height="-1" android:singleLine="true" android:layout_marginEnd="2dp" />
+            <LinearLayout android:gravity="50" android:orientation="0" android:layout_width="-2" android:layout_height="-1">
+                <TextView android:textSize="14sp" android:textColor="0x7f0a005e" android:ellipsize="4" android:id="@az/z" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:layout_marginEnd="8dp" />
+                <TextView android:textSize="12sp" android:textColor="0x7f0a005e" android:ellipsize="4" android:gravity="800003" android:id="@az/A" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@az/B" android:background="0x7f02008b" android:clickable="true" android:layout_width="0x7f0b009f" android:layout_height="0x7f0b009f" android:src="0x7f0200af" android:scaleType="5" android:tint="0x7f0a005d" android:contentDescription="0x7f0f01a7" />
+    <ImageButton android:id="@az/x" android:background="0x7f02008b" android:clickable="true" android:layout_width="0x7f0b009f" android:layout_height="0x7f0b009f" android:src="@buf/kn" android:scaleType="5" android:tint="0x7f0a005d" android:contentDescription="0x7f0f0247" android:layout_marginStart="8dp" />
+</LinearLayout>

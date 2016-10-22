@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:id="0x7f0d027b" android:layout_width="-1" android:layout_height="-2">
+    <view android:layout_gravity="50" android:id="@ba/eX" android:layout_width="-1" android:layout_height="-2" class="com.google.android.apps.hangouts.hangout.ParticipantTrayView$HorizontalScrollNotifier">
+        <LinearLayout android:layout_gravity="800005" android:orientation="0" android:id="@ba/dV" android:paddingLeft="@gwb/eS" android:paddingRight="@gwb/eS" android:layout_width="-2" android:layout_height="-2" android:animateLayoutChanges="true"
+            <LinearLayout android:gravity="50" android:orientation="0" android:id="@ba/eJ" android:layout_width="-2" android:layout_height="-2" android:animateLayoutChanges="true" style="0x7f0c0263" />
+            <FrameLayout android:layout_gravity="50" android:orientation="0" android:id="@ba/eY" android:layout_width="-2" android:layout_height="-2" android:animateLayoutChanges="true" style="0x7f0c0263" />
+        </LinearLayout>
+    </view>
+</LinearLayout>

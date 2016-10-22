@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="800033" android:layout_width="-1" android:layout_height="-1">
+    <ImageView android:id="@ba/dH" android:layout_alignParentTop="true" style="0x7f0c0224" />
+    <ImageView android:id="@bn/r" android:layout_alignParentTop="true" style="0x7f0c0224" />
+    <ImageView android:id="@ba/av" android:visibility="2" android:layout_alignParentTop="true" style="0x7f0c0225" />
+    <FrameLayout android:id="@ba/G" android:focusable="true" android:layout_alignParentTop="true" style="0x7f0c0225">
+        <ImageView android:id="@gwb/xu" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:src="@gwb/xl" android:contentDescription="0x7f0a0b68" />
+    </FrameLayout>
+    <ImageView android:id="@ba/aw" android:visibility="2" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" style="0x7f0c0226" />
+    <FrameLayout android:id="@ba/H" android:focusable="true" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" style="0x7f0c0226">
+        <ImageView android:id="@gwb/xw" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:src="@gwb/xl" android:contentDescription="0x7f0a0b68" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:background="@rl/c" android:paddingRight="1dp" android:paddingBottom="1dp" android:paddingEnd="1dp" class="com.android.contacts.common.list.ContactTileStarredView">
+    <RelativeLayout android:layout_width="-1" android:layout_height="-1">
+        <com.android.contacts.common.widget.LayoutSuppressingImageView android:id="@cob/v" android:layout_width="-1" android:layout_height="-1" android:scaleType="6" />
+        <LinearLayout android:gravity="10" android:orientation="1" android:background="0x7f0a0063" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="-1" android:layout_height="0x7f0b00b8" android:layout_alignParentBottom="true" android:paddingStart="8dp" android:paddingEnd="8dp">
+            <TextView android:textSize="16sp" android:textColor="0x106000b" android:ellipsize="4" android:id="@cob/w" android:fadingEdge="1000" android:fadingEdgeLength="3dp" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:textAlignment="5" />
+            <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="0x7f0a00bf" android:ellipsize="4" android:id="@cob/B" android:fadingEdge="1000" android:fadingEdgeLength="3dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="-3dp" android:singleLine="true" android:drawablePadding="4dp" />
+        </LinearLayout>
+        <QuickContactBadge android:id="@cob/A" android:background="@rl/c" android:focusable="true" android:layout_width="-1" android:layout_height="-1" />
+    </RelativeLayout>
+</view>

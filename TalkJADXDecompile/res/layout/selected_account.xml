@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@ba/o" android:layout_width="-1" android:layout_height="@gwb/xj">
+    <ImageView android:id="@ba/dI" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:scaleType="6" />
+    <ImageView android:id="@ba/au" android:layout_width="-1" android:layout_height="-1" android:scaleType="6" />
+    <View android:id="@ba/eW" android:background="0x106000c" android:layout_width="-1" android:layout_height="-1" android:alpha="0.4" />
+    <include layout="0x7f040037" />
+    <LinearLayout android:layout_gravity="50" android:orientation="0" android:id="@gwb/xp" android:layout_width="-1" android:layout_height="0x7f0b01c4" style="0x7f0c0231">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0">
+            <LinearLayout android:orientation="1" android:id="@ba/p" android:layout_width="-1" android:layout_height="-2" android:layout_centerVertical="true" style="0x7f0c022c">
+                <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="#ffffff" android:ellipsize="3" android:id="@ba/m" android:layout_width="-2" android:layout_height="-2" android:maxLines="1" android:singleLine="true" android:fontFamily="sans-serif-medium" style="0x7f0c022d" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="#ffffff" android:ellipsize="3" android:id="@ba/l" android:layout_width="-2" android:layout_height="-2" android:maxLines="1" android:singleLine="true" android:alpha="0.72" />
+            </LinearLayout>
+            <LinearLayout android:orientation="1" android:id="@ba/dJ" android:layout_width="-1" android:layout_height="-2" android:layout_centerVertical="true" style="0x7f0c022c">
+                <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="#ffffff" android:ellipsize="3" android:id="@ba/dG" android:layout_width="-2" android:layout_height="-2" android:maxLines="1" android:singleLine="true" android:fontFamily="sans-serif-medium" style="0x7f0c022d" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="#ffffff" android:ellipsize="3" android:id="@ba/dF" android:layout_width="-2" android:layout_height="-2" android:maxLines="1" android:singleLine="true" android:alpha="0.72" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.google.android.gms.people.accountswitcherview.ExpanderView android:id="@ba/n" android:layout_height="-1" android:src="0x7f020485" android:scaleType="5" android:contentDescription="@bm/ao" style="0x7f0c022f" />
+    </LinearLayout>
+</FrameLayout>

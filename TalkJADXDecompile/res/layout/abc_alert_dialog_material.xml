@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="@gwb/bA" android:layout_width="-1" android:layout_height="-2"
+    <LinearLayout android:orientation="1" android:id="@gwb/bL" android:layout_width="-1" android:layout_height="-2"
+        <LinearLayout android:gravity="10" android:orientation="0" android:id="@gwb/bK" android:paddingLeft="?unknown_attr_ref: 7f010104" android:paddingTop="0x7f0b017e" android:paddingRight="?unknown_attr_ref: 7f010104" android:layout_width="-1" android:layout_height="-2">
+            <ImageView android:id="0x1020006" android:layout_width="32dp" android:layout_height="32dp" android:src="@wi/w" android:scaleType="3" style="0x7f0c01d4" />
+            <android.support.v7.widget.DialogTitle android:ellipsize="3" android:id="@gwb/bs" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" style="?unknown_attr_ref: 101005b" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@gwb/bu" android:layout_width="-1" android:layout_height="-2" android:minHeight="48dp" android:layout_weight="1.0">
+        <View android:layout_gravity="30" android:id="@gwb/bC" android:background="?unknown_attr_ref: 7f010130" android:visibility="2" android:layout_width="-1" android:layout_height="1dp" />
+        <android.support.v4.widget.NestedScrollView android:id="@gwb/bD" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-2">
+            <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+                <TextView android:id="0x102000b" android:paddingLeft="?unknown_attr_ref: 7f010104" android:paddingTop="0x7f0b017e" android:paddingRight="?unknown_attr_ref: 7f010104" android:layout_width="-1" android:layout_height="-2" style="0x7f0c0120" />
+                <View android:id="@gwb/bI" android:visibility="2" android:layout_width="0dp" android:layout_height="0x7f0b017e" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <View android:layout_gravity="50" android:id="@gwb/bB" android:background="?unknown_attr_ref: 7f010130" android:visibility="2" android:layout_width="-1" android:layout_height="1dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@gwb/bw" android:layout_width="-1" android:layout_height="-2" android:minHeight="48dp" android:layout_weight="1.0"
+        <FrameLayout android:id="@gwb/bv" android:layout_width="-1" android:layout_height="-2" /> />
+    <include layout="0x7f040009" />
+</LinearLayout>

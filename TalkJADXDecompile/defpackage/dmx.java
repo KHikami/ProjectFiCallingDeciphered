@@ -1,0 +1,16 @@
+package defpackage;
+
+import com.google.android.apps.hangouts.hangout.IncomingRingActivity;
+
+/* renamed from: dmx */
+final class dmx implements dmu {
+    final /* synthetic */ dmw a;
+
+    dmx(dmw dmw) {
+        this.a = dmw;
+    }
+
+    public Class<?> a() {
+        return IncomingRingActivity.class;
+    }
+}

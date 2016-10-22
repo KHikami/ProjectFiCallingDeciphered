@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:id="@ba/db" android:layout_width="-1" android:layout_height="-1" android:divider="@wi/w" android:dividerHeight="0px" android:headerDividersEnabled="false" />

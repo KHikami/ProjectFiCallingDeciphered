@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout hangouts:id="@ba/da" hangouts:background="0x7f0e0284" hangouts:layout_width="-1" hangouts:layout_height="-1">
+    <LinearLayout hangouts:orientation="0" hangouts:id="@ba/dL" hangouts:background="0x7f020499" hangouts:visibility="2" hangouts:clickable="true" hangouts:layout_width="-1" hangouts:layout_height="-2">
+        <com.google.android.apps.hangouts.views.FixedParticipantsView hangouts:layout_gravity="10" hangouts:id="@ba/bX" hangouts:visibility="2" hangouts:duplicateParentState="true" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_marginLeft="0x7f0b01e7" hangouts:layout_marginTop="0x7f0b01e8" hangouts:layout_marginBottom="0x7f0b01e8" hangouts:layout_weight="0.0" hangouts:avatarSize="0x7f0b01e5" hangouts:largeAvatarSize="0x7f0b01e6" />
+        <TextView hangouts:layout_gravity="10" hangouts:duplicateParentState="true" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_marginLeft="0x7f0b01e9" hangouts:layout_marginTop="0x7f0b01ea" hangouts:layout_marginBottom="0x7f0b01ea" hangouts:text="@bc/hS" hangouts:layout_weight="1.0" style="0x7f0c024c" />
+        <com.google.android.apps.hangouts.util.modulized.ChronometerAccessible hangouts:layout_gravity="15" hangouts:id="@ba/X" hangouts:duplicateParentState="true" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_marginRight="0x7f0b01eb" hangouts:layout_weight="0.0" style="0x7f0c024e" />
+    </LinearLayout>
+    <FrameLayout hangouts:layout_width="-1" hangouts:layout_height="-1" hangouts:layout_above="@ba/eK" hangouts:layout_below="@ba/dL"
+        <FrameLayout hangouts:id="@ba/du" hangouts:visibility="2" hangouts:layout_width="-1" hangouts:layout_height="-1" />
+        <com.google.android.apps.hangouts.views.MessageListView hangouts:id="0x102000a" hangouts:fadingEdge="0" hangouts:longClickable="false" hangouts:persistentDrawingCache="3" hangouts:layout_width="-1" hangouts:layout_height="-1" hangouts:listSelector="0x7f020676" hangouts:drawSelectorOnTop="false" hangouts:stackFromBottom="true" hangouts:transcriptMode="1" hangouts:cacheColorHint="0x7f0e0284" hangouts:divider="@wi/w" hangouts:dividerHeight="0px" />
+    </FrameLayout>
+    <com.google.android.apps.hangouts.views.ParticipantsGalleryView hangouts:id="@ba/dS" hangouts:paddingLeft="0x7f0b002d" hangouts:focusableInTouchMode="true" hangouts:layout_width="-2" hangouts:layout_height="@gwb/ff" hangouts:layout_marginBottom="0x7f0b00c5" hangouts:layout_above="@ba/eK" />
+    <ImageView hangouts:id="@ba/fx" hangouts:visibility="2" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_above="@ba/eK" hangouts:layout_alignParentRight="true" hangouts:contentDescription="0x7f0a0abd" />
+    <include layout="@gwb/fV" />
+    <FrameLayout hangouts:id="@ba/dh" hangouts:visibility="2" hangouts:layout_width="-1" hangouts:layout_height="-1" hangouts:layout_above="@ba/eK" />
+    <LinearLayout hangouts:orientation="1" hangouts:id="@ba/eK" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:divider="?unknown_attr_ref: 101032c" hangouts:layout_alignParentBottom="true" hangouts:dividerPadding="4dp"
+        <LinearLayout hangouts:id="0x7f0d0196" hangouts:background="@bc/vc" hangouts:visibility="2" hangouts:layout_width="-1" hangouts:layout_height="48dp">
+            <EditText hangouts:textAppearance="?unknown_attr_ref: 1010044" hangouts:textColor="0x7f0e028d" hangouts:textColorHint="0x7f0e028f" hangouts:id="0x7f0d0197" hangouts:paddingLeft="48dp" hangouts:paddingTop="8dp" hangouts:paddingBottom="8dp" hangouts:layout_width="0dp" hangouts:layout_height="-2" hangouts:minHeight="48dp" hangouts:hint="0x7f0a08f3" hangouts:scrollHorizontally="false" hangouts:singleLine="true" hangouts:layout_weight="1.0" hangouts:inputType="c041" hangouts:textCursorDrawable="@wi/w" style="0x7f0c0044" />
+            <ImageView hangouts:layout_gravity="11" hangouts:id="0x7f0d0198" hangouts:paddingRight="8dp" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:src="@r$drawable/aH" hangouts:contentDescription="0x7f0a0abc" />
+        </LinearLayout>
+        <RelativeLayout hangouts:layout_width="-1" hangouts:layout_height="-2">
+            <com.google.android.apps.hangouts.conversation.v2.FloatingButtonWithCounter hangouts:id="@ba/bo" hangouts:clipChildren="false" hangouts:clipToPadding="false" hangouts:layout_width="0dp" hangouts:layout_height="0dp" hangouts:layout_above="@ba/v" hangouts:layout_alignParentRight="true" />
+            <FrameLayout hangouts:id="@ba/aa" hangouts:layout_width="-1" hangouts:layout_height="-2" />
+            <FrameLayout hangouts:id="@ba/v" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:layout_below="@ba/aa" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.google.android.apps.hangouts.views.EasterEggView hangouts:id="@ba/aP" hangouts:layout_width="-1" hangouts:layout_height="0x7f0b01ff" hangouts:layout_above="@ba/eK" />
+    <view hangouts:id="@ba/z" hangouts:background="0x7f0e00c6" hangouts:visibility="2" hangouts:layout_width="-1" hangouts:layout_height="-1" class="com.google.android.apps.hangouts.hangout.ProximityCoverView" />
+    <include layout="0x7f0400a0" />
+</RelativeLayout>

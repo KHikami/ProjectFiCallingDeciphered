@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:background="0x7f0200be" android:focusable="true" android:clickable="true" android:layout_width="-1" android:layout_height="@gwb/eD" android:soundEffectsEnabled="false" class="com.google.android.apps.hangouts.fragments.dialpad.DialpadKeyButton">
+    <TextView android:textSize="0x7f0b024b" android:textColor="0x7f0e02a5" android:gravity="11" android:layout_gravity="31" android:id="@ba/aK" android:layout_width="-2" android:layout_height="-2" android:fontFamily="sans-serif-light" />
+    <TextView android:textSize="0x7f0b024c" android:textColor="@gwb/dK" android:layout_gravity="51" android:id="@ba/aJ" android:layout_width="-2" android:layout_height="-2" android:fontFamily="sans-serif" />
+</view>

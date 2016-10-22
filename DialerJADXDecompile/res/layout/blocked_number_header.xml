@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout card_view:orientation="1" card_view:focusable="false" card_view:layout_width="-1" card_view:layout_height="-2"
+    <LinearLayout card_view:orientation="1" card_view:id="@aq/m" card_view:background="0x7f0a0020" card_view:paddingTop="27dp" card_view:paddingBottom="29dp" card_view:focusable="true" card_view:visibility="2" card_view:layout_width="-1" card_view:layout_height="-2" card_view:paddingStart="0x7f0b004f" card_view:paddingEnd="44dp">
+        <TextView card_view:textStyle="1" card_view:layout_width="-1" card_view:layout_height="-2" card_view:text="0x7f0f0057" style="0x7f100092" />
+        <TextView card_view:layout_width="-1" card_view:layout_height="-2" card_view:text="0x7f0f0056" style="0x7f100092" />
+    </LinearLayout>
+    <android.support.v7.widget.CardView card_view:layout_width="-1" card_view:layout_height="-2" card_view:cardCornerRadius="0dp">
+        <LinearLayout card_view:orientation="1" card_view:background="0x106000b" card_view:focusable="true" card_view:layout_width="-1" card_view:layout_height="-2">
+            <TextView card_view:textColor="0x7f0a0022" card_view:gravity="10" card_view:id="@aq/k" card_view:layout_width="-2" card_view:layout_height="48dp" card_view:text="0x7f0f0045" card_view:paddingStart="0x7f0b004f" style="@*style/TextAppearance.Material.Subhead" />
+            <RelativeLayout card_view:id="@aq/ay" card_view:visibility="2" card_view:layout_width="-1" card_view:layout_height="-2">
+                <TextView card_view:textSize="0x7f0b0056" card_view:textColor="0x7f0a00e4" card_view:id="0x7f0c009f" card_view:paddingTop="11dp" card_view:paddingBottom="27dp" card_view:layout_width="-1" card_view:layout_height="-2" card_view:text="0x7f0f0053" card_view:paddingStart="0x7f0b004f" card_view:paddingEnd="0x7f0b004f" style="0x7f100092" />
+                <Button card_view:id="@aq/ax" card_view:layout_width="-2" card_view:layout_height="-2" card_view:text="0x7f0f0052" card_view:layout_below="0x7f0c009f" card_view:layout_marginEnd="0x7f0b004f" card_view:layout_alignParentEnd="true" style="0x7f10009f" />
+                <Button card_view:id="@aq/bG" card_view:layout_width="-2" card_view:layout_height="-2" card_view:text="0x7f0f0054" card_view:layout_below="0x7f0c009f" card_view:layout_marginEnd="8dp" card_view:layout_toStartOf="@aq/ax" style="0x7f10009f" />
+                <View card_view:background="0x7f0a0086" card_view:layout_width="-1" card_view:layout_height="1dp" card_view:layout_marginTop="8dp" card_view:layout_below="@aq/ax" />
+            </RelativeLayout>
+            <LinearLayout card_view:orientation="1" card_view:id="@aq/aK" card_view:visibility="2" card_view:layout_width="-1" card_view:layout_height="-2">
+                <TextView card_view:textStyle="1" card_view:textColor="0x7f0a0022" card_view:gravity="10" card_view:id="0x7f0c00a3" card_view:layout_width="-1" card_view:layout_height="48dp" card_view:text="@buf/is" card_view:paddingStart="0x7f0b004f" card_view:paddingEnd="0x7f0b004f" style="@*style/TextAppearance.Material.Subhead" />
+                <TextView card_view:textColor="0x7f0a00e4" card_view:id="0x7f0c00a4" card_view:layout_width="-1" card_view:layout_height="-2" card_view:layout_marginBottom="0x7f0b004f" card_view:text="@buf/ir" card_view:layout_marginStart="0x7f0b004f" card_view:layout_marginEnd="0x7f0b004f" />
+                <Button card_view:layout_gravity="800005" card_view:id="@aq/aL" card_view:layout_width="-2" card_view:layout_height="-2" card_view:layout_marginBottom="0x7f0b004f" card_view:text="@buf/ip" card_view:layout_marginStart="0x7f0b004f" card_view:layout_marginEnd="0x7f0b004f" style="0x7f1000a0" />
+                <View style="0x7f1000ba" />
+            </LinearLayout>
+            <LinearLayout card_view:gravity="10" card_view:orientation="0" card_view:id="@aq/c" card_view:background="?unknown_attr_ref: 101030e" card_view:paddingTop="0x7f0b004d" card_view:paddingBottom="0x7f0b004c" card_view:focusable="true" card_view:clickable="true" card_view:layout_width="-1" card_view:layout_height="-2" card_view:baselineAligned="false" card_view:contentDescription="0x7f0f0036" card_view:paddingStart="0x7f0b0052">
+                <ImageView card_view:id="@aq/b" card_view:layout_width="@buf/hl" card_view:layout_height="@buf/hl" card_view:importantForAccessibility="2" />
+                <LinearLayout card_view:gravity="10" card_view:orientation="1" card_view:layout_width="0dp" card_view:layout_height="-2" card_view:layout_weight="1.0" card_view:layout_marginStart="0x7f0b0052">
+                    <TextView card_view:textSize="0x7f0b0053" card_view:textColor="0x7f0a0024" card_view:id="0x7f0c00a8" card_view:layout_width="-2" card_view:layout_height="-2" card_view:text="0x7f0f0036" card_view:includeFontPadding="false" />
+                </LinearLayout>
+            </LinearLayout>
+            <View card_view:id="@aq/j" card_view:background="0x7f0a0086" card_view:layout_width="-1" card_view:layout_height="1dp" card_view:layout_marginStart="72dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

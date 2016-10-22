@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view ex:background="?unknown_attr_ref: 101030e" ex:focusable="true" class="com.android.contacts.common.list.ContactTileStarredView">
+    <LinearLayout ex:orientation="1" ex:id="@cob/z" ex:paddingTop="24dp" ex:layout_width="-1" ex:layout_height="-1">
+        <view ex:id="0x7f0c0111" ex:layout_width="-1" ex:layout_height="-2" ex:direction="widthToHeight" ex:ratio="1.0" class="com.android.contacts.common.widget.ProportionalLayout">
+            <ImageView ex:id="@cob/v" ex:layout_width="-1" ex:layout_height="-1" />
+        </view>
+        <TextView ex:textSize="@buf/cO" ex:textColor="#202020" ex:ellipsize="4" ex:id="@cob/w" ex:paddingTop="7dp" ex:fadingEdge="1000" ex:fadingEdgeLength="3dp" ex:layout_width="-1" ex:layout_height="-2" ex:singleLine="true" ex:textAlignment="4" />
+    </LinearLayout>
+</view>

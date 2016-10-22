@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-2">
+    <LinearLayout android:gravity="10" android:id="@bm/O" android:paddingLeft="16dp" android:paddingRight="16dp" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-2" android:minHeight="?unknown_attr_ref: 1010387">
+        <ImageView android:layout_gravity="11" android:id="@co/b" android:layout_width="-2" android:layout_height="-2" android:contentDescription="0x7f0a05f9" />
+        <RelativeLayout android:paddingTop="16dp" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+            <TextView android:textSize="16sp" android:textColor="?unknown_attr_ref: 1010036" android:ellipsize="4" android:id="@co/i" android:layout_width="-2" android:layout_height="-2" />
+            <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="?unknown_attr_ref: 1010038" android:id="@co/g" android:layout_width="-2" android:layout_height="-2" android:layout_below="@co/i" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="10" android:orientation="1" android:id="@co/j" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="-2" android:layout_height="-2" /> />
+    <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="?unknown_attr_ref: 7f01012d" android:id="0x7f0d035a" android:background="?unknown_attr_ref: 101030e" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:clickable="true" android:layout_width="-2" android:layout_height="-1" android:layout_below="@bm/O" />
+</RelativeLayout>

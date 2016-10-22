@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <FrameLayout android:background="0x7f020571" android:paddingTop="8dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-1">
+        <fragment android:id="0x7f0d02a7" android:layout_width="-1" android:layout_height="-1" class="com.google.android.apps.hangouts.fragments.dialpad.InCallDialpadFragment" />
+    </FrameLayout>
+</LinearLayout>

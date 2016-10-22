@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="1" android:background="0x7f0a008f" android:layout_width="-1" android:layout_height="-1"
+    <RelativeLayout android:orientation="1" android:id="@az/a" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_width="64dp" android:layout_height="64dp" android:src="0x7f0200c7" android:layout_centerInParent="true" />
+        <TextView android:textSize="12sp" android:textColor="0x7f0a0006" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="8dp" android:text="0x7f0f0136" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="1" android:id="@az/b" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:layout_width="64dp" android:layout_height="64dp" android:src="0x7f0200cd" android:layout_centerInParent="true" />
+        <TextView android:textSize="12sp" android:textColor="0x7f0a0006" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="8dp" android:text="0x7f0f0139" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="11" android:orientation="1" android:id="@az/c" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="92dp" android:layout_height="92dp" android:layout_above="@az/b" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentRight="false" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="false" android:contentDescription="0x7f0f013d" android:layout_alignParentStart="false" android:layout_alignParentEnd="false">
+        <ImageView android:layout_width="64dp" android:layout_height="64dp" android:src="@buf/ky" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+import java.util.Set;
+
+final class cqy extends cuz {
+    final /* synthetic */ cqx a;
+
+    cqy(cqx cqx) {
+        this.a = cqx;
+    }
+
+    public void a(int i) {
+        this.a.a(i);
+    }
+
+    public void a(isr isr, Set<isq> set) {
+        this.a.a(isr, set);
+    }
+}

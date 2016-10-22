@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout hangouts:orientation="1" hangouts:id="0x7f0d0139" hangouts:paddingLeft="0x7f0b002e" hangouts:paddingRight="0x7f0b002e" hangouts:layout_width="-1" hangouts:layout_height="-2"
+    <LinearLayout hangouts:orientation="0" hangouts:layout_width="-1" hangouts:layout_height="0x7f0b026e">
+        <FrameLayout hangouts:layout_gravity="10" hangouts:id="@ba/C" hangouts:layout_width="@ba/np" hangouts:layout_height="@ba/np" hangouts:layout_alignParentLeft="true">
+            <com.google.android.apps.hangouts.views.AvatarView hangouts:id="@bn/r" hangouts:layout_width="@ba/np" hangouts:layout_height="@ba/np" hangouts:avatarViewSize="medium" />
+            <View hangouts:id="0x7f0d013b" hangouts:background="0x7f020075" hangouts:layout_width="-1" hangouts:layout_height="-1" />
+        </FrameLayout>
+        <TextView hangouts:textSize="18sp" hangouts:id="@bm/Q" hangouts:paddingLeft="8dp" hangouts:layout_width="0dp" hangouts:layout_height="-2" hangouts:layout_weight="1.0" hangouts:layout_centerVertical="true" style="0x7f0c0247" />
+        <View style="0x7f0c0237" />
+        <Button hangouts:textSize="14sp" hangouts:textStyle="0" hangouts:id="@ba/gb" hangouts:background="0x7f02006f" hangouts:paddingLeft="16dp" hangouts:paddingRight="16dp" hangouts:layout_width="-2" hangouts:layout_height="-1" hangouts:text="@bc/tt" style="0x7f0c0248" />
+    </LinearLayout>
+    <View style="0x7f0c0239" />
+</LinearLayout>

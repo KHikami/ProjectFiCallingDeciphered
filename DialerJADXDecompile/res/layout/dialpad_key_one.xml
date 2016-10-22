@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.dialer.dialpadview.DialpadKeyButton android:id="@az/aj" style="0x7f1000a5">
+    <LinearLayout style="0x7f1000a6">
+        <com.android.dialer.dialpadview.DialpadTextView android:id="@az/J" style="0x7f1000a8" />
+        <RelativeLayout android:layout_width="-2" android:layout_height="-2">
+            <ImageView android:id="0x7f0c0137" android:paddingTop="0x7f0b00f6" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0200bb" android:scaleType="3" android:tint="?unknown_attr_ref: 7f01017c" android:layout_centerInParent="true" />
+            <TextView style="0x7f1000a7" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.android.dialer.dialpadview.DialpadKeyButton>

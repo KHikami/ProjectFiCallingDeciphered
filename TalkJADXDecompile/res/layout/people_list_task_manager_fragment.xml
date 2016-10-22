@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="0x7f0d0329" android:layout_width="-1" android:layout_height="-2" android:animateLayoutChanges="true"
+    <LinearLayout android:gravity="30" android:layout_gravity="30" android:orientation="1" android:id="0x7f0d032a" android:background="0x7f0e009e" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:minHeight="24dp" />
+    <View android:id="0x7f0d032b" android:background="0x7f0e0240" android:layout_width="-1" android:layout_height="2dp" />
+</LinearLayout>

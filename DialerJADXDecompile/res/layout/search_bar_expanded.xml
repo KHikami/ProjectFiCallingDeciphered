@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="10" android:orientation="0" android:id="@aq/bi" android:visibility="2" android:layout_width="-1" android:layout_height="-1">
+    <ImageButton android:id="@aq/bg" android:background="?unknown_attr_ref: 7f010065" android:layout_width="0x7f0b015f" android:layout_height="0x7f0b015f" android:layout_margin="0x7f0b0161" android:src="0x7f0200a1" android:tint="@buf/cB" android:contentDescription="0x7f0f002d" />
+    <EditText android:textSize="0x7f0b0169" android:textColor="0x7f0a00e1" android:textColorHint="0x7f0a00df" android:id="@aq/bm" android:background="@rl/c" android:layout_width="0dp" android:layout_height="0x7f0b015f" android:layout_marginLeft="0x7f0b0164" android:singleLine="true" android:layout_weight="1.0" android:inputType="b1" android:imeOptions="10000000" android:textCursorDrawable="0x7f020144" android:fontFamily="0x7f0f02a3" />
+    <ImageView android:id="@aq/bk" android:background="?unknown_attr_ref: 7f010065" android:padding="0x7f0b015a" android:clickable="true" android:layout_width="0x7f0b015b" android:layout_height="0x7f0b015b" android:src="@buf/kp" android:tint="0x7f0a00e0" android:contentDescription="0x7f0f0113" />
+</LinearLayout>

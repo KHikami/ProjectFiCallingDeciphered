@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="800033" android:layout_width="-1" android:layout_height="-1">
+    <FrameLayout android:id="@ba/dH" android:layout_marginTop="16dp" android:layout_alignParentTop="true" style="0x7f0c0224">
+        <include layout="0x7f040022" />
+    </FrameLayout>
+    <FrameLayout android:id="@bn/r" android:layout_marginTop="16dp" android:layout_alignParentTop="true" style="0x7f0c0224">
+        <include layout="0x7f040022" />
+    </FrameLayout>
+    <FrameLayout android:id="@ba/av" android:visibility="2" android:layout_marginTop="16dp" android:layout_alignParentTop="true" style="0x7f0c0225">
+        <include layout="0x7f040022" />
+    </FrameLayout>
+    <FrameLayout android:id="@ba/G" android:layout_marginTop="16dp" android:layout_alignParentTop="true" style="0x7f0c0225">
+        <include layout="0x7f040022" />
+    </FrameLayout>
+    <FrameLayout android:id="@ba/aw" android:visibility="2" android:layout_marginTop="16dp" android:layout_alignParentTop="true" style="0x7f0c0226">
+        <include layout="0x7f040022" />
+    </FrameLayout>
+    <FrameLayout android:id="@ba/H" android:layout_marginTop="16dp" android:layout_alignParentTop="true" style="0x7f0c0226">
+        <include layout="0x7f040022" />
+    </FrameLayout>
+</RelativeLayout>

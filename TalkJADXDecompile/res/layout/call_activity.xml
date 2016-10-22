@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@gwb/oC" app:layout_width="-1" app:layout_height="-1" app:layout_alignParentTop="true" />
+    <FrameLayout app:id="@gwb/ov" app:fitsSystemWindows="true" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-2" app:layout_alignParentTop="true">
+        <View app:id="@gwb/oM" app:background="0x7f0e002e" app:layout_width="-1" app:layout_height="-2" />
+        <android.support.v7.widget.Toolbar app:id="@ba/cm" app:background="0x7f020570" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 7f0100ee" app:contentInsetStart="0x7f0b015c" app:contentInsetLeft="0x7f0b015c" app:popupTheme="0x7f0c01e5" app:theme="0x7f0c0030" app:titleTextAppearance="0x7f0c0031" style="?unknown_attr_ref: 7f010113" />
+    </FrameLayout>
+</RelativeLayout>

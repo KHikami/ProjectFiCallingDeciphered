@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:id="0x7f0c017c" android:paddingBottom="0x7f0b00b4" android:paddingEnd="0x7f0b00b4" class="com.android.dialer.app.list.PhoneFavoriteSquareTileView">
+    <RelativeLayout android:id="0x7f0c017d" android:focusable="true" android:nextFocusRight="@aq/Q" android:layout_width="-1" android:layout_height="-1">
+        <com.android.contacts.common.widget.LayoutSuppressingImageView android:id="@cob/v" android:layout_width="-1" android:layout_height="-1" android:scaleType="6" />
+        <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+            <View android:layout_width="-1" android:layout_height="0dp" android:layout_weight="6.0" />
+            <View android:id="@aq/bt" android:background="0x7f020147" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="4.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="1" android:paddingBottom="0x7f0b00ba" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true" android:paddingStart="0x7f0b00bb" android:paddingEnd="0x7f0b00bb"
+            <LinearLayout android:gravity="10" android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+                <TextView android:textSize="15sp" android:textColor="0x7f0a0062" android:ellipsize="4" android:id="@cob/w" android:fadingEdge="1000" android:fadingEdgeLength="3dp" android:layout_width="0dp" android:layout_height="-2" android:singleLine="true" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" android:textAlignment="5" />
+                <ImageView android:id="@aq/K" android:visibility="2" android:layout_width="0x7f0b010b" android:layout_height="0x7f0b010b" android:src="0x7f020107" android:layout_marginStart="3dp" />
+            </LinearLayout>
+            <TextView android:textSize="11sp" android:textColor="0x7f0a0062" android:ellipsize="4" android:gravity="10" android:id="@cob/y" android:fadingEdge="1000" android:fadingEdgeLength="3dp" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" android:fontFamily="sans-serif" android:textAlignment="5" />
+        </LinearLayout>
+        <View android:id="@cob/z" android:background="0x7f020130" android:layout_width="-1" android:layout_height="-1" android:importantForAccessibility="2" />
+        <ImageButton android:id="@aq/Q" android:background="0x7f020130" android:paddingLeft="4dp" android:paddingTop="8dp" android:paddingRight="9dp" android:paddingBottom="4dp" android:layout_width="0x7f0b00b6" android:layout_height="0x7f0b00b6" android:src="0x7f0200e5" android:scaleType="5" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="0x7f0f0144" android:paddingStart="4dp" android:paddingEnd="4dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</view>

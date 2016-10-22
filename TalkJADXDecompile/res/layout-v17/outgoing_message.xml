@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.conversation.messagelist.impl.LinearLayoutEx android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:importantForAccessibility="2">
+    <LinearLayout android:gravity="800005" android:orientation="1" android:layout_width="-1" android:layout_height="-2"
+        <LinearLayout android:orientation="0" android:layout_width="-2" android:layout_height="-2"
+            <LinearLayout android:orientation="0" android:id="@bm/r" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b00b8" android:layout_marginStart="0x7f0b00b8" />
+            <ImageView android:layout_gravity="11" android:id="@bm/i" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b00b6" android:src="0x7f02056f" android:importantForAccessibility="2" android:layout_marginStart="0x7f0b00b6" />
+            <ImageView android:layout_gravity="11" android:id="@bm/e" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b00c2" android:src="0x7f0205cd" android:importantForAccessibility="2" android:layout_marginStart="0x7f0b00c2" />
+            <LinearLayout android:gravity="800005" android:orientation="1" android:layout_width="-2" android:layout_height="-2"
+                <LinearLayout android:orientation="1" android:id="@bm/w" android:paddingLeft="0x7f0b00b9" android:paddingRight="12dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+                <com.google.android.apps.hangouts.views.MessageBubbleView android:gravity="10" android:orientation="1" android:id="@bm/s" android:background="@r$drawable/bG" android:visibility="0" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b00b9" android:layout_marginRight="0x7f0b00b6" android:baselineAligned="false" android:importantForAccessibility="2" android:layout_marginStart="0x7f0b00b9" android:layout_marginEnd="0x7f0b00b6">
+                    <LinearLayout android:orientation="1" android:id="@bm/a" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+                    <com.google.android.apps.hangouts.views.WrapWidthTextView android:layout_gravity="800003" android:id="@bm/q" android:layout_width="-2" android:layout_height="-2" android:maxWidth="@gwb/fa" android:lineSpacingExtra="0x7f0b00c4" android:importantForAccessibility="2" style="0x7f0c0044" />
+                </com.google.android.apps.hangouts.views.MessageBubbleView>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:paddingLeft="0x7f0b00b4" android:paddingRight="0x7f0b00b3" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b00b5" android:paddingStart="0x7f0b00b4" android:paddingEnd="0x7f0b00b3" android:layout_marginStart="0x7f0b00b5">
+            <include android:id="@bm/u" layout="0x7f0400e9" />
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.apps.hangouts.conversation.messagelist.impl.LinearLayoutEx>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="0x106000d" android:layout_width="-1" android:layout_height="-1">
+    <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="2000000" android:id="@gwb/zi" android:paddingLeft="16dp" android:paddingTop="0dp" android:paddingRight="16dp" android:paddingBottom="0dp" android:clipToPadding="false" android:layout_width="-1" android:layout_height="0dp" android:drawSelectorOnTop="false" android:cacheColorHint="0x106000d" android:layout_weight="1.0" />
+</LinearLayout>

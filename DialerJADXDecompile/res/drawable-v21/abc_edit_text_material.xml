@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="0x7f0b0029" android:insetRight="0x7f0b0029" android:insetTop="0x7f0b002a" android:insetBottom="0x7f0b0028">
+    <selector>
+        <item android:state_enabled="false">
+            <nine-patch android:src="@buf/aY" android:tint="?unknown_attr_ref: 7f010085" android:alpha="?unknown_attr_ref: 1010033" />
+        </item>
+        <item android:state_focused="false" android:state_pressed="false">
+            <nine-patch android:src="@buf/aY" android:tint="?unknown_attr_ref: 7f010085" />
+        </item>
+        <item>
+            <nine-patch android:src="@buf/aX" android:tint="?unknown_attr_ref: 7f010086" />
+        </item>
+    </selector>
+</inset>

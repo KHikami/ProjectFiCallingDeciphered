@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout hangouts:layout_width="-1" hangouts:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+        <RelativeLayout android:background="0x7f0e0087" android:layout_width="-1" android:layout_height="-2"
+            <RelativeLayout android:id="0x7f0d02b2" android:background="0x7f0e0087" android:layout_width="-1" android:layout_height="-2">
+                <ImageView android:id="@ba/au" android:layout_width="-1" android:layout_height="96dp" android:scaleType="6" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:importantForAccessibility="2" />
+                <view android:gravity="800003" android:id="@ba/bv" android:background="#00000000" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="-2" android:layout_marginBottom="8dp" android:layout_alignBottom="@ba/au" android:avatarPadding="4dp" android:avatarSize="48dp" class="com.google.android.apps.hangouts.views.FixedParticipantsGalleryView" style="0x7f0c027b" />
+                <com.google.android.apps.hangouts.views.AvatarView android:layout_gravity="5" android:id="@bm/ac" android:paddingBottom="0dp" android:layout_width="96dp" android:layout_height="96dp" android:layout_marginTop="-64dp" android:layout_marginRight="16dp" android:layout_below="@ba/au" android:layout_alignParentRight="true" android:avatarViewSize="large" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010040" android:textStyle="1" android:textColor="#ff1d1d1d" android:id="@bm/Q" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:layout_below="@ba/au" style="0x7f0c027c" />
+                <TextView android:textSize="14sp" android:textColor="0x7f0e00a3" android:id="@ba/dM" android:paddingBottom="4dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:layout_below="@bm/Q" style="0x7f0c027d" />
+                <TextView android:textSize="14sp" android:textColor="0x7f0e00a3" android:id="@ba/dN" android:paddingBottom="4dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:layout_below="@ba/dM" style="0x7f0c027d" />
+                <TextView android:textSize="14sp" android:textColor="0x7f0e00a3" android:id="@ba/dO" android:paddingBottom="4dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:layout_below="@ba/dN" style="0x7f0c027d" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="0" android:id="0x7f0d02b8" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+                <Button android:textSize="14sp" android:id="@ba/eE" android:layout_width="0dp" android:layout_height="-2" android:text="0x7f0a075a" android:layout_weight="1.0" android:textAllCaps="true" style="?unknown_attr_ref: 101032b" />
+                <Button android:textSize="14sp" android:id="@ba/es" android:layout_width="0dp" android:layout_height="-2" android:text="0x7f0a075b" android:layout_weight="1.0" android:textAllCaps="true" style="?unknown_attr_ref: 101032b" />
+            </LinearLayout>
+            <FrameLayout android:id="@ba/cD" android:background="#eee" android:layout_width="-1" android:layout_height="-2" android:layout_above="0x7f0d02b8" android:layout_below="0x7f0d02b2" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@ba/bd" android:background="#ffffff" android:layout_width="-1" android:layout_height="-1" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:opacity="-1">
+    <item android:drawable="0x106000b" />
+    <item android:id="0x7f0d03f7" android:bottom="0x7f0b015d">
+        <bitmap android:gravity="11" android:src="0x7f0205b6" />
+    </item>
+    <item android:id="0x7f0d03f8" android:bottom="0x7f0b015e">
+        <bitmap android:gravity="51" android:src="0x7f020491" />
+    </item>
+</layer-list>

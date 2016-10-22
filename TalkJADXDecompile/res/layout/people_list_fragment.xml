@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <include layout="0x7f040051" />
+    <FrameLayout android:background="0x7f0e009e" android:layout_width="-1" android:layout_height="-1">
+        <com.google.android.apps.hangouts.peoplelistv2.impl.FastScrollingRecyclerView android:id="0x102000a" android:scrollbars="200" android:layout_width="-1" android:layout_height="-1" />
+        <TextView android:textSize="18sp" android:gravity="11" android:id="@ba/fd" android:padding="24dp" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:text="0x7f0a0082" />
+        <LinearLayout android:gravity="11" android:layout_gravity="11" android:orientation="1" android:id="0x1020004" android:focusableInTouchMode="true" android:visibility="2" android:layout_width="-2" android:layout_height="-2">
+            <com.google.android.apps.hangouts.peoplelistv2.impl.MinHeightImageView android:id="@bm/M" android:paddingBottom="28dp" android:layout_width="-2" android:layout_height="-2" android:src="0x7f02047f" />
+            <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textSize="16sp" android:textColor="0x7f0e00a3" android:gravity="11" android:id="@ba/cX" android:layout_width="-2" android:layout_height="-2" android:text="@gwb/te" android:importantForAccessibility="2" android:fontFamily="sans-serif-light" />
+            <LinearLayout android:gravity="1" android:layout_gravity="11" android:orientation="1" android:id="@gwb/yN" android:visibility="2" android:layout_width="-2" android:layout_height="-2">
+                <ProgressBar android:id="@ba/cW" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="5dp" android:indeterminate="true" style="?unknown_attr_ref: 1010077" />
+                <TextView android:textSize="24sp" android:textColor="0x7f0e00a3" android:id="@gwb/yO" android:layout_width="-2" android:layout_height="-2" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="0x7f0400a1" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+interface aro {
+    void a();
+}

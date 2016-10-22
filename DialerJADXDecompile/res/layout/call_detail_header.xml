@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:id="0x7f0c00aa" android:background="0x7f0a0012" android:paddingTop="0x7f0b0072" android:paddingBottom="0x7f0b006c" android:focusable="true" android:layout_width="-1" android:layout_height="-2" android:baselineAligned="false" android:paddingStart="0x7f0b0071" android:elevation="0x7f0b006e">
+    <QuickContactBadge android:layout_gravity="30" android:id="@aq/aZ" android:focusable="true" android:layout_width="@buf/hl" android:layout_height="@buf/hl" android:layout_marginTop="3dp" android:layout_alignParentStart="true" />
+    <LinearLayout android:gravity="10" android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0" android:layout_marginStart="0x7f0b0071">
+        <TextView android:textSize="0x7f0b008b" android:textColor="?unknown_attr_ref: 7f0100a6" android:id="@aq/H" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="2dp" android:layout_marginBottom="3dp" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="0x7f0b0081" android:textColor="?unknown_attr_ref: 7f0100a8" android:id="@aq/I" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="1dp" android:singleLine="true" />
+        <TextView android:textSize="0x7f0b0081" android:textColor="?unknown_attr_ref: 7f0100a8" android:id="@aq/aP" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@aq/q" android:background="?unknown_attr_ref: 101045c" android:visibility="2" android:layout_width="0x7f0b0088" android:layout_height="0x7f0b0088" android:src="@cob/ap" android:scaleType="5" android:tint="0x7f0a003b" android:contentDescription="0x7f0f0110" android:layout_marginEnd="16dp" />
+</LinearLayout>

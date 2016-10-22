@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-1" android:minHeight="?unknown_attr_ref: 101004d" style="0x7f0c0228">
+    <FrameLayout android:layout_gravity="10" style="0x7f0c0229">
+        <ImageView android:id="0x7f0d0108" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0204aa" style="0x7f0c022a" />
+    </FrameLayout>
+    <TextView android:ellipsize="3" android:gravity="800013" android:id="0x7f0d0109" android:layout_width="-1" android:layout_height="-1" android:text="0x7f0a0b62" style="0x7f0c022b" />
+</LinearLayout>

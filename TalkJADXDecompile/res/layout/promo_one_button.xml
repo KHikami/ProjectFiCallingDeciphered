@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="15" android:orientation="0" android:background="@gwb/mv" android:paddingRight="0x7f0b014e" android:layout_width="-1" android:layout_height="-2">
+    <Button android:textSize="14sp" android:textColor="@gwb/xX" android:id="@gwb/nJ" android:layout_width="-2" android:layout_height="-2" style="?unknown_attr_ref: 101032b" />
+</LinearLayout>

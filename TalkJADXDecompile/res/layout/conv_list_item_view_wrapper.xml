@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.views.ConversationListItemWrapper android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:minHeight="0x7f0b0037">
+    <FrameLayout android:id="@ba/ah" android:layout_width="-1" android:layout_height="-2">
+        <View android:id="@ba/ae" android:background="#ffaaaaaa" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+    </FrameLayout>
+</com.google.android.apps.hangouts.views.ConversationListItemWrapper>

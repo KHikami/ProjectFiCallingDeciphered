@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <EditText android:textSize="14sp" android:textColorHint="0x7f0e029e" android:id="@ba/ac" android:background="@gwb/mv" android:paddingLeft="0x7f0b002e" android:paddingTop="0x7f0b002e" android:paddingRight="0x7f0b002e" android:paddingBottom="0x7f0b002e" android:layout_width="-1" android:layout_height="-2" android:minHeight="0x7f0b0251" android:hint="0x7f0a0938" android:singleLine="true" />
+    <View style="0x7f0c0239" />
+    <FrameLayout android:id="@ba/eG" android:visibility="2" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0" />
+    <FrameLayout android:id="@ba/dc" android:visibility="2" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0" />
+    <ImageView android:id="@ba/aL" android:background="@bc/uH" android:visibility="2" android:layout_width="-1" android:layout_height="0dp" android:src="0x7f0204d0" android:scaleType="7" android:layout_weight="1.0" android:importantForAccessibility="2" />
+    <FrameLayout android:id="@ba/dY" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:importantForAccessibility="1" />
+    <LinearLayout android:gravity="11" android:id="@ba/cP" android:background="0x7f02006a" android:clickable="true" android:layout_width="-1" android:layout_height="0x7f0b0252" android:contentDescription="0x7f0a0963" android:layoutDirection="3">
+        <ImageButton android:layout_gravity="11" android:id="0x7f0d015a" android:background="0x7f020079" android:clickable="false" android:layout_width="0x7f0b0253" android:layout_height="-1" android:src="0x7f0204ce" android:importantForAccessibility="2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="11" android:id="@ba/aG" android:background="0x7f02006a" android:visibility="2" android:layout_width="-1" android:layout_height="0x7f0b0252" android:layoutDirection="3">
+        <ImageButton android:state_enabled="false" android:id="0x7f0d015c" android:background="0x7f020079" android:clickable="false" android:layout_width="0x7f0b0253" android:layout_height="-1" android:src="0x7f0204cb" android:contentDescription="0x7f0a0955" />
+    </LinearLayout>
+</LinearLayout>

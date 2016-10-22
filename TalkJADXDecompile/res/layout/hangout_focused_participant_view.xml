@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="0x7f0e00c6" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:id="@ba/bI" android:layout_width="-1" android:layout_height="-1" />
+    <LinearLayout android:gravity="11" android:orientation="1" android:id="@ba/bp" android:background="0x7f0e00c6" android:clipChildren="false" android:layout_width="-1" android:layout_height="-1">
+        <FrameLayout android:gravity="11" android:layout_gravity="1" android:id="@ba/bq" android:background="0x7f0e00ae" android:clipChildren="false" android:layout_width="-2" android:layout_height="-2">
+            <ImageView android:layout_gravity="11" android:id="@ba/br" android:background="@r$drawable/az" android:padding="0x7f0b0236" android:layout_width="0x7f0b0237" android:layout_height="0x7f0b0237" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="1" android:orientation="1" android:id="@ba/el" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="0x7f0b0239">
+            <TextView android:textSize="0x7f0b0238" android:textColor="0x7f0e027b" android:layout_gravity="1" android:id="@ba/at" android:background="0x7f0e00ae" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+            <TextView android:textSize="0x7f0b0238" android:textColor="0x7f0e027b" android:layout_gravity="1" android:id="@ba/ga" android:background="0x7f0e00ae" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0828" />
+        </LinearLayout>
+        <com.google.android.apps.hangouts.util.modulized.ChronometerAccessible android:textSize="0x7f0b023a" android:textColor="@gwb/mv" android:layout_gravity="1" android:id="@ba/Y" android:background="0x7f0e00ae" android:focusable="true" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="0x7f0b023b" />
+    </LinearLayout>
+</FrameLayout>

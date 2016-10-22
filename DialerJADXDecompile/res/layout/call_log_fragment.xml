@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="0x7f0a000e" android:layout_width="-1" android:layout_height="-1">
+    <android.support.v7.widget.RecyclerView android:id="@aq/ba" android:background="0x7f0a000e" android:paddingBottom="@buf/cR" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-1" android:paddingStart="0x7f0b0082" android:paddingEnd="0x7f0b0082" />
+    <com.android.dialer.app.widget.EmptyContentView android:layout_gravity="11" android:id="@aq/aq" android:visibility="2" android:layout_width="-1" android:layout_height="-2" />
+</FrameLayout>

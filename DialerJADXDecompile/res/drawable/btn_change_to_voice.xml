@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item android:id="@az/k" android:drawable="0x7f02004f" />
+    <item>
+        <bitmap android:gravity="11" android:src="0x7f02010f" android:tint="0x7f0a011d" android:autoMirrored="true" />
+    </item>
+</layer-list>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="0x7f0c00de" android:layout_width="-1" android:layout_height="-2">
+    <TextView android:textSize="0x7f0b007e" android:textColor="0x7f0a0038" android:layout_gravity="800003" android:id="@aq/x" android:paddingTop="0x7f0b0080" android:paddingBottom="0x7f0b007f" android:layout_width="-2" android:layout_height="-2" android:fontFamily="sans-serif-medium" android:layout_marginStart="0x7f0b008c" android:layout_marginEnd="0x7f0b008a" />
+    <android.support.v7.widget.CardView android:id="@aq/A" style="0x7f100099">
+        <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2"
+            <LinearLayout android:gravity="10" android:orientation="0" android:id="@aq/aY" android:background="?unknown_attr_ref: 101030e" android:paddingTop="0x7f0b008d" android:paddingBottom="0x7f0b008d" android:focusable="true" android:nextFocusLeft="@aq/aZ" android:nextFocusRight="0x7f0c00e2" android:layout_width="-1" android:layout_height="-2" android:paddingStart="0x7f0b008c" android:paddingEnd="0x7f0b008a">
+                <QuickContactBadge android:layout_gravity="30" android:id="@aq/aZ" android:paddingTop="2dp" android:focusable="true" android:nextFocusRight="@aq/aY" android:layout_width="@buf/hl" android:layout_height="@buf/hl" />
+                <LinearLayout android:gravity="10" android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0" android:layout_marginStart="0x7f0b0087">
+                    <TextView android:textSize="0x7f0b008b" android:textColor="0x7f0a003d" android:id="@cob/P" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="0x7f0b0089" android:singleLine="true" android:layout_marginEnd="@buf/hj" />
+                    <LinearLayout android:orientation="0" android:id="@aq/B" android:layout_width="-2" android:layout_height="-2">
+                        <view android:layout_gravity="10" android:id="@aq/D" android:layout_width="-2" android:layout_height="-2" android:layout_marginEnd="@buf/hj" class="com.android.dialer.app.calllog.CallTypeIconsView" />
+                        <ImageView android:id="@aq/bL" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:src="@buf/dg" android:scaleType="5" android:layout_marginEnd="@buf/hj" />
+                        <TextView android:textSize="0x7f0b0081" android:textColor="@cob/Y" android:layout_gravity="10" android:id="@aq/w" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:layout_marginEnd="@buf/hj" />
+                    </LinearLayout>
+                    <TextView android:textSize="0x7f0b0081" android:textColor="?unknown_attr_ref: 7f0100a8" android:id="@aq/n" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="0x7f0b007b" android:singleLine="true" android:layout_marginEnd="@buf/hj" />
+                    <TextView android:textSize="0x7f0b008e" android:textColor="0x7f0a0040" android:ellipsize="4" android:id="@aq/bK" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="@buf/hj" android:maxLines="10" android:singleLine="false" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="10" android:id="@aq/aX" android:background="?unknown_attr_ref: 101045c" android:visibility="2" android:layout_width="0x7f0b0088" android:layout_height="0x7f0b0088" android:scaleType="5" android:tint="0x7f0a003b" android:layout_marginEnd="@buf/hj" />
+            </LinearLayout>
+            <ViewStub android:layout_gravity="50" android:id="@aq/y" android:layout="0x7f040033" android:inflatedId="0x7f0c00ec" android:layout_width="-1" android:layout_height="-2" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

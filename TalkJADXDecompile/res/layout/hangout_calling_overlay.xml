@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="1" android:layout_gravity="50" android:id="@ba/bE" android:paddingLeft="0x7f0b0224" android:paddingRight="0x7f0b0224" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="0x7f0b0225" android:translationY="@gwb/eQ">
+    <com.google.android.apps.hangouts.views.FixedParticipantsView hangouts:id="@ba/bv" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:avatarSize="0x7f0b0226" hangouts:largeAvatarSize="0x7f0b0227" />
+    <TextView hangouts:textSize="0x7f0b0228" hangouts:layout_gravity="10" hangouts:id="@ba/dR" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:lineSpacingExtra="0x7f0b022a" style="0x7f0c026f" />
+</LinearLayout>

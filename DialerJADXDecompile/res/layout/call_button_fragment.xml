@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="0x7f0c00b2" android:background="0x7f0a002d" android:padding="0dp" android:layout_width="-1" android:layout_height="-2" android:layout_margin="0dp" android:layout_alignParentBottom="true" android:animateLayoutChanges="true"
+    <LinearLayout android:gravity="51" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:baselineAligned="false">
+        <ToggleButton android:id="@az/f" android:background="0x7f020052" android:contentDescription="@aq/bR" style="0x7f1000bd" />
+        <ToggleButton android:id="@az/ag" android:background="0x7f020056" android:contentDescription="@aq/da" style="0x7f1000bd" />
+        <ToggleButton android:id="@az/H" android:background="0x7f020054" android:contentDescription="@aq/dc" style="0x7f1000bd" />
+        <ToggleButton android:id="@az/W" android:background="0x7f020055" android:contentDescription="@aq/cY" style="0x7f1000bd" />
+        <ImageButton android:id="@az/aK" android:background="0x7f02005e" android:visibility="2" android:contentDescription="0x7f0f0253" style="0x7f1000bc" />
+        <ImageButton android:id="@az/u" android:background="0x7f020050" android:visibility="2" android:contentDescription="0x7f0f0257" style="0x7f1000bc" />
+        <ToggleButton android:id="@az/aL" android:background="0x7f020058" android:visibility="2" android:contentDescription="0x7f0f0254" style="0x7f1000bd" />
+        <ToggleButton android:id="@az/an" android:background="0x7f020057" android:visibility="2" android:contentDescription="@aq/dd" style="0x7f1000bd" />
+        <ImageButton android:id="@az/v" android:background="0x7f020051" android:visibility="2" android:contentDescription="0x7f0f0245" style="0x7f1000bc" />
+        <ImageButton android:id="@az/d" android:background="0x7f02004e" android:visibility="2" android:contentDescription="0x7f0f0243" style="0x7f1000bc" />
+        <ImageButton android:id="@az/ae" android:background="0x7f02005a" android:visibility="2" android:contentDescription="0x7f0f024d" style="0x7f1000bc" />
+        <ImageButton android:id="@az/al" android:background="0x7f02005b" android:visibility="2" android:contentDescription="0x7f0f0250" style="0x7f1000bc" />
+        <ImageButton android:id="@az/ac" android:background="0x7f0200be" android:visibility="2" android:contentDescription="0x7f0f024b" style="0x7f1000bc" />
+    </LinearLayout>
+</LinearLayout>

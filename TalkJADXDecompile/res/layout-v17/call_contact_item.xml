@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout hangouts:orientation="0" hangouts:id="@ba/df" hangouts:background="0x7f02006f" hangouts:paddingLeft="0x7f0b002d" hangouts:paddingTop="16dp" hangouts:paddingRight="0x7f0b002d" hangouts:paddingBottom="16dp" hangouts:layout_width="-1" hangouts:layout_height="-2">
+    <com.google.android.apps.hangouts.views.AvatarView hangouts:layout_gravity="10" hangouts:id="@bn/r" hangouts:layout_width="0x7f0b00c7" hangouts:layout_height="0x7f0b00c7" hangouts:avatarViewSize="medium" />
+    <FrameLayout hangouts:id="@ba/F" hangouts:visibility="2" hangouts:layout_width="0x7f0b00c7" hangouts:layout_height="1dp" />
+    <LinearLayout hangouts:layout_gravity="10" hangouts:orientation="1" hangouts:paddingLeft="0x7f0b002d" hangouts:layout_width="0dp" hangouts:layout_height="-2" hangouts:layout_weight="1.0" hangouts:layout_alignParentLeft="true" hangouts:layout_centerVertical="true" hangouts:paddingStart="0x7f0b002d">
+        <TextView hangouts:id="@bm/Q" hangouts:layout_width="-2" hangouts:layout_height="-2" style="0x7f0c0291" />
+        <com.google.android.apps.hangouts.views.ContactDetailItemView hangouts:id="@ba/ab" hangouts:layout_width="-2" hangouts:layout_height="-2" style="0x7f0c0292" />
+    </LinearLayout>
+    <com.google.android.apps.hangouts.views.CheckmarkView hangouts:layout_gravity="10" hangouts:id="@ba/W" hangouts:background="0x7f0204c0" hangouts:visibility="2" hangouts:layout_width="32dp" hangouts:layout_height="32dp" hangouts:layout_marginRight="0x7f0b002f" />
+    <LinearLayout hangouts:gravity="5" hangouts:layout_gravity="10" hangouts:orientation="1" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_weight="0.0">
+        <TextView hangouts:textSize="12sp" hangouts:textColor="0x7f0e02c5" hangouts:gravity="15" hangouts:id="@ba/fL" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:drawablePadding="2dp" />
+        <TextView hangouts:textSize="12sp" hangouts:textColor="0x7f0e02c5" hangouts:gravity="35" hangouts:id="@ba/ep" hangouts:visibility="0" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:text="" hangouts:drawablePadding="2dp" />
+    </LinearLayout>
+</LinearLayout>

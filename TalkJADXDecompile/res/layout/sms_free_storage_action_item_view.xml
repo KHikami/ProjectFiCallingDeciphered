@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="16sp" android:textColor="0x7f0e00c6" android:id="@gwb/yk" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:layout_width="-1" android:layout_height="-1" android:singleLine="false" android:layout_alignParentLeft="true" style="0x7f0c025a" />

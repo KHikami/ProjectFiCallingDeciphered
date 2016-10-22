@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageView android:gravity="1" android:id="@aq/ao" android:layout_width="-1" android:layout_height="-2" />
+    <TextView android:textSize="0x7f0b0100" android:textColor="0x7f0a0087" android:gravity="31" android:id="@aq/ap" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="-1" android:layout_height="-2" />
+    <TextView android:gravity="1" android:layout_gravity="1" android:id="@aq/an" android:background="?unknown_attr_ref: 101030e" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:clickable="true" android:layout_width="-2" android:layout_height="-2" style="0x7f1000da" />
+    <Space android:layout_width="-1" android:layout_height="40dp" />
+</merge>

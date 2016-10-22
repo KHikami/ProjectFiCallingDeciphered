@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.dialer.dialpadview.DialpadKeyButton android:id="@az/aj" style="0x7f1000a5">
+    <LinearLayout android:layout_gravity="15" android:orientation="0" android:baselineAligned="false" style="0x7f1000a6">
+        <com.android.dialer.dialpadview.DialpadTextView android:layout_gravity="5" android:id="@az/J" android:layout_marginRight="0x7f0b018d" android:layout_marginBottom="0dp" style="0x7f1000a8" />
+        <FrameLayout android:layout_gravity="13" android:layout_width="0x7f0b018e" android:layout_height="-2">
+            <ImageView android:id="0x7f0c0137" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0200bb" android:scaleType="3" android:tint="0x7f0a007e" />
+        </FrameLayout>
+    </LinearLayout>
+</com.android.dialer.dialpadview.DialpadKeyButton>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="-1" android:layout_height="-2" android:minHeight="?unknown_attr_ref: 101004d" style="0x7f0c028b">
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:ellipsize="4" android:id="@ba/bf" android:fadingEdge="1000" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" />
+    <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="?unknown_attr_ref: 1010038" android:id="@ba/be" android:layout_width="-1" android:layout_height="-2" android:maxLines="4" android:layout_below="@ba/bf" android:layout_alignLeft="@ba/bf" />
+</RelativeLayout>

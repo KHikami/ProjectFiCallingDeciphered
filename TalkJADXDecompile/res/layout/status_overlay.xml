@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.google.android.apps.hangouts.elane.StatusOverlay android:gravity="1" android:orientation="1" android:id="0x7f0d03a2" android:background="@gwb/oo" android:paddingLeft="0x7f0b007e" android:paddingRight="0x7f0b007e" android:paddingBottom="0x7f0b007f" android:visibility="2" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-1">
+        <include layout="0x7f040154" />
+        <TextView android:textSize="0x7f0b008b" android:textColor="@gwb/ec" android:gravity="11" android:id="@gwb/oU" android:paddingTop="0x7f0b008a" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:lineSpacingExtra="0x7f0b008c" />
+        <Button android:textSize="0x7f0b008b" android:textColor="@gwb/ec" android:gravity="11" android:id="@gwb/oT" android:background="0x7f020493" android:paddingLeft="0x7f0b0087" android:paddingTop="0x7f0b0088" android:paddingRight="0x7f0b0087" android:paddingBottom="0x7f0b0088" android:focusable="true" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="0x7f0b0086" android:minWidth="0x7f0b0084" android:minHeight="0x7f0b0085" android:text="0x7f0a0134" android:contentDescription="0x7f0a013d" android:textAllCaps="true" style="0x7f0c0033" />
+    </com.google.android.apps.hangouts.elane.StatusOverlay>
+</merge>

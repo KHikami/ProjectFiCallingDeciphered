@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout hangouts:orientation="1" hangouts:layout_width="-1" hangouts:layout_height="-2"
+    <LinearLayout hangouts:orientation="0" hangouts:id="@ba/df" hangouts:background="0x7f02006f" hangouts:paddingLeft="0x7f0b002e" hangouts:paddingRight="0x7f0b002e" hangouts:layout_width="-1" hangouts:layout_height="64dp">
+        <com.google.android.apps.hangouts.views.AvatarView hangouts:layout_gravity="10" hangouts:id="@bn/r" hangouts:layout_width="@ba/np" hangouts:layout_height="@ba/np" hangouts:avatarViewSize="medium" />
+        <LinearLayout hangouts:layout_gravity="10" hangouts:orientation="1" hangouts:paddingLeft="0x7f0b002e" hangouts:paddingRight="3dp" hangouts:layout_width="0dp" hangouts:layout_height="-2" hangouts:layout_weight="1.0" hangouts:layout_alignParentLeft="true" hangouts:layout_centerVertical="true">
+            <TextView hangouts:textColor="#ff000000" hangouts:ellipsize="3" hangouts:id="@bm/Q" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:lines="1" style="0x7f0c025a" />
+            <com.google.android.apps.hangouts.views.ContactDetailItemView hangouts:textSize="14sp" hangouts:ellipsize="3" hangouts:id="@ba/ab" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:lines="1" style="0x7f0c025a" />
+        </LinearLayout>
+        <com.google.android.apps.hangouts.views.CheckmarkView hangouts:layout_gravity="10" hangouts:id="@ba/W" hangouts:background="0x7f0204c0" hangouts:layout_width="32dp" hangouts:layout_height="32dp" hangouts:layout_marginRight="0x7f0b002f" hangouts:alpha="0.0" />
+        <ImageView hangouts:layout_gravity="10" hangouts:id="0x7f0d016d" hangouts:paddingRight="0x7f0b002e" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:src="0x7f020563" hangouts:layout_alignParentRight="true" hangouts:layout_centerVertical="true" hangouts:importantForAccessibility="2" />
+    </LinearLayout>
+    <LinearLayout hangouts:orientation="1" hangouts:id="0x7f0d0167" hangouts:visibility="2" hangouts:layout_width="-1" hangouts:layout_height="-2" /> />

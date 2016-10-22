@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+    <com.android.ex.photo.views.PhotoView android:id="@gwb/cE" android:layout_width="-1" android:layout_height="-1" />
+    <FrameLayout android:id="@gwb/cC" android:layout_width="0x7f0b00dc" android:layout_height="0x7f0b00dc" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="11" android:id="@gwb/cD" android:visibility="2" android:layout_width="0x7f0b00dc" android:layout_height="0x7f0b00dc" android:src="@gwb/cv" android:scaleType="6" />
+        <ProgressBar android:layout_gravity="50" android:id="@gwb/cy" android:visibility="2" android:layout_width="0x7f0b00dc" android:layout_height="-2" android:indeterminate="true" style="?unknown_attr_ref: 1010078" />
+        <ProgressBar android:layout_gravity="50" android:id="@gwb/cw" android:visibility="2" android:layout_width="0x7f0b00dc" android:layout_height="-2" android:indeterminate="false" style="?unknown_attr_ref: 1010078" />
+    </FrameLayout>
+    <TextView android:textColor="0x106000b" android:id="@gwb/cx" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_below="@gwb/cC" android:layout_centerHorizontal="true" />
+    <include layout="0x7f040120" />
+</RelativeLayout>

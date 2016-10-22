@@ -1,0 +1,2 @@
+public interface idw<O> {
+}

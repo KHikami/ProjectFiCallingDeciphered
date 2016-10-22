@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="10" android:orientation="0" android:id="0x7f0c00aa" android:background="0x106000b" android:focusable="true" android:layout_width="-1" android:layout_height="-2" android:baselineAligned="false" android:paddingStart="0x7f0b0052">
+    <QuickContactBadge android:id="@aq/aZ" android:focusable="true" android:layout_width="@buf/hl" android:layout_height="@buf/hl" android:layout_marginTop="0x7f0b0057" android:layout_marginBottom="0x7f0b004e" />
+    <LinearLayout android:gravity="10" android:orientation="1" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" android:layout_marginStart="0x7f0b0052">
+        <TextView android:textSize="0x7f0b0053" android:textColor="0x7f0a0024" android:id="@aq/H" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="0x7f0b0056" android:textColor="0x7f0a0025" android:id="@aq/I" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@aq/Y" android:background="?unknown_attr_ref: 101045c" android:layout_width="0x7f0b0050" android:layout_height="0x7f0b0050" android:src="@cob/aG" android:scaleType="5" android:tint="0x7f0a0023" android:contentDescription="0x7f0f010d" android:layout_marginEnd="24dp" />
+</LinearLayout>

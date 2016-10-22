@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.views.MessageListItemWrapperView android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+    <FrameLayout android:id="@ba/dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-2" />
+    <com.google.android.apps.hangouts.views.ParticipantsGalleryView android:id="@ba/gl" android:paddingLeft="0x7f0b002d" android:layout_width="-1" android:layout_height="@gwb/ff" android:layout_marginBottom="0x7f0b00c5" />
+    <Space android:id="@ba/V" android:layout_width="-1" android:layout_height="@gwb/ka" />
+</com.google.android.apps.hangouts.views.MessageListItemWrapperView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@gwb/mv" android:layout_width="-1" android:layout_height="-2">
+    <com.google.android.apps.hangouts.util.AttachmentFragmentTabHost android:id="@gwb/lo" android:layout_width="-1" android:layout_height="-1">
+        <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+            <com.google.android.apps.hangouts.conversation.v2.TabWidget android:orientation="0" android:id="0x1020013" android:layout_width="-1" android:layout_height="@gwb/lf" />
+            <FrameLayout android:id="0x1020011" android:layout_width="0dp" android:layout_height="0dp" />
+            <FrameLayout android:id="@gwb/lt" android:layout_width="0dp" android:layout_height="0dp" />
+            <FrameLayout android:id="@gwb/lp" android:layout_width="-1" android:layout_height="-1" />
+        </LinearLayout>
+    </com.google.android.apps.hangouts.util.AttachmentFragmentTabHost> />

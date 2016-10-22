@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <include layout="0x7f040169" />
+    <ScrollView android:background="0x7f0e0284" android:padding="0x7f0b002d" android:layout_width="-1" android:layout_height="-1" android:fillViewport="true" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:textSize="0x7f0b0249" android:textColor="0x7f0e00a2" android:id="0x7f0d03e7" android:paddingTop="@gwb/fn" android:paddingBottom="0x7f0b002e" android:layout_width="-1" android:layout_height="-2" android:text="0x7f0a092f" />
+            <TextView android:textSize="0x7f0b0248" android:textColor="0x7f0e00a2" android:textColorLink="@bc/uH" android:id="@ba/fR" android:paddingBottom="0x7f0b002e" android:layout_width="-1" android:layout_height="-2" android:lineSpacingExtra="6dp" />
+            <TextView android:textSize="0x7f0b0249" android:textColor="0x7f0e00a2" android:id="0x7f0d03e9" android:paddingTop="0x7f0b002d" android:paddingBottom="0x7f0b002e" android:layout_width="-1" android:layout_height="-2" android:text="0x7f0a0931" />
+            <TextView android:textSize="0x7f0b0248" android:textColor="0x7f0e00a2" android:textColorLink="@bc/uH" android:id="@ba/fT" android:paddingBottom="0x7f0b002e" android:layout_width="-1" android:layout_height="-2" android:lineSpacingExtra="6dp" />
+            <TextView android:textSize="0x7f0b0249" android:textColor="0x7f0e00a2" android:id="0x7f0d03eb" android:paddingTop="0x7f0b002d" android:paddingBottom="@gwb/fn" android:layout_width="-1" android:layout_height="-2" android:text="0x7f0a0933" />
+            <TextView android:textSize="0x7f0b0248" android:textColor="0x7f0e00a2" android:textColorLink="@bc/uH" android:id="@ba/fU" android:layout_width="-1" android:layout_height="-2" android:lineSpacingExtra="6dp" />
+            <LinearLayout android:gravity="50" android:orientation="0" android:layout_width="-1" android:layout_height="-1" android:layout_marginTop="0x7f0b002d">
+                <Button android:textSize="0x7f0b0248" android:textColor="@gwb/mv" android:id="@ba/fS" android:background="0x7f020692" android:layout_width="0dp" android:layout_height="-2" android:layout_marginRight="0x7f0b002e" android:text="0x7f0a0935" android:layout_weight="1.0" />
+                <Button android:textSize="0x7f0b0248" android:textColor="@gwb/mv" android:id="@ba/fQ" android:background="0x7f020692" android:layout_width="0dp" android:layout_height="-2" android:layout_marginLeft="0x7f0b002e" android:text="0x7f0a0936" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

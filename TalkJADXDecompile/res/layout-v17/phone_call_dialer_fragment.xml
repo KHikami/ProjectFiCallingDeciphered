@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="@ba/fP" android:background="0x7f0e02a2" android:layout_width="-1" android:layout_height="-2" android:animateLayoutChanges="true" android:layoutDirection="0">
+    <View android:background="0x7f0e02a8" android:layout_width="-1" android:layout_height="2dp" />
+    <view android:id="@ba/er" android:visibility="2" android:layout_width="-1" android:layout_height="-2" class="com.google.android.apps.hangouts.views.VoiceRatesAndBalanceView" />
+    <View android:clickable="true" android:layout_width="-1" android:layout_height="10dp" android:importantForAccessibility="2" />
+    <include layout="0x7f04008f" />
+    <View android:clickable="true" android:layout_width="-1" android:layout_height="8dp" android:importantForAccessibility="2" />
+    <FrameLayout android:id="@ba/aI" android:layout_width="-1" android:layout_height="-2" />
+    <View android:layout_width="-1" android:layout_height="8dp" />
+    <View android:background="0x7f0e02a8" android:layout_width="-1" android:layout_height="2dp" />
+</LinearLayout>

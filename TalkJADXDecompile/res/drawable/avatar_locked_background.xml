@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape android:shape="1">
+            <solid android:color="0x7f0e02c1" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="11" android:src="@r$drawable/bS" android:tint="0x7f0e02c2" />
+    </item>
+</layer-list>

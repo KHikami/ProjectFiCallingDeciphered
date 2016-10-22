@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TwoLineListItem android:layout_width="-1" android:layout_height="-2" android:mode="3" android:paddingStart="?unknown_attr_ref: 10104d3" android:paddingEnd="?unknown_attr_ref: 10104d3">
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@buf/lp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" />
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@buf/lq" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_below="@buf/lp" android:layout_alignStart="@buf/lp" />
+</TwoLineListItem>

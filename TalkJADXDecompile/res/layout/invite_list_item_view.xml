@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:id="@ba/ak" android:background="@r$drawable/c" android:descendantFocusability="2" android:layout_width="-1" android:layout_height="-2" android:minHeight="0x7f0b0037" class="com.google.android.apps.hangouts.fragments.ConversationListFragment$InviteListItem">
+    <ImageView android:id="@ba/B" android:background="0x7f020572" android:layout_width="0x7f0b0039" android:layout_height="0x7f0b0039" android:layout_margin="16dp" android:src="@ba/kK" android:scaleType="5" android:layout_centerVertical="true" />
+    <TextView android:textSize="16sp" android:textStyle="0x7f0f0036" android:textColor="@bm/ak" android:id="@ba/cN" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="16dp" android:layout_alignParentTop="true" android:fontFamily="0x7f0a0b3c" style="0x7f0c001c" />
+    <TextView android:textSize="14sp" android:textColor="0x7f0e0021" android:id="@ba/cK" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2" android:layout_below="@ba/cN" android:layout_alignWithParentIfMissing="true" android:fontFamily="sans-serif" style="0x7f0c001d" />
+</view>

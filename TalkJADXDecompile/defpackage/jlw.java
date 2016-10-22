@@ -1,0 +1,18 @@
+package defpackage;
+
+import com.google.android.libraries.social.jni.crashreporter.NativeCrashReporterActivity;
+
+/* renamed from: jlw */
+public final class jlw implements Runnable {
+    final /* synthetic */ String a;
+    final /* synthetic */ NativeCrashReporterActivity b;
+
+    public jlw(NativeCrashReporterActivity nativeCrashReporterActivity, String str) {
+        this.b = nativeCrashReporterActivity;
+        this.a = str;
+    }
+
+    public void run() {
+        throw new jlv(this.a);
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="10" android:orientation="0" android:id="0x7f0d01b3" android:layout_width="-1" android:layout_height="-2">
+    <ImageView android:id="@gwb/kL" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="0x7f0b002d" android:layout_marginRight="0x7f0b002d" android:importantForAccessibility="2" android:layout_marginStart="0x7f0b002d" android:layout_marginEnd="0x7f0b002d" />
+    <LinearLayout android:orientation="1" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+        <TextView android:textSize="16sp" android:textColor="@gwb/xX" android:ellipsize="3" android:id="@gwb/kP" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b002d" android:layout_marginRight="0x7f0b002d" android:singleLine="true" android:lineSpacingExtra="8dp" android:fontFamily="sans-serif" android:layout_marginStart="0x7f0b002d" android:layout_marginEnd="0x7f0b002d" />
+        <TextView android:textSize="14sp" android:textColor="0x7f0e00c8" android:ellipsize="3" android:id="@gwb/kN" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b002d" android:layout_marginRight="0x7f0b002d" android:singleLine="true" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif" android:layout_marginStart="0x7f0b002d" android:layout_marginEnd="0x7f0b002d" />
+    </LinearLayout>
+    <ImageView android:id="@gwb/kM" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="0x7f0b002d" android:importantForAccessibility="2" android:layout_marginEnd="0x7f0b002d" />
+    <android.support.v7.widget.SwitchCompat android:id="@gwb/kO" android:background="@wi/w" android:focusable="false" android:clickable="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="0x7f0b002d" android:layout_marginEnd="0x7f0b002d" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="0x7f0d0131" android:background="0x7f0e00ca" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="-1" android:layout_height="-2">
+    <ViewStub android:id="0x7f0d0132" android:layout_width="-1" android:layout_height="-2" />
+</RelativeLayout>

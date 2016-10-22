@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="-2" android:layout_height="-2" class="com.google.android.apps.hangouts.views.FixedParticipantsView"
+    <LinearLayout android:layout_gravity="800003" android:orientation="0" android:id="@ba/bk" android:layout_width="-2" android:layout_height="-2" />
+    <LinearLayout android:layout_gravity="800005" android:orientation="0" android:id="@ba/bl" android:layout_width="-2" android:layout_height="-2">
+        <TextView android:textStyle="1" android:textColor="@gwb/mv" android:gravity="11" android:layout_gravity="11" android:id="@ba/bm" android:background="0x7f0205a5" android:layout_width="-2" android:layout_height="-2" />
+    </LinearLayout>
+</LinearLayout>

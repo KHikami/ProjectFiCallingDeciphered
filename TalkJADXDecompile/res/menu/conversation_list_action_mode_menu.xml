@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item android:icon="0x7f020519" android:id="@ba/ey" android:visible="false" android:title="@bc/iX" />
+    <item android:icon="0x7f02051b" android:id="@ba/eC" android:visible="false" android:title="@bc/ja" />
+    <item android:icon="0x7f0204ab" android:id="@ba/et" android:title="@bc/iK" />
+    <item android:icon="0x7f020567" android:id="@ba/eB" android:title="@bc/iZ" />
+    <item android:icon="0x7f0204ec" android:id="@ba/ex" android:visible="false" android:title="@bc/iV" />
+    <item android:icon="0x7f0204c9" android:id="@ba/eu" android:title="@bc/iL" />
+    <item android:id="@ba/eA" android:title="0x7f0a0b7c" android:showAsAction="0" />
+</menu>

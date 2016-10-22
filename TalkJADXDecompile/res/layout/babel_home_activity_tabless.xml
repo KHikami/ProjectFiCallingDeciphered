@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@ba/aN" android:background="0x106000b" android:fitsSystemWindows="true" android:layout_width="-1" android:layout_height="-1">
+    <FrameLayout android:id="@ba/de" android:layout_width="-1" android:layout_height="-1" android:layout_weight="1.0">
+        <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+            <include layout="0x7f0400c7" />
+            <FrameLayout android:id="@ba/ai" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="50" android:id="@ba/bn" android:layout_width="-1" android:layout_height="-1" />
+        <ViewStub android:id="@ba/fp" android:layout="0x7f0400c6" android:inflatedId="@ba/fo" style="0x7f0c028f" />
+    </FrameLayout>
+    <fragment android:name="com.google.android.apps.hangouts.navigation.NavigationDrawerFragment" android:layout_gravity="800003" android:id="@ba/dA" android:fitsSystemWindows="true" android:layout_width="0x7f0b025a" android:layout_height="-1" />
+</android.support.v4.widget.DrawerLayout>

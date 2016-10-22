@@ -1,0 +1,40 @@
+package defpackage;
+
+import android.content.Context;
+import android.content.Intent;
+
+/* renamed from: ebf */
+public abstract class ebf extends ecm {
+    static final boolean a;
+    static ebj g;
+    public String b;
+    public CharSequence c;
+    public final long d;
+    public int e;
+    public String f;
+
+    static {
+        kae kae = glk.o;
+        a = false;
+        g = new ebj();
+    }
+
+    public static void a(Context context, int i) {
+        ecs.a(context, i, null);
+        ece.b(context, i);
+    }
+
+    ebf(Context context, int i, int i2, gjj gjj, long j) {
+        super(context, i, gjj);
+        this.c = null;
+        this.e = i2;
+        if (j <= 0) {
+            j = glj.a();
+        }
+        this.d = j;
+    }
+
+    protected Intent h() {
+        return new ebg().a(this.r, this.s, this.t.b());
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="24dp" android:paddingTop="12dp" android:paddingRight="24dp" android:layout_width="-1" android:layout_height="-1" style="0x7f0c0075">
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@co/e" android:paddingBottom="24dp" android:layout_width="-1" android:layout_height="-2" android:minHeight="48dp" />
+</ScrollView>

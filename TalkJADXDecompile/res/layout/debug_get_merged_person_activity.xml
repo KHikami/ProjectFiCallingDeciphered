@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+        <EditText android:id="@ba/em" android:layout_width="-1" android:layout_height="-2" android:hint="Enter query" android:inputType="3" />
+        <RadioGroup android:id="@ba/en" android:layout_width="-1" android:layout_height="-2">
+            <RadioButton android:id="@ba/dZ" android:layout_width="-2" android:layout_height="-2" android:checked="true" android:text="phone" />
+            <RadioButton android:id="@ba/aT" android:layout_width="-2" android:layout_height="-2" android:text="email" />
+        </RadioGroup>
+        <CheckBox android:id="@ba/s" android:layout_width="-2" android:layout_height="-2" android:text="Only fetch app reachability" />
+        <Button android:id="@ba/eZ" android:layout_width="-2" android:layout_height="-2" android:text="query" />
+        <TextView android:id="@ba/eL" android:layout_width="-1" android:layout_height="-2" android:textIsSelectable="true" />
+    </LinearLayout>
+</ScrollView>

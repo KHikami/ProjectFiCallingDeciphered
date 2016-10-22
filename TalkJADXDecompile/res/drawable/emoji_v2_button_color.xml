@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="0x7f0e0045" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="0x7f0e0045" />
+        </shape>
+    </item>
+</selector>

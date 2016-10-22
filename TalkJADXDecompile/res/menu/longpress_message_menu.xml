@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item android:id="@bm/d" android:title="0x7f0a01c9" />
+    <item android:id="@bm/z" android:title="0x7f0a01ca" />
+    <item android:id="@bm/k" android:title="0x7f0a01cb" />
+    <item android:id="@bm/h" android:title="0x7f0a01cc" />
+    <item android:id="@bm/f" android:title="@bc/go" />
+    <item android:id="@bm/g" android:title="@bc/fT" />
+</menu>

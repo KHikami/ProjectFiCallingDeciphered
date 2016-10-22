@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@az/ad" android:background="0x7f0a00a2" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+    <Space android:background="0x7f0a00e2" android:layout_width="-1" android:layout_height="1dp" />
+    <LinearLayout android:orientation="0" android:background="?unknown_attr_ref: 101030e" android:paddingTop="0x7f0b016d" android:paddingBottom="0x7f0b016d" android:layout_width="-1" android:layout_height="-1" android:paddingStart="0x7f0b016b" android:paddingEnd="0x7f0b016b">
+        <TextView android:textSize="0x7f0b016c" android:textColor="0x7f0a00a3" android:layout_gravity="10" android:id="0x7f0c0163" android:layout_width="0dp" android:layout_height="-2" android:text="0x7f0f0246" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="18dp" />
+        <ImageView android:id="0x7f0c0164" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0200be" android:tint="0x7f0a00a3" android:paddingEnd="16dp" />
+        <TextView android:textSize="0x7f0b016c" android:textColor="0x7f0a00a3" android:id="0x7f0c0165" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0f024c" android:singleLine="true" android:textAlignment="5" />
+    </LinearLayout>
+</FrameLayout>

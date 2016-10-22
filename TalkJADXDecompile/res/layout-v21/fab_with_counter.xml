@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <FrameLayout hangouts:layout_gravity="11" hangouts:id="@gwb/ls" hangouts:clipToPadding="false" hangouts:layout_width="0x7f0b00d6" hangouts:layout_height="0x7f0b00d6" hangouts:contentDescription="0x7f0a01f3" hangouts:elevation="0dp">
+        <ImageView hangouts:layout_gravity="11" hangouts:id="@gwb/lr" hangouts:layout_width="0x7f0b00d4" hangouts:layout_height="0x7f0b00d4" hangouts:layout_marginTop="6dp" hangouts:src="0x7f020078" hangouts:scaleType="7" />
+        <com.google.android.libraries.quantum.fab.FloatingActionButton hangouts:layout_gravity="11" hangouts:id="@gwb/lq" hangouts:clipToPadding="false" hangouts:layout_width="0x7f0b00d4" hangouts:layout_height="0x7f0b00d4" hangouts:src="0x7f020636" hangouts:quantumFabColor="@ba/iZ" hangouts:quantumSize="1" />
+    </FrameLayout>
+    <FrameLayout hangouts:gravity="11" hangouts:layout_gravity="800055" hangouts:id="@gwb/lm" hangouts:visibility="2" hangouts:layout_width="-2" hangouts:layout_height="0x7f0b00d0" hangouts:layout_above="@gwb/ls" hangouts:translationY="-6dp" hangouts:importantForAccessibility="4" hangouts:elevation="5dp">
+        <ImageView hangouts:layout_gravity="11" hangouts:id="@gwb/ln" hangouts:layout_width="0x7f0b00d0" hangouts:layout_height="0x7f0b00d0" hangouts:layout_marginTop="3dp" hangouts:src="0x7f020078" hangouts:scaleType="7" hangouts:elevation="4dp" />
+        <TextView hangouts:textSize="12dp" hangouts:textStyle="1" hangouts:textColor="0x7f0e0055" hangouts:gravity="11" hangouts:id="@gwb/lk" hangouts:background="0x7f020488" hangouts:layout_width="-2" hangouts:layout_height="0x7f0b00d0" hangouts:minWidth="0x7f0b00d0" hangouts:minHeight="0x7f0b00d0" hangouts:text="" hangouts:drawablePadding="6dp" hangouts:elevation="4dp" />
+        <TextView hangouts:textSize="12dp" hangouts:textStyle="1" hangouts:textColor="0x7f0e0055" hangouts:gravity="11" hangouts:id="@gwb/ll" hangouts:background="0x7f020488" hangouts:layout_width="-2" hangouts:layout_height="0x7f0b00d0" hangouts:minWidth="0x7f0b00d0" hangouts:minHeight="0x7f0b00d0" hangouts:text="" hangouts:drawablePadding="6dp" hangouts:elevation="4dp" />
+    </FrameLayout>
+</merge>

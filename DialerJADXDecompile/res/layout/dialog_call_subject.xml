@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="@cob/n" android:background="0x106000d" android:layout_width="-1" android:layout_height="-1">
+    <RelativeLayout android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:theme="@*android:style/Theme.Material.Light.Dialog" android:orientation="1" android:id="@cob/J" android:background="0x7f02008e" android:clickable="true" android:layout_width="-1" android:layout_height="-2" android:layout_centerInParent="true" android:elevation="16dp"
+            <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="0x7f0b0097" android:layout_marginStart="0x7f0b0097" android:layout_marginEnd="0x7f0b0097">
+                <QuickContactBadge android:layout_gravity="30" android:id="@cob/t" android:focusable="true" android:layout_width="@buf/cM" android:layout_height="@buf/cM" android:layout_marginEnd="0x7f0b0097" />
+                <LinearLayout android:gravity="10" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+                    <TextView android:textSize="0x7f0b0099" android:textColor="0x7f0a007f" android:id="@cob/P" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+                    <TextView android:textSize="0x7f0b0099" android:textColor="@cob/ae" android:layout_gravity="10" android:id="@cob/Q" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="0x7f0b0094" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <EditText android:textSize="0x7f0b0099" android:textColor="@cob/ae" android:gravity="30" android:layout_gravity="30" android:id="@cob/m" android:background="@rl/c" android:layout_width="-1" android:layout_height="0dp" android:layout_marginTop="0x7f0b0096" android:hint="0x7f0f009b" android:layout_weight="1.0" android:layout_marginStart="0x7f0b0097" android:layout_marginEnd="0x7f0b0097" />
+            <TextView android:textSize="0x7f0b0099" android:textColor="@cob/ae" android:id="@cob/o" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="0x7f0b0097" android:layout_marginBottom="0x7f0b0097" android:singleLine="true" android:layout_marginStart="0x7f0b0097" android:layout_marginEnd="0x7f0b0097" />
+            <View android:background="0x7f0a0042" android:layout_width="-1" android:layout_height="1dp" />
+            <RelativeLayout android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="0x7f0b0097" android:layout_marginBottom="0x7f0b0097" android:layout_marginStart="0x7f0b0097" android:layout_marginEnd="0x7f0b0097">
+                <ImageView android:id="@cob/L" android:layout_width="25dp" android:layout_height="25dp" android:src="0x7f0200c1" android:tint="0x7f0a0044" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                <TextView android:textSize="0x7f0b0099" android:textColor="0x7f0a0041" android:id="@cob/R" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0f02ae" android:singleLine="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView android:id="@cob/S" android:background="0x7f0a0043" android:layout_width="-1" android:layout_height="-2" android:divider="@rl/c" android:layout_below="@cob/J" android:elevation="8dp" />
+</LinearLayout>

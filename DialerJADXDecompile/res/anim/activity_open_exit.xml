@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:background="#ff000000" android:zAdjustment="0">
+    <alpha android:interpolator="0x7f05000e" android:duration="300" android:fillBefore="false" android:fillAfter="true" android:fromAlpha="1.0" android:toAlpha="0.0" android:fillEnabled="true" />
+</set>

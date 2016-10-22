@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="58dp" style="0x7f0c01c9">
+    <ImageView android:id="0x1020007" android:visibility="1" android:layout_width="0x7f0b016d" android:layout_height="48dp" android:scaleType="7" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" style="0x7f0c01cb" />
+    <ImageView android:id="0x7f0d00e1" android:background="?unknown_attr_ref: 7f01010d" android:visibility="2" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="7" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" style="0x7f0c01ca" />
+    <ImageView android:id="0x1020008" android:visibility="2" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="7" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="0x7f0c01cc" />
+    <TextView android:textAppearance="?unknown_attr_ref: 7f01011b" android:gravity="30" android:id="0x1020015" android:paddingBottom="4dp" android:visibility="2" android:layout_width="-1" android:layout_height="29dp" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="?unknown_attr_ref: 1010086" />
+    <TextView android:textAppearance="?unknown_attr_ref: 7f01011a" android:id="0x1020014" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" android:layout_above="0x1020015" android:layout_centerVertical="true" style="?unknown_attr_ref: 1010086" />
+</RelativeLayout>

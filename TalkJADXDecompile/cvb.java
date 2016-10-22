@@ -1,0 +1,4 @@
+final class cvb {
+    cvb() {
+    }
+}

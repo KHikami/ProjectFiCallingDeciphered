@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <include layout="0x7f040169" />
+    <fragment android:id="@ba/cE" android:tag="top_level" android:layout_width="-1" android:layout_height="-1" android:layout_weight="1.0" class="com.google.android.apps.hangouts.fragments.InvitationFragment" />
+    <FrameLayout android:id="0x7f0d02b1" android:layout_width="-1" android:layout_height="-2" android:layout_weight="0.0" />
+</LinearLayout>

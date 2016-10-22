@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+    <SwitchPreference android:key="wifi_calling_enabled_key" />
+    <Preference android:title="0x7f0a003b" android:key="account_key" />
+    <SwitchPreference android:title="0x7f0a003c" android:key="ask_each_call_key" />
+    <SwitchPreference android:title="0x7f0a003d" android:key="request_feedback_key" />
+</PreferenceScreen>

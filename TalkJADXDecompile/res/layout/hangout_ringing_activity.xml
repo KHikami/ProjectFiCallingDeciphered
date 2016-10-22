@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout hangouts:orientation="1" hangouts:layout_width="-1" hangouts:layout_height="-1">
+    <RelativeLayout app:id="@ba/eS" app:background="@gwb/dF" app:layout_width="-1" app:layout_height="-1">
+        <com.google.android.apps.hangouts.views.AvatarView app:id="@ba/cO" app:layout_width="-1" app:layout_height="0dp" app:scaleType="6" app:layout_above="0x7f0d028b" app:layout_alignParentTop="true" app:avatarViewShape="square" app:avatarViewSize="xlarge" />
+        <view app:gravity="1" app:id="@ba/bS" app:background="#00000000" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="21dp" app:layout_marginBottom="5dp" app:layout_above="0x7f0d028b" app:avatarPadding="0x7f0b021c" app:avatarSize="0x7f0b021b" class="com.google.android.apps.hangouts.views.FixedParticipantsGalleryView" />
+        <LinearLayout app:gravity="11" app:orientation="1" app:id="0x7f0d028b" app:background="@bc/uH" app:layout_width="-1" app:layout_height="-2" app:minHeight="64dp" app:layout_above="0x7f0d028d">
+            <TextView app:textSize="18sp" app:ellipsize="3" app:gravity="1" app:layout_gravity="11" app:id="@ba/cG" app:visibility="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:text="@bc/dZ" app:maxLines="2" app:singleLine="false" style="0x7f0c024a" />
+            <TextView app:textSize="14sp" app:ellipsize="3" app:gravity="1" app:layout_gravity="11" app:id="@ba/cF" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:maxLines="1" style="0x7f0c024a" />
+            <TextView app:textSize="14sp" app:textColor="0x7f0e0254" app:ellipsize="3" app:gravity="1" app:layout_gravity="11" app:id="@ba/cM" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:text="@bc/dV" app:maxLines="2" app:singleLine="false" style="0x7f0c024a" />
+        </LinearLayout>
+        <FrameLayout app:id="0x7f0d028d" app:background="#000000" app:layout_width="-1" app:layout_height="-2" app:layout_alignParentBottom="true">
+            <com.google.android.apps.hangouts.hangout.multiwaveview.GlowPadView app:layout_gravity="11" app:id="@ba/cC" app:background="0x106000c" app:layout_width="-2" app:layout_height="232dp" app:targetDrawables="@gwb/dv" app:targetDescriptions="@gwb/du" app:directionDescriptions="@gwb/dt" app:outerRingDrawable="0x7f020504" app:innerRadius="15dp" app:outerRadius="135dp" app:glowRadius="75dp" app:vibrationDuration="20" app:snapMargin="40dp" app:feedbackCount="3" />
+            <LinearLayout app:orientation="0" app:id="@ba/O" app:background="#ffffff" app:visibility="2" app:layout_width="-1" app:layout_height="64dp" style="0x7f0c026d">
+                <Button app:id="@ba/cu" app:focusable="true" app:layout_width="-2" app:layout_height="-1" app:text="@bc/fj" app:layout_weight="1.0" style="?unknown_attr_ref: 101032b" />
+                <View app:background="#ccc" app:layout_width="1dp" app:layout_height="-1" app:layout_marginTop="16dp" app:layout_marginBottom="16dp" />
+                <Button app:id="@ba/k" app:focusable="true" app:layout_width="-2" app:layout_height="-1" app:text="@bc/fi" app:layout_weight="1.0" style="?unknown_attr_ref: 101032b" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

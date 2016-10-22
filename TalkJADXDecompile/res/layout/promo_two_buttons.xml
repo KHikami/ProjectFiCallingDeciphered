@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:background="@gwb/mv" android:layout_width="-1" android:layout_height="-2">
+    <Button android:textSize="14sp" android:textColor="0x7f0e00c8" android:id="@bn/b" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0" style="?unknown_attr_ref: 101032b" />
+    <Button android:textSize="14sp" android:textColor="@gwb/xX" android:id="@bn/c" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0" style="?unknown_attr_ref: 101032b" />
+</LinearLayout>

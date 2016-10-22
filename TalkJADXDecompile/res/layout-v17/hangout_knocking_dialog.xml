@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:padding="0x7f0b0281" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+        <com.google.android.apps.hangouts.views.AvatarView android:layout_gravity="30" android:id="@gwb/qc" android:layout_width="@ba/nr" android:layout_height="@ba/nr" android:scaleType="6" android:importantForAccessibility="2" android:layout_marginEnd="0x7f0b0281" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@gwb/qf" android:layout_width="-2" android:layout_height="-2" />
+    </LinearLayout>
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textStyle="1" android:id="@gwb/qd" android:paddingTop="0x7f0b0281" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@gwb/qe" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.views.ConversationListItemView android:id="@ba/ak" android:background="@r$drawable/c" android:layout_width="-1" android:layout_height="-2" android:minHeight="0x7f0b0037">
+    <FrameLayout android:layout_gravity="10" android:id="0x7f0d01a1" android:layout_width="72dp" android:layout_height="72dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <include layout="0x7f040066" />
+        <ImageView android:layout_gravity="11" android:id="@ba/W" android:background="@r$drawable/a" android:visibility="1" android:layout_width="40dp" android:layout_height="40dp" android:src="@r$drawable/bS" android:scaleType="5" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="11" android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_marginTop="0x7f0b002d" android:layout_marginBottom="0x7f0b002d" android:layout_weight="1.0" style="0x7f0c0280"
+        <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:textSize="12dp" android:gravity="50" android:layout_gravity="50" android:id="@ba/aB" android:background="#ffffefa8" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+            <view app:textStyle="0x7f0f0036" app:layout_gravity="50" app:id="@ba/al" app:layout_width="0dp" app:layout_height="-2" app:layout_weight="1.0" app:fontFamily="0x7f0a0b3c" app:single_line_text_size="16sp" app:textColor="@bm/ak" class="com.google.android.apps.hangouts.views.ConversationNameView" style="0x7f0c0281" />
+            <ImageView app:layout_gravity="50" app:id="@ba/aq" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:src="0x7f020619" app:tint="@bc/uZ" app:importantForAccessibility="2" style="0x7f0c0280" />
+            <ImageView app:layout_gravity="50" app:id="@ba/ao" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:src="0x7f020618" app:tint="@bc/uZ" app:importantForAccessibility="2" style="0x7f0c0280" />
+            <ImageView app:layout_gravity="50" app:id="@ba/ge" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:src="0x7f0204ae" app:importantForAccessibility="2" style="0x7f0c0280" />
+            <ImageView app:id="@ba/bw" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:src="0x7f02056e" app:importantForAccessibility="2" style="0x7f0c0280" />
+            <ImageView app:layout_gravity="50" app:id="@bm/i" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:src="0x7f02056f" app:importantForAccessibility="2" style="0x7f0c0280" />
+            <TextView app:layout_gravity="50" app:id="@ba/fK" app:layout_width="-2" app:layout_height="-2" style="0x7f0c0250" />
+        </LinearLayout>
+        <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2">
+            <TextView app:id="@ba/gk" app:visibility="2" app:layout_width="-2" app:layout_height="-2" style="0x7f0c0285" />
+            <TextView app:id="0x7f0d01ab" app:visibility="2" app:layout_width="-1" app:layout_height="-2" style="0x7f0c0284" />
+            <ImageView app:id="0x7f0d01ac" app:visibility="2" app:layout_width="-1" app:layout_height="@gwb/fi" app:scaleType="6" app:contentDescription="@bc/fs" style="0x7f0c0283" />
+        </LinearLayout>
+        <TextView app:id="@ba/dv" app:layout_width="-1" app:layout_height="-2" app:drawablePadding="2dp" style="0x7f0c0284" />
+        <ImageView app:id="@ba/cw" app:visibility="2" app:layout_width="-1" app:layout_height="@gwb/fi" app:scaleType="6" app:contentDescription="@bc/fs" style="0x7f0c0283" />
+    </LinearLayout>
+    <ImageView app:enabled="false" app:id="@ba/bx" app:background="0x7f02006e" app:layout_width="-2" app:layout_height="-1" app:src="@r$drawable/bf" app:importantForAccessibility="2" style="0x7f0c0282" />
+</com.google.android.apps.hangouts.views.ConversationListItemView>

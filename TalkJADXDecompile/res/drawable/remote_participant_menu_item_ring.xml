@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="3" android:useLevel="false" android:innerRadius="0x7f0b0221" android:thickness="0x7f0b0222">
+    <solid android:color="@gwb/mv" />
+    <size android:height="0x7f0b0223" android:width="0x7f0b0223" />
+</shape>

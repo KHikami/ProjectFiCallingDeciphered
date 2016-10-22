@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <group android:checkableBehavior="2">
+        <item android:id="0x7f0d03fe" android:title="@bc/gc" />
+        <item android:id="0x7f0d03ff" android:title="@bc/gd" />
+        <item android:id="0x7f0d0400" android:title="@bc/gb" />
+        <item android:id="0x7f0d0401" android:title="@bc/ga" />
+    </group>
+</menu>

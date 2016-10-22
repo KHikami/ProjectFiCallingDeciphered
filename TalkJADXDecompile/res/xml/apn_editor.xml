@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen settings:title="0x7f0a0909">
+    <EditTextPreference settings:singleLine="true" settings:title="0x7f0a090b" settings:key="apn_name" settings:dialogTitle="0x7f0a090b" settings:inputType="1" />
+    <EditTextPreference settings:singleLine="true" settings:title="0x7f0a090c" settings:key="apn_mmsc" settings:dialogTitle="0x7f0a090c" settings:inputType="11" />
+    <EditTextPreference settings:singleLine="true" settings:title="0x7f0a090d" settings:key="apn_mms_proxy" settings:dialogTitle="0x7f0a090d" settings:inputType="11" />
+    <EditTextPreference settings:singleLine="true" settings:title="0x7f0a090e" settings:key="apn_mms_port" settings:dialogTitle="0x7f0a090e" settings:inputType="2" />
+    <EditTextPreference settings:singleLine="true" settings:title="0x7f0a090f" settings:key="apn_mcc" settings:dialogTitle="0x7f0a090f" settings:inputType="2" />
+    <EditTextPreference settings:singleLine="true" settings:title="0x7f0a0910" settings:key="apn_mnc" settings:dialogTitle="0x7f0a0910" settings:inputType="2" />
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="0x7f0c00d9" android:layout_width="-1" android:layout_height="-1">
+    <com.android.contacts.common.list.ViewPagerTabs android:layout_gravity="30" android:orientation="0" android:id="@aq/bH" android:layout_width="-1" android:layout_height="0x7f0b0179" android:textAllCaps="true" android:elevation="0x7f0b0178" style="0x7f1000b0" />
+    <android.support.v4.view.ViewPager android:id="@aq/z" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@aq/at" android:layout_width="0dp" android:layout_height="0dp" />
+</LinearLayout>

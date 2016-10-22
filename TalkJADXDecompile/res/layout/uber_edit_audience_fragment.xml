@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="1" android:id="@ba/eS" android:background="0x106000b" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+        <FrameLayout android:id="0x7f0d03d2" android:layout_width="-1" android:layout_height="-2" />
+        <FrameLayout android:id="@bm/V" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="50" android:orientation="1" android:id="0x7f0d03d3" android:background="@bc/uH" android:layout_width="-1" android:layout_height="-2"
+        <LinearLayout android:orientation="1" android:id="0x7f0d03d4" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="-1" android:layout_height="-2" android:text="0x7f0a08bc" android:singleLine="false" style="0x7f0c024f" />
+            <View android:background="@gwb/mv" style="0x7f0c0239" />
+        </LinearLayout>
+        <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="48dp">
+            <FrameLayout android:id="0x7f0d03d5" android:focusable="true" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" style="0x7f0c0235">
+                <TextView android:textColor="@gwb/mv" android:text="0x1040000" android:drawableLeft="@r$drawable/aI" style="0x7f0c0236" />
+            </FrameLayout>
+            <View android:background="@gwb/mv" style="0x7f0c0237" />
+            <FrameLayout android:id="@gwb/uv" android:focusable="true" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" style="0x7f0c0235">
+                <TextView android:textColor="@gwb/mv" android:text="0x104000a" android:drawableLeft="@r$drawable/aL" style="0x7f0c0236" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

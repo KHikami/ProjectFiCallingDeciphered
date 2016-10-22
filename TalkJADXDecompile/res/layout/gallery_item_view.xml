@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="0x7f0d023d" android:layout_width="-2" android:layout_height="-1" android:minWidth="120dp">
+    <ImageView android:id="@gwb/mC" android:layout_width="-2" android:layout_height="-2" android:src="0x1080037" android:layout_centerInParent="true" />
+    <com.google.android.apps.hangouts.conversation.v2.gallerypicker.impl.GalleryItemView android:id="@gwb/mE" android:background="@gwb/mv" android:layout_width="-1" android:layout_height="-1" android:scaleType="6" android:adjustViewBounds="true" android:maxWidth="320dp" android:cropToPadding="false" android:importantForAccessibility="1">
+        <ImageView android:id="@ba/jl" android:background="@gwb/mv" android:layout_width="-1" android:layout_height="-1" android:scaleType="6" android:adjustViewBounds="true" android:cropToPadding="false" />
+        <TextureView android:id="@gwb/mD" android:layout_width="-1" android:layout_height="-1" android:importantForAccessibility="2" />
+        <View android:id="@gwb/mH" android:background="0x106000c" android:layout_width="-1" android:layout_height="-1" android:alpha="0.0" />
+    </com.google.android.apps.hangouts.conversation.v2.gallerypicker.impl.GalleryItemView>
+    <TextView android:textSize="14sp" android:textColor="0x106000b" android:gravity="10" android:id="@gwb/mI" android:background="0x7f02068c" android:layout_width="-2" android:layout_height="24dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:importantForAccessibility="2" />
+    <ImageView android:id="@gwb/mB" android:visibility="1" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0205e2" android:layout_centerInParent="true" />
+</RelativeLayout>

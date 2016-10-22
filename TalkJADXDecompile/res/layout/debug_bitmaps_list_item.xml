@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="-1" android:layout_height="-2"
+    <LinearLayout android:layout_gravity="10" android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:ellipsize="3" android:id="@ba/fD" android:layout_width="-2" android:layout_height="-2" android:maxLines="3" android:scrollHorizontally="true" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:ellipsize="3" android:id="@ba/fE" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:ellipsize="3" android:id="@ba/fF" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:ellipsize="3" android:id="@ba/fG" android:layout_width="-2" android:layout_height="-2" android:scrollHorizontally="true" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="11" android:id="@ba/M" android:layout_width="48dp" android:layout_height="48dp" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="30" android:layout_gravity="30" android:orientation="1" android:id="@bm/ai" android:background="@bc/vc" android:visibility="2" android:layout_width="-1" android:layout_height="-2"
+    <LinearLayout android:orientation="0" android:paddingTop="16dp" android:paddingBottom="10dp" android:layout_width="-1" android:layout_height="-2">
+        <ImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:src="0x7f0200aa" android:scaleType="5" />
+        <LinearLayout android:gravity="10" android:layout_gravity="10" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:textSize="16sp" android:textStyle="1" android:textColor="0x7f0e00a2" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a008f" />
+            <TextView android:textSize="14sp" android:textColor="0x7f0e00a3" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0090" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="800005" android:orientation="0" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2">
+        <Button android:textSize="14sp" android:textStyle="1" android:textColor="@bc/uH" android:id="@bm/aj" android:paddingLeft="20dp" android:paddingTop="6dp" android:paddingRight="20dp" android:paddingBottom="6dp" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0091" android:fontFamily="sans-serif-light" style="?unknown_attr_ref: 101032b" />
+        <Button android:textSize="14sp" android:textStyle="1" android:textColor="@gwb/mv" android:id="@bm/ah" android:background="@bc/uH" android:paddingLeft="20dp" android:paddingTop="6dp" android:paddingRight="20dp" android:paddingBottom="6dp" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0092" android:fontFamily="sans-serif-light" style="?unknown_attr_ref: 101032b" />
+    </LinearLayout>
+    <View android:id="0x7f0d0171" android:background="0x7f0e0240" android:layout_width="-1" android:layout_height="3dp" />
+</LinearLayout>

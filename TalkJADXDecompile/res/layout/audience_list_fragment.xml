@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="-1" android:layout_height="-1">
+    <ListView android:id="0x102000a" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-1" android:cacheColorHint="0x7f0e0284" android:fastScrollEnabled="true" android:headerDividersEnabled="false" />
+    <View android:layout_gravity="50" android:background="0x7f020669" android:layout_width="-1" android:layout_height="-2" />
+    <TextView android:textSize="18sp" android:gravity="11" android:id="@ba/fd" android:padding="24dp" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:text="0x7f0a06aa" />
+    <include layout="0x7f0400a0" />
+</FrameLayout>

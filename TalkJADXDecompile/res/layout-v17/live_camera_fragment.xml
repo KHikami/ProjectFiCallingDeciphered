@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:layout_width="-1" app:layout_height="-1">
+    <TextureView app:id="@gwb/mR" app:layout_width="-1" app:layout_height="-1" app:importantForAccessibility="2" />
+    <FrameLayout app:paddingLeft="16dp" app:paddingRight="16dp" app:paddingBottom="16dp" app:clipChildren="false" app:clipToPadding="false" app:layout_width="88dp" app:layout_height="72dp" app:layout_alignParentBottom="true" app:layout_centerHorizontal="true">
+        <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/mY" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-1" app:src="0x7f0205d8" app:contentDescription="0x7f0a016f" app:quantumFabColor="@gwb/sj" />
+        <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/mZ" app:visibility="2" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-1" app:src="@bc/vq" app:contentDescription="0x7f0a016f" app:quantumFabColor="@gwb/sj" />
+        <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/mT" app:visibility="2" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-1" app:src="0x7f02063e" app:contentDescription="0x7f0a016f" app:quantumFabColor="@gwb/sj" />
+        <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/mS" app:visibility="2" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-1" app:src="0x7f020637" app:contentDescription="0x7f0a0170" app:quantumFabColor="@gwb/sj" />
+    </FrameLayout>
+    <FrameLayout app:clipChildren="false" app:clipToPadding="false" app:layout_width="40dp" app:layout_height="40dp" app:layout_marginRight="16dp" app:layout_marginBottom="16dp" app:layout_alignParentRight="true" app:layout_alignParentBottom="true" app:layout_marginEnd="16dp" app:layout_alignParentEnd="true">
+        <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/mU" app:visibility="2" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-1" app:src="0x7f0205d9" app:contentDescription="0x7f0a0171" app:quantumFabColor="#66000000" app:quantumSize="1" />
+        <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/mW" app:visibility="2" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-1" app:src="0x7f0205da" app:contentDescription="0x7f0a0172" app:quantumFabColor="#66000000" app:quantumSize="1" />
+    </FrameLayout>
+    <FrameLayout app:clipChildren="false" app:clipToPadding="false" app:layout_width="40dp" app:layout_height="40dp" app:layout_marginLeft="16dp" app:layout_marginBottom="16dp" app:layout_alignParentLeft="true" app:layout_alignParentBottom="true" app:layout_marginStart="16dp" app:layout_alignParentStart="true">
+        <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/mX" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-1" app:src="0x7f020640" app:contentDescription="0x7f0a0171" app:quantumFabColor="#66000000" app:quantumSize="1" />
+        <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/mV" app:visibility="2" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-1" app:src="0x7f02063f" app:contentDescription="0x7f0a0172" app:quantumFabColor="#66000000" app:quantumSize="1" />
+    </FrameLayout>
+</RelativeLayout>

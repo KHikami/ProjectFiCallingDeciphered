@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+    <com.android.contacts.common.preference.SortOrderPreference android:icon="@rl/c" android:title="0x7f0f016d" android:key="sortOrder" android:dialogTitle="0x7f0f016d" />
+    <com.android.contacts.common.preference.DisplayOrderPreference android:icon="@rl/c" android:title="0x7f0f0171" android:key="displayOrder" android:dialogTitle="0x7f0f0171" />
+    <com.android.contacts.common.preference.DefaultAccountPreference android:icon="@rl/c" android:title="0x7f0f010a" android:key="accounts" android:dialogTitle="0x7f0f010a" />
+    <Preference android:icon="@rl/c" android:title="0x7f0f02b3" android:key="about" android:order="0x7f0d0002" />
+</PreferenceScreen>

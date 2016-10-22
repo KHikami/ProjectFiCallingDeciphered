@@ -1,0 +1,3 @@
+interface chx {
+    boolean t();
+}

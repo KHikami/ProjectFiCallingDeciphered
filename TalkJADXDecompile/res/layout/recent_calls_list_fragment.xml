@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:id="@ba/cV" android:visibility="1" android:layout_width="-1" android:layout_height="-1">
+        <RelativeLayout android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="0x7f0b002e" android:layout_marginRight="0x7f0b002e">
+            <TextView android:textStyle="1" android:textColor="0x7f0e00a2" android:paddingTop="16dp" android:paddingBottom="8dp" android:focusable="true" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a068d" android:layout_alignParentLeft="true" android:textAllCaps="true" />
+            <TextView android:textColor="0x7f0e00a2" android:id="@ba/Z" android:paddingTop="16dp" android:paddingBottom="8dp" android:focusable="true" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a068e" android:layout_alignParentRight="true" android:textAllCaps="false" />
+        </RelativeLayout>
+        <View android:id="0x7f0d0378" android:background="0x7f0e00a2" android:layout_width="-1" android:layout_height="2dp" android:color="0x7f0e00a2" />
+        <ListView android:id="0x102000a" android:clipToPadding="false" android:layout_width="-1" android:layout_height="0dp" android:cacheColorHint="0x7f0e0284" android:divider="@wi/w" android:dividerHeight="0px" android:layout_weight="1.0" android:fastScrollEnabled="true" android:headerDividersEnabled="false" />
+    </LinearLayout>
+    <LinearLayout android:gravity="11" android:layout_gravity="11" android:orientation="1" android:id="@ba/dC" android:focusableInTouchMode="true" android:visibility="1" android:layout_width="-1" android:layout_height="-1" android:layout_marginBottom="0x7f0b01ca">
+        <ImageView android:id="@ba/dD" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0204cd" />
+        <TextView android:textSize="16sp" android:textStyle="1" android:textColor="@gwb/xX" android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a093a" />
+        <TextView android:textSize="16sp" android:textColor="@gwb/xX" android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a093b" />
+    </LinearLayout>
+</FrameLayout>

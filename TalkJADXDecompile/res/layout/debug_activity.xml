@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="0x7f0d01c7" android:layout_width="-1" android:layout_height="-1">
+    <TextView android:textSize="18sp" android:textStyle="1" android:textColor="#ffffffff" android:gravity="11" android:id="@ba/ax" android:padding="4dp" android:layout_width="-1" android:layout_height="-2" />
+    <RelativeLayout android:layout_width="-1" android:layout_height="-2">
+        <CheckBox android:id="@ba/aj" android:layout_width="-2" android:layout_height="24dp" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:gravity="11" android:layout_gravity="11" android:id="@ba/fe" android:padding="4dp" android:layout_width="-1" android:layout_height="-2" />
+    <ListView android:id="@ba/eT" android:background="#ffffffff" android:layout_width="-1" android:layout_height="0dp" android:stackFromBottom="true" android:transcriptMode="1" android:divider="#ff000000" android:dividerHeight="1dp" android:layout_weight="1.0" />
+    <TextView android:gravity="11" android:layout_gravity="11" android:id="@ba/cY" android:padding="4dp" android:layout_width="-1" android:layout_height="-2" />
+    <ListView android:id="0x102000a" android:background="#ffffffff" android:layout_width="-1" android:layout_height="0dp" android:divider="#ff000000" android:dividerHeight="1dp" android:layout_weight="1.0" />
+</LinearLayout>

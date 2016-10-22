@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:paddingTop="0x7f0b0085" android:paddingBottom="0x7f0b0085" android:layout_width="-1" android:layout_height="-2" android:paddingStart="0x7f0b0071" android:paddingEnd="0x7f0b008a"
+    <LinearLayout android:orientation="0" android:layout_width="-2" android:layout_height="-2">
+        <view android:layout_gravity="10" android:id="@aq/C" android:layout_width="-2" android:layout_height="-2" class="com.android.dialer.app.calllog.CallTypeIconsView" />
+        <TextView android:textSize="0x7f0b008b" android:textColor="?unknown_attr_ref: 7f0100a6" android:id="@aq/F" android:layout_width="-2" android:layout_height="-2" android:layout_marginStart="@buf/hj" />
+    </LinearLayout>
+    <TextView android:textSize="0x7f0b0081" android:textColor="?unknown_attr_ref: 7f0100a8" android:id="@aq/V" android:layout_width="-2" android:layout_height="-2" />
+    <TextView android:textSize="0x7f0b0081" android:textColor="?unknown_attr_ref: 7f0100a8" android:id="@aq/al" android:layout_width="-2" android:layout_height="-2" />
+</LinearLayout>

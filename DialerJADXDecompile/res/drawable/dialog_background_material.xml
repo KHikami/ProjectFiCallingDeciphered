@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:inset="16dp">
+    <shape android:shape="0">
+        <corners android:radius="2dp" />
+        <solid android:color="0x7f0a0043" />
+    </shape>
+</inset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="0x7f0d01bd" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="1" android:layout_alignParentEnd="true">
+    <TextView android:textSize="12sp" android:layout_gravity="5" android:id="@gwb/rv" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a020f" style="0x7f0c001b" />
+    <TextView android:textSize="12sp" android:layout_gravity="5" android:id="@gwb/ru" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0210" style="0x7f0c001a" />
+    <TextView android:textSize="12sp" android:layout_gravity="5" android:id="@gwb/rw" android:visibility="2" android:layout_width="-2" android:layout_height="-2" style="0x7f0c001b" />
+</LinearLayout>

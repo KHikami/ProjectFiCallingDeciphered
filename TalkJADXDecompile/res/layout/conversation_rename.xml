@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="10dp" android:layout_width="-1" android:layout_height="-2">
+    <EditText android:id="@gwb/ku" android:layout_width="-1" android:layout_height="-2" android:hint="0x7f0a0196" android:maxLength="128" android:inputType="4001" />
+</FrameLayout>

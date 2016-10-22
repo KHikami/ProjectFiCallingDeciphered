@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.views.MessageListItemView hangouts:orientation="0" hangouts:clipToPadding="false" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:importantForAccessibility="2">
+    <FrameLayout hangouts:id="@ba/C" hangouts:layout_width="-2" hangouts:layout_height="-2">
+        <com.google.android.apps.hangouts.views.AvatarView hangouts:id="@bm/b" hangouts:layout_width="0x7f0b00c7" hangouts:layout_height="0x7f0b00c7" hangouts:layout_marginLeft="0x7f0b00ba" hangouts:importantForAccessibility="2" hangouts:layout_marginStart="0x7f0b00ba" hangouts:avatarViewSize="small" />
+    </FrameLayout>
+    <LinearLayout hangouts:orientation="1" hangouts:layout_width="-1" hangouts:layout_height="-2"
+        <LinearLayout hangouts:orientation="0" hangouts:layout_width="-1" hangouts:layout_height="-2"
+            <LinearLayout hangouts:orientation="1" hangouts:layout_width="-1" hangouts:layout_height="-2"
+                <LinearLayout hangouts:orientation="1" hangouts:id="@bm/w" hangouts:paddingLeft="8dp" hangouts:paddingRight="8dp" hangouts:visibility="2" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:paddingStart="8dp" hangouts:paddingEnd="8dp" />
+                <com.google.android.apps.hangouts.views.MessageBubbleView hangouts:gravity="10" hangouts:orientation="1" hangouts:id="@bm/s" hangouts:visibility="2" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_marginLeft="0x7f0b00b5" hangouts:layout_marginRight="0x7f0b00b7" hangouts:baselineAligned="false" hangouts:importantForAccessibility="2" hangouts:layout_marginStart="0x7f0b00b5" hangouts:layout_marginEnd="0x7f0b00b7">
+                    <LinearLayout hangouts:orientation="1" hangouts:id="@bm/a" hangouts:visibility="2" hangouts:layout_width="-2" hangouts:layout_height="-2" />
+                    <com.google.android.apps.hangouts.views.WrapWidthTextView hangouts:layout_gravity="800003" hangouts:id="@bm/q" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:maxWidth="@gwb/fa" hangouts:lineSpacingExtra="0x7f0b00c4" hangouts:importantForAccessibility="2" style="0x7f0c0044" />
+                </com.google.android.apps.hangouts.views.MessageBubbleView>
+            </LinearLayout>
+            <ImageView hangouts:layout_gravity="11" hangouts:id="@bm/e" hangouts:visibility="2" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_marginRight="0x7f0b01fc" hangouts:src="0x7f0205cd" hangouts:importantForAccessibility="2" hangouts:layout_marginEnd="0x7f0b01fc" />
+        </LinearLayout>
+        <FrameLayout hangouts:paddingLeft="0x7f0b00b3" hangouts:paddingRight="0x7f0b00b4" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_marginLeft="0x7f0b00b5" hangouts:paddingStart="0x7f0b00b3" hangouts:paddingEnd="0x7f0b00b4" hangouts:layout_marginStart="0x7f0b00b5">
+            <include hangouts:id="@ba/dw" layout="0x7f0400ee" />
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.apps.hangouts.views.MessageListItemView>

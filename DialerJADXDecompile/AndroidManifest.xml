@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:"http://schemas.android.com/apk/res/android" android:versionCode="403272" android:versionName="4.1.134720488" package="com.google.android.dialer" platformBuildVersionCode="24" platformBuildVersionName="N">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="24" android:usesCleartextTraffic="false" />
+    <uses-feature android:glEsVersion="20000" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <application android:label="0x7f0f003e" android:icon="0x7f030002" android:name="com.google.android.apps.dialer.app.GoogleDialerApplication" android:backupAgent="com.android.dialer.app.DialerBackupAgent" android:hardwareAccelerated="true" android:supportsRtl="true">
+        <uses-library android:name="com.google.android.dialer.support" android:required="true" />
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIn3-Y3JKit1mrzfvcdbVhUiJn2ICtKfhGYLy0Bg" />
+        <activity android:theme="0x7f1000b3" android:label="@cob/cj" android:name="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:windowSoftInputMode="33" android:resizeableActivity="true" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="vnd.android.cursor.item/phone" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="voicemail" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tel" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="vnd.android.cursor.dir/calls" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_BUTTON" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.phone.action.TOUCH_DIALER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+            <intent-filter android:label="0x7f0f0062">
+                <action android:name="com.android.phone.action.RECENT_CALLS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+            <meta-data android:name="com.android.keyguard.layout" android:resource="0x7f04005f" />
+        </activity>
+        <activity android:theme="0x7f1000d9" android:label="0x7f0f0152" android:name="com.google.android.apps.dialer.settings.GoogleDialerSettingsActivity" android:exported="false" android:parentActivityName="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity" />
+        <activity android:theme="0x7f100094" android:label="0x7f0f005e" android:name="com.google.android.apps.dialer.calllog.GoogleCallDetailActivity" android:parentActivityName="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/calls" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.google.android.apps.dialer.app.GoogleDialerBootReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.google.android.apps.dialer.provider.DialerProvider" android:exported="false" android:multiprocess="false" android:authorities="com.google.android.dialer.provider" />
+        <provider android:name="com.google.android.apps.dialer.phonenumbercache.PhoneNumberCacheProvider" android:exported="false" android:multiprocess="false" android:authorities="com.google.android.dialer.cacheprovider" />
+        <service android:name="com.google.android.apps.dialer.incallui.InCallUiControllerService">
+            <intent-filter>
+                <action android:name="com.google.android.dialer.incallui.IInCallUiControllerService" />
+            </intent-filter>
+        </service>
+        <activity android:theme="0x7f1000b5" android:label="0x7f0f032a" android:name="com.android.dialer.app.voicemail.VoicemailArchiveActivity" />
+        <activity android:theme="0x7f1000b5" android:label="0x7f0f007a" android:name="com.android.dialer.app.calllog.CallLogActivity" />
+        <activity android:theme="0x7f1000b5" android:label="@cob/cj" android:name="com.android.contacts.common.activity.RequestPermissionsActivity" android:exported="false" />
+        <activity android:theme="0x7f1000c2" android:label="@cob/cm" android:name="com.android.dialer.app.filterednumber.BlockedNumbersSettingsActivity" android:exported="false" android:parentActivityName="com.android.dialer.app.settings.DialerSettingsActivity">
+            <intent-filter>
+                <action android:name="com.android.dialer.action.BLOCKED_NUMBERS_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.google.android.dialer.files" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="0x7f060004" />
+        </provider>
+        <provider android:name="com.android.dialer.app.voicemail.VoicemailArchiveProvider" android:exported="false" android:multiprocess="false" android:authorities="com.google.android.dialer.voicemail.voicemailarchiveprovider" />
+        <receiver android:name="com.android.dialer.app.calllog.CallLogReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_VOICEMAIL" />
+                <data android:mimeType="vnd.android.cursor.item/voicemail" android:scheme="content" android:host="com.android.voicemail" />
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.dialer.app.interactions.UndemoteOutgoingCallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.dialer.app.calllog.MissedCallNotificationReceiver" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="android.telecom.action.SHOW_MISSED_CALLS_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.android.dialer.app.calllog.CallLogNotificationsService" android:exported="false" android:directBootAware="true" />
+        <service android:name="com.android.dialer.app.contact.ContactUpdateService" android:exported="false" />
+        <activity android:theme="0x7f100001" android:name="com.android.incallui.spam.SpamNotificationActivity" android:exported="false" android:taskAffinity="" android:excludeFromRecents="true" android:noHistory="true" />
+        <activity android:theme="0x7f100137" android:label="0x7f0f0275" android:name="com.android.incallui.InCallActivity" android:exported="false" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="nosensor" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:resizeableActivity="true" android:directBootAware="true" />
+        <receiver android:name="com.android.incallui.NotificationBroadcastReceiver" android:exported="false" android:directBootAware="true" />
+        <service android:name="com.android.incallui.InCallServiceImpl" android:permission="android.permission.BIND_INCALL_SERVICE" android:exported="true" android:directBootAware="true">
+            <meta-data android:name="android.telecom.IN_CALL_SERVICE_UI" android:value="true" />
+            <meta-data android:name="android.telecom.IN_CALL_SERVICE_RINGING" android:value="false" />
+            <intent-filter>
+                <action android:name="android.telecom.InCallService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.android.incallui.spam.SpamNotificationService" android:exported="false" />
+        <activity android:theme="0x7f1000b5" android:label="0x7f0f01ce" android:name="com.google.android.apps.dialer.about.LicenseActivity" android:exported="false" />
+        <receiver android:name="com.google.android.apps.dialer.phenotype.UpdateBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.phenotype.UPDATE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.apps.dialer.phenotype.ExperimentCommitService" android:exported="false" />
+        <service android:name="com.google.android.apps.dialer.spam.impl.SpamJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false" />
+        <service android:name="com.google.android.apps.dialer.spam.impl.CallScreeningServiceImpl" android:permission="android.permission.BIND_SCREENING_SERVICE" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.telecom.CallScreeningService" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.android.gms.version" android:value="0x7f0d0013" />
+        <activity android:theme="0x7f100130" android:name="com.android.contacts.common.dialog.CallSubjectDialog" android:windowSoftInputMode="14">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="0x7f100008" android:label="@cob/cj" android:name="com.android.contacts.common.activity.RequestImportVCardPermissionsActivity" android:exported="false" />
+        <activity android:theme="0x7f100008" android:name="com.android.contacts.common.vcard.ImportVCardActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="0x7f100008" android:name="com.android.contacts.common.vcard.NfcImportVCardActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="0x7f100008" android:name="com.android.contacts.common.vcard.CancelActivity" />
+        <activity android:theme="0x7f100008" android:name="com.android.contacts.common.vcard.SelectAccountActivity" />
+        <activity android:theme="0x7f100008" android:name="com.android.contacts.common.vcard.ExportVCardActivity" />
+        <activity android:theme="0x7f100008" android:name="com.android.contacts.common.vcard.ShareVCardActivity" />
+        <receiver android:name="com.android.contacts.common.location.CountryDetector$LocationChangedReceiver" />
+        <service android:name="com.android.contacts.common.vcard.VCardService" android:exported="false" />
+        <service android:name="com.android.contacts.common.location.UpdateCountryService" android:exported="false" />
+        <provider android:name="com.android.dialer.blocking.FilteredNumberProvider" android:exported="false" android:multiprocess="false" android:authorities="com.google.android.dialer.blocking.filterednumberprovider" />
+        <activity-alias android:name="com.google.android.dialer.calllog.GoogleCallDetailActiviy" android:exported="true" android:targetActivity="com.google.android.apps.dialer.calllog.GoogleCallDetailActivity" />
+        <activity-alias android:name="com.google.android.dialer.extensions.GoogleDialtactsActivity" android:exported="true" android:launchMode="singleTask" android:targetActivity="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:name="com.android.dialer.CallDetailActivity" android:exported="true" android:targetActivity="com.google.android.apps.dialer.calllog.GoogleCallDetailActivity" />
+        <activity-alias android:name="com.android.dialer.app.CallDetailActivity" android:exported="true" android:targetActivity="com.google.android.apps.dialer.calllog.GoogleCallDetailActivity" />
+        <activity-alias android:name="com.android.dialer.DialtactsActivity" android:exported="true" android:targetActivity="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity" />
+        <activity-alias android:name="com.android.dialer.app.DialtactsActivity" android:exported="true" android:targetActivity="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity" />
+        <activity-alias android:name="com.android.dialer.RecentCallsListActivity" android:exported="true" android:targetActivity="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity" />
+        <activity-alias android:name="com.android.dialer.activities.CallLogActivity" android:exported="true" android:targetActivity="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity" />
+        <activity-alias android:name="com.google.android.dialer.DialtactsActivity" android:exported="true" android:targetActivity="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity" />
+        <activity-alias android:name="com.google.android.dialer.RecentCallsListActivity" android:exported="true" android:targetActivity="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity" />
+        <activity-alias android:name="com.google.android.dialer.activities.CallLogActivity" android:exported="true" android:targetActivity="com.google.android.apps.dialer.extensions.GoogleDialtactsActivity" />
+    </application>
+    <permission android:name="com.google.android.dialer.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CONTROL_INCALL_EXPERIENCE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REGISTER_CONNECTION_MANAGER" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.dialer.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+    <uses-permission android:name="com.android.voicemail.permission.WRITE_VOICEMAIL" />
+    <uses-permission android:name="com.android.voicemail.permission.READ_VOICEMAIL" />
+    <uses-permission android:name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES" />
+</manifest>

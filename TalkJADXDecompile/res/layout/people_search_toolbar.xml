@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+    <EditText android:textSize="14sp" android:textColor="@gwb/ec" android:textColorHighlight="0x7f0e00fe" android:textColorHint="0x7f0e00ce" android:ellipsize="3" android:id="@bm/ae" android:background="0x106000d" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="-1" android:layout_height="0x7f0b0024" android:hint="@gwb/tj" android:singleLine="true" android:inputType="80001" android:imeOptions="10000000" android:textCursorDrawable="0x7f020650" />
+</FrameLayout>

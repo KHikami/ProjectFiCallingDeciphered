@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.promo.AnnouncingRelativeLayout android:id="@gwb/tV" android:layout_width="-1" android:layout_height="-1" android:fillViewport="true">
+    <ViewStub android:id="@gwb/tT" android:inflatedId="0x7f0d035f" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true" />
+    <com.google.android.libraries.quantum.snackbar.Snackbar android:id="@bn/d" android:background="0x7f0e0016" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_above="0x7f0d035f" />
+    <ScrollView android:layout_width="-1" android:layout_height="-1" android:fillViewport="true" android:layout_above="@bn/d" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:fadeScrollbars="false" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:paddingLeft="0x7f0b014f" android:paddingTop="0x7f0b014f" android:paddingRight="0x7f0b014f" android:layout_width="-1" android:layout_height="-1" android:paddingStart="0x7f0b014f" android:paddingEnd="0x7f0b014f">
+            <ViewStub android:id="@gwb/tU" android:inflatedId="0x7f0d0361" android:layout_width="-1" android:layout_height="-1" />
+        </LinearLayout>
+    </ScrollView>
+</com.google.android.apps.hangouts.promo.AnnouncingRelativeLayout>

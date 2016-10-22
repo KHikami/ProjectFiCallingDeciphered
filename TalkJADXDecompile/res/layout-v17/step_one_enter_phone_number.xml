@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+    <TextView android:textSize="0x7f0b014b" android:textColor="@gwb/ec" android:gravity="800013" android:paddingBottom="16dp" android:layout_width="-2" android:layout_height="-2" android:text="@gwb/tK" />
+    <TextView android:textSize="0x7f0b014c" android:textColor="0x7f0e00cd" android:textColorLink="0x7f0e02e2" android:id="@bn/i" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2" android:text="@gwb/tI" android:textIsSelectable="false" />
+    <TextView android:textSize="0x7f0b014c" android:textColor="0x7f0e00cd" android:layout_width="-1" android:layout_height="-2" android:text="0x7f0a0064" android:textIsSelectable="false" />
+    <LinearLayout android:orientation="0" android:paddingTop="24dp" android:layout_width="-1" android:layout_height="-2" android:layoutDirection="0"
+        <LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2">
+            <TextView android:textSize="0x7f0b014d" android:textColor="0x7f0e00cd" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0066" android:contentDescription="0x7f0a0067" android:labelFor="@bn/g" />
+            <EditText android:textSize="0x7f0b014b" android:textColor="@gwb/ec" android:id="@bn/g" android:focusable="false" android:focusableInTouchMode="false" android:longClickable="false" android:layout_width="-2" android:layout_height="-2" android:maxWidth="0x7f0b0018" android:minWidth="0x7f0b0018" android:cursorVisible="false" android:singleLine="true" android:inputType="3" android:textDirection="3" />
+        </LinearLayout>
+        <Spinner android:id="@bn/h" android:visibility="1" android:layout_width="0dp" android:layout_height="0dp" android:drawSelectorOnTop="true" android:spinnerMode="0" />
+        <LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginStart="16dp">
+            <TextView android:textSize="0x7f0b014d" android:textColor="0x7f0e00cd" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0065" android:labelFor="@bn/m" />
+            <LinearLayout android:background="0x106000d" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="0dp" />
+            <EditText android:textSize="0x7f0b014b" android:textColor="@gwb/ec" android:id="@bn/m" android:longClickable="false" android:layout_width="-2" android:layout_height="-2" android:minWidth="0x7f0b001a" android:singleLine="true" android:inputType="3" android:textDirection="3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

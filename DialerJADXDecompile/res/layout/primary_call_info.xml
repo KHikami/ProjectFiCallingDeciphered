@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="11" android:orientation="1" android:id="@az/aw" android:clipChildren="false" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-1" android:paddingStart="0x7f0b0062" android:paddingEnd="0x7f0b0062"
+    <LinearLayout android:orientation="0" android:id="0x7f0c018a" android:clipChildren="false" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textSize="0x7f0b0073" android:textColor="0x7f0a00a4" android:ellipsize="3" android:id="@az/q" android:background="0x7f02014b" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:maxLines="2" android:singleLine="false" android:textAlignment="5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:id="@az/n" android:clipChildren="false" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-2">
+        <ImageView android:id="@az/aR" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:src="@buf/dg" android:scaleType="5" android:tint="@buf/jV" android:baselineAlignBottom="true" android:layout_weight="0.0" android:layout_marginEnd="8dp" />
+        <ImageView android:id="@az/o" android:visibility="2" android:layout_width="24dp" android:layout_height="-1" android:scaleType="3" android:tint="@buf/jV" android:alpha="0.0" android:layout_marginEnd="10dp" />
+        <ImageView android:id="@az/aO" android:visibility="2" android:layout_width="16dp" android:layout_height="-1" android:src="0x7f020116" android:scaleType="5" android:tint="@buf/jV" android:baselineAlignBottom="true" android:layout_marginEnd="16dp" />
+        <com.android.dialer.widget.ResizingTextTextView ex:textAppearance="?unknown_attr_ref: 1010040" ex:textSize="0x7f0b0093" ex:textColor="@buf/jV" ex:ellipsize="3" ex:gravity="800003" ex:id="@az/p" ex:layout_width="-1" ex:layout_height="-2" ex:singleLine="true" ex:alpha="0.7" ex:textAlignment="5" ex:resizing_text_min_size="0x7f0b0092" />
+    </LinearLayout>
+    <LinearLayout ex:orientation="0" ex:layout_width="-1" ex:layout_height="-2">
+        <com.android.dialer.widget.ResizingTextTextView ex:textAppearance="?unknown_attr_ref: 1010040" ex:textSize="0x7f0b0090" ex:id="@cob/P" ex:layout_width="0dp" ex:layout_height="-2" ex:layout_marginTop="-5dp" ex:singleLine="true" ex:layout_weight="1.0" ex:fontFamily="sans-serif-light" ex:textAlignment="5" ex:resizing_text_min_size="0x7f0b008f" />
+        <ImageView ex:id="@az/aq" ex:layout_width="0x7f0b00a9" ex:layout_height="0x7f0b00a9" ex:src="@buf/kF" ex:scaleType="6" ex:layout_centerVertical="true" ex:importantForAccessibility="2" ex:layout_alignParentEnd="true" />
+    </LinearLayout>
+    <LinearLayout ex:orientation="0" ex:clipChildren="false" ex:clipToPadding="false" ex:layout_width="-1" ex:layout_height="-2">
+        <ImageView ex:id="@az/U" ex:visibility="2" ex:layout_width="24dp" ex:layout_height="-1" ex:src="0x7f0200c0" ex:scaleType="3" ex:tint="0x7f0a00a5" ex:layout_marginEnd="8dp" />
+        <ImageView ex:id="@az/R" ex:visibility="2" ex:layout_width="24dp" ex:layout_height="-1" ex:src="0x7f0200bc" ex:scaleType="3" ex:tint="0x7f0a00a5" ex:layout_marginEnd="8dp" />
+        <ImageView ex:id="@az/aH" ex:visibility="2" ex:layout_width="24dp" ex:layout_height="-1" ex:src="0x7f0200f8" ex:scaleType="3" ex:layout_marginEnd="8dp" />
+        <LinearLayout ex:orientation="0" ex:id="@az/aa" ex:layout_width="-2" ex:layout_height="-2" ex:layout_weight="1.0">
+            <TextView ex:textAppearance="?unknown_attr_ref: 1010042" ex:textSize="0x7f0b0073" ex:textColor="0x7f0a00a5" ex:id="@cob/N" ex:visibility="2" ex:layout_width="-2" ex:layout_height="-2" ex:singleLine="true" ex:layout_weight="0.0" ex:textDirection="3" />
+            <TextView ex:textAppearance="?unknown_attr_ref: 1010042" ex:textSize="0x7f0b0073" ex:textColor="0x7f0a00a5" ex:id="@az/ao" ex:visibility="2" ex:layout_width="-2" ex:layout_height="-2" ex:singleLine="false" ex:layout_weight="1.0" ex:textAlignment="5" ex:layout_marginStart="6dp" />
+        </LinearLayout>
+        <TextView ex:textAppearance="?unknown_attr_ref: 1010042" ex:textSize="0x7f0b0073" ex:textColor="0x7f0a00a5" ex:id="@az/N" ex:visibility="2" ex:layout_width="-2" ex:layout_height="-2" ex:singleLine="true" ex:layout_weight="0.0" ex:textAlignment="6" />
+    </LinearLayout>
+    <TextView ex:textAppearance="?unknown_attr_ref: 1010042" ex:textColor="0x7f0a00a6" ex:ellipsize="3" ex:id="@az/r" ex:visibility="2" ex:layout_width="-2" ex:layout_height="-2" ex:maxLines="1" />
+</LinearLayout>

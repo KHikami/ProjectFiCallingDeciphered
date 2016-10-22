@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1"
+        <LinearLayout android:gravity="50" android:orientation="1" android:id="@az/ax" android:background="0x7f0a00a4" android:paddingTop="0x7f0b0061" android:clipChildren="false" android:clipToPadding="false" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0" android:elevation="@buf/kf">
+            <include android:gravity="11" android:layout_width="-1" android:layout_height="0dp" android:minHeight="0x7f0b005f" android:layout_weight="1.0" android:animateLayoutChanges="true" layout="0x7f040076" />
+            <fragment android:name="com.android.incallui.CallButtonFragment" android:id="@az/m" android:layout_width="-1" android:layout_height="-2" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="-1" android:layout_height="0dp" android:layout_weight="2.0">
+            <FrameLayout android:id="@az/s" android:layout_width="-1" android:layout_height="-1">
+                <ImageView android:id="@az/ap" android:background="0x7f0a00ab" android:layout_width="-1" android:layout_height="-1" android:src="@buf/kF" android:scaleType="6" android:importantForAccessibility="2" />
+                <LinearLayout android:orientation="1" android:id="@az/F" android:background="0x7f0a00a1" android:visibility="2" android:layout_width="-1" android:layout_height="-1">
+                    <TextView android:textSize="0x7f0b00ad" android:textColor="0x7f0a0060" android:layout_gravity="1" android:id="@az/E" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="0x7f0b00ac" android:fontFamily="sans-serif-medium" />
+                    <ListView android:id="@az/D" android:layout_width="-1" android:layout_height="-1" android:divider="@rl/c" android:dividerHeight="0x7f0b00a8" />
+                </LinearLayout>
+            </FrameLayout>
+            <fragment android:name="com.android.incallui.VideoCallFragment" android:layout_gravity="31" android:id="0x7f0c00c7" android:layout_width="-1" android:layout_height="-1" android:layout_alignParentTop="true" />
+            <FrameLayout android:id="@az/ay" android:background="#63000000" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <ProgressBar android:layout_gravity="11" android:id="0x7f0c00c6" android:layout_width="48dp" android:layout_height="48dp" android:indeterminate="true" style="@*style/Widget.Material.ProgressBar" />
+            </FrameLayout>
+            <include android:layout_width="-1" android:layout_height="-2" layout="0x7f040063" />
+            <FrameLayout android:layout_gravity="51" android:id="@az/e" android:layout_width="-1" android:layout_height="-1" android:layout_alignParentBottom="true" android:elevation="0x7f0b00e6" />
+            <FrameLayout android:id="@az/Q" android:background="0x7f020099" android:layout_width="@buf/ka" android:layout_height="@buf/ka" android:layout_marginBottom="0x7f0b0103" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageButton android:id="@az/P" android:background="0x7f020092" android:layout_width="-1" android:layout_height="-1" android:src="0x7f020097" android:scaleType="5" android:contentDescription="0x7f0f0247" />
+            </FrameLayout>
+            <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@az/C" android:background="0x106000b" android:padding="0x7f0b0062" android:visibility="2" android:layout_width="-1" android:layout_height="-2" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="0x7f040079" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:focusableInTouchMode="true" android:layout_width="-1" android:layout_height="-2">
+    <TextView android:textSize="0x7f0b014b" android:textColor="@gwb/ec" android:gravity="800013" android:layout_width="-1" android:layout_height="-2" android:text="@gwb/tF" />
+    <TextView android:textSize="0x7f0b014c" android:textColor="0x7f0e00cd" android:gravity="800013" android:paddingTop="20dp" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a006e" />
+    <EditText android:textSize="0x7f0b001b" android:textColor="@gwb/ec" android:textColorHint="@gwb/ec" android:id="@bn/n" android:longClickable="true" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="20dp" android:hint="0x7f0a0072" android:singleLine="true" android:maxLength="4" android:inputType="3" />
+    <TextView android:textSize="0x7f0b0019" android:textColor="0x7f0e0102" android:id="@bn/l" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="8dp" android:layout_marginTop="12dp" android:text="0x7f0a0070" />
+    <Button android:textSize="14sp" android:textColor="0x7f0e00cd" android:id="@bn/p" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a006f" android:drawableLeft="0x7f02062f" android:drawablePadding="8dp" android:textAllCaps="true" android:drawableStart="0x7f02062f" style="0x7f0c0019" />
+</LinearLayout>

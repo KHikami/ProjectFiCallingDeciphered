@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <LinearLayout hangouts:layout_gravity="11" hangouts:orientation="0" hangouts:id="@gwb/oS" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_marginTop="0x7f0b0080">
+        <com.google.android.apps.hangouts.views.AvatarView hangouts:id="@gwb/or" hangouts:visibility="2" hangouts:layout_width="0x7f0b0081" hangouts:layout_height="0x7f0b0081" hangouts:avatarViewSize="medium" />
+        <com.google.android.apps.hangouts.views.AvatarView hangouts:id="@gwb/os" hangouts:avatarViewSize="medium" style="0x7f0c0032" />
+        <com.google.android.apps.hangouts.views.AvatarView hangouts:id="@gwb/ot" hangouts:avatarViewSize="medium" style="0x7f0c0032" />
+        <com.google.android.apps.hangouts.views.AvatarView hangouts:id="@gwb/ou" hangouts:avatarViewSize="medium" style="0x7f0c0032" />
+        <TextView hangouts:textSize="0x7f0b0083" hangouts:textColor="@gwb/ec" hangouts:gravity="11" hangouts:id="@gwb/oP" hangouts:background="0x7f020675" style="0x7f0c0032" />
+    </LinearLayout>
+</merge>

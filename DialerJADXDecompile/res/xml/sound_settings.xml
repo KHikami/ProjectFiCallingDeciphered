@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+    <com.android.dialer.app.settings.DefaultRingtonePreference android:persistent="false" android:title="0x7f0f02a1" android:key="@cob/cJ" android:dialogTitle="0x7f0f02a1" android:ringtoneType="1" />
+    <CheckBoxPreference android:persistent="false" android:title="0x7f0f031d" android:key="@cob/ds" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="false" android:title="0x7f0f0174" android:key="@cob/cG" android:defaultValue="true" />
+    <ListPreference android:entries="0x7f080003" android:title="0x7f0f0176" android:key="@cob/ce" android:entryValues="0x7f080004" />
+</PreferenceScreen>

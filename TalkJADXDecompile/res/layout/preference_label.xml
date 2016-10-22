@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="10" android:paddingLeft="16dp" android:paddingRight="16dp" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-2" android:minHeight="?unknown_attr_ref: 1010387">
+    <ImageView android:layout_gravity="11" android:id="@co/b" android:paddingRight="12dp" android:layout_width="-2" android:layout_height="-2" android:contentDescription="0x7f0a05f9" />
+    <RelativeLayout android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+        <TextView android:textSize="16sp" android:textColor="?unknown_attr_ref: 1010036" android:ellipsize="4" android:id="@co/i" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="?unknown_attr_ref: 1010038" android:id="@co/g" android:layout_width="-2" android:layout_height="-2" android:maxLines="10" android:layout_below="@co/i" />
+        <TextView android:textSize="16sp" android:textColor="0x7f0e0092" android:id="@co/c" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" />
+        <FrameLayout android:id="@co/f" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true">
+            <ProgressBar android:padding="5dp" android:layout_width="-2" android:layout_height="-2" android:indeterminate="true" style="?unknown_attr_ref: 1010079" />
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="10" android:orientation="1" android:id="@co/j" android:layout_width="-2" android:layout_height="-1" /> />

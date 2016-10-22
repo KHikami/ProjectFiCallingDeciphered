@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:paddingLeft="0x7f0b0042" app:paddingTop="0x7f0b0043" app:paddingRight="0x7f0b0042" app:paddingBottom="0x7f0b0043" app:layout_width="-1" app:layout_height="-2">
+    <view app:id="@ba/ak" app:descendantFocusability="2" app:layout_width="-1" app:layout_height="-2" app:foreground="?unknown_attr_ref: 101030e" app:cardCornerRadius="4dp" app:cardElevation="2dp" app:cardUseCompatPadding="true" app:cardPreventCornerOverlap="true" class="com.google.android.apps.hangouts.invites.conversationinvitelist.impl.InviteItemView">
+        <LinearLayout app:orientation="1" app:id="0x7f0d0177" app:layout_width="-1" app:layout_height="-2"
+            <LinearLayout app:orientation="0" app:id="0x7f0d0178" app:layout_width="-1" app:layout_height="-2">
+                <ImageView app:layout_gravity="30" app:id="@gwb/qF" app:layout_width="0x7f0b004b" app:layout_height="0x7f0b004b" app:layout_margin="0x7f0b004a" />
+                <LinearLayout app:layout_gravity="30" app:orientation="1" app:id="0x7f0d017a" app:layout_width="-2" app:layout_height="-2" app:layout_margin="0dp" app:layout_toRightOf="@gwb/qF">
+                    <TextView app:textStyle="0x7f0f0036" app:textColor="0x7f0e0091" app:id="@ba/cN" app:layout_width="-2" app:layout_height="-2" app:fontFamily="0x7f0a0b3c" style="0x7f0c001e" />
+                    <TextView app:textColor="0x7f0e0090" app:id="@gwb/qG" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="0x7f0b0048" app:maxWidth="0x7f0b004c" app:maxLines="2" app:layout_below="@ba/cN" style="0x7f0c0020" />
+                    <TextView app:textColor="0x7f0e0090" app:id="@gwb/qH" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:maxWidth="0x7f0b004c" app:maxLines="1" app:layout_below="@gwb/qG" app:layout_alignWithParentIfMissing="true" style="0x7f0c0020" />
+                    <FrameLayout app:id="@gwb/qD" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="0x7f0b0049" app:layout_below="@gwb/qH" app:layout_alignWithParentIfMissing="true" style="0x7f0c0021">
+                        <TextView app:textColor="@gwb/dZ" app:id="@ba/cK" app:layout_width="-2" app:layout_height="-2" app:fontFamily="sans-serif" style="0x7f0c0022" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout app:id="0x7f0d0141" app:paddingLeft="0x7f0b003f" app:layout_width="-1" app:layout_height="-2" app:layout_below="0x7f0d0178">
+                <View app:id="0x7f0d0180" app:background="@bc/uJ" app:layout_width="-1" app:layout_height="1dp" />
+                <Button app:textColor="0x7f0e0090" app:id="@ba/nl" app:layout_width="-2" app:layout_height="-2" app:text="0x7f0a00d2" app:layout_below="0x7f0d0180" style="0x7f0c0026" />
+                <Button app:textColor="0x7f0e001e" app:id="@ba/nf" app:layout_width="-2" app:layout_height="-2" app:text="0x7f0a00d3" style="0x7f0c001f" />
+            </RelativeLayout>
+        </LinearLayout>
+    </view>
+</RelativeLayout>

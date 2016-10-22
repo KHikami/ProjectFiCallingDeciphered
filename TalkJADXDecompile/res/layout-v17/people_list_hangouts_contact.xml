@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="10" android:id="@ba/cT" android:paddingRight="16dp" android:layout_width="-1" android:layout_height="-2" android:minHeight="72dp" android:paddingEnd="16dp">
+    <FrameLayout android:layout_gravity="10" android:id="0x7f0d01a1" android:layout_width="72dp" android:layout_height="72dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <com.google.android.apps.hangouts.views.AvatarView android:layout_gravity="11" android:id="@bn/r" android:layout_width="40dp" android:layout_height="40dp" android:importantForAccessibility="2" />
+        <ImageView android:layout_gravity="11" android:id="@ba/W" android:background="@r$drawable/a" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="5" />
+        <ImageView android:layout_gravity="53" android:id="@ba/cl" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="44dp" android:layout_marginBottom="36dp" android:src="0x7f0204a2" android:layout_marginStart="44dp" />
+    </FrameLayout>
+    <LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:layout_toLeftOf="0x7f0d01bd" android:layout_toRightOf="0x7f0d01a1" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_toStartOf="0x7f0d01bd" android:layout_toEndOf="0x7f0d01a1">
+        <TextView android:id="@bm/Q" android:layout_width="-2" android:layout_height="-2" style="0x7f0c0291" />
+        <TextView android:id="@ba/aE" android:layout_width="-2" android:layout_height="-2" style="0x7f0c0292" />
+    </LinearLayout>
+</RelativeLayout>

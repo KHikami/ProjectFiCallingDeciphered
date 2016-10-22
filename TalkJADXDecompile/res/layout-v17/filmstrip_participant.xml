@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.elane.FilmstripParticipantView android:background="0x7f0e0039" android:clickable="true" android:layout_width="-1" android:layout_height="-1" android:translationY="@gwb/nZ">
+    <FrameLayout android:id="@gwb/oL" android:layout_width="-1" android:layout_height="-1" android:layout_centerInParent="true"
+        <FrameLayout android:id="@gwb/oI" android:background="0x7f0e00c6" android:layout_width="-1" android:layout_height="-1">
+            <ImageView android:id="@gwb/oJ" android:layout_width="-1" android:layout_height="-1" android:src="@r$drawable/h" android:scaleType="6" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@gwb/oK" android:background="0x7f02048a" android:visibility="2" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="0x7f0b006b" android:layout_marginTop="0x7f0b006b" android:layout_marginRight="0x7f0b006b" android:layout_marginBottom="0x7f0b006b" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerInParent="true" android:layout_marginStart="0x7f0b006b" android:layout_marginEnd="0x7f0b006b" android:layout_alignParentStart="true" style="0x7f0c0035" />
+    <RelativeLayout android:paddingLeft="0x7f0b0070" android:paddingRight="0x7f0b0071" android:paddingBottom="0x7f0b0072" android:clipChildren="false" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true" android:paddingStart="0x7f0b0070" android:paddingEnd="0x7f0b0071">
+        <TextView android:textSize="0x7f0b006f" android:textColor="0x7f0e003b" android:ellipsize="3" android:id="@gwb/oA" android:focusable="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:maxLines="1" android:layout_toLeftOf="0x7f0d022e" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:fontFamily="sans-serif" android:layout_toStartOf="0x7f0d022e" android:layout_alignParentStart="true" />
+        <FrameLayout android:id="0x7f0d022e" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+            <include layout="0x7f040177" />
+            <ImageView android:id="@gwb/oq" android:layout_width="-2" android:layout_height="-2" android:src="0x7f020489" />
+        </FrameLayout>
+    </RelativeLayout>
+</com.google.android.apps.hangouts.elane.FilmstripParticipantView>

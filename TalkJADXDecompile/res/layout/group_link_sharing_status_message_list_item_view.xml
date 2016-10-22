@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.views.GroupLinkSharingStatusMessageListItemView android:layout_width="-1" android:layout_height="-2">
+    <LinearLayout style="0x7f0c0049">
+        <ImageView android:id="@co/b" android:src="0x7f020606" style="0x7f0c004a" />
+        <ImageView android:id="@ba/ct" android:src="0x7f020609" style="0x7f0c004a" />
+        <TextView android:id="@bm/C" style="0x7f0c004b" />
+    </LinearLayout>
+</com.google.android.apps.hangouts.views.GroupLinkSharingStatusMessageListItemView>

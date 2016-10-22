@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+    <SwitchPreference android:persistent="true" android:title="@buf/lF" android:key="@buf/lI" android:defaultValue="true" />
+    <SwitchPreference android:persistent="true" android:title="0x7f0f0274" android:key="@buf/lL" android:summary="0x7f0f0273" />
+    <Preference android:persistent="false" android:title="0x7f0f0213" android:key="@buf/lG">
+        <intent android:action="dummy" />
+    </Preference>
+    <PreferenceScreen android:persistent="false" android:title="0x7f0f031f" android:key="@buf/lK">
+        <intent android:action="com.google.android.gms.location.settings.GOOGLE_LOCATION_SETTINGS" />
+    </PreferenceScreen>
+    <SwitchPreference android:title="0x7f0f020f" android:key="@buf/lJ" android:summary="0x7f0f020e" />
+    <com.google.android.apps.dialer.settings.TextViewPreference android:key="@buf/lH" />
+</PreferenceScreen>

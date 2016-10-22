@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="0x7f0c0126" android:clipChildren="false" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0">
+        <Space style="0x7f1000ab" />
+        <include layout="0x7f040051" />
+        <include android:id="@az/aN" style="0x7f1000a5" layout="0x7f040050" />
+        <include android:id="@az/aM" style="0x7f1000a5" layout="0x7f040050" />
+        <Space style="0x7f1000ab" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0">
+        <Space style="0x7f1000ab" />
+        <include android:id="@az/S" style="0x7f1000a5" layout="0x7f040050" />
+        <include android:id="@az/O" style="0x7f1000a5" layout="0x7f040050" />
+        <include android:id="@az/aG" style="0x7f1000a5" layout="0x7f040050" />
+        <Space style="0x7f1000ab" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0">
+        <Space style="0x7f1000ab" />
+        <include android:id="@az/aF" style="0x7f1000a5" layout="0x7f040050" />
+        <include android:id="@az/M" style="0x7f1000a5" layout="0x7f040050" />
+        <include android:id="@az/ai" style="0x7f1000a5" layout="0x7f040050" />
+        <Space style="0x7f1000ab" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0">
+        <Space style="0x7f1000ab" />
+        <include layout="0x7f040053" />
+        <include layout="0x7f040054" />
+        <include layout="0x7f040052" />
+        <Space style="0x7f1000ab" />
+    </LinearLayout>
+    <Space android:layout_width="-1" android:layout_height="0x7f0b00db" />
+</LinearLayout>

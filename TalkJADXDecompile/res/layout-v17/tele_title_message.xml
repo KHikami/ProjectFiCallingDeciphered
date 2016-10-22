@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <TextView android:gravity="800013" android:orientation="0" android:id="0x1020016" android:paddingTop="0x7f0b000f" android:paddingBottom="0x7f0b0010" android:layout_width="-1" android:layout_height="-2" android:paddingStart="0x7f0b000f" android:paddingEnd="0x7f0b000f" style="0x7f0c0014" />
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:minHeight="0x7f0b0017">
+        <ScrollView android:clipToPadding="false" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:id="0x102000b" android:paddingTop="0x7f0b000f" android:paddingBottom="0x7f0b000f" android:layout_width="-1" android:layout_height="-2" android:paddingStart="0x7f0b000f" android:paddingEnd="0x7f0b000f" style="@*style/TextAppearance.Medium" />
+        </ScrollView>
+    </LinearLayout>
+    <include layout="0x7f040162" />
+</LinearLayout>

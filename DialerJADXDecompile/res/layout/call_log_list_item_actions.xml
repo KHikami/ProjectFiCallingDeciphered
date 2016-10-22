@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="10" android:orientation="1" android:id="0x7f0c00ed" android:visibility="0" android:layout_width="-1" android:layout_height="-2" android:importantForAccessibility="1">
+    <com.android.dialer.app.voicemail.VoicemailPlaybackLayout android:id="@aq/bJ" android:layout_width="-1" android:layout_height="-2" />
+    <View android:background="0x7f0a0036" android:layout_width="-1" android:layout_height="1dp" />
+    <LinearLayout android:id="@aq/o" android:paddingTop="0x7f0b007a" style="0x7f100096">
+        <ImageView android:src="@cob/ap" style="0x7f100095" />
+        <LinearLayout android:gravity="10" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:id="@aq/p" android:text="0x7f0f0110" style="0x7f100098" />
+            <TextView android:id="@aq/E" style="0x7f100097" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@aq/bF" style="0x7f100096">
+        <ImageView android:src="@cob/aL" style="0x7f100095" />
+        <TextView android:text="0x7f0f0079" style="0x7f100098" />
+    </LinearLayout>
+    <LinearLayout android:id="@aq/U" style="0x7f100096">
+        <ImageView android:src="@cob/aC" style="0x7f100095" />
+        <TextView android:text="@cob/cN" style="0x7f100098" />
+    </LinearLayout>
+    <LinearLayout android:id="@aq/d" style="0x7f100096">
+        <ImageView android:src="@cob/aB" style="0x7f100095" />
+        <TextView android:text="@cob/cK" style="0x7f100098" />
+    </LinearLayout>
+    <LinearLayout android:id="@aq/bp" style="0x7f100096">
+        <ImageView android:src="@cob/ax" style="0x7f100095" />
+        <TextView android:text="0x7f0f0077" style="0x7f100098" />
+    </LinearLayout>
+    <LinearLayout android:id="@aq/G" style="0x7f100096">
+        <ImageView android:src="0x7f0200ae" style="0x7f100095" />
+        <TextView android:text="0x7f0f00a0" style="0x7f100098" />
+    </LinearLayout>
+    <LinearLayout android:id="@aq/bf" android:visibility="2" style="0x7f100096">
+        <ImageView android:src="0x7f0200e7" style="0x7f100095" />
+        <TextView android:text="0x7f0f0076" style="0x7f100098" />
+    </LinearLayout>
+    <LinearLayout android:id="@aq/h" android:visibility="2" style="0x7f100096">
+        <ImageView android:src="@cob/ao" style="0x7f100095" />
+        <TextView android:text="0x7f0f0073" style="0x7f100098" />
+    </LinearLayout>
+    <LinearLayout android:id="@aq/f" android:visibility="2" style="0x7f100096">
+        <ImageView android:src="@cob/ao" style="0x7f100095" />
+        <TextView android:text="0x7f0f0072" style="0x7f100098" />
+    </LinearLayout>
+    <LinearLayout android:id="@aq/bE" android:visibility="2" style="0x7f100096">
+        <ImageView android:src="0x7f02011a" style="0x7f100095" />
+        <TextView android:text="0x7f0f0078" style="0x7f100098" />
+    </LinearLayout>
+    <LinearLayout android:id="@aq/aa" style="0x7f100096">
+        <ImageView android:src="0x7f0200c4" style="0x7f100095" />
+        <TextView android:text="0x7f0f0075" style="0x7f100098" />
+    </LinearLayout>
+</LinearLayout>

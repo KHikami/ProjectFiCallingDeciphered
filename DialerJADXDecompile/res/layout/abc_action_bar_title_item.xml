@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2" style="0x7f1000cb">
+    <TextView android:ellipsize="3" android:id="@buf/bg" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+    <TextView android:ellipsize="3" android:id="@buf/bf" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="0x7f0b000c" android:singleLine="true" />
+</LinearLayout>

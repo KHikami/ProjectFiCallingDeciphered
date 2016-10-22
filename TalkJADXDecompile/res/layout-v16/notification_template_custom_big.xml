@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="0x7f0d0304" android:layout_width="-1" android:layout_height="-2">
+    <ImageView android:id="@co/b" android:layout_width="0x7f0b0185" android:layout_height="0x7f0b0186" android:scaleType="5" />
+    <LinearLayout android:layout_gravity="30" android:orientation="1" android:layout_width="-1" android:layout_height="-2"
+        <LinearLayout android:orientation="0" android:id="0x7f0d02ff" android:paddingTop="0x7f0b0192" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="0x7f0b0185" android:minHeight="0x7f0b0186">
+            <FrameLayout android:id="0x7f0d0300" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="0x7f0b0190" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_weight="1.0" />
+            <FrameLayout android:id="0x7f0d0301" android:paddingTop="0x7f0b0193" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="8dp">
+                <ViewStub android:layout_gravity="800035" android:id="@ba/fJ" android:visibility="2" android:layout="0x7f040102" android:layout_width="-2" android:layout_height="-2" />
+                <ViewStub android:layout_gravity="800035" android:id="@ba/X" android:visibility="2" android:layout="0x7f040101" android:layout_width="-2" android:layout_height="-2" />
+                <LinearLayout android:layout_gravity="800055" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="20dp">
+                    <TextView android:textAppearance="0x7f0c014d" android:id="0x7f0d0302" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+                    <ImageView android:layout_gravity="11" android:id="0x7f0d0303" android:visibility="2" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="8dp" android:scaleType="7" android:alpha="0.6" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:id="0x7f0d02fe" android:background="?unknown_attr_ref: 101032c" android:visibility="2" android:layout_width="-1" android:layout_height="1px" android:layout_marginLeft="0x7f0b0185" />
+        <LinearLayout android:orientation="0" android:id="0x7f0d0305" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="0x7f0b0185" android:divider="?unknown_attr_ref: 1010214" android:showDividers="2" android:dividerPadding="12dp" /> />
+</FrameLayout>

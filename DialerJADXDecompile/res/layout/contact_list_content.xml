@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="0x7f0c0095" android:background="?unknown_attr_ref: 7f0100cc" android:layout_width="-1" android:layout_height="-1">
+    <include layout="0x7f04001b" />
+    <FrameLayout android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0">
+        <include layout="0x7f040039" />
+        <view android:id="0x102000a" android:paddingTop="?unknown_attr_ref: 7f0100d1" android:fadingEdge="0" android:clipToPadding="false" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="?unknown_attr_ref: 7f0100ca" android:layout_marginRight="?unknown_attr_ref: 7f0100cb" android:fastScrollEnabled="true" android:layout_marginStart="?unknown_attr_ref: 7f0100ca" android:layout_marginEnd="?unknown_attr_ref: 7f0100cb" class="com.android.contacts.common.list.PinnedHeaderListView" />
+        <ProgressBar android:layout_gravity="11" android:id="0x7f0c0108" android:visibility="2" android:layout_width="-2" android:layout_height="-2" style="?unknown_attr_ref: 101007a" />
+    </FrameLayout>
+</LinearLayout>

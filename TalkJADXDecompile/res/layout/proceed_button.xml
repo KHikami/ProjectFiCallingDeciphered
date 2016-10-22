@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView android:id="@bm/aa" android:background="0x106000d" android:layout_width="56dp" android:layout_height="56dp" android:src="0x7f0205c5" android:scaleType="5" style="0x7f0c00a7" />

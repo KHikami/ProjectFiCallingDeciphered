@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageView android:layout_gravity="10" android:id="@bn/r" style="0x7f0c0222" />
+    <LinearLayout android:layout_gravity="10" android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:ellipsize="3" android:gravity="800003" android:id="@ba/l" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" android:fontFamily="sans-serif-medium" android:textAlignment="5" style="0x7f0c0223" />
+    </LinearLayout>
+</merge>

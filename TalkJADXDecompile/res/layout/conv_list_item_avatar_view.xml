@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view hangouts:id="@ba/B" hangouts:paddingTop="38dp" hangouts:paddingBottom="@gwb/fy" hangouts:layout_width="0x7f0b0039" hangouts:layout_height="0x7f0b0039" hangouts:layout_margin="16dp" hangouts:fadeOutDurationMs="0" hangouts:fadeInDurationMs="100" hangouts:fadeStartPercent="0.25" style="0x7f0c0025" class="com.google.android.apps.hangouts.views.FadeImageView" />

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.conversation.v2.FauxConversationSnackbar android:id="@ba/fo" android:visibility="2" android:clickable="true" android:layout_below="@ba/dL" style="0x7f0c0290" />

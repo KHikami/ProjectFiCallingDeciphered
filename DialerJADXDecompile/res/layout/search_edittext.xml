@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="0" android:id="@aq/bn" android:background="@cob/aR" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="0x7f0b0167" android:layout_marginTop="0x7f0b016a" android:layout_marginRight="0x7f0b0167" android:layout_marginBottom="0x7f0b0159" android:elevation="0x7f0b015d" class="com.android.dialer.app.widget.SearchEditTextLayout">
+    <LinearLayout android:gravity="10" android:orientation="0" android:id="@aq/bh" android:layout_width="-1" android:layout_height="-1" android:paddingStart="0x7f0b0160">
+        <ImageView android:id="@aq/bl" android:padding="0x7f0b0163" android:layout_width="0x7f0b015f" android:layout_height="0x7f0b015f" android:src="0x7f02009c" android:scaleType="5" android:tint="0x7f0a00e0" android:importantForAccessibility="2" />
+        <TextView android:textSize="0x7f0b0165" android:textColorHint="0x7f0a00df" android:gravity="10" android:id="@aq/bj" android:layout_width="0dp" android:layout_height="-2" android:layout_marginLeft="0x7f0b015c" android:hint="@cob/bX" android:layout_weight="1.0" android:fontFamily="0x7f0f02a3" />
+        <ImageView android:id="@aq/bI" android:background="?unknown_attr_ref: 101045c" android:clickable="true" android:layout_width="0x7f0b015f" android:layout_height="-1" android:src="0x7f0200e3" android:scaleType="5" android:tint="0x7f0a00e0" android:contentDescription="0x7f0f0132" />
+        <ImageButton android:id="@aq/aj" android:background="?unknown_attr_ref: 101045c" android:layout_width="0x7f0b015f" android:layout_height="-1" android:src="0x7f0200e8" android:scaleType="5" android:tint="0x7f0a00e0" android:contentDescription="0x7f0f0030" android:paddingEnd="0x7f0b0162" />
+    </LinearLayout>
+    <include layout="0x7f040077" />
+</view>

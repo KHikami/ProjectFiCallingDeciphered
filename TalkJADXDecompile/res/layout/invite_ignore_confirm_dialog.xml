@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:theme="0x7f0c0298" android:paddingLeft="8dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:weightSum="1.0">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010040" android:textColor="@gwb/dZ" android:id="@ba/bQ" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="10dp" android:singleLine="true" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010034" android:textColor="@gwb/dZ" android:id="@ba/bO" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="-1" android:layout_height="0dp" android:layout_marginBottom="8dp" android:layout_weight="0.55" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010034" android:textColor="@gwb/dZ" android:id="0x7f0d02bf" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="8dp" android:text="0x7f0a08df" />
+        <CheckBox android:textAppearance="?unknown_attr_ref: 1010034" android:textColor="@gwb/dZ" android:id="@ba/bR" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="8dp" android:checked="false" android:text="0x7f0a08e1" />
+        <CheckBox android:textAppearance="?unknown_attr_ref: 1010034" android:textColor="@gwb/dZ" android:id="@ba/bP" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="8dp" android:checked="false" android:text="0x7f0a08e0" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010034" android:textColor="@gwb/dZ" android:id="@ba/cH" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="8dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item android:drawable="0x7f020105" android:left="2dp" android:top="5dp" android:right="18dp" android:bottom="5dp" />
+    <item android:drawable="0x7f020104" android:left="9.5dp" android:top="4.5dp" android:right="9.5dp" android:bottom="4.5dp" />
+    <item android:drawable="0x7f020105" android:left="18dp" android:top="5dp" android:right="2dp" android:bottom="5dp" />
+</layer-list>

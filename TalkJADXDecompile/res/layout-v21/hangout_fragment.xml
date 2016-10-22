@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+    <com.google.android.apps.hangouts.hangout.FocusedParticipantView android:id="@ba/bJ" android:layout_width="-1" android:layout_height="-1" />
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="0x7f0b021a">
+        <FrameLayout android:layout_width="-2" android:layout_height="-1">
+            <com.google.android.apps.hangouts.hangout.BroadcastOverlayView android:layout_gravity="15" android:orientation="1" android:id="@ba/bC" android:layout_width="-2" android:layout_height="-2" android:layout_margin="4dp">
+                <TextView android:layout_gravity="35" android:id="@ba/bB" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_margin="4dp" />
+                <TextView android:layout_gravity="55" android:id="@ba/bD" android:background="0x7f0e0274" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_margin="4dp" style="0x7f0c0270" />
+            </com.google.android.apps.hangouts.hangout.BroadcastOverlayView>
+        </FrameLayout>
+        <com.google.android.apps.hangouts.hangout.DebugOverlayTextView android:textAppearance="?unknown_attr_ref: 1010044" android:id="@ba/bF" android:background="0x7f0e0252" android:visibility="2" android:scrollbars="200" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="0x7f0b01ec" android:layout_marginBottom="@gwb/eU" />
+    </LinearLayout>
+    <FrameLayout android:id="@ba/bK" android:background="0x7f020494" android:paddingTop="0x7f0b022c" android:visibility="2" android:layout_width="-1" android:layout_height="0x7f0b021f" android:layout_alignParentTop="true" android:alpha="0.0">
+        <include layout="0x7f0400b1" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="-1" android:layout_height="-1" android:layout_alignParentBottom="true">
+        <com.google.android.apps.hangouts.hangout.ParticipantTrayView android:layout_gravity="800055" android:id="@ba/cb" android:layout_width="-1" android:layout_height="-2" />
+        <com.google.android.apps.hangouts.hangout.HangoutSelfMenu android:layout_gravity="51" android:orientation="0" android:id="@ba/cc" android:layout_width="-2" android:layout_height="0x7f0b0215" />
+    </FrameLayout>
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="-1" android:layout_height="-1">
+        <include layout="0x7f0400c1" />
+        <LinearLayout android:id="0x7f0d0269" android:background="@gwb/eu" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="?unknown_attr_ref: 7f0100ee">
+            <FrameLayout android:orientation="1" android:id="0x7f0d026a" android:paddingLeft="0x7f0b0265" android:paddingTop="0x7f0b0267" android:paddingRight="0x7f0b0266" android:paddingBottom="0x7f0b0268" android:layout_width="0x7f0b0264" android:layout_height="-2" android:layout_weight="1.0" android:layout_centerVertical="true">
+                <TextView android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0796" android:layout_alignParentLeft="true" style="0x7f0c024d" />
+            </FrameLayout>
+            <View android:background="0x7f0e024f" android:layout_width="0x7f0b0269" android:layout_height="-1" android:layout_marginTop="0x7f0b026a" android:layout_marginBottom="0x7f0b026b" />
+            <Button android:textColor="0x7f0e02b7" android:id="0x7f0d026b" android:background="0x7f02006f" android:paddingLeft="0x7f0b026c" android:paddingRight="0x7f0b026d" android:layout_width="-2" android:layout_height="-1" android:text="0x7f0a0797" android:contentDescription="0x7f0a0798" android:textAllCaps="true" style="0x7f0c024e" />
+        </LinearLayout>
+        <include layout="0x7f0400b0" />
+        <LinearLayout android:orientation="1" android:id="@ba/cR" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+            <com.google.android.apps.hangouts.hangout.HangoutSelfMenu android:layout_gravity="11" android:orientation="0" android:id="@ba/bL" android:layout_width="-2" android:layout_height="0x7f0b0215" android:layout_marginBottom="@gwb/eS" />
+            <FrameLayout android:background="0x7f0e00c6" android:layout_width="-1" android:layout_height="0x7f0b0217" />
+            <Button android:textAppearance="?unknown_attr_ref: 1010040" android:textSize="0x7f0b0219" android:textColor="@gwb/ec" android:layout_gravity="51" android:id="@ba/cQ" android:background="0x7f020573" android:layout_width="-1" android:layout_height="0x7f0b0218" android:text="0x7f0a0779" android:textAllCaps="true" />
+        </LinearLayout>
+        <com.google.android.libraries.quantum.snackbar.Snackbar android:id="@ba/cd" android:visibility="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:translationZ="30dp" style="0x7f0c028f" />
+    </RelativeLayout>
+    <view android:id="@ba/ek" android:background="0x7f0e00c6" android:visibility="2" android:layout_width="-1" android:layout_height="-1" class="com.google.android.apps.hangouts.hangout.ProximityCoverView" />
+</RelativeLayout>

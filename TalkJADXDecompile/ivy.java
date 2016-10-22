@@ -1,0 +1,3 @@
+interface ivy {
+    ixl a();
+}

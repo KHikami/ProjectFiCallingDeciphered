@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:gravity="30" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+        <android.support.v4.view.ViewPager android:id="@ba/bc" android:background="@r$drawable/emoji_v2_top_bottom_border" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0" />
+        <com.google.android.apps.hangouts.views.EmojiCategoryPageIndicatorView android:id="@ba/aV" android:visibility="2" android:layout_width="-1" android:layout_height="-2" />
+        <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:textSize="0x7f0b01dd" android:textStyle="1" android:textColor="@bc/uZ" android:gravity="11" android:id="@gwb/mq" android:background="@r$drawable/emoji_v2_alphabet_button" android:layout_width="0dp" android:layout_height="-1" android:text="0x7f0a08c2" android:layout_weight="1.0" />
+            <TabHost android:id="@ba/aW" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="6.0">
+                <TabWidget android:id="0x1020013" android:layout_width="-1" android:layout_height="42dp" android:tabStripEnabled="false" />
+                <FrameLayout android:id="0x1020011" android:layout_width="0dp" android:layout_height="0dp">
+                    <View android:id="@ba/eF" android:visibility="2" android:layout_width="0dp" android:layout_height="0dp" />
+                    <View android:id="@ba/bg" android:visibility="2" android:layout_width="0dp" android:layout_height="0dp" />
+                    <View android:id="@ba/dE" android:visibility="2" android:layout_width="0dp" android:layout_height="0dp" />
+                    <View android:id="@ba/dz" android:visibility="2" android:layout_width="0dp" android:layout_height="0dp" />
+                    <View android:id="@ba/eb" android:visibility="2" android:layout_width="0dp" android:layout_height="0dp" />
+                    <View android:id="@ba/fA" android:visibility="2" android:layout_width="0dp" android:layout_height="0dp" />
+                </FrameLayout>
+            </TabHost>
+            <ImageButton android:id="@ba/ba" android:background="@r$drawable/emoji_v2_backspace_button" android:layout_width="0dp" android:layout_height="-1" android:src="0x7f0205c7" android:layout_weight="1.0" android:contentDescription="0x7f0a0ac2" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

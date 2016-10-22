@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="30" android:layout_gravity="30" android:orientation="1" android:background="0x7f0e00ca" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="-1" android:layout_height="-2"
+    <LinearLayout android:orientation="1" android:id="0x7f0d0115" android:background="0x106000b" android:paddingTop="20dp" android:paddingBottom="8dp" android:focusable="true" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textSize="16sp" android:textStyle="1" android:textColor="@gwb/dZ" android:id="0x7f0d0116" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:text="0x7f0a024e" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" />
+        <TextView android:textSize="14sp" android:textColor="@bc/va" android:id="0x7f0d0117" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="0x7f0a024f" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" />
+        <LinearLayout android:layout_gravity="800005" android:orientation="0" android:padding="8dp" android:layout_width="-2" android:layout_height="-2">
+            <Button android:textSize="14sp" android:textColor="@gwb/sj" android:id="@gwb/iL" android:background="0x7f020699" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="-2" android:layout_height="36dp" android:layout_marginRight="8dp" android:text="0x7f0a0250" android:textAllCaps="true" android:paddingStart="8dp" android:paddingEnd="8dp" android:layout_marginEnd="8dp" style="?unknown_attr_ref: 101032b" />
+            <Button android:textSize="14sp" android:textColor="0x106000b" android:id="@gwb/iM" android:background="0x7f020493" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="-2" android:layout_height="36dp" android:layout_marginRight="8dp" android:text="0x7f0a0251" android:textAllCaps="true" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginEnd="8dp" style="?unknown_attr_ref: 101032b" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

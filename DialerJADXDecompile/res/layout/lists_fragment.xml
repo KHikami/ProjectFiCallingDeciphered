@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="0x7f0c015b" android:layout_width="-1" android:layout_height="-1" android:animateLayoutChanges="true">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+        <FrameLayout android:background="0x7f0a0007" android:layout_width="-1" android:layout_height="@buf/hh" android:elevation="0x7f0b0178" />
+        <com.android.contacts.common.list.ViewPagerTabs android:layout_gravity="30" android:orientation="0" android:id="@aq/aA" android:layout_width="-1" android:layout_height="0x7f0b0179" android:textAllCaps="true" android:elevation="0x7f0b0178" style="0x7f1000b0" />
+        <android.support.v4.view.ViewPager android:id="@aq/az" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.android.dialer.app.list.RemoveView android:id="@aq/bb" android:layout_width="-1" android:layout_height="0x7f0b0179" android:layout_marginTop="@buf/hh" android:contentDescription="0x7f0f0295" android:importantForAccessibility="2">
+        <LinearLayout android:gravity="11" android:orientation="0" android:id="@aq/bc" android:background="0x7f0a0007" android:visibility="2" android:layout_width="-1" android:layout_height="-1">
+            <ImageView android:id="@aq/bd" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:src="@cob/aG" android:tint="@cob/ah" />
+            <TextView android:textSize="0x7f0b0158" android:textColor="@cob/ah" android:id="@aq/be" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0f0295" />
+        </LinearLayout>
+    </com.android.dialer.app.list.RemoveView>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="-1" android:layout_height="-1" android:layout_marginTop="48dp" android:layout_marginBottom="48dp" android:overScrollMode="1">
+    <LinearLayout android:orientation="1" android:id="0x7f0d0353" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010045" android:id="@co/e" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="48dp" />
+    </LinearLayout>
+</ScrollView>

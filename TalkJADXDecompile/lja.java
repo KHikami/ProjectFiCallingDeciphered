@@ -1,0 +1,17 @@
+import java.util.UUID;
+
+abstract class lja extends liu {
+    private final ljm b;
+
+    lja(String str, UUID uuid, ljm ljm) {
+        super(str, uuid);
+        bm.a(ljm.d);
+        this.b = ljm;
+    }
+
+    lja(String str, ljo ljo, ljm ljm) {
+        super(str, ljo);
+        bm.a(ljm.d);
+        this.b = ljm;
+    }
+}

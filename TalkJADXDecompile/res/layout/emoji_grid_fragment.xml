@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView android:gravity="11" android:id="@ba/aX" android:layout_width="-1" android:layout_height="-1" android:listSelector="@r$drawable/emoji_grid_item_selector" android:stretchMode="2" android:columnWidth="@gwb/eH" android:numColumns="-1" />

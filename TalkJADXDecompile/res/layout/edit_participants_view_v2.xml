@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.peoplelistv2.impl.EditParticipantsView android:layout_gravity="800013" android:id="0x7f0d0207" android:layout_width="-1" android:layout_height="-2">
+    <com.google.android.apps.hangouts.peoplelistv2.impl.ScrollViewCustom custom:layout_gravity="800013" custom:orientation="1" custom:id="@bm/U" custom:background="0x106000d" custom:scrollbars="0" custom:clipToPadding="false" custom:layout_width="-1" custom:layout_height="-2" custom:min_height="0x7f0b0022">
+        <LinearLayout custom:orientation="1" custom:layout_width="-1" custom:layout_height="-2">
+            <com.google.android.apps.hangouts.views.MultiLineLayout custom:id="@bm/Z" custom:layout_width="-1" custom:layout_height="-2">
+                <com.google.android.apps.hangouts.peoplelistv2.impl.DeleteOnEmptyEditText custom:textSize="@gwb/sx" custom:textColor="@gwb/dY" custom:textColorHint="@bc/va" custom:ellipsize="3" custom:layout_gravity="30" custom:id="@bm/T" custom:background="#00ffffff" custom:layout_width="-2" custom:layout_height="0x7f0b0022" custom:hint="@gwb/tj" custom:minEms="5" custom:inputType="80021" custom:imeOptions="10000000" custom:textCursorDrawable="0x7f0200c1" />
+            </com.google.android.apps.hangouts.views.MultiLineLayout>
+        </LinearLayout>
+    </com.google.android.apps.hangouts.peoplelistv2.impl.ScrollViewCustom>
+</com.google.android.apps.hangouts.peoplelistv2.impl.EditParticipantsView>

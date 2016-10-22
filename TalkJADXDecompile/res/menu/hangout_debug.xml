@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item android:id="@ba/di" android:title="Simulate network error" />
+    <item android:id="0x7f0d0403" android:title="Stress join" />
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list>
+    <item android:duration="33" android:drawable="@r$drawable/r" />
+    <item android:duration="33" android:drawable="@r$drawable/s" />
+    <item android:duration="33" android:drawable="@r$drawable/t" />
+    <item android:duration="33" android:drawable="@r$drawable/u" />
+    <item android:duration="33" android:drawable="@r$drawable/v" />
+    <item android:duration="33" android:drawable="@r$drawable/w" />
+    <item android:duration="33" android:drawable="@r$drawable/x" />
+    <item android:duration="33" android:drawable="@r$drawable/y" />
+    <item android:duration="33" android:drawable="@r$drawable/z" />
+    <item android:duration="33" android:drawable="@r$drawable/A" />
+    <item android:duration="33" android:drawable="@r$drawable/B" />
+    <item android:duration="33" android:drawable="@r$drawable/C" />
+    <item android:duration="33" android:drawable="@r$drawable/D" />
+    <item android:duration="33" android:drawable="@r$drawable/E" />
+    <item android:duration="33" android:drawable="@r$drawable/F" />
+    <item android:duration="33" android:drawable="@r$drawable/G" />
+    <item android:duration="33" android:drawable="@r$drawable/H" />
+    <item android:duration="33" android:drawable="@r$drawable/I" />
+    <item android:duration="33" android:drawable="@r$drawable/J" />
+    <item android:duration="500" android:drawable="@r$drawable/K" />
+</animation-list>

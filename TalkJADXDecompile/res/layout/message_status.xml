@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.views.MessageStatusView android:paddingTop="2dp" android:paddingBottom="10dp" android:layout_width="-2" android:layout_height="30dp" android:importantForAccessibility="4">
+    <LinearLayout android:layout_gravity="800005" android:orientation="0" android:id="@bm/c" android:visibility="1" android:layout_width="-2" android:layout_height="-2">
+        <TextView android:id="@bm/Q" android:layout_width="-2" android:layout_height="-2" style="0x7f0c0045" />
+        <TextView android:id="@ba/fc" android:layout_width="-2" android:layout_height="-2" android:text=" · " style="0x7f0c0045" />
+        <com.google.android.apps.hangouts.views.ScalingTextView android:id="@ba/fJ" android:layout_width="-2" android:layout_height="-2" style="0x7f0c0045" />
+        <ImageView android:layout_gravity="11" android:id="@ba/fl" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="@gwb/fn" android:src="0x7f020562" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="800005" android:orientation="0" android:id="@ba/fa" android:visibility="2" android:layout_width="-2" android:layout_height="-2">
+        <com.google.android.apps.hangouts.views.ScalingTextView android:id="@ba/fb" android:layout_width="-2" android:layout_height="-2" android:text="@bc/cF" style="0x7f0c0045" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="800005" android:orientation="0" android:id="@ba/fm" android:visibility="2" android:layout_width="-2" android:layout_height="-2">
+        <ImageView android:layout_gravity="11" android:id="0x7f0d02f1" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="@gwb/fn" android:src="0x7f020561" />
+        <TextView android:id="0x7f0d02f2" android:layout_width="-2" android:layout_height="-2" android:text="@ba/iA" style="0x7f0c0046" />
+    </LinearLayout>
+</com.google.android.apps.hangouts.views.MessageStatusView>

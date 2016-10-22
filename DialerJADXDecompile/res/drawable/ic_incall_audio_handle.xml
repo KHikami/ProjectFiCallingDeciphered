@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_focused="false" android:state_enabled="true" android:state_active="false">
+        <layer-list>
+            <item>
+                <bitmap android:src="0x7f020093" android:tint="0x7f0a0092" />
+            </item>
+            <item>
+                <bitmap android:gravity="11" android:src="0x7f020095" android:tint="0x7f0a0093" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

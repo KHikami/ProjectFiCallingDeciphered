@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="11" android:orientation="0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="-1" android:layout_height="-2">
+    <ImageButton android:id="0x7f0d0349" android:background="@wi/w" android:padding="0x7f0b00df" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0205b1" android:layout_weight="0.0" android:contentDescription="0x7f0a05f3" />
+    <EditText android:textSize="20dp" android:textColor="0x7f0e0063" android:textColorHint="0x7f0e0062" android:id="0x7f0d034a" android:background="@wi/w" android:paddingLeft="16dp" android:paddingRight="16dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="0dp" android:layout_height="-1" android:hint="0x7f0a05f3" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_weight="1.0" android:inputType="80001" />
+    <ImageButton android:id="0x7f0d034b" android:background="@wi/w" android:padding="0x7f0b00df" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0205b0" android:layout_weight="0.0" android:contentDescription="0x7f0a05f2" />
+</LinearLayout>

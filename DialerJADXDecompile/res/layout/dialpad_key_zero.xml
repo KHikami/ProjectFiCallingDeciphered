@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.dialer.dialpadview.DialpadKeyButton android:id="@az/aS" style="0x7f1000a5">
+    <LinearLayout style="0x7f1000a6">
+        <com.android.dialer.dialpadview.DialpadTextView android:id="@az/J" style="0x7f1000a4" />
+        <TextView android:id="@buf/iI" style="0x7f1000a7" />
+    </LinearLayout>
+</com.android.dialer.dialpadview.DialpadKeyButton>

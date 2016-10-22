@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="1" android:id="@ba/ak" android:background="#ffffffff" android:layout_width="-1" android:layout_height="-2">
+    <ListView android:id="0x102000a" android:layout_width="0dp" android:layout_height="0dp" android:divider="#ff000000" android:dividerHeight="1px" android:layout_above="@ba/fh" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true" />
+    <Button android:id="@ba/fg" android:visibility="2" android:layout_width="0dp" android:layout_height="-2" android:layout_above="@ba/fh" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true" />
+    <Button android:id="@ba/fh" android:visibility="2" android:layout_width="0dp" android:layout_height="-2" android:layout_above="@ba/fi" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true" />
+    <Button android:id="@ba/fi" android:visibility="2" android:layout_width="0dp" android:layout_height="-2" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

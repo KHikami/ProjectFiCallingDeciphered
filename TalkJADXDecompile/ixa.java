@@ -1,0 +1,3 @@
+interface ixa {
+    int b();
+}

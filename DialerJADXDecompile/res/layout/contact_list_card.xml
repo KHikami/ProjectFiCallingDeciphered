@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:id="@cob/O" android:visibility="1" android:layout_width="-1" android:layout_height="-1">
+    <View android:background="0x7f0a0019" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="@buf/dk" />
+    <View android:background="0x7f0a005f" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="@buf/dj" android:elevation="0x7f0b00ae" />
+    <View android:background="0x7f0a0019" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="@buf/dk" />
+</LinearLayout>

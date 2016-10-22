@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="-1" android:layout_height="-1">
+    <ImageView android:src="0x7f020604" android:contentDescription="0x7f0a017b" style="0x7f0c004c" />
+</LinearLayout>

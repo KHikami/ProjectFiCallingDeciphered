@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2">
+        <TextView android:textSize="0x7f0b014b" android:textColor="@gwb/ec" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2" android:text="@gwb/rQ" />
+        <TextView android:textSize="0x7f0b014c" android:textColor="0x7f0e00cd" android:textColorLink="0x7f0e00cd" android:id="@bc/uK" android:layout_width="-1" android:layout_height="-2" android:text="@gwb/rO" />
+    </LinearLayout>
+</RelativeLayout>

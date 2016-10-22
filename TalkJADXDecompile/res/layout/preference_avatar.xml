@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout hangouts:layout_width="-1" hangouts:layout_height="-2">
+    <com.google.android.apps.hangouts.views.AvatarView hangouts:layout_gravity="11" hangouts:id="@bn/r" hangouts:layout_width="0x7f0b01e4" hangouts:layout_height="0x7f0b01e4" hangouts:avatarViewSize="medium" />
+</LinearLayout>

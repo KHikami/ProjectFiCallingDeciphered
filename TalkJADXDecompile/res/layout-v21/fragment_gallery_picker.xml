@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout fab:layout_width="-1" fab:layout_height="-1">
+    <ProgressBar fab:layout_gravity="11" fab:id="@gwb/mz" fab:layout_width="-2" fab:layout_height="-2" fab:layout_marginTop="5dp" fab:indeterminate="true" style="?unknown_attr_ref: 1010077" />
+    <android.support.v7.widget.RecyclerView fab:id="@gwb/mG" fab:visibility="2" fab:layout_width="-1" fab:layout_height="-1" />
+    <TextView fab:textStyle="2" fab:gravity="11" fab:id="@gwb/mF" fab:visibility="2" fab:layout_width="-1" fab:layout_height="-1" fab:text="0x7f0a0173" fab:importantForAccessibility="2" style="0x7f0c0036" />
+    <RelativeLayout fab:id="@gwb/my" fab:clipChildren="false" fab:layout_width="-1" fab:layout_height="-1" fab:layout_above="@gwb/mG">
+        <com.google.android.libraries.quantum.fab.FloatingActionButton fab:id="@gwb/mx" fab:clipToPadding="false" fab:layout_width="56dp" fab:layout_height="56dp" fab:layout_marginBottom="16dp" fab:src="0x7f02062a" fab:tint="@bc/uZ" fab:layout_alignParentBottom="true" fab:contentDescription="0x7f0a0174" fab:layout_marginEnd="16dp" fab:layout_alignParentEnd="true" fab:tintMode="5" fab:elevation="8dp" fab:quantumFabColor="0x106000b" />
+    </RelativeLayout>
+</FrameLayout>

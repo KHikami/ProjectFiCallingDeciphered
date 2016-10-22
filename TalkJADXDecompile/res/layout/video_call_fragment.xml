@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:id="0x7f0d03d7" app:layout_width="-1" app:layout_height="-1">
+    <com.google.android.apps.hangouts.elane.MainFeedViewController app:focusable="true" app:layout_width="-1" app:layout_height="-1" app:contentDescription="0x7f0a0159">
+        <com.google.android.apps.hangouts.elane.FocusedParticipantAvatarView app:id="@gwb/oB" app:background="0x7f0e002f" app:clipChildren="false" app:layout_width="-1" app:layout_height="-1">
+            <include layout="0x7f040178" />
+            <ImageView app:layout_gravity="11" app:id="@gwb/oF" app:background="0x7f02048f" app:layout_width="0x7f0b0076" app:layout_height="0x7f0b0076" />
+        </com.google.android.apps.hangouts.elane.FocusedParticipantAvatarView>
+    </com.google.android.apps.hangouts.elane.MainFeedViewController>
+    <include layout="0x7f040153" />
+    <com.google.android.apps.hangouts.hangout.DebugOverlayTextView app:textAppearance="?unknown_attr_ref: 1010044" app:textColor="0x7f0e0040" app:id="@gwb/oy" app:background="0x7f0e0041" app:paddingLeft="0x7f0b007d" app:paddingTop="0x7f0b007c" app:paddingRight="0x7f0b007d" app:paddingBottom="0x7f0b007d" app:visibility="2" app:scrollbars="200" app:layout_width="-1" app:layout_height="-2" app:layout_alignParentTop="true" />
+    <RelativeLayout app:orientation="1" app:id="@gwb/ox" app:paddingTop="0x7f0b006a" app:clipChildren="false" app:clipToPadding="false" app:layout_width="-1" app:layout_height="-2" app:layout_alignParentBottom="true">
+        <com.google.android.apps.hangouts.elane.FilmstripViewController app:id="@gwb/oz" app:clipChildren="false" app:clipToPadding="false" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@gwb/nX" app:layout_marginRight="@gwb/nX" app:layout_alignParentTop="true" app:layout_alignParentRight="true" />
+        <com.google.android.apps.hangouts.elane.SelfMenuViewController app:id="0x7f0d03dd" app:layout_width="-2" app:layout_height="-2" app:layout_below="@gwb/oz" app:layout_centerHorizontal="true">
+            <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/oG" app:focusable="true" app:nextFocusDown="@gwb/oD" app:layout_width="0x7f0b0062" app:layout_height="0x7f0b0062" app:layout_margin="0x7f0b0063" app:src="0x7f02060f" app:tint="@gwb/nU" app:contentDescription="@ba/jX" app:quantumFabColor="@gwb/nT" app:quantumFabRippleColor="@gwb/nV" style="0x7f0c0034" />
+            <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/oD" app:focusable="true" app:nextFocusUp="@gwb/oG" app:nextFocusDown="@gwb/oH" app:layout_width="0x7f0b0062" app:layout_height="0x7f0b0062" app:layout_marginTop="0x7f0b0063" app:layout_marginBottom="0x7f0b0063" app:src="0x7f0205d0" app:tint="0x7f0e0038" app:contentDescription="0x7f0a0116" app:quantumFabColor="0x7f0e0036" app:quantumFabRippleColor="0x7f0e0037" style="0x7f0c0034" />
+            <com.google.android.libraries.quantum.fab.FloatingActionButton app:id="@gwb/oH" app:focusable="true" app:nextFocusUp="@gwb/oD" app:layout_width="0x7f0b0062" app:layout_height="0x7f0b0062" app:layout_margin="0x7f0b0063" app:src="0x7f020649" app:tint="@gwb/nU" app:contentDescription="@ba/jV" app:quantumFabColor="@gwb/nT" app:quantumFabRippleColor="@gwb/nV" style="0x7f0c0034" />
+        </com.google.android.apps.hangouts.elane.SelfMenuViewController>
+    </RelativeLayout>
+</RelativeLayout>

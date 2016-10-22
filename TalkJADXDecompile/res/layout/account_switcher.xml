@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="0x7f0d0102">
+    <FrameLayout android:id="0x7f0d0103" android:paddingTop="8dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" />
+    <LinearLayout android:orientation="1" android:background="@wi/w" android:layout_width="-1" android:layout_height="-1">
+        <include android:visibility="2" layout="0x7f040148" />
+        <com.google.android.gms.people.accountswitcherview.SelectedAccountNavigationView android:id="0x7f0d0104" android:layout_width="-1" android:layout_height="-2" />
+        <FrameLayout android:layout_width="-1" android:layout_height="-2">
+            <com.google.android.gms.people.accountswitcherview.ShrinkingItem android:id="0x7f0d0105" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+                <ListView android:id="0x7f0d00f6" android:background="0x106000b" android:paddingTop="8dp" android:layout_width="-1" android:layout_height="-2" android:divider="@wi/w" android:dividerHeight="0dp" android:contentDescription="0x7f0a0b6a" />
+            </com.google.android.gms.people.accountswitcherview.ShrinkingItem>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

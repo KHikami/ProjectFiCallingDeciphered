@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:exitFadeDuration="0x10e0001">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="0x7f0e0089" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#0000" />
+        </shape>
+    </item>
+</selector>

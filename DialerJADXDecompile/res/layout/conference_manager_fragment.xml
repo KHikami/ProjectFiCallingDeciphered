@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="0x7f0c0104" android:background="0x7f0a005b" android:paddingTop="0x7f0b00a0" android:layout_width="-1" android:layout_height="-1">
+    <ListView android:id="@az/am" android:background="0x7f0a0012" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="-1" android:layout_height="-1" android:listSelector="@rl/c" android:divider="@rl/c" />
+</FrameLayout>

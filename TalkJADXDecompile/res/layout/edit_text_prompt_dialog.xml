@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:paddingLeft="24dp" android:paddingTop="20dp" android:paddingRight="24dp" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:gravity="11" android:orientation="0" android:id="0x7f0d020b" android:layout_width="-1" android:layout_height="-2">
+        <EditText android:textColorHint="0x7f0e009a" android:id="@bm/C" android:layout_width="0dp" android:layout_height="-2" android:minWidth="400dp" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="1" />
+        <ImageView android:id="0x7f0d020c" android:background="@gwb/yI" android:padding="10dp" android:focusable="true" android:clickable="true" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0205db" android:contentDescription="0x7f0a0619" />
+    </LinearLayout>
+    <TextView android:textColor="#ff555555" android:gravity="11" android:id="0x7f0d020d" android:layout_width="-1" android:layout_height="-1" />
+</LinearLayout>

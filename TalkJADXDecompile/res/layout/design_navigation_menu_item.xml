@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <CheckedTextView android:textAppearance="0x7f0c0122" android:gravity="800013" android:id="@ajk/d" android:layout_width="0dp" android:layout_height="-1" android:maxLines="1" android:drawablePadding="0x7f0b00fa" android:layout_weight="1.0" />
+    <ViewStub android:id="@ajk/c" android:layout="0x7f040081" android:inflatedId="0x7f0d01e4" android:layout_width="-2" android:layout_height="-1" />
+</merge>

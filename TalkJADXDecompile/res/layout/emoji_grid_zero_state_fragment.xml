@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <include layout="@gwb/gs" />
+    <LinearLayout android:gravity="11" android:layout_gravity="10" android:orientation="1" android:id="@ba/eH" android:visibility="2" android:layout_width="-1" android:layout_height="-1">
+        <TextView android:gravity="11" android:id="@ba/eI" android:paddingTop="12dp" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a08c1" style="0x7f0c0286" />
+    </LinearLayout>
+</LinearLayout>

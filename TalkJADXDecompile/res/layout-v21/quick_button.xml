@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="0x7f0d0366" style="0x7f0c002e">
+    <TextView android:id="@gwb/pG" style="0x7f0c002b" />
+    <ImageView android:id="@gwb/pE" android:background="0x7f020655" android:scaleType="5" android:stateListAnimator="@gwb/pu" style="0x7f0c002d" />
+</LinearLayout>

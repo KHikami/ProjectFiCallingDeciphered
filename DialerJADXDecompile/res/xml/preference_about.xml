@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+    <Preference android:icon="@rl/c" android:title="0x7f0f001f" android:key="0x7f0f0286" />
+    <Preference android:icon="@rl/c" android:title="0x7f0f0020" android:key="0x7f0f0287" android:summary="0x7f0f0021" />
+    <Preference android:icon="@rl/c" android:title="0x7f0f0023" android:key="0x7f0f0288" />
+    <Preference android:icon="@rl/c" android:title="0x7f0f0024" android:key="0x7f0f0289" />
+</PreferenceScreen>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:textAppearance="?unknown_attr_ref: 101039f" android:gravity="10" android:id="0x1020014" android:layout_width="-1" android:layout_height="?unknown_attr_ref: 1010387" android:checkMark="@wi/w" android:drawableLeft="?unknown_attr_ref: 1010219" />

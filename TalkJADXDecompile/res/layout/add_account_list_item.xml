@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffff" android:layout_width="-1" android:layout_height="-1"
+    <FrameLayout android:background="@gwb/yI" android:layout_width="-1" android:layout_height="64dp">
+        <TextView android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0000" style="?unknown_attr_ref: 1010042" />
+    </FrameLayout>
+</FrameLayout>

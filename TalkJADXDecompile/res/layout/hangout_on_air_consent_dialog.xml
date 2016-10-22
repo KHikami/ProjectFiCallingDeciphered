@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="16dp" android:layout_width="-2" android:layout_height="-2">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010034" android:id="@ba/cq" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="8dp" android:text="@bc/eU" />
+        <CheckBox android:id="@ba/cp" android:layout_width="-1" android:layout_height="-2" android:text="0x7f0a077f" />
+    </LinearLayout>
+</ScrollView>

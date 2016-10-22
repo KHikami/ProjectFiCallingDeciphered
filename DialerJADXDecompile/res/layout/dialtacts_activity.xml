@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout app:orientation="1" app:id="@aq/ai" app:background="0x7f0a0010" app:focusable="true" app:focusableInTouchMode="true" app:clipChildren="false" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@aq/ag" app:clipChildren="false" app:layout_width="-1" app:layout_height="-1"
+        <FrameLayout app:id="@aq/ah" app:clipChildren="false" app:layout_width="-1" app:layout_height="-1" /> />
+    <FrameLayout app:layout_gravity="51" app:id="@aq/at" app:background="0x7f020093" app:layout_width="@buf/cU" app:layout_height="0x7f0b010c" app:layout_marginBottom="0x7f0b010e" app:layout_behavior="com.android.dialer.app.FloatingActionButtonBehavior">
+        <ImageButton app:id="@aq/as" app:background="0x7f02009b" app:layout_width="-1" app:layout_height="-1" app:src="@cob/an" app:contentDescription="@cob/aW" />
+    </FrameLayout>
+    <FrameLayout app:id="0x7f0c0149" app:layout_width="-1" app:layout_height="-1">
+        <ImageView app:id="@aq/L" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:importantForAccessibility="2" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

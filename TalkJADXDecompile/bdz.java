@@ -1,0 +1,4 @@
+final class bdz {
+    bdz() {
+    }
+}

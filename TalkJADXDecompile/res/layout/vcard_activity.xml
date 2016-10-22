@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <include layout="0x7f040169" />
+    <FrameLayout android:id="@ba/da" android:layout_width="-1" android:layout_height="-1">
+        <ExpandableListView android:id="@ba/cU" android:layout_width="-1" android:layout_height="-1" android:drawSelectorOnTop="false" />
+        <ProgressBar android:layout_gravity="11" android:id="@ba/bd" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="5dp" android:indeterminate="true" style="?unknown_attr_ref: 1010077" />
+    </FrameLayout>
+</LinearLayout>

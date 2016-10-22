@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@ba/da" android:background="@bc/uJ" android:layout_width="-1" android:layout_height="-1">
+    <com.google.android.apps.hangouts.listui.SwipeableListView android:id="0x102000a" android:longClickable="false" android:layout_width="-1" android:layout_height="-1" android:layout_marginBottom="0x7f0b0043" android:listSelector="0x7f020676" android:drawSelectorOnTop="false" android:cacheColorHint="0x7f0e0022" android:divider="@wi/w" android:dividerHeight="0x7f0b0038" android:layout_weight="1.0" android:layout_below="0x7f0d0182" android:layout_alignWithParentIfMissing="true" />
+    <FrameLayout android:layout_width="-1" android:layout_height="-1" android:layout_weight="1.0">
+        <TextView android:textSize="18sp" android:gravity="11" android:id="@ba/cX" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+        <ProgressBar android:layout_gravity="11" android:id="@ba/cW" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="5dp" android:indeterminate="true" style="?unknown_attr_ref: 1010077" />
+        <RelativeLayout android:id="0x1020004" android:visibility="2" android:layout_width="-1" android:layout_height="-1">
+            <LinearLayout android:gravity="11" android:layout_gravity="11" android:orientation="1" android:id="@ba/gn" android:layout_width="-1" android:layout_height="-1" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textSize="16sp" android:textStyle="1" android:textColor="@gwb/xX" android:gravity="11" android:id="@ba/go" android:paddingTop="8dp" android:layout_width="-2" android:layout_height="-2" android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.google.android.libraries.quantum.snackbar.Snackbar android:layout_gravity="50" android:id="@ba/fo" android:visibility="1" android:layout_width="-1" android:layout_height="-2" />
+    </FrameLayout>
+</RelativeLayout>

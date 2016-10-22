@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout hangouts:orientation="1" hangouts:background="0x7f0e0299" hangouts:layout_width="-1" hangouts:layout_height="-1">
+    <ScrollView hangouts:layout_width="-2" hangouts:layout_height="0dp" hangouts:fillViewport="true" hangouts:layout_weight="1.0">
+        <LinearLayout hangouts:orientation="1" hangouts:paddingLeft="0x7f0b020d" hangouts:paddingTop="0x7f0b020d" hangouts:paddingRight="0x7f0b020d" hangouts:layout_width="-1" hangouts:layout_height="800dp">
+            <TextView hangouts:textSize="24sp" hangouts:textColor="@gwb/ec" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:text="0x7f0a081c" />
+            <TextView hangouts:textSize="0x7f0b020e" hangouts:textColor="0x7f0e00cd" hangouts:id="@ba/dm" hangouts:paddingTop="2dp" hangouts:layout_width="-1" hangouts:layout_height="-2" />
+            <LinearLayout hangouts:orientation="0" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:layout_marginTop="14dp">
+                <FrameLayout hangouts:background="0x7f020069" hangouts:padding="2dp" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:layout_marginTop="16dp">
+                    <com.google.android.apps.hangouts.views.AvatarView hangouts:layout_gravity="30" hangouts:id="@ba/dl" hangouts:layout_width="0x7f0b020f" hangouts:layout_height="0x7f0b020f" hangouts:avatarViewSize="medium" />
+                </FrameLayout>
+                <LinearLayout hangouts:orientation="1" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:layout_marginLeft="0x7f0b020c" hangouts:layout_marginStart="0x7f0b020c">
+                    <EditText hangouts:textSize="16sp" hangouts:textColor="@gwb/ec" hangouts:textColorHighlight="0x7f0e00fa" hangouts:textColorHint="0x7f0e00cd" hangouts:textColorLink="@gwb/ec" hangouts:gravity="50" hangouts:id="@ba/fu" hangouts:background="0x106000d" hangouts:paddingBottom="10dp" hangouts:scrollbars="200" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:minHeight="0x7f0b020a" hangouts:hint="0x7f0a0820" hangouts:inputType="2c041" hangouts:textCursorDrawable="@wi/w" />
+                    <View hangouts:id="@ba/ft" hangouts:background="@gwb/es" hangouts:layout_height="2dp" style="0x7f0c0239" />
+                    <TextView hangouts:textColor="@gwb/ec" hangouts:gravity="5" hangouts:id="@ba/fs" hangouts:layout_width="-1" hangouts:layout_height="-2" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout hangouts:gravity="10" hangouts:layout_gravity="50" hangouts:orientation="0" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:layout_marginTop="24dp" hangouts:layout_marginBottom="0x7f0b020b">
+                <TextView hangouts:textSize="0x7f0b020e" hangouts:textColor="0x7f0e00cd" hangouts:layout_width="-2" hangouts:layout_height="-2" hangouts:text="@bc/ld" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout hangouts:layout_gravity="50" hangouts:orientation="0" hangouts:layout_width="-1" hangouts:layout_height="0x7f0b0209">
+        <Button hangouts:textColor="0x7f0e029c" hangouts:id="@ba/fv" hangouts:layout_width="-1" hangouts:layout_height="-1" hangouts:text="0x7f0a0821" style="0x7f0c027a" />
+        <Button hangouts:textColor="0x7f0e02e1" hangouts:id="@ba/fw" hangouts:layout_width="-1" hangouts:layout_height="-1" hangouts:text="0x7f0a081f" style="0x7f0c027a" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+package defpackage;
+
+import java.util.Iterator;
+
+/* renamed from: mny */
+public abstract class mny<E> implements Iterator<E> {
+    protected mny() {
+    }
+
+    @Deprecated
+    public final void remove() {
+        throw new UnsupportedOperationException();
+    }
+}

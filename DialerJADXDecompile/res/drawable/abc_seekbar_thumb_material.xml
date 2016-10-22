@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:constantSize="true">
+    <item android:state_enabled="false" android:state_pressed="true">
+        <bitmap android:gravity="11" android:src="0x7f020038" />
+    </item>
+    <item android:state_enabled="false">
+        <bitmap android:gravity="11" android:src="0x7f020038" />
+    </item>
+    <item android:state_pressed="true">
+        <bitmap android:gravity="11" android:src="0x7f02003a" />
+    </item>
+    <item>
+        <bitmap android:gravity="11" android:src="0x7f020039" />
+    </item>
+</selector>

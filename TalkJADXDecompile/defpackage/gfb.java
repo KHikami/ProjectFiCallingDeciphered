@@ -1,0 +1,6 @@
+package defpackage;
+
+/* renamed from: gfb */
+interface gfb {
+    void a(boolean z, long j);
+}

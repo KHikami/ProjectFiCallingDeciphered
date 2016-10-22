@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+    <Preference android:persistent="false" android:title="0x7f0f005a" android:key="@buf/lW" />
+    <Preference android:persistent="false" android:title="0x7f0f01ce" android:key="0x7f0f025a" android:summary="0x7f0f0259">
+        <intent android:targetPackage="com.google.android.dialer" android:targetClass="com.google.android.apps.dialer.about.LicenseActivity" />
+    </Preference>
+    <Preference android:persistent="false" android:title="0x7f0f028d" android:key="0x7f0f028c">
+        <intent android:action="android.intent.action.VIEW" android:data="0x7f0f028e" />
+    </Preference>
+    <Preference android:persistent="false" android:title="0x7f0f02fb" android:key="0x7f0f02fa">
+        <intent android:action="android.intent.action.VIEW" android:data="0x7f0f02fc" />
+    </Preference>
+</PreferenceScreen>

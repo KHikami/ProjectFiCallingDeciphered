@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="0x7f0b0018" android:insetRight="0x7f0b0018" android:insetTop="0x7f0b0018" android:insetBottom="0x7f0b0018">
+    <selector>
+        <item android:state_checked="false" android:state_pressed="false">
+            <layer-list>
+                <item android:drawable="@buf/aY" />
+                <item android:drawable="@buf/aR" />
+            </layer-list> />
+        <item>
+            <layer-list>
+                <item android:drawable="@buf/aX" />
+                <item android:drawable="@buf/aR" />
+            </layer-list> />
+    </selector>
+</inset>

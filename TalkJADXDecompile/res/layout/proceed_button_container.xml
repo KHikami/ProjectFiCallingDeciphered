@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@ba/eh" android:visibility="2" android:clipChildren="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="-28dp" android:layout_marginRight="16dp" android:layout_below="@ba/cm" android:layout_alignParentRight="true">
+    <ImageView android:layout_gravity="11" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="4dp" android:src="0x7f020078" />
+    <FrameLayout android:id="@ba/eg" android:clipChildren="false" android:layout_width="-2" android:layout_height="-2" /> />

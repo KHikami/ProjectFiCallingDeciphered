@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item android:id="@az/w" android:drawable="0x7f020053" />
+    <item android:id="@az/af">
+        <bitmap android:gravity="11" android:src="0x7f02010c" android:tint="0x7f0a011d" />
+    </item>
+    <item android:id="@az/l">
+        <bitmap android:gravity="11" android:src="0x7f02010d" android:tint="0x7f0a011d" />
+    </item>
+    <item android:id="@az/T">
+        <bitmap android:gravity="11" android:src="0x7f02010f" android:tint="0x7f0a011d" />
+    </item>
+    <item android:id="@az/aI">
+        <bitmap android:gravity="11" android:src="0x7f020114" android:tint="0x7f0a011d" />
+    </item>
+</layer-list>

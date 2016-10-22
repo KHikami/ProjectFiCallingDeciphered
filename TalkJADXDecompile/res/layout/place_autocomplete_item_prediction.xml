@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="0" android:layout_width="-1" android:layout_height="0x7f0b00e2">
+    <include android:layout_gravity="11" android:visibility="1" android:layout_width="0x7f0b00e7" android:layout_height="0x7f0b00e7" android:layout_marginLeft="0x7f0b00e6" android:layout_marginRight="0x7f0b00e6" android:layout_alignParentLeft="true" android:layout_centerVertical="true" layout="0x7f040124" />
+    <View android:id="0x7f0d034c" android:layout_width="0dp" android:layout_height="0dp" android:layout_centerVertical="true" />
+    <TextView android:textSize="0x7f0b00e4" android:textColor="0x7f0e005f" android:ellipsize="3" android:id="0x7f0d034f" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b00e3" android:layout_marginRight="0x7f0b00e3" android:lines="1" android:singleLine="true" android:layout_toRightOf="0x7f0d034e" android:layout_above="0x7f0d034c" android:layout_centerVertical="true" />
+    <TextView android:textSize="0x7f0b00e5" android:textColor="0x7f0e0061" android:ellipsize="3" android:id="0x7f0d0350" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b00e3" android:layout_marginRight="0x7f0b00e3" android:lines="1" android:singleLine="true" android:layout_toRightOf="0x7f0d034e" android:layout_below="0x7f0d034c" />
+</RelativeLayout>

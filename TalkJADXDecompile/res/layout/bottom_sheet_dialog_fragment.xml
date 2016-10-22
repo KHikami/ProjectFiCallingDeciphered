@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.quantum.bottomsheet.BottomSheetLinearLayout android:orientation="0" android:fitsSystemWindows="true" android:layout_width="-1" android:layout_height="-1">
+    <ImageView android:gravity="800003" android:id="@ba/ng" android:layout_width="0x7f0b00a9" android:layout_height="0x7f0b00a9" android:layout_marginLeft="0x7f0b00b0" android:layout_marginTop="0x7f0b00a8" android:layout_marginRight="0x7f0b00b0" />
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" style="0x7f0c0040">
+        <TextView android:textSize="0x7f0b00aa" android:textStyle="0x7f0f001a" android:textColor="@gwb/xX" android:id="@ba/nk" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="0x7f0b00a8" android:layout_marginBottom="0x7f0b00ac" android:lineSpacingExtra="0x7f0b00ab" android:fontFamily="0x7f0a0182" style="0x7f0c0042" />
+        <TextView android:textSize="0x7f0b00ad" android:textColor="0x7f0e00c8" android:id="@ba/nj" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="0x7f0b00ae" android:lineSpacingExtra="0x7f0b00af" />
+        <LinearLayout android:orientation="0" android:id="0x7f0d0141" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="0x7f0b00a8" style="0x7f0c003f">
+            <Button android:textStyle="0x7f0f001a" android:id="@ba/nl" android:layout_width="-2" android:layout_height="-2" android:textAllCaps="true" android:fontFamily="0x7f0a0182" style="0x7f0c0106" />
+            <Button android:textStyle="0x7f0f001a" android:textColor="0x7f0e00c8" android:id="@ba/nf" android:paddingLeft="0x7f0b00b0" android:paddingRight="0x7f0b00b0" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:textAllCaps="true" android:fontFamily="0x7f0a0182" style="0x7f0c003e" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.libraries.quantum.bottomsheet.BottomSheetLinearLayout>

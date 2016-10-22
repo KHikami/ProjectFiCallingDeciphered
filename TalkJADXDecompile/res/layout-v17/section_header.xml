@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.social.ui.views.SectionHeaderView android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+    <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textStyle="1" android:textColor="0x7f0e008d" android:id="0x1020014" android:paddingLeft="24dp" android:paddingRight="16dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="16dp" android:layout_marginBottom="0dp" android:paddingStart="24dp" android:paddingEnd="16dp" />
+</com.google.android.libraries.social.ui.views.SectionHeaderView>

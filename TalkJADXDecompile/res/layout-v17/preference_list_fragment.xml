@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="0x106000d" android:layout_width="-1" android:layout_height="-1">
+    <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="0x7f0f0035" android:id="0x102000a" android:clipToPadding="false" android:layout_width="-1" android:layout_height="0px" android:drawSelectorOnTop="false" android:cacheColorHint="0x106000d" android:layout_weight="1.0" style="0x7f0c008e" />
+    <TextView android:gravity="11" android:id="0x1020004" android:padding="16dp" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+    <RelativeLayout android:id="0x7f0d0355" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_weight="0.0">
+        <Button android:id="@gwb/ui" android:layout_width="150dp" android:layout_height="-2" android:layout_margin="5dp" android:text="0x7f0a05fa" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="0" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentEnd="true">
+            <Button android:id="0x7f0d0357" android:visibility="2" android:layout_width="150dp" android:layout_height="-2" android:layout_margin="5dp" android:text="0x7f0a05fc" style="?unknown_attr_ref: 101032f" />
+            <Button android:id="0x7f0d0358" android:layout_width="150dp" android:layout_height="-2" android:layout_margin="5dp" android:text="0x7f0a05fb" style="?unknown_attr_ref: 101032f" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+package defpackage;
+
+import java.util.List;
+
+/* compiled from: PG */
+/* renamed from: dt */
+public final class dt {
+    final List a;
+    final List b;
+
+    dt(List list, List list2) {
+        this.a = list;
+        this.b = list2;
+    }
+}

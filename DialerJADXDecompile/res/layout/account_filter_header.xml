@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="0x7f0a0019" android:layout_width="-1" android:layout_height="-2"
+    <FrameLayout android:id="@cob/l" android:background="?unknown_attr_ref: 101030e" android:paddingTop="0x7f0b012a" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_marginStart="0x7f0b00a1" android:layout_marginEnd="0x7f0b00a2">
+        <TextView android:id="@cob/k" android:paddingLeft="0x7f0b00a5" android:paddingStart="0x7f0b00a5" style="0x7f10009d" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@gwb/zg" android:layout_width="-1" android:layout_height="-2">
+    <TextView android:typeface="3" android:id="@gwb/zh" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" />
+</ScrollView>

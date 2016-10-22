@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.elane.VolumeBar android:orientation="1" android:id="@gwb/oW" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+    <ImageView android:id="@gwb/pa" android:layout_width="-2" android:layout_height="-2" android:src="0x7f020695" android:scaleType="5" android:scaleX="0.0" android:scaleY="0.0" />
+    <ImageView android:id="@gwb/oZ" android:paddingTop="0x7f0b0074" android:layout_width="-2" android:layout_height="-2" android:src="0x7f020695" android:scaleType="5" android:scaleX="0.0" android:scaleY="0.0" />
+    <ImageView android:id="@gwb/oY" android:paddingTop="0x7f0b0074" android:layout_width="-2" android:layout_height="-2" android:src="0x7f020695" android:scaleType="5" android:scaleX="0.0" android:scaleY="0.0" />
+</com.google.android.apps.hangouts.elane.VolumeBar>

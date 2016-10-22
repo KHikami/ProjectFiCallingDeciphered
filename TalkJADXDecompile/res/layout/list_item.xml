@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:paddingLeft="0x7f0b000c" android:paddingRight="0x7f0b000d" android:layout_width="-1" android:layout_height="-1" android:minHeight="?unknown_attr_ref: 101004d">
+    <FrameLayout android:layout_gravity="10" android:layout_width="0x7f0b000a" android:layout_height="0x7f0b000a" android:importantForAccessibility="2">
+        <com.google.android.apps.hangouts.views.AvatarView android:id="@bn/r" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+        <ImageView android:layout_gravity="11" android:id="@co/b" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="10" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textSize="0x7f0b000e" android:textStyle="1" android:textColor="@gwb/dY" android:ellipsize="3" android:gravity="10" android:id="@co/i" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" />
+        <TextView android:textSize="0x7f0b000e" android:textColor="@bc/uZ" android:ellipsize="3" android:gravity="10" android:id="@bn/t" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

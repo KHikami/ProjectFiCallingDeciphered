@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-2" android:layout_height="-2" android:layout_margin="0x7f0b0233" android:animateLayoutChanges="true">
+    <ImageView android:id="@ba/dQ" android:layout_width="-2" android:layout_height="-2" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@gwb/cA" android:layout_width="-1" android:layout_height="-1">
+    <View android:id="@gwb/cz" android:background="#ff000000" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+    <com.android.ex.photo.PhotoViewPager android:id="@gwb/cF" android:layout_width="-1" android:layout_height="-1" />
+    <ImageView android:id="@gwb/cB" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:importantForAccessibility="2" />
+    <LinearLayout android:layout_gravity="53" android:orientation="1" android:id="0x7f0d033f" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_margin="4dp">
+        <TextView android:textSize="16sp" android:textColor="@gwb/mv" android:id="0x7f0d0340" android:layout_width="-2" android:layout_height="-2" />
+        <TextView android:textColor="0x7f0e0254" android:id="0x7f0d0341" android:layout_width="-2" android:layout_height="-2" />
+    </LinearLayout>
+</FrameLayout>

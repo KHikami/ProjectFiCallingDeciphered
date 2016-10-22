@@ -1,0 +1,10 @@
+package defpackage;
+
+import android.content.Context;
+
+/* renamed from: icq */
+public interface icq {
+    String a(Context context, String str, String str2);
+
+    void a(Context context, String str);
+}

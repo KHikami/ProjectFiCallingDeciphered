@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item app:state_enabled="true" app:state_collapsed="true" app:state_collapsible="true">
+        <objectAnimator app:valueTo="0x7f0b00bc" app:valueType="0" app:propertyName="elevation" />
+    </item>
+    <item app:state_enabled="true" app:state_collapsed="false" app:state_collapsible="true">
+        <objectAnimator app:valueTo="0dp" app:valueType="0" app:propertyName="elevation" />
+    </item>
+    <item app:state_enabled="true" app:state_collapsible="false">
+        <objectAnimator app:valueTo="0x7f0b00bc" app:valueType="0" app:propertyName="elevation" />
+    </item>
+    <item>
+        <objectAnimator app:valueTo="0" app:valueType="0" app:propertyName="elevation" />
+    </item>
+</selector>

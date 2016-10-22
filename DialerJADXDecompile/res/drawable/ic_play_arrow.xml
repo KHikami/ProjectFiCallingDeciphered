@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:autoMirrored="true">
+    <item android:state_enabled="false">
+        <bitmap android:src="@cob/aF" android:tint="0x7f0a0100" />
+    </item>
+    <item>
+        <bitmap android:src="@cob/aF" android:tint="0x7f0a0104" />
+    </item>
+</selector>

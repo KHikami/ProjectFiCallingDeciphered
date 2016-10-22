@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list>
+    <item android:duration="66" android:drawable="@gwb/uY" />
+    <item android:duration="66" android:drawable="0x7f020530" />
+    <item android:duration="66" android:drawable="0x7f020531" />
+    <item android:duration="66" android:drawable="0x7f020532" />
+    <item android:duration="66" android:drawable="0x7f020533" />
+    <item android:duration="66" android:drawable="0x7f020534" />
+    <item android:duration="66" android:drawable="0x7f020535" />
+    <item android:duration="66" android:drawable="0x7f020536" />
+    <item android:duration="66" android:drawable="0x7f020537" />
+    <item android:duration="66" android:drawable="0x7f020538" />
+    <item android:duration="66" android:drawable="0x7f020537" />
+    <item android:duration="66" android:drawable="0x7f020536" />
+    <item android:duration="66" android:drawable="0x7f020535" />
+    <item android:duration="66" android:drawable="0x7f020534" />
+    <item android:duration="66" android:drawable="0x7f020533" />
+    <item android:duration="66" android:drawable="0x7f020532" />
+    <item android:duration="66" android:drawable="0x7f020531" />
+    <item android:duration="66" android:drawable="0x7f020530" />
+    <item android:duration="66" android:drawable="@gwb/uY" />
+</animation-list>

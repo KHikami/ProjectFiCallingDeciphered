@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="0x7f0a000f" android:layout_width="-1" android:layout_height="-2" android:layout_marginStart="64dp" android:layout_marginEnd="24dp">
+    <TextView android:textSize="14sp" android:gravity="11" android:id="@aq/aU" android:layout_width="-1" android:layout_height="-2" />
+    <LinearLayout android:gravity="10" android:orientation="0" android:paddingTop="0x7f0b018a" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textSize="14sp" android:id="@aq/aQ" android:layout_width="-2" android:layout_height="-2" android:importantForAccessibility="2" />
+        <SeekBar android:id="@aq/aR" android:layout_width="0dp" android:layout_height="-2" android:max="0" android:progress="0" android:progressDrawable="0x7f020145" android:thumb="@cob/aN" android:layout_weight="1.0" android:contentDescription="0x7f0f0127" />
+        <TextView android:textSize="14sp" android:id="@aq/bC" android:layout_width="-2" android:layout_height="-2" android:importantForAccessibility="2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="11" android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+        <Space android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" />
+        <ImageButton android:id="@aq/aS" android:src="@cob/aP" android:tint="0x7f0a0101" android:contentDescription="0x7f0f0128" style="0x7f10013f" />
+        <Space android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" />
+        <ImageButton android:id="@aq/aT" android:src="@cob/aE" android:contentDescription="0x7f0f0337" style="0x7f10013f" />
+        <Space android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" />
+        <ImageButton android:id="@aq/Z" android:src="@cob/as" android:tint="0x7f0a0101" android:contentDescription="0x7f0f008b" style="0x7f10013f" />
+        <Space android:id="@aq/bx" android:visibility="2" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" />
+        <ImageButton android:id="@aq/bu" android:visibility="2" android:src="0x7f020104" android:tint="0x7f0a0101" android:contentDescription="@cob/bu" style="0x7f10013f" />
+        <Space android:id="@aq/bw" android:visibility="2" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" />
+        <ImageButton android:id="@aq/e" android:visibility="2" android:src="0x7f02009e" android:tint="0x7f0a0101" android:contentDescription="0x7f0f007f" style="0x7f10013f" />
+        <Space android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

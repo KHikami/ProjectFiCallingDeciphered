@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="0x7f0a001e" android:layout_width="-1" android:layout_height="-1">
+    <ListView android:id="0x102000a" android:layout_width="-1" android:layout_height="0dp" android:divider="@rl/c" android:layout_weight="1.0" android:headerDividersEnabled="false" />
+    <RelativeLayout android:layout_gravity="50" android:background="0x106000b" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="-1" android:layout_height="-2">
+        <Button android:id="@aq/ax" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0f0052" android:layout_marginEnd="0x7f0b004f" android:layout_alignParentEnd="true" style="0x7f10009f" />
+        <Button android:id="@aq/J" android:layout_width="-2" android:layout_height="-2" android:text="0x1040000" android:layout_toLeftOf="@aq/ax" android:layout_below="0x7f0c009f" style="0x7f10009f" />
+    </RelativeLayout>
+</LinearLayout>

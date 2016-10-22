@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_gravity="50" android:orientation="1" android:id="@az/K" android:background="?unknown_attr_ref: 7f01017d" android:clickable="true" android:layout_width="-1" android:layout_height="-1" android:layoutDirection="0" class="com.android.dialer.dialpadview.DialpadView">
+    <LinearLayout android:orientation="1" android:id="@buf/iU" android:visibility="2" android:layout_width="-1" android:layout_height="-2"
+        <LinearLayout android:layout_gravity="1" android:orientation="0" android:id="0x7f0c013d" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="0x7f0b0121" android:layout_marginBottom="0x7f0b0121">
+            <TextView android:id="@buf/iP" android:layout_width="-2" android:layout_height="-2" />
+            <TextView android:textStyle="1" android:id="@buf/iQ" android:layout_width="-2" android:layout_height="-2" android:layout_marginStart="4dp" />
+        </LinearLayout>
+        <View android:background="#e3e3e3" android:layout_width="-1" android:layout_height="1dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:id="0x7f0c0140" android:layout_width="-1" android:layout_height="?unknown_attr_ref: 7f0100f4">
+        <ImageButton android:gravity="11" android:id="@az/I" android:background="@buf/iG" android:paddingLeft="0x7f0b00e1" android:paddingRight="0x7f0b00e2" android:visibility="2" android:layout_width="-2" android:layout_height="-1" android:layout_margin="0x7f0b00f2" android:src="0x7f0200a0" android:tint="?unknown_attr_ref: 7f01017b" android:contentDescription="0x7f0f0119" />
+        <ImageButton android:gravity="11" android:id="@aq/ae" android:background="@buf/iG" android:paddingLeft="0x7f0b00e1" android:paddingRight="0x7f0b00e2" android:visibility="2" android:layout_width="-2" android:layout_height="-1" android:layout_margin="0x7f0b00f2" android:src="0x7f0200e8" android:tint="?unknown_attr_ref: 7f01017b" android:contentDescription="0x7f0f011a" />
+        <view ex:textSize="?unknown_attr_ref: 7f0100f3" ex:textStyle="0" ex:textColor="?unknown_attr_ref: 7f010178" ex:gravity="11" ex:id="@az/L" ex:background="0x106000d" ex:focusableInTouchMode="true" ex:layout_width="0dp" ex:layout_height="-1" ex:cursorVisible="false" ex:maxLines="1" ex:scrollHorizontally="true" ex:singleLine="true" ex:freezesText="true" ex:layout_weight="1.0" ex:textCursorDrawable="@rl/c" ex:fontFamily="sans-serif" ex:resizing_text_min_size="0x7f0b00e4" class="com.android.dialer.dialpadview.DigitsEditText" />
+        <ImageButton ex:state_enabled="false" ex:id="@aq/W" ex:background="@buf/iG" ex:paddingLeft="0x7f0b00e3" ex:paddingRight="0x7f0b00e3" ex:layout_width="-2" ex:layout_height="-1" ex:src="0x7f0200ba" ex:tint="?unknown_attr_ref: 7f01017b" ex:contentDescription="0x7f0f0116" />
+    </LinearLayout>
+    <View ex:background="#e3e3e3" ex:layout_width="-1" ex:layout_height="1dp" />
+    <Space ex:layout_width="-1" ex:layout_height="0x7f0b00f3" />
+    <include layout="0x7f04004d" />
+    <Space ex:layout_width="-1" ex:layout_height="0x7f0b00f4" />
+</view>

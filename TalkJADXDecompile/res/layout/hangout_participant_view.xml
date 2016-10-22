@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="50" android:orientation="1" android:layout_width="-2" android:layout_height="-2">
+    <com.google.android.apps.hangouts.hangout.RemoteParticipantPopupMenu android:layout_gravity="51" android:orientation="1" android:id="@ba/ee" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+    <FrameLayout android:id="@ba/bW" android:layout_width="-1" android:layout_height="-1">
+        <ImageButton android:id="@ba/bV" android:background="@r$drawable/aC" android:layout_width="-1" android:layout_height="-1" android:scaleType="7" android:importantForAccessibility="1" style="0x7f0c0235" />
+        <TextureView android:id="@ba/ca" android:layout_width="-1" android:layout_height="-1" />
+        <ImageView android:id="@ba/bY" android:layout_width="-1" android:layout_height="-1" android:scaleType="6" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010045" android:textColor="@gwb/mv" android:ellipsize="3" android:layout_gravity="11" android:id="@ba/bZ" android:padding="0x7f0b021e" android:visibility="1" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a07af" android:singleLine="true" android:importantForAccessibility="2" />
+        <com.google.android.apps.hangouts.hangout.ParticipantOverlays android:orientation="0" android:id="@ba/dT" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+    </FrameLayout>
+</LinearLayout>

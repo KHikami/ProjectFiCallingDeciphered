@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="@ba/by" android:background="0x7f0e00c6" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_centerInParent="true">
+    <com.google.android.apps.hangouts.views.FixedParticipantsView hangouts:gravity="11" hangouts:layout_gravity="1" hangouts:id="@ba/bv" hangouts:paddingTop="0x7f0b0236" hangouts:layout_width="0x7f0b0237" hangouts:layout_height="0x7f0b0237" hangouts:avatarSize="0x7f0b022f" hangouts:largeAvatarSize="0x7f0b0235" hangouts:countTextSize="0x7f0b022e" />
+    <TextView hangouts:textSize="0x7f0b0238" hangouts:textColor="0x7f0e027b" hangouts:gravity="1" hangouts:id="@ba/U" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:layout_marginTop="0x7f0b0239" />
+    <TextView hangouts:textSize="0x7f0b022d" hangouts:gravity="1" hangouts:id="@ba/dR" hangouts:layout_width="-1" hangouts:layout_height="-2" hangouts:layout_marginTop="0x7f0b023b" style="0x7f0c026f" />
+</LinearLayout>

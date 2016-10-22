@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.hangouts.views.OtrModificationMessageListItemView android:layout_width="-1" android:layout_height="-2">
+    <LinearLayout style="0x7f0c0049">
+        <ImageView android:id="@co/b" android:src="0x7f020632" style="0x7f0c004a" />
+        <TextView android:id="@bm/C" style="0x7f0c004b" />
+    </LinearLayout>
+</com.google.android.apps.hangouts.views.OtrModificationMessageListItemView>

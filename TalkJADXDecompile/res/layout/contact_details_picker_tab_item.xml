@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton android:background="?unknown_attr_ref: 101030e" android:paddingTop="8dp" android:paddingBottom="8dp" android:focusable="true" android:clickable="true" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="7" style="0x7f0c0289" />

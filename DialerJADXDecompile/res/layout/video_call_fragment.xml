@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="-1" android:layout_height="-1">
+    <ViewStub android:id="@az/aP" android:layout="0x7f040085" android:inflatedId="0x7f0c01ae" android:layout_width="-1" android:layout_height="-1" />
+</FrameLayout>

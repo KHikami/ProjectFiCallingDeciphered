@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="0x7f0d0204" android:clipChildren="false" android:layout_width="-1" android:layout_height="-1">
+    <android.support.v7.widget.Toolbar app:id="@ba/cm" app:background="@bc/uH" app:paddingTop="10dp" app:paddingBottom="10dp" app:layout_width="-1" app:layout_height="-2" app:minHeight="?unknown_attr_ref: 7f0100ee" app:layout_alignParentTop="true" app:elevation="@gwb/fr" app:contentInsetStart="0x7f0b015c" app:contentInsetLeft="0x7f0b015c" app:popupTheme="0x7f0c01e5" app:theme="0x7f0c01e8" style="?unknown_attr_ref: 7f010113" logo="0x106000d" />
+    <FrameLayout app:layout_width="-1" app:layout_height="-1" app:layout_below="@ba/cm" app:layout_alignParentBottom="true"
+        <FrameLayout app:id="@ba/aQ" app:layout_width="-1" app:layout_height="-1" />
+        <com.google.android.libraries.quantum.snackbar.Snackbar android:layout_gravity="51" android:id="@ba/fo" android:background="0x7f02048c" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:translationZ="30dp" />
+    </FrameLayout>
+    <include layout="0x7f040133" />
+</RelativeLayout>

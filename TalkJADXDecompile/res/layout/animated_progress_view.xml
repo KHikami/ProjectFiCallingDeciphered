@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="11" android:orientation="1" android:paddingLeft="0x7f0b00eb" android:paddingTop="0x7f0b00ec" android:paddingRight="0x7f0b00eb" android:paddingBottom="0x7f0b00eb" android:layout_width="-2" android:layout_height="-2"
+    <LinearLayout android:orientation="0" android:layout_width="-2" android:layout_height="-2">
+        <View android:id="@bc/vr" android:background="0x7f02057c" android:layout_width="0x7f0b00e9" android:layout_height="0x7f0b00e9" android:layout_margin="0x7f0b00ea" />
+        <View android:id="@bc/vs" android:background="0x7f02057c" android:layout_width="0x7f0b00e9" android:layout_height="0x7f0b00e9" android:layout_margin="0x7f0b00ea" />
+        <View android:id="@bc/vt" android:background="0x7f02057c" android:layout_width="0x7f0b00e9" android:layout_height="0x7f0b00e9" android:layout_margin="0x7f0b00ea" />
+    </LinearLayout>
+    <TextView android:textSize="0x7f0b012f" android:textColor="@gwb/eb" android:gravity="11" android:id="@bc/vu" android:layout_width="-2" android:layout_height="-2" />
+    <TextView android:textSize="0x7f0b012d" android:textColor="@gwb/eb" android:gravity="11" android:id="@bc/vv" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+</LinearLayout>

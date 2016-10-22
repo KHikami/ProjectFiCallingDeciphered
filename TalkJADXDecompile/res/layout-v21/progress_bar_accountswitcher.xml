@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.ContentLoadingProgressBar android:padding="8dp" android:layout_width="-2" android:layout_height="-2" android:minHeight="?unknown_attr_ref: 101004d" android:indeterminateTint="#ffeeeeee" style="?unknown_attr_ref: 1010077" />

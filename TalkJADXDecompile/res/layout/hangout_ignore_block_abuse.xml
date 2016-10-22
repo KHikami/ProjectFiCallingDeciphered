@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="8dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@ba/bN" android:paddingLeft="8dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="24dp" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010034" android:id="@ba/bM" android:paddingLeft="8dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="8dp" />
+        <CheckBox android:id="@ba/bA" android:layout_width="-1" android:layout_height="-2" android:text="0x7f0a078b" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:linksClickable="true" android:id="@ba/bz" android:paddingLeft="34dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="8dp" />
+    </LinearLayout>
+</ScrollView>

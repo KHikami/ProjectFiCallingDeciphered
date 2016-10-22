@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-1">
+    <RelativeLayout android:gravity="1" android:paddingTop="0x7f0b0152" android:paddingBottom="0x7f0b0154" android:layout_width="-1" android:layout_height="-1" android:layout_weight="1.0">
+        <ImageView android:id="@gwb/iO" android:layout_width="-1" android:layout_height="-1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="10" android:orientation="1" android:paddingRight="40dp" android:layout_width="-1" android:layout_height="-1" android:layout_weight="1.0" android:paddingEnd="40dp">
+        <TextView android:textSize="0x7f0b014b" android:textColor="@gwb/dZ" android:paddingBottom="16dp" android:layout_width="-2" android:layout_height="-2" android:text="@gwb/iS" />
+        <TextView android:textSize="0x7f0b014c" android:textColor="@bc/va" android:paddingBottom="32dp" android:layout_width="-1" android:layout_height="-2" android:text="0x7f0a024c" />
+        <Button android:textSize="14sp" android:textColor="0x106000b" android:layout_gravity="1" android:id="@gwb/iP" android:background="0x7f020493" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="-2" android:layout_height="36dp" android:text="0x7f0a024d" android:textAllCaps="true" android:paddingStart="8dp" android:paddingEnd="8dp" style="?unknown_attr_ref: 101032b" />
+    </LinearLayout>
+</LinearLayout>

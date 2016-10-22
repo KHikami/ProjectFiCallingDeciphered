@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:id="0x7f0d0389" android:background="0x106000c" android:layout_width="-1" android:layout_height="-2">
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="0x106000b" android:ellipsize="3" android:gravity="800013" android:layout_width="0dp" android:layout_height="0x7f0b01c3" android:text="0x7f0a0b64" android:layout_weight="1.0" android:textAlignment="5" style="0x7f0c0230" />
+    <com.google.android.gms.people.accountswitcherview.ExpanderView android:id="@ba/n" android:layout_width="48dp" android:layout_height="-1" android:src="0x7f020485" android:scaleType="5" android:contentDescription="@bm/ao" style="0x7f0c022f" />
+</LinearLayout>

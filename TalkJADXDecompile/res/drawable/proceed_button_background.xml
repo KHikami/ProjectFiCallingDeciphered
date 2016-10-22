@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_pressed="true">
+        <shape android:shape="1">
+            <solid android:color="@gwb/qb" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="1">
+            <solid android:color="@gwb/sj" />
+        </shape>
+    </item>
+</selector>

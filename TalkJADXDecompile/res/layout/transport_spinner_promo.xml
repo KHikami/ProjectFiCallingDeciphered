@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@ba/fX" android:clickable="true" android:layout_width="-1" android:layout_height="-1" android:layout_marginBottom="-6dp" android:layout_above="@ba/eK"
+    <FrameLayout android:background="#80000000" android:layout_width="-1" android:layout_height="-1" android:layout_marginBottom="6dp" />
+    <LinearLayout android:layout_gravity="800053" android:orientation="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="4dp" android:layout_marginTop="0dp" android:layout_marginRight="100dp"
+        <LinearLayout android:orientation="1" android:background="0x7f0200b6" android:paddingLeft="24dp" android:paddingTop="16dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="-2" android:layout_height="-2" style="0x7f0c00c1">
+            <TextView android:textStyle="1" android:id="0x7f0d03cb" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a092e" style="0x7f0c024a" />
+            <TextView android:id="@ba/fY" android:layout_width="-2" android:layout_height="-2" style="0x7f0c024a" />
+        </LinearLayout>
+        <ImageView android:id="0x7f0d03cd" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="15dp" android:src="0x7f020062" android:importantForAccessibility="2" />
+    </LinearLayout>
+</FrameLayout>

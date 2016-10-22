@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:paddingStart="14dp" android:paddingEnd="15dp">
+    <CheckBox android:id="@aq/bq" android:focusable="true" android:clickable="true" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0f01e3" />
+</LinearLayout>

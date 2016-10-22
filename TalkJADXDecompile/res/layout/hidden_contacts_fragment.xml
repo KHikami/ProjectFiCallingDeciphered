@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@ba/da" android:layout_width="-1" android:layout_height="-1">
+    <ListView android:id="@ba/db" android:layout_width="-1" android:layout_height="-1" />
+    <FrameLayout android:layout_width="-1" android:layout_height="-1">
+        <TextView android:textSize="18sp" android:gravity="11" android:id="@ba/cX" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+        <ProgressBar android:layout_gravity="11" android:id="@ba/cW" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="5dp" android:indeterminate="true" style="?unknown_attr_ref: 1010077" />
+        <LinearLayout android:gravity="11" android:layout_gravity="11" android:orientation="1" android:id="0x1020004" android:focusableInTouchMode="true" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:contentDescription="0x7f0a0ad4">
+            <ImageView android:paddingBottom="28dp" android:layout_width="-2" android:layout_height="-2" android:src="0x7f0204fe" />
+            <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textSize="16sp" android:textColor="@gwb/xX" android:gravity="11" android:id="0x7f0d02a4" android:layout_width="-2" android:layout_height="-2" android:text="0x7f0a0ad4" android:fontFamily="sans-serif-light" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

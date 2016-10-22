@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item app:icon="@r$drawable/cp" app:id="@gwb/ow" app:title="@ba/jS" app:showAsAction="2" />
+    <item app:icon="0x7f020565" app:id="@gwb/oN" app:title="@ba/jZ" app:showAsAction="2" />
+    <item app:icon="@r$drawable/cg" app:id="@gwb/oE" app:title="@bc/iU" app:showAsAction="0" />
+</menu>

@@ -1,0 +1,16 @@
+package defpackage;
+
+/* renamed from: emv */
+public abstract class emv {
+    String e;
+
+    public abstract void a();
+
+    public emv(String str) {
+        this.e = str;
+    }
+
+    public String toString() {
+        return this.e;
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@ba/da" android:layout_width="-1" android:layout_height="-1">
+    <ViewStub android:id="@ba/L" android:inflatedId="@ba/L" android:layout_width="-1" android:layout_height="-2" />
+    <com.google.android.apps.hangouts.listui.SwipeableListView android:id="0x102000a" android:longClickable="false" android:layout_width="-1" android:layout_height="-1" android:listSelector="0x7f0200ac" android:drawSelectorOnTop="true" android:cacheColorHint="0x7f0e0022" android:divider="@wi/w" android:dividerHeight="0px" android:layout_weight="1.0" android:layout_above="0x7f0d01a0" android:layout_below="@ba/L" android:layout_alignWithParentIfMissing="true" />
+    <Button android:id="0x7f0d01a0" android:background="0x7f02006f" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:text="0x7f0a08a0" android:layout_alignParentBottom="true" />
+    <FrameLayout android:layout_width="-1" android:layout_height="-1" android:layout_weight="1.0" android:layout_below="@ba/L">
+        <TextView android:textSize="18sp" android:gravity="11" android:id="@ba/cX" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+        <ProgressBar android:layout_gravity="11" android:id="@ba/cW" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="5dp" android:indeterminate="true" style="?unknown_attr_ref: 1010077" />
+        <RelativeLayout android:id="0x1020004" android:visibility="2" android:layout_width="-1" android:layout_height="-1">
+            <LinearLayout android:gravity="11" android:layout_gravity="11" android:orientation="1" android:id="@ba/gn" android:layout_width="-1" android:layout_height="-1" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textSize="16sp" android:textColor="@gwb/xX" android:gravity="11" android:id="@ba/go" android:paddingTop="8dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0x7f0b01c9" android:layout_marginRight="0x7f0b01c9" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

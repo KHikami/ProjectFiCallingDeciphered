@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="0x7f0d0386" android:background="@gwb/mv" android:paddingTop="0x7f0b017e" android:layout_width="-1" android:layout_height="-1">
+    <FrameLayout android:id="@ba/ap" android:tag="top_level" android:background="0x7f0e0284" android:layout_width="-1" android:layout_height="-1" android:layout_weight="1.0" />
+    <View android:id="0x7f0d00fa" style="0x7f0c0239" />
+    <Button android:gravity="11" android:id="@ba/P" android:visibility="2" android:layout_width="-1" android:layout_height="44dp" android:text="0x7f0a069a" android:onClick="onStartNewHangoutButtonClick" style="0x7f0c0235" />
+    <Button android:gravity="11" android:id="@ba/Q" android:visibility="2" android:layout_width="-1" android:layout_height="44dp" android:text="0x7f0a069b" android:onClick="onStartNewSmsButtonClick" style="0x7f0c0235" />
+</LinearLayout>

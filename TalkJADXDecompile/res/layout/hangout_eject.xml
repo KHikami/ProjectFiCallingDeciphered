@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="16dp" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@ba/bH" android:paddingLeft="8dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="24dp" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010034" android:id="@ba/bG" android:paddingLeft="8dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="8dp" />
+    </LinearLayout>
+</ScrollView>
