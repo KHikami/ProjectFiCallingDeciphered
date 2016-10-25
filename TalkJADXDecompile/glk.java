@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+//seems to be a logger where it takes a bunch of strings/possibilities for every service
 public final class glk {
     public static volatile boolean A;
     private static final Map<String, String> B;
@@ -55,7 +56,7 @@ public final class glk {
         p = c("requestwriter");
         q = c("service");
         r = c("sms");
-        s = c("telephony");
+        s = c("telephony"); //what we're mainly concerned with...
         t = c("util");
         u = c("view");
         v = c("wear");
@@ -70,12 +71,14 @@ public final class glk {
         C = Pattern.compile(String.format("(%s)", new Object[]{meu.a("|").a(arrayList)}));
     }
 
+    //creates string in form of debug.chat.telephony etc.
     private static kae c(String str) {
         String str2 = "debug.chat.";
         String valueOf = String.valueOf(str);
         return new kae(valueOf.length() != 0 ? str2.concat(valueOf) : new String(str2), (byte) 0);
     }
 
+    //calls gwb's methods...
     public static void a() {
         int i = 2;
         boolean a = gwb.a(gwb.H(), "babel_log_dump", false);

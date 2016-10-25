@@ -1,0 +1,36 @@
+Bookmark Files: (files that we ought to pay more attention to)
+TeleWifiCallingSettingsService.java =
+  -> calls glk
+  -> calls ggt
+glk.java = some sort of logger for the hangouts services
+  -> calls gwb
+  -> calls inx for telephony
+ggt.java = new type of Binder
+  -> added extention of ggs
+  -> has a switch statement based on "wi.java" values
+  -> has a specific case on 1598968902... (not the default case)
+  -> calls gwb.T() with Context being fed in
+  -> when Tyco Account involved, calls ggc
+  -> calls glk for logging
+gwb.java = seems to be the interface drawer
+  -> returns a mup.java for telephony ops
+  -> has a switch statement for call errors etc.
+  -> seems to be the drawer for all the interfaces including that of calling (is the visual screen to all of the apps)
+  -> calls gcq for answer/reject calls
+  -> contains all of the loggings for LTE, 3G, WiFi, etc. calling :o
+       -> uses context, gec, gcm, gfv to determine this
+       -> also has a new gfo object which has methods to retrieve info...
+       -> uses static methods in gcm, gfv
+gcq.java
+
+Other files:
+kae.java = a new type that creates an object from a string or returns just the string.
+itz.java = new object
+wi.java = a place where a lot of constants are. (all of them regarding ints) uses constants from gwb and very specific arrays
+
+Classes to look up:
+android.os.IBinder 
+android.os.Binder
+android.os.Parcel (being used to print ints in ggt???)
+android.telephony.TelephonyManager
+android.telecom.TelecomManager

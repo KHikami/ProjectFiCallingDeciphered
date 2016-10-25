@@ -1,3 +1,5 @@
+//some new type called kae that stores a string else creates a default object with the string fed in
+
 public class kae {
     private final String a;
 

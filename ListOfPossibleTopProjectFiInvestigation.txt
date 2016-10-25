@@ -1,0 +1,20 @@
+com.android.services.telephony.TelephonyConnectionService
+Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] to trigger PendingIntent{6099bad: PendingIntentRecord{3cff6d8 com.google.android.apps.tycho broadcastIntent
+Sending phone-account registered intent as user
+Telecom
+com.google.android.talk/com.google.android.apps.hangouts.telephony.TeleConnectionService
+ConnectivityService: registerNetworkAgent NetworkAgentInfo{ ni{[type: MOBILE[CDMA - 1xRTT], state: CONNECTED/CONNECTED, reason: connected, extra: n.nv.ispsn, failover: false, available: true, roaming: false, metered: false]}  network{169}  nethandle{725865908958}  lp{{InterfaceName: rmnet_data0 LinkAddresses: [21.7.121.200/28,]  Routes: [0.0.0.0/0 -> 21.7.121.201 rmnet_data0,] DnsAddresses: [68.29.1.7,68.29.9.7,] Domains: null MTU: 1472 TcpBufferSizes: 16384,32768,131072,4096,16384,102400}}  nc{[ Transports: CELLULAR Capabilities: MMS&SUPL&IMS&CBS&IA&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN LinkUpBandwidth>=100Kbps LinkDnBandwidth>=100Kbps Specifier: <2>]}  Score{10}  everValidated{false}  lastValidated{false}  created{false} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} 
+Telecom : Event: Call TC@6: SET_CONNECTING, ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService},
+EmergencyInCallServiceConnection: Attempting to bind to InCall ComponentInfo{com.google.android.dialer/com.android.incallui.InCallServiceImpl}, with Intent { act=android.telecom.InCallService cmp=com.google.android.dialer/com.android.incallui.InCallServiceImpl (has extras) }: PCR.oR@Cao
+PhoneAccountRegistrar: SimCallManager queried, returning: ComponentInfo{com.google.android.talk/com.google.android.apps.hangouts.telephony.TeleConnectionService},
+CellStateListener (Babel_Telephony)
+ActivityManager: START u0 {act=android.intent.action.MAIN flg=0x10040000 cmp=com.google.android.dialer/com.android.incallui.InCallActivity
+Babel_telephony: TeleWifiCallThreshold.shouldAllowOutgoingLteCall, connected to wifi
+Babel_telephony: TeleOutgoingCallRequest.startWifiCall, outgoing phone number: +***********
+   followed by Babel_telephony: TeleWifiCall.updateStatusHints, label: UCLA_WEB, icon: com.google.android.apps.hangouts:drawable/ic_signal_wifi_white_24dp
+   
+
+Resulting focus:
+com.google.android.talk/com.google.android.apps.hangouts.telephony.TeleConnectionService
+    Hangouts is babel_telephony (slash it returns this as part of its stream)
+
