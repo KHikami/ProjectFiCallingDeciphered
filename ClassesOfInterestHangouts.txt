@@ -1,4 +1,4 @@
-Bookmark Files: (files that we ought to pay more attention to)
+BOOKMARK FILES: (files that we ought to pay more attention to)
 TeleWifiCallingSettingsService.java =
   -> calls glk
   -> calls ggt
@@ -21,16 +21,46 @@ gwb.java = seems to be the interface drawer
        -> uses context, gec, gcm, gfv to determine this
        -> also has a new gfo object which has methods to retrieve info...
        -> uses static methods in gcm, gfv
-gcq.java
+       -> might be where the threshold is determined! (method public static gfo a(Context context, gec gec, int i))
+  -> ggq used to determine home & visitor call network?
+gcq.java = A more complicated Connection? (Is this the caller sound of dialing etc.?) Caller Status Connection
+  -> extends the connection class
+  -> uses a gef to determine an address???
+  -> uses gcc to set call
+  -> uses gdc to handoff call
+  -> plays tones??? (DTM tone)
+  -> has state changes of the status of the calls
+gec.java = reports the current network carrier for phone
+  -> carrier identifier? (has a switch statement for roaming or T-mobile)
+  -> has string babel_hutch
+gcm.java = seems to be the cell state???
+  -> initialized with signal state, service state, and more...
+gfv.java
+gfo.java
+ggq.java
+nyu.java
+gcc.java
+gdc.java
 
-Other files:
+New Types & Objects:
 kae.java = a new type that creates an object from a string or returns just the string.
 itz.java = new object
 wi.java = a place where a lot of constants are. (all of them regarding ints) uses constants from gwb and very specific arrays
-
+nyt.java = 
+nzf.java = seems to ba a large cache array?
+nyx.java = extends nzf (seems to be a field logger?)
+mup.java = a constant class that extends nyx (question mark class???)
+  -> uses the super constructor of nyx
+  -> has a method that returns a nzf and takes in a nyt
+  -> uses static methods from nyu
+gef.java
+  
 Classes to look up:
 android.os.IBinder 
 android.os.Binder
 android.os.Parcel (being used to print ints in ggt???)
 android.telephony.TelephonyManager
 android.telecom.TelecomManager
+com.google.android.gms.herrevad.PredictedNetworkQuality
+android.content.Context
+android.telecom.Connection
