@@ -1,9 +1,9 @@
 import java.util.Locale;
 
-public final class gfv {
-    public final boolean a;
-    public final int b;
-    public final int c;
+public final class gfv { //wifi connection cell?
+    public final boolean a; //is connected
+    public final int b; // signal level
+    public final int c; //link speed
 
     gfv(boolean z, int i, int i2) {
         this.a = z;

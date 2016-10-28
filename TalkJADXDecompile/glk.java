@@ -78,7 +78,7 @@ public final class glk {
         return new kae(valueOf.length() != 0 ? str2.concat(valueOf) : new String(str2), (byte) 0);
     }
 
-    //calls gwb's methods...
+    //calls gwb's methods... seems to be the default log method
     public static void a() {
         int i = 2;
         boolean a = gwb.a(gwb.H(), "babel_log_dump", false);
@@ -146,6 +146,7 @@ public final class glk {
         a(true, 6, str, Log.getStackTraceString(th), new Object[0]);
     }
 
+    //creates the log string to print based on what the strings where passed
     private static void a(boolean z, int i, String str, String str2, Object... objArr) {
         String str3 = null;
         Object obj = (objArr == null || objArr.length > 0) ? 1 : null;
