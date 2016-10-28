@@ -61,7 +61,7 @@ public final class gcq extends Connection {
         }
         this.h = str;
         setInitializing();
-        setAddress(gef.h().getAddress(), 1);
+        setAddress(gef.h().getAddress(), 1); //returns connection request address and calls own method setAddress
         setConnectionCapabilities(66);
         this.a = new gca(this.h);
         this.a.a(HttpStatusCodes.STATUS_CODE_OK);

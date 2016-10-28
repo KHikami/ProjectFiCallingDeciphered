@@ -25,7 +25,7 @@ gwb.java = seems to be the interface drawer
   -> ggq used to determine home & visitor call network?
 gcq.java = A more complicated Connection? (Is this the caller sound of dialing etc.?) Caller Status Connection
   -> extends the connection class
-  -> uses a gef to determine an address???
+  -> uses a gef to determine an phone address to call
   -> uses gcc to set call
   -> uses gdc to handoff call
   -> plays tones??? (DTM tone)
@@ -38,7 +38,7 @@ gcm.java = represents a cell (has service state, signal level etc.)
 gfv.java
 gfo.java
 ggq.java
-nyu.java
+nyu.java (NON-EXISTENT) (Is some type of object who's method a() is used often)
 gcc.java
 gdc.java
 
@@ -53,8 +53,10 @@ mup.java = a constant class that extends nyx (question mark class???)
   -> uses the super constructor of nyx
   -> has a method that returns a nzf and takes in a nyt
   -> uses static methods from nyu
-gef.java
-lks.java =
+gef.java = destination for call (callee)
+  -> uses android.net.uri for something & gec (the carrier)
+  -> contains methods to try and leave voice mails, connect, and various variations of input phone number
+lks.java = extends nyx (another field logger/tracker)
 mcm.java = uses an lks object
   
 Classes to look up:
@@ -66,3 +68,5 @@ android.telecom.TelecomManager
 com.google.android.gms.herrevad.PredictedNetworkQuality
 android.content.Context
 android.telecom.Connection
+com.google.android.apps.hangouts.telephony.TeleConnectionService
+android.net.Uri
