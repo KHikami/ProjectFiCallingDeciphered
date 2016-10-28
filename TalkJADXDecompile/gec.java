@@ -7,10 +7,10 @@ import android.text.TextUtils;
 import java.util.Locale;
 import java.util.Objects;
 
-public final class gec implements Parcelable {
+public final class gec implements Parcelable { //refered to as network status in gwb
     public static final Creator<gec> CREATOR;
     private final int a;
-    private final String b;
+    private final String b; //sim operator identifier
     private final String c;
 
     public gec(Context context, int i) {
@@ -113,7 +113,7 @@ public final class gec implements Parcelable {
     }
 
     public int c() {
-        String str = this.b;
+        String str = this.b; //returns a "code" based on the Sim Operator
         if (str != null) {
             if (str.startsWith("310260")) {
                 return 2;

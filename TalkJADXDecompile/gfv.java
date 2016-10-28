@@ -11,7 +11,9 @@ public final class gfv { //wifi connection cell?
         this.c = i2;
     }
 
+    //is good wifi signal :)
     public boolean a(int i, int i2) {
+        //is connected & signal level is greater than thresh 1 & link speed is greater than thresh 2
         return this.a && this.b > i && this.c > i2;
     }
 

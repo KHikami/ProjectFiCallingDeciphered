@@ -4073,6 +4073,7 @@ public class gwb implements gub {
     }
 
     public static boolean a(Context context, String str, boolean z) {
+
         biw biw = (biw) jyn.b(context, biw.class);
         return biw == null ? z : biw.a(str, z);
     }
@@ -8327,12 +8328,16 @@ public class gwb implements gub {
     }
 
     public static boolean b(Context context, int i, boolean z) {
+        //only use found right now is given context, Sim Operator code, and a boolean that's hardcoded false or not
+        //when false, VoIP is favored over 3G
         if (z) {
             if ((a(context, "babel_hutch_three_g_incoming_enabled", false) && (i == 4 || i == 5)) || a(context, "babel_hutch_3g_incoming_experience_for_us", false)) {
+                //not 3G inbound enabled and not receiving a 3G call
                 return true;
             }
             return false;
         } else if ((a(context, "babel_hutch_three_g_outgoing_enabled", true) && (i == 4 || i == 5)) || a(context, "babel_hutch_3g_outgoing_experience_for_us", false)) {
+            //is 3G outbound enabled and sim operator code is 4 or 5 or not sending a 3G outgoing call???
             return true;
         } else {
             return false;
@@ -8364,50 +8369,59 @@ public class gwb implements gub {
         return simCountryIso;
     }
 
+    //given context, current network carrier, cell info, wifi context, and string calculate allow outbound Lte Call
     public static boolean a(Context context, gec gec, gcm gcm, gfv gfv, String str) {
-        if (gfv.a) {
+        if (gfv.a) { //if wifi is connected, do not allow outgoing Lte call (returns false)
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, connected to wifi", new Object[0]);
             return false;
         } else if (gcm.e != 13) {
+            //going to guess if network type == 13 phone is connected to Lte
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, not connected to LTE", new Object[0]);
             return false;
-        } else if (!H(context)) {
+        } else if (!H(context)) { //check if there is an active connection given context
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, not connected to internet", new Object[0]);
             return false;
         } else if (gec.c() == 2 && glq.d(H(), str) && a(context, "babel_lte_fallback_for_outgoing_tmobile_emergency_call", true)) {
+            //identifies T-mobile as #2,
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, falling back to LTE for emergency call over T-Mobile", new Object[0]);
             return true;
         } else if (a(context, "babel_lte_outgoing_call_allowed", false)) {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, LTE outgoing call allowed by default", new Object[0]);
             return true;
         } else if (a(context, gec.c(), false)) {
+            //so by the time I get here, we've already determined we do not have internet? => can make VoLTE
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall,on carrier where we support voip calling over LTE, carrierId: " + gec.c(), new Object[0]);
             return true;
         } else {
+            //default is no.
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, returning false", new Object[0]);
             return false;
         }
     }
 
+    //given context, current network carrier, cell info, wifi context, and string calculate allow 3G Call
     public static boolean a(Context context, gec gec, gcm gcm, gfv gfv) {
-        if (gfv.a) {
+        if (gfv.a) { //connected to wifi => false
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoing3GCall, connected to wifi", new Object[0]);
             return false;
-        } else if (!w(gcm.e)) {
+        } else if (!w(gcm.e)) { //network type is 8,9,15,10 => connected to 3G
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoing3GCall, not connected to 3G", new Object[0]);
             return false;
-        } else if (!H(context)) {
+        } else if (!H(context)) { //check if there is an active connection given context
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoing3GCall, not connected to internet", new Object[0]);
             return false;
-        } else if (b(context, gec.c(), false)) {
+        } else if (b(context, gec.c(), false)) { //b(context,int,boolean) (boolean = is outbound)
+            //if sim operator type is 4 or 5 & I'm 3G outbound enabled & this is outbound=> allow outbound 3G call (ensures it isn't a 3G incoming call)
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoing3GCall,on carrier where we support voip calling over 3G, carrierId: " + gec.c(), new Object[0]);
             return true;
         } else {
+            //not too sure why this becomes Incoming...
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowIncoming3GCall, returning false", new Object[0]);
             return false;
         }
     }
 
+    //determines allowing the incoming Lte call
     public static boolean b(Context context, gec gec, gcm gcm, gfv gfv) {
         if (gfv.a) {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowIncomingLteCall, connected to wifi", new Object[0]);
@@ -8433,6 +8447,7 @@ public class gwb implements gub {
         }
     }
 
+    //allow incoming 3G call
     public static boolean c(Context context, gec gec, gcm gcm, gfv gfv) {
         if (gfv.a) {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowIncoming3GCall, connected to wifi", new Object[0]);
@@ -8443,7 +8458,7 @@ public class gwb implements gub {
         } else if (!H(context)) {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowIncoming3GCall, not connected to internet", new Object[0]);
             return false;
-        } else if (b(context, gec.c(), true)) {
+        } else if (b(context, gec.c(), true)) { //very similar to the outbound version but this bool is inbound
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowIncoming3GCall,on carrier where we support voip calling over 3G, carrierId: " + gec.c(), new Object[0]);
             return true;
         } else {
@@ -8452,8 +8467,10 @@ public class gwb implements gub {
         }
     }
 
+    //checks whether or not to make wifi call given context, network state, cell state, wifi cell state, string
     public static boolean b(Context context, gec gec, gcm gcm, gfv gfv, String str) {
-        gfo a = a(context, gec, gcm.e);
+        gfo a = a(context, gec, gcm.e); //creates a new wifi calculator based on cell state, network type, and context
+        //reports what's the signal into the logs with network state(gec), cell state, wifi signal, field a = threshold (can't find it :( )
         glk.c("Babel_telephony", String.format(Locale.US, "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, network status is: %s\ncell signal is: %s\nwifi signal is: %s\nthreshold is: %s", new Object[]{gec, gcm, gfv, a}), new Object[0]);
         if (VERSION.SDK_INT < 23 && S(context)) {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, phone is in power save mode; WiFi is not stable enough for calls.", new Object[0]);
