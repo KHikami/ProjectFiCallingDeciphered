@@ -1,4 +1,4 @@
-public final class mcm extends nyx<mcm> {
+public final class mcm extends nyx<mcm> { //is of nyx (field logger)
     public Integer a;
     public String b;
     public Integer c;

@@ -9,11 +9,11 @@ import com.google.android.apps.hangouts.telephony.TeleConnectionService;
 import java.util.Iterator;
 import java.util.Locale;
 
-public final class gef {
+public final class gef { //is the phone caller! tries to call the destination w/ variations on the given phone number
     private final TeleConnectionService a;
     private final ConnectionRequest b;
     private final boolean c;
-    private gec d;
+    private gec d; //current Network Carrier
     private String e;
     private int f;
     private boolean g;
@@ -27,19 +27,19 @@ public final class gef {
 
     void a(int i) {
         this.f = i;
-    }
+    } //sets f to be the value of whatever is passed...
 
     int a() {
         return this.f;
-    }
+    } //returns f
 
     void a(String str) {
         this.e = str;
-    }
+    } //sets e
 
     gec b() {
         return this.d;
-    }
+    } //method to return current Network Carrier
 
     void a(gec gec) {
         this.d = gec;
@@ -286,7 +286,7 @@ public final class gef {
 
     ConnectionRequest h() {
         return this.b;
-    }
+    } //returns a connection request
 
     ConnectionRequest i() {
         String e = e();
