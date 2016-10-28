@@ -1,12 +1,12 @@
 import java.util.Objects;
 
 public final class gcm {
-    public final int a;
-    public final int b;
-    public final int c;
-    public final String d;
-    public final int e;
-    public final int f;
+    public final int a; //serviceState
+    public final int b; //signalLevelPercentage
+    public final int c; // phoneType
+    public final String d; //networkOperator
+    public final int e;//networkType
+    public final int f; //systemID
 
     gcm(int i, int i2, int i3, String str, int i4, int i5) {
         this.a = i;

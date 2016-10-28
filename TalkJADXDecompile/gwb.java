@@ -8274,16 +8274,17 @@ public class gwb implements gub {
 
     public static mcm a(gcm gcm, gfv gfv) {
         mcm mcm = new mcm();
-        mcm.a = Integer.valueOf(gcm.c);
+        mcm.a = Integer.valueOf(gcm.c); //grabs phoneType for cell
         if (!TextUtils.isEmpty(gcm.d)) {
             mcm.b = gcm.d;
+            //grabs Network operatior
         }
-        mcm.d = Integer.valueOf(gcm.e);
+        mcm.d = Integer.valueOf(gcm.e); //grabs network type
         mcm.e = new lks();
-        mcm.e.c = Integer.valueOf(gcm.b);
+        mcm.e.c = Integer.valueOf(gcm.b); // signal level percentage
         mcm.e.a = Integer.valueOf(gfv.b);
         if (gcm.f != -1) {
-            mcm.c = Integer.valueOf(gcm.f);
+            mcm.c = Integer.valueOf(gcm.f); //if systemID is not -1, grab systemID of cell?
         }
         return mcm;
     }

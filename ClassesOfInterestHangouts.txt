@@ -20,7 +20,7 @@ gwb.java = seems to be the interface drawer
   -> contains all of the loggings for LTE, 3G, WiFi, etc. calling :o
        -> uses context, gec, gcm, gfv to determine this
        -> also has a new gfo object which has methods to retrieve info...
-       -> uses static methods in gcm, gfv
+       -> uses static methods in gcm (with a mcm object?), gfv
        -> might be where the threshold is determined! (method public static gfo a(Context context, gec gec, int i))
   -> ggq used to determine home & visitor call network?
 gcq.java = A more complicated Connection? (Is this the caller sound of dialing etc.?) Caller Status Connection
@@ -33,8 +33,8 @@ gcq.java = A more complicated Connection? (Is this the caller sound of dialing e
 gec.java = reports the current network carrier for phone
   -> carrier identifier? (has a switch statement for roaming or T-mobile)
   -> has string babel_hutch
-gcm.java = seems to be the cell state???
-  -> initialized with signal state, service state, and more...
+gcm.java = represents a cell (has service state, signal level etc.)
+  -> initialized with signal state, service state, signal level percent etc. 
 gfv.java
 gfo.java
 ggq.java
@@ -54,6 +54,8 @@ mup.java = a constant class that extends nyx (question mark class???)
   -> has a method that returns a nzf and takes in a nyt
   -> uses static methods from nyu
 gef.java
+lks.java =
+mcm.java = uses an lks object
   
 Classes to look up:
 android.os.IBinder 
