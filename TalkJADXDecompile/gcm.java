@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public final class gcm {
-    public final int a; //serviceState
+    public final int a; //serviceState (should be 0 to be good?)
     public final int b; //signalLevelPercentage
     public final int c; // phoneType
     public final String d; //networkOperator
@@ -27,10 +27,12 @@ public final class gcm {
     }
 
     public boolean a() {
+        //service state is not null or signal level percentage is -1 or signal is 0
         return this.a != 0 || this.b == -1 || this.b == 0;
     }
 
     public boolean a(int i) {
+        //returns that service state is 0 and signal level percentage is not -1 and signal percentage is greater than given number
         return this.a == 0 && this.b != -1 && this.b > i;
     }
 

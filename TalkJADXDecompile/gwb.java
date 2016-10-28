@@ -8468,26 +8468,31 @@ public class gwb implements gub {
     }
 
     //checks whether or not to make wifi call given context, network state, cell state, wifi cell state, string
+    //summary:
+    // if no cell service => wifi call (if wifi connected)
+    //
     public static boolean b(Context context, gec gec, gcm gcm, gfv gfv, String str) {
-        gfo a = a(context, gec, gcm.e); //creates a new wifi calculator based on cell state, network type, and context
-        //reports what's the signal into the logs with network state(gec), cell state, wifi signal, field a = threshold (can't find it :( )
+        gfo a = a(context, gec, gcm.e); //creates a new wifi calculator based on cell state, network type, and context???
+        //need to check how this wifi calculator is made
+        //reports what's the signal into the logs with network state(gec), cell state, wifi signal, wifi calculator (as threshold)
         glk.c("Babel_telephony", String.format(Locale.US, "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, network status is: %s\ncell signal is: %s\nwifi signal is: %s\nthreshold is: %s", new Object[]{gec, gcm, gfv, a}), new Object[0]);
         if (VERSION.SDK_INT < 23 && S(context)) {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, phone is in power save mode; WiFi is not stable enough for calls.", new Object[0]);
             return false;
-        } else if (gcm.a()) {
+        } else if (gcm.a()) { //has no service (cell signal percentage is -1 or 0 or cell state is not 0)
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, no cell service", new Object[0]);
-            return gfv.a;
+            return gfv.a; //return wifi is connected
         } else if (glq.d(H(), str)) {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, possible emergency call", new Object[0]);
             return gfv.a;
-        } else if (gcm.a(a.a)) {
+        } else if (gcm.a(a.a)) { //checks if cell signal is better than cell signal??? of wifi calculator...  wonder if they actually meant gfv...
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, cell is better than threshold", new Object[0]);
             return false;
-        } else if (gfv.a(a.b, a.d)) {
+        } else if (gfv.a(a.b, a.d)) { //wifi signal is better than wifi signal speed and wifi link handoff
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, returning true", new Object[0]);
             return true;
         } else {
+            //default is false.
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, wifi is below threshold", new Object[0]);
             return false;
         }
