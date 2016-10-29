@@ -74,14 +74,14 @@ public class InCallActivity extends abr implements bbw {
     private FragmentManager l;
     private akl m;
     private bci n;
-    private int o;
+    private int o; //orig value is 1
     private boolean p;
     private String q;
     private boolean r;
     private String s;
     private String t;
     private boolean u;
-    private boolean v;
+    private boolean v; //orig value is false
     private int w;
     private int x;
     private akd y;
@@ -92,6 +92,8 @@ public class InCallActivity extends abr implements bbw {
         this.v = false;
         this.y = new bca(this);
     }
+
+    //creates the new UI for an inCall screen
 
     static {
         h = InCallActivity.class.getSimpleName();

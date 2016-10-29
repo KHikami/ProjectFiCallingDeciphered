@@ -9,7 +9,7 @@ import com.google.android.apps.hangouts.telephony.TeleConnectionService;
 import java.util.Iterator;
 import java.util.Locale;
 
-public final class gef { //is the phone caller! tries to call the destination w/ variations on the given phone number
+public final class gef { //is the phone remapper! tries to call the destination w/ variations on the given phone number
     private final TeleConnectionService a;
     private final ConnectionRequest b;
     private final boolean c;
