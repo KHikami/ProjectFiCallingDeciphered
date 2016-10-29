@@ -3,17 +3,17 @@ import android.text.TextUtils;
 import java.util.Locale;
 
 public final class gcw {
-    private final String a;
-    private final String b;
+    private final String a; // substring of b for specific info
+    private final String b; // gwb context info
 
     static gcw a(Context context, String str, boolean z, gfv gfv) {
-        if (gfv.a) {
+        if (gfv.a) {    // If wifi signal is good enough...
             String b = gwb.b(context, "babel_wifi_experiment_prerequisites", gda.e);
             if (TextUtils.isEmpty(b)) {
                 glk.c("Babel_telephony", "TeleExperiment.getWifiExperiment, no experiments defined.", new Object[0]);
                 return null;
             }
-            String a = a(b, "wifi_ssid=");
+            String a = a(b, "wifi_ssid=");  // Gets whatever is after "wifi_ssid=" and before a comma
             if (!TextUtils.isEmpty(a) && !a.equals(gwb.G(context))) {
                 glk.c("Babel_telephony", new StringBuilder(String.valueOf(a).length() + 49).append("TeleExperiment.getWifiExperiment, not on '").append(a).append("' wifi.").toString(), new Object[0]);
                 return null;
@@ -58,17 +58,23 @@ public final class gcw {
                 return null;
             }
         }
+        // Wifi signal wasn't good enough
         glk.c("Babel_telephony", "TeleExperiment.getWifiExperiment, no wifi connection.", new Object[0]);
         return null;
     }
 
+    // Retuns a substring from str that is after str2 and before a comma
+    // Example str: "something_test_hi,alksjdflkajsd"
+    // Example str2: "test_"
+    // Returns "hi"
     private static String a(String str, String str2) {
-        int indexOf = str.indexOf(str2);
+        int indexOf = str.indexOf(str2);    // Find out if str2 is a substring of str
         if (indexOf == -1) {
             return null;
         }
-        indexOf += str2.length();
-        int indexOf2 = str.indexOf(44, indexOf);
+        indexOf += str2.length();           // If it is a substring, then add its length to the index
+        int indexOf2 = str.indexOf(44, indexOf);    // Look for a comma, after str2's end
+        // Return substring of everything after str2 to a comma (if any)
         return indexOf2 == -1 ? str.substring(indexOf) : str.substring(indexOf, indexOf2);
     }
 

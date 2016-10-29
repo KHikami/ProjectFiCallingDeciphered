@@ -4060,7 +4060,9 @@ public class gwb implements gub {
     }
 
     public static String b(Context context, String str, String str2) {
+        // Called by gcw to create a biw (biz implements biw)
         biw biw = (biw) jyn.b(context, biw.class);
+        // If not successfull, just return str2, otherwise... not sure
         return biw == null ? str2 : biw.a(str, str2);
     }
 

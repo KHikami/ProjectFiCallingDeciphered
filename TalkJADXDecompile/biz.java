@@ -34,6 +34,7 @@ final class biz implements biw {
         ba.a(z, valueOf.length() != 0 ? str2.concat(valueOf) : new String(str2));
     }
 
+    // Called by gwb
     public String a(String str, String str2) {
         a(str);
         c();
@@ -66,11 +67,13 @@ final class biz implements biw {
 
     private void c() {
         if (!this.e) {
+            // Only one thread in here at a time
             synchronized (this.d) {
                 long currentTimeMillis = System.currentTimeMillis();
+                // Protect against "spurious wakup" by checking this condition on wake-up
                 while (!this.e) {
                     try {
-                        this.d.wait(3000);
+                        this.d.wait(3000);  // Wait 3000 ms (3 sec)
                         if (System.currentTimeMillis() - currentTimeMillis > 3000) {
                             ((iih) jyn.a(this.c, iih.class)).a(-1).b().c(2029);
                             return;

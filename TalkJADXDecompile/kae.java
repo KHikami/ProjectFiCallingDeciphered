@@ -7,6 +7,7 @@ public class kae {
         this.a = str;
     }
 
+    // Does nothing of use: just calls the single-parameter constructor above
     public kae(String str, byte b) {
         this(str);
     }

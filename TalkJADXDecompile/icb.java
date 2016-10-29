@@ -41,13 +41,14 @@ public class icb {
         }
     }
 
+    // Called by biz
     public static String a(ContentResolver contentResolver, String str, String str2) {
         a();
         synchronized (icb.class) {
             b(contentResolver);
             Object obj = f;
             String str3;
-            if (e.containsKey(str)) {
+            if (e.containsKey(str)) {   // If hashmap contains str...
                 str3 = (String) e.get(str);
                 if (str3 != null) {
                     str2 = str3;
