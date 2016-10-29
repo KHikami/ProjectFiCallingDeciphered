@@ -254,7 +254,7 @@ public final class azs {
     }
 
     public final ayo a(Call call) {
-        return (ayo) this.c.get(call);
+        return (ayo) this.c.get(call); //get Ayo to related Call
     }
 
     public final List b(String str) {
@@ -289,19 +289,20 @@ public final class azs {
         }
     }
 
+    //returns true if ayo was successfully mapped in c and b otherwise removed from c and b???
     public final boolean g(ayo ayo) {
         int i = 0;
         Objects.requireNonNull(ayo);
-        if (ayo.c() == 10) {
-            if (!this.b.containsKey(ayo.d)) {
+        if (ayo.c() == 10) { //ayo.y is 10
+            if (!this.b.containsKey(ayo.d)) { //if map contains string ayo.d  => false
                 return false;
             }
             Message obtainMessage = this.h.obtainMessage(1, ayo);
             Handler handler = this.h;
-            if (ayo.c() != 10) {
+            if (ayo.c() != 10) { //if ayo.y is not 10 => bad!
                 throw new IllegalStateException();
             }
-            switch (ayo.f().getCode()) {
+            switch (ayo.f().getCode()) {//get disconnect reason
                 case rq.b /*1*/:
                 case rl.e /*3*/:
                     i = 2000;
@@ -318,18 +319,18 @@ public final class azs {
                     break;
             }
             handler.sendMessageDelayed(obtainMessage, (long) i);
-            this.e.add(ayo);
+            this.e.add(ayo); //add to set e, ayo
+            this.b.put(ayo.d, ayo); //add to map b, ayo.d to given ayo
+            this.c.put(ayo.b, ayo); //add to map c, ayo.b (call) to given ayo
+            return true;
+        } else if (!i(ayo)) { //if ayo.y is not 2 or 0
             this.b.put(ayo.d, ayo);
             this.c.put(ayo.b, ayo);
             return true;
-        } else if (!i(ayo)) {
-            this.b.put(ayo.d, ayo);
-            this.c.put(ayo.b, ayo);
-            return true;
-        } else if (!this.b.containsKey(ayo.d)) {
+        } else if (!this.b.containsKey(ayo.d)) {//check if ayo.d is already mapped in b again???
             return false;
         } else {
-            this.b.remove(ayo.d);
+            this.b.remove(ayo.d); //otherwise remove the cells
             this.c.remove(ayo.b);
             return true;
         }

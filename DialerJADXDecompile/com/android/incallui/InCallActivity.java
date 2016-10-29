@@ -60,7 +60,7 @@ import rl;
 import rq;
 
 /* compiled from: PG */
-public class InCallActivity extends abr implements bbw {
+public class InCallActivity extends abr implements bbw { //inherits a boolean a from abr
     private static String h;
     public ayv b;
     DialpadFragment c;

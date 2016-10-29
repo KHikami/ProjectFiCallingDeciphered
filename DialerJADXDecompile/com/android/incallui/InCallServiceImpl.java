@@ -53,20 +53,20 @@ public class InCallServiceImpl extends InCallService {
         boolean z;
         bcj b = bcj.b();
         bde bde = new bde(call);
-        if (call.getState() != 2) {
+        if (call.getState() != 2) { //as long as phone is not rining => z = false
             z = false;
-        } else if (buf.b(call)) {
+        } else if (buf.b(call)) { //is callee emergency # => z = false
             bdf.d(b, "Not attempting to block incoming emergency call");
             z = false;
-        } else if (buf.C(b.i)) {
+        } else if (buf.C(b.i)) { //is caller possibly an emergency number
             bdf.d(b, "Not attempting to block incoming call due to recent emergency call");
             z = false;
         } else if (call.getDetails().hasProperty(64)) {
-            z = false;
+            z = false; //is an External Call (as in not calling self)
         } else {
-            z = true;
+            z = true; //z is set to true
         }
-        if (z) {
+        if (z) { //block the call?
             String g = buf.g(b.i);
             String c = buf.c(call);
             long currentTimeMillis = System.currentTimeMillis();
@@ -75,9 +75,9 @@ public class InCallServiceImpl extends InCallService {
             Runnable bco = new bco(b, atomicBoolean, bde, call);
             handler.postDelayed(bco, 1000);
             b.t.a(new bcp(b, atomicBoolean, handler, bco, bde, call, c, currentTimeMillis), c, g);
-        } else if (call.getDetails().hasProperty(64)) {
-            bbq bbq = b.l;
-            if (call.getDetails().hasProperty(64)) {
+        } else if (call.getDetails().hasProperty(64)) { //is External Call
+            bbq bbq = b.l; //get related bbq for bcj
+            if (call.getDetails().hasProperty(64)) {//verify still an external call???
                 bbq.a.add(call);
                 call.registerCallback(bbq.c, new Handler(Looper.getMainLooper()));
                 bbq.b(call);
@@ -85,11 +85,11 @@ public class InCallServiceImpl extends InCallService {
                 throw new IllegalArgumentException();
             }
         } else {
-            bde.a();
-            b.k.a(b.i, call, bde);
+            bde.a(); //set call's clock with call completion time
+            b.k.a(b.i, call, bde); //azs.a(Context, call, call clock)
         }
-        b.a(false, null);
-        call.registerCallback(b.n);
+        b.a(false, null); //make sure phone cannot make outbound call while servicing an incoming call
+        call.registerCallback(b.n); //set the callBack to this call w/ bcj's callback
     }
 
     public void onCallRemoved(Call call) {

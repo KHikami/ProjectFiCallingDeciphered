@@ -28,14 +28,14 @@ public class ayo {
     private PhoneAccountHandle D;
     private final Callback E;
     public final String a;
-    public final Call b;
+    public final Call b; //holds Conferenceable and Video info
     public final bde c;
     public final String d;
-    final List e;
-    public final ayr f;
+    final List e; //list of children ayos
+    public final ayr f; //video settings
     public final ayq g;
     boolean h;
-    int i;
+    int i; //session state
     int j;
     String k;
     String l;
@@ -253,7 +253,7 @@ public class ayo {
     }
 
     public final int c() {
-        if (this.b == null || this.b.getParent() == null) {
+        if (this.b == null || this.b.getParent() == null) { //if call or parent call is null, return y (int)
             return this.y;
         }
         return 11;
@@ -355,22 +355,22 @@ public class ayo {
         Locale locale = Locale.US;
         String str2 = "[%s, %s, %s, %s, children:%s, parent:%s, conferenceable:%s, videoState:%s, mSessionModificationState:%d, VideoSettings:%s]";
         Object[] objArr = new Object[10];
-        objArr[0] = this.d;
-        objArr[1] = buf.g(c());
-        objArr[2] = Details.capabilitiesToString(this.b.getDetails().getCallCapabilities());
-        objArr[3] = Details.propertiesToString(this.b.getDetails().getCallProperties());
-        objArr[4] = this.e;
+        objArr[0] = this.d; //string
+        objArr[1] = buf.g(c()); //string
+        objArr[2] = Details.capabilitiesToString(this.b.getDetails().getCallCapabilities()); //string
+        objArr[3] = Details.propertiesToString(this.b.getDetails().getCallProperties()); // string
+        objArr[4] = this.e; //children
         Call parent = this.b.getParent();
         if (parent != null) {
             str = azs.a.a(parent).d;
         } else {
             str = null;
         }
-        objArr[5] = str;
-        objArr[6] = this.b.getConferenceableCalls();
-        objArr[7] = VideoProfile.videoStateToString(this.b.getDetails().getVideoState());
-        objArr[8] = Integer.valueOf(this.i);
-        objArr[9] = this.f;
+        objArr[5] = str; //parent
+        objArr[6] = this.b.getConferenceableCalls(); //confrenceable
+        objArr[7] = VideoProfile.videoStateToString(this.b.getDetails().getVideoState()); //video
+        objArr[8] = Integer.valueOf(this.i); //session state
+        objArr[9] = this.f; //video settings
         return String.format(locale, str2, objArr);
     }
 
