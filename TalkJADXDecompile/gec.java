@@ -11,35 +11,44 @@ public final class gec implements Parcelable { //refered to as network status in
     public static final Creator<gec> CREATOR;
     private final int a;
     private final String b; //sim operator identifier
-    private final String c;
+    private final String c; //network country ISO (international standard org)
 
     public gec(Context context, int i) {
         String str;
         this.a = i;
         this.b = ((TelephonyManager) context.getSystemService("phone")).getSimOperator();
-        ggc a = ggc.a(context);
+        ggc a = ggc.a(context); //new ggc object created
         TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService("phone");
         String networkCountryIso = telephonyManager.getNetworkCountryIso();
         if (networkCountryIso != null) {
-            networkCountryIso = networkCountryIso.toUpperCase(Locale.US);
+            networkCountryIso = networkCountryIso.toUpperCase(Locale.US);//formats ISO to US format
             if (!TextUtils.isEmpty(networkCountryIso)) {
                 if (!networkCountryIso.equals(a.k())) {
+                    //if network Country is not previous country ISO,
+                    //set "previous" ISO to be current ISO
                     a.b(networkCountryIso);
+
                 }
                 str = networkCountryIso;
                 this.c = str;
             }
         }
-        CharSequence k = a.k();
-        if (!TextUtils.isEmpty(k)) {
+
+        // Note: if the lines in networkCountryIso!= null executed
+        // a.k() now returns current country ISO
+
+        CharSequence k = a.k(); //get previous country iso.
+
+        if (!TextUtils.isEmpty(k)) { //if had previous country, store into a charsequence
             CharSequence charSequence = k;
-        } else if (telephonyManager.getPhoneType() == 2) {
+        } else if (telephonyManager.getPhoneType() == 2) { //phone type is CDMA & no previous ISO
             str = glq.i(context);
         } else {
             glk.c("Babel_telephony", "TeleNetworkStatus.getCurrentNetworkCountryIso, network country is unknown.", new Object[0]);
             str = null;
+            //if no previous country ISO & no current country iso
         }
-        this.c = str;
+        this.c = str;//stores country iso state
     }
 
     gec(int i, String str, String str2) {
@@ -100,6 +109,7 @@ public final class gec implements Parcelable { //refered to as network status in
     public int a() {
         int c = c();
         if ((c != 2 && c != 1) || this.a == 1) {
+            //simOperator is not 2 and not 1 or int given at construction is 1
             return 2;
         }
         if (this.a == 2) {
@@ -110,7 +120,7 @@ public final class gec implements Parcelable { //refered to as network status in
 
     public String b() {
         return this.b;
-    }
+    } //returns SIM Operator
 
     public int c() {
         String str = this.b; //returns a "code" based on the Sim Operator
@@ -136,16 +146,16 @@ public final class gec implements Parcelable { //refered to as network status in
 
     public String d() {
         return this.c;
-    }
+    } //returns ISO
 
     int e() {
-        if (this.c == null) {
+        if (this.c == null) {//no ISO => 3
             return 3;
         }
         if (this.c.equals(Locale.US.getCountry())) {
-            return 1;
+            return 1; //if ISO is US => 1
         }
-        return 2;
+        return 2; //default is 2
     }
 
     public static gec a(gfz gfz) {
@@ -181,6 +191,7 @@ public final class gec implements Parcelable { //refered to as network status in
 
     public boolean a(Context context) {
         if (gwb.a(context, "babel_hutch_experience_for_us", false) || e() != 1) {
+            //if I have an ISO or passes gwb.a(context, string, false) => false
             return false;
         }
         return true;
@@ -188,6 +199,7 @@ public final class gec implements Parcelable { //refered to as network status in
 
     public boolean b(Context context) {
         if (gwb.a(context, "babel_hutch_experience_for_us", false) || e() == 2) {
+            //if ISO is US or passes gwb.a(context, string, false) => true
             return true;
         }
         return false;

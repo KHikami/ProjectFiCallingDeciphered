@@ -4054,6 +4054,8 @@ public class gwb implements gub {
     }
 
     public static biw g(Context context) {
+        //creates a biw from the given context (successful if the context is a jyq)
+        //returns some object that's related to the jyn from the given jyq context
         return (biw) jyn.b(context, biw.class);
     }
 
@@ -8548,22 +8550,28 @@ public class gwb implements gub {
         return false;
     }
 
+    //creates a wifi threshold calc given context, network status, and an int (network type for some calling methods)
     public static gfo a(Context context, gec gec, int i) {
         Collection arrayList = new ArrayList();
-        if (gec.b(context)) {
-            if (!TextUtils.isEmpty(gec.d())) {
+        if (gec.b(context)) { //if locale is US or passes gwb.a(context, string, boolean)
+            if (!TextUtils.isEmpty(gec.d())) { //if ISO is non empty
                 arrayList.add(String.format(Locale.US, "_international_%s", new Object[]{gec.d()}));
+                //add US recognized name of ISO
             }
             arrayList.add("_international");
         } else if (gec.a() == 2) {
+            //if locale is not US and did not pass gwb.a(context,string,boolean) but SimOperator code/ initial a meet gec.a()
             arrayList.add("_domestic_roaming");
+            //states that I roamed domesitcally~
         }
         if (!TextUtils.isEmpty(gec.b())) {
             arrayList.add(String.format(Locale.US, "_carrier_%s", new Object[]{gec.b()}));
+            //identify my SimOperator as long as I have one
         }
         arrayList.add(String.format(Locale.US, "_network_type_%s", new Object[]{v(i)}));
         gfo gfo = new gfo();
         biw g = g(context);
+        //so the other fields of the gfo are based on a(biw, Collection<String>, string, int)
         gfo.b = a(g, arrayList, "babel_wifi_signal_level_percent_threshold_new_call", 50);
         gfo.c = a(g, arrayList, "babel_wifi_signal_level_percent_threshold_jmi_handoff", 20);
         gfo.d = a(g, arrayList, "babel_wifi_link_speed_mbps_threshold", 2);
@@ -8574,15 +8582,20 @@ public class gwb implements gub {
         return gfo;
     }
 
+    //threshold calculator (need to find related subclass of biw... might be in a named file)
     public static int a(biw biw, Collection<String> collection, String str, int i) {
+        //per issue in the collection of strings
         for (String str2 : collection) {
             String valueOf = String.valueOf(str);
             String str22 = String.valueOf(str22);
+            //if the str 22 is not empty string => add str22 to str  otherwise create a new string object with passed str
+            //run method a() of the biw subclass w/ int -1 =>
             int a = biw.a(str22.length() != 0 ? valueOf.concat(str22) : new String(valueOf), -1);
             if (a != -1) {
                 return a;
             }
         }
+
         return biw.a(str, i);
     }
 

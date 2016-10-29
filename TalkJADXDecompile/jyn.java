@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-public final class jyn {
+public final class jyn { //being treated as a specific kind of binder...
     static final kad a;
     private static final Object b;
     private static final jys c;
@@ -123,20 +123,20 @@ public final class jyn {
 
     public <T> T b(Class<T> cls) {
         String str = "GetOptional";
-        cls.getSimpleName();
+        cls.getSimpleName();//retrieves the simple name of the passed class (biw in our case)
         return d(cls);
     }
 
     private <T> T d(Class<T> cls) {
-        ba.a((Object) cls);
-        do {
-            T e = e(cls);
-            if (e != null) {
+        ba.a((Object) cls); //calls a static method in class ba
+        do { //keeps trying to make an instance of biw from a jyn
+            T e = e(cls); //instance of biw = e(biw)
+            if (e != null) { //creation of biw successful from this jyn
                 return e;
             }
-            this = this.e;
+            this = this.e; //grab jyn's related jyn and try to create a biw again
         } while (this != null);
-        return null;
+        return null; //if I'm out of jyns => can't create the biw => return null
     }
 
     public <T> List<T> c(Class<T> cls) {
@@ -214,39 +214,39 @@ public final class jyn {
         list.add(obj2);
     }
 
-    private synchronized <T> T e(Class<T> cls) {
+    private synchronized <T> T e(Class<T> cls) { //creates a new biw
         T t;
         synchronized (this) {
             ba.a((Object) cls);
             if (this.d == null) {
                 throw new IllegalStateException("Binder not initialized yet.");
             }
-            t = this.g.get(cls);
-            if (t == null) {
-                boolean z = this.k;
-                this.k = false;
+            t = this.g.get(cls); //Map.get(Biw)'s related object?
+            if (t == null) { //if no related object to Biw in Map
+                boolean z = this.k; //grab boolean related to this jyn
+                this.k = false; //temp set k to be false
                 try {
-                    int size = this.j.size();
+                    int size = this.j.size(); //in related list of jyw-s (contexts)
                     for (int i = 0; i < size; i++) {
-                        ((jyw) this.j.get(i)).a(this.d, cls, this);
-                        t = this.g.get(cls);
-                        if (t != null) {
+                        ((jyw) this.j.get(i)).a(this.d, cls, this); //call jyw's method a(jyn's related context, biw, this jyn)
+                        t = this.g.get(cls);//try to grab Map's BIW related object
+                        if (t != null) { //if I finally get an object exit!
                             break;
                         }
                     }
-                    this.k = z;
-                    t = this.g.get(cls);
-                    if (t == null) {
-                        this.g.put(cls, b);
+                    this.k = z;//reset k to orig value
+                    t = this.g.get(cls); //get Map's BIW related object
+                    if (t == null) { //if still null
+                        this.g.put(cls, b);//use put operation to have BIW's related object be jyn's related Object
                     }
                 } finally {
-                    this.k = z;
+                    this.k = z; //set k back to orig value
                 }
-            } else if (t == b) {
+            } else if (t == b) { //if the Map's related Biw Object is jyn's related Object => null
                 t = null;
             }
         }
-        return t;
+        return t; // return Map's Biw related object
     }
 
     private synchronized <T> List<T> f(Class<T> cls) {
@@ -286,6 +286,7 @@ public final class jyn {
     }
 
     public static <T> T b(Context context, Class<T> cls) {
+        //calls b(context) and then calls b(Class) from the resulting jyn
         return b(context).b((Class) cls);
     }
 
@@ -317,16 +318,19 @@ public final class jyn {
         return b(context);
     }
 
+    //basically returns the jyn instance retrieved from context if context is a jyq
+    //otherwise this is a very specifice context => change value of the jyn based on the context
     public static jyn b(Context context) {
         Context applicationContext = context.getApplicationContext();
         int i = 0;
         Context context2 = context;
         do {
-            jyn a = a((Object) context2);
+            jyn a = a((Object) context2); //returns null if context is not a jyq
             if (a != null) {
-                return a;
+                return a;//happy that I got a jyq.binder() (return)
             }
-            i |= context2 == applicationContext ? 1 : 0;
+            i |= context2 == applicationContext ? 1 : 0;//set i to be 1 if context2 is the same as application context
+            //otherwise i = 0
             if (context2 instanceof ContextWrapper) {
                 context2 = ((ContextWrapper) context2).getBaseContext();
                 if (context2 == null) {
@@ -353,12 +357,17 @@ public final class jyn {
 
     private static jyn a(Object obj) {
         if (!(obj instanceof jyq)) {
+            //if obj is not a jyq => return nothing
             return null;
         }
+        //get jyn by typecasing obj to be a jyq and grab Binder
         jyn binder = ((jyq) obj).getBinder();
         if (binder != null) {
+            //return the binder retrieved
             return binder;
         }
+
+        //otherwise, die (with bad state exception)
         String valueOf = String.valueOf(obj);
         throw new IllegalStateException(new StringBuilder(String.valueOf(valueOf).length() + 43).append("BinderContext must not return null Binder: ").append(valueOf).toString());
     }
