@@ -25,7 +25,7 @@ public final class glq {
     private static Integer h;
     public final glt a;
     public final Set<String> b;
-    public lo<String, String> c;
+    public lo<String, String> c;//maps countries with a string?
     private final ke i;
     private final jbc j;
     private final jar k;
@@ -34,7 +34,7 @@ public final class glq {
     private final Pattern n;
 
     static {
-        kae kae = glk.t;
+        kae kae = glk.t;//creates a kae w/ string "debug.chat.util"
         d = false;
         e = -1;
     }
@@ -54,7 +54,7 @@ public final class glq {
         this.c = new lo();
         this.c.put(Locale.US.getCountry(), "*67");
         this.c.put(Locale.UK.getCountry(), "#31#");
-        this.c.put("HK", "133");
+        this.c.put("HK", "133");//hong kong is 133 for something???
         this.c.put("DK", "#31#");
         this.c.put("IT", "#31#");
         this.c.put("SE", "#31#");
@@ -97,7 +97,7 @@ public final class glq {
 
     public static boolean a(Context context) {
         int phoneType = n(context).getPhoneType();
-        glk.a("Babel", "isPhone: phoneType = " + phoneType, new Object[0]);
+        glk.a("Babel", "isPhone: phoneType = " + phoneType, new Object[0]);//glk.a(String,String,Object)
         if (phoneType != 0) {
             return true;
         }
@@ -140,7 +140,7 @@ public final class glq {
         if (TextUtils.isEmpty(g)) {
             return null;
         }
-        return gls.a.f(g, j(context));
+        return gls.a.f(g, j(context)); //related glq to gls.f(string, string)
     }
 
     public static String g(Context context) {
@@ -608,11 +608,11 @@ public final class glq {
 
     public static glq a() {
         return gls.a;
-    }
+    } //create new glq
 
     public static boolean b(String str) {
-        String a = gls.a.a(str);
-        return a == null || a.equals("US") || a.equals("CA");
+        String a = gls.a.a(str); //glq.a for related glq to gls
+        return a == null || a.equals("US") || a.equals("CA"); //glt.equals("US") or "CA"
     }
 
     public static String b(Context context, String str) {
