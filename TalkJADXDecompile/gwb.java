@@ -8476,6 +8476,7 @@ public class gwb implements gub {
     // if no cell service => wifi call (if wifi connected)
     //
     public static boolean b(Context context, gec gec, gcm gcm, gfv gfv, String str) {
+        // gfo: data structure holding service/signal state
         gfo a = a(context, gec, gcm.e); //creates a new wifi calculator based on cell state, network type, and context???
         //need to check how this wifi calculator is made
         //reports what's the signal into the logs with network state(gec), cell state, wifi signal, wifi calculator (as threshold)
@@ -8489,6 +8490,7 @@ public class gwb implements gub {
         } else if (glq.d(H(), str)) {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, possible emergency call", new Object[0]);
             return gfv.a;
+        // (gcm.a(a.a)) => (is_service_better_than(some_service_state.cell_signal))
         } else if (gcm.a(a.a)) { //checks if cell signal is better than cell signal??? of wifi calculator...  wonder if they actually meant gfv...
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasGoodSignalForNewWifiCall, cell is better than threshold", new Object[0]);
             return false;

@@ -26,12 +26,14 @@ public final class gcm {
         return new StringBuilder(String.valueOf(str).length() + 161).append("CellState, serviceState: ").append(i).append(", signalLevelPercent: ").append(i2).append(", phoneType: ").append(i3).append(", networkOperator: ").append(str).append(", networkType: ").append(i4).append(", systemId: ").append(this.f).toString();
     }
 
-    public boolean a() {
+    // Returns true if anything is wrong with service or signal
+    public boolean a() {    // is_service_bad()
         //service state is not null or signal level percentage is -1 or signal is 0
         return this.a != 0 || this.b == -1 || this.b == 0;
     }
 
-    public boolean a(int i) {
+    // Returns true if service is working and signal is better than the given threshold i
+    public boolean a(int i) {   // is_service_better_than(threshold)
         //returns that service state is 0 and signal level percentage is not -1 and signal percentage is greater than given number
         return this.a == 0 && this.b != -1 && this.b > i;
     }

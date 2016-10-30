@@ -9,7 +9,7 @@ import java.util.Objects;
 
 public final class gec implements Parcelable { //refered to as network status in gwb
     public static final Creator<gec> CREATOR;
-    private final int a;
+    private final int a;    // Roaming status (1 = roaming, 2 = not roaming, otherwise unknown)
     private final String b; //sim operator identifier
     private final String c; //network country ISO (international standard org)
 
@@ -122,26 +122,28 @@ public final class gec implements Parcelable { //refered to as network status in
         return this.b;
     } //returns SIM Operator
 
+    // Returns mapped int for current MCC/MNC number
+    // https://en.wikipedia.org/wiki/Mobile_country_code
     public int c() {
         String str = this.b; //returns a "code" based on the Sim Operator
         if (str != null) {
-            if (str.startsWith("310260")) {
+            if (str.startsWith("310260")) { // T-Mobile
                 return 2;
             }
-            if (str.startsWith("310120")) {
+            if (str.startsWith("310120")) { // Sprint
                 return 1;
             }
-            if (str.startsWith("311580")) {
+            if (str.startsWith("311580")) { // US Cellular
                 return 3;
             }
-            if (str.startsWith("23420")) {
+            if (str.startsWith("23420")) {  // Hutchison 3G (UK)
                 return 4;
             }
-            if (str.startsWith("45403")) {
+            if (str.startsWith("45403")) {  // Hutchison Telecom (HK)
                 return 5;
             }
         }
-        return 0;
+        return 0;   // Error
     }
 
     public String d() {
