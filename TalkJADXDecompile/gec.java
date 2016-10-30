@@ -66,7 +66,7 @@ public final class gec implements Parcelable { //refered to as network status in
         } else if (c == 1) {
             str = "Sprint";
         } else {
-            str2 = "Uknown carrier: ";
+            str2 = "Uknown carrier: ";  // spelled unknown wrong
             str = String.valueOf(this.b);
             str = str.length() != 0 ? str2.concat(str) : new String(str2);
         }

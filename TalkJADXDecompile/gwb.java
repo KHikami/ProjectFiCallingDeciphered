@@ -8335,6 +8335,7 @@ public class gwb implements gub {
         //only use found right now is given context, Sim Operator code, and a boolean that's hardcoded false or not
         //when false, VoIP is favored over 3G
         if (z) {
+            // Sim operator codes 4 and 5 are international carriers (in UK and HK)
             if ((a(context, "babel_hutch_three_g_incoming_enabled", false) && (i == 4 || i == 5)) || a(context, "babel_hutch_3g_incoming_experience_for_us", false)) {
                 //not 3G inbound enabled and not receiving a 3G call
                 return true;
@@ -8603,6 +8604,7 @@ public class gwb implements gub {
         return biw.a(str, i);
     }
 
+    // boolean in_power_save_mode(context)
     public static boolean S(Context context) {
         try {
             return ((PowerManager) context.getSystemService("power")).isPowerSaveMode();
@@ -8612,8 +8614,10 @@ public class gwb implements gub {
     }
 
     public static void T(Context context) {
+        // vQ always false judging from static globals at the top
         if (!vQ) {
             int callingUid = Binder.getCallingUid();
+            // Throws an assertion error if callingUid is not equal to process's UID
             iil.a("Expected condition to be true", callingUid != Process.myUid());
             gtw.a(context).a(context.getPackageManager(), callingUid);
         }

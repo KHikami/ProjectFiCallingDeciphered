@@ -10,18 +10,25 @@ public final class iil {
         b = true;
     }
 
+    // Assert that given condition z is false
+    // assert_condition_false(str, z)
     public static void a(String str, boolean z) {
+        // a always true
         if (a && !z) {
             throw new AssertionError(str);
         }
     }
 
+    // Assert that given condition z is true
+    // assert_condition_true(str, z)
     public static void b(String str, boolean z) {
+        // a always true
         if (a && z) {
             throw new AssertionError(str);
         }
     }
 
+    // Assert that two objects are equal
     public static void a(Object obj, Object obj2) {
         String format;
         try {
@@ -32,7 +39,9 @@ public final class iil {
         a(format, obj, obj2);
     }
 
+    // Assert that two objects are equal
     public static void a(String str, Object obj, Object obj2) {
+        // a always true
         if (a) {
             if (obj == null) {
                 if (obj2 == null) {
@@ -46,6 +55,7 @@ public final class iil {
         }
     }
 
+    // Assert that two objects are not equal
     public static void b(Object obj, Object obj2) {
         String format;
         try {
@@ -56,6 +66,7 @@ public final class iil {
         b(format, obj, obj2);
     }
 
+    // Assert that two objects are not equal
     public static void b(String str, Object obj, Object obj2) {
         if (a && obj == obj2) {
             Log.e("vclib", str);
@@ -63,12 +74,14 @@ public final class iil {
         }
     }
 
+    // Assert that object is null
     public static void a(String str, Object obj) {
         if (a && obj != null) {
             throw new AssertionError(str);
         }
     }
 
+    // Assert that type T is not null, and return it
     public static <T> T b(String str, T t) {
         if (!a || t != null) {
             return t;
@@ -76,16 +89,21 @@ public final class iil {
         throw new AssertionError(str);
     }
 
+    // Throw an assertion error with given string
     public static void a(String str) {
         if (a) {
             throw new AssertionError(str);
         }
     }
 
+    // Assert that i is within range [i3, i2], with empty string
+    // i3 < i < i2 
     public static void a(int i, int i2, int i3) {
         a("", i, i2, i3);
     }
 
+    // Assert that i is within range [i3, i2], with provided string
+    // i3 < i < i2
     public static void a(String str, int i, int i2, int i3) {
         if (!a) {
             return;
@@ -96,6 +114,7 @@ public final class iil {
         }
     }
 
+    // Assert that main thread is performing this or thread has "test" in the name
     public static void a() {
         if (b && Looper.myLooper() != Looper.getMainLooper() && !Thread.currentThread().getName().contains("test")) {
             String valueOf = String.valueOf(Looper.myLooper());
@@ -103,12 +122,14 @@ public final class iil {
         }
     }
 
+    // Assert that main thread is not performing this
     public static void b() {
         if (b && Looper.myLooper() == Looper.getMainLooper()) {
             throw new AssertionError("Main thread unexpected");
         }
     }
 
+    // Assert that GL rendering thread is performing this or "test" is in thread name
     public static void c() {
         if (b && !Thread.currentThread().getName().startsWith("GLThread") && !Thread.currentThread().getName().contains("test")) {
             String valueOf = String.valueOf(Thread.currentThread());
@@ -116,6 +137,7 @@ public final class iil {
         }
     }
 
+    // Assert that CameraOpenThread is performing this or "test" is in thread name
     public static void d() {
         if (b && !Thread.currentThread().getName().equals("CameraOpenThread") && !Thread.currentThread().getName().contains("test")) {
             String valueOf = String.valueOf(Thread.currentThread());
@@ -123,6 +145,7 @@ public final class iil {
         }
     }
 
+    // Assert that DecoderHandlerThread is performing this or "test" is in thread name
     public static void e() {
         if (b && !Thread.currentThread().getName().equals("DecoderHandlerThread") && !Thread.currentThread().getName().contains("test")) {
             String valueOf = String.valueOf(Thread.currentThread());
@@ -130,6 +153,7 @@ public final class iil {
         }
     }
 
+    // Assert that EncoderHanlderThread is performing this or "test" is in thread name
     public static void f() {
         if (b && !Thread.currentThread().getName().equals("EncoderHandlerThread") && !Thread.currentThread().getName().contains("test")) {
             String valueOf = String.valueOf(Thread.currentThread());
