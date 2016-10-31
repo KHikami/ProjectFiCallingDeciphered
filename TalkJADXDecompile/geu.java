@@ -371,44 +371,48 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
                                 //gwb.a(Context, network cell (gec), gcm (cell state), gfv (wifi), gcg.f().f()) || gwb.a(Contect, gcm, gec, gfv)
                                 //allow 3G call or LTE call
 
-                                if (b(geb) || glq.d(this.a, r0)) {
+                                if (b(geb) || glq.d(this.a, r0)) { //uses 3G???
                                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, falling back to cellular data", new Object[0]);
                                     this.b.c(true);
                                     z = true;
-                                } else {
+                                } else { //uses Lte???
                                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, data network latency high", new Object[0]);
                                 }
                             } else if (gwb.b(this.a, this.b.h(), geb.a, geb.b, r0)) {
-                                if (geb.a.a()) {
+                                //gwb.b(Context, glq.h(), gcm, gfv, String)
+                                //checks wifi connection for wifi call
+                                if (geb.a.a()) { //no cell signal => have to use wifi
                                     glk.c("Babel_telephony", "TeleSetupController.hasNetworkQualityForWifiCall, no cell service, not checking herrevad", new Object[0]);
                                     z = true;
                                 } else if (gwb.a(this.a, geb.c, geb.d, geb.a)) {
+                                    //gwb.a(Context, gec, predicated Network Quality, gcm) => good predicted wifi
                                     a(2893, -1);
                                     z = true;
                                 } else {
+                                    //poor predicted wifi
                                     a(2895, -1);
                                     glk.c("Babel_telephony", "TeleSetupController.hasNetworkQualityForWifiCall using cell due to bad herrevad network quality score for the wifi network", new Object[0]);
                                     z = false;
                                 }
-                                if (z) {
-                                    if (geb.a.a()) {
+                                if (z) { //only ran if have wifi :)
+                                    if (geb.a.a()) { //no connection => no check of stun ping latency
                                         glk.c("Babel_telephony", "TeleSetupController.shouldCheckStunPingLatency, not checking, no cell service", new Object[0]);
-                                        z = false;
+                                        z = false; //now z here means to check stun ping latency???
                                     } else {
                                         z = true;
                                     }
-                                    if (!z || b(geb)) {
+                                    if (!z || b(geb)) { //don't check stun ping latency or b(geb)
                                         glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, good network, using Wi-Fi", new Object[0]);
-                                        z = true;
-                                    } else {
+                                        z = true; //z sest to orig value of wifi call allowed
+                                    } else { //bad stun ping latency. b(geb) should be stun latency method calculator
                                         glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, poor stun latency on Wi-Fi", new Object[0]);
                                     }
-                                } else {
+                                } else { //overall fail
                                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, bad network quality score", new Object[0]);
                                 }
                             }
                         }
-                        if (z) {
+                        if (z) { //wifi pickedd as calling method!
                             if (e) {
                                 glk.c("Babel_telephony", "TeleSetupController.performWifiChooserWithCellState, ask each call is enabled", new Object[0]);
                                 if (geb.a.a()) {
@@ -450,6 +454,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
         m();
     }
 
+    //calculate ping stun latency
     private boolean b(geb geb) {
         String str;
         if (geb.b.a) {

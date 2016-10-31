@@ -8516,21 +8516,26 @@ public class gwb implements gub {
         return false;
     }
 
+    //network predictor
     public static boolean a(Context context, gec gec, PredictedNetworkQuality predictedNetworkQuality, gcm gcm) {
-        if (predictedNetworkQuality == null) {
+        if (predictedNetworkQuality == null) { //no prediction defaults to good?!
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasNetworkQualityForNewWifiCall, no prediction, assuming good network", new Object[0]);
             return true;
         }
         gfo a = a(context, gec, gcm.e);
+        //predicted Network Quality.c = predicted latency
         if (predictedNetworkQuality.c >= 0 && ((long) predictedNetworkQuality.c) > a.f) {
+            //predicted latency non zero and greater than latency threshold => bad wifi
             int i = predictedNetworkQuality.c;
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasNetworkQualityForNewWifiCall, predicted latency " + i + "micros exceeds threshold " + a.f + "micros", new Object[0]);
             return false;
         } else if (predictedNetworkQuality.d < 0 || (predictedNetworkQuality.d << 3) >= a.g) {
+            //predicted latency is less than 0 or predictedNetworkQuality.downlink*8 >= downlink threshold => really good wifi
             String valueOf = String.valueOf(predictedNetworkQuality);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 80).append("TeleWifiCallThreshold.hasNetworkQualityForNewWifiCall, has good network quality ").append(valueOf).toString(), new Object[0]);
             return true;
         } else {
+            //bad down link => fail
             glk.c("Babel_telephony", "TeleWifiCallThreshold.hasNetworkQualityForNewWifiCall, down throughput " + predictedNetworkQuality.d + "Bps below threshold", new Object[0]);
             return false;
         }
