@@ -8294,7 +8294,7 @@ public class gwb implements gub {
         return mcm;
     }
 
-    public static boolean P(Context context) {
+    public static boolean P(Context context) { //check wifi call permissions
         boolean z;
         ehz ehz = (ehz) jyn.a(context, ehz.class);
         if (ehz.a("android.permission.CALL_PHONE") && ehz.a("android.permission.READ_PHONE_STATE") && ehz.a("android.permission.RECORD_AUDIO")) {

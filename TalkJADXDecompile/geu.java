@@ -298,7 +298,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
     void a(geb geb) {
         boolean z;
         this.h = geb;
-        boolean e = ggc.a(this.a).e();
+        boolean e = ggc.a(this.a).e();//ggc.a(Context).e() => (new ggc object).e() => grabs the preference for asking each call
         this.b.b(e);
         if (!gwb.R(this.a)) {
             this.b.b(true);
@@ -306,11 +306,11 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
         glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible", new Object[0]);
         iil.b("Expected non-null", geb.b);
         iil.b("Expected non-null", geb.c);
-        if (geb.a == null) {
+        if (geb.a == null) { //have cell state?
             glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, no cell state, didTimeout: " + geb.g, new Object[0]);
-        } else if (!gwb.P(this.a)) {
+        } else if (!gwb.P(this.a)) { //gwb.P(Context) checks for permissions
             glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, no permissions", new Object[0]);
-        } else if (ggc.a(this.a).c()) {
+        } else if (ggc.a(this.a).c()) { //new ggc.c() => has tycho account or wifi call allowed for phone
             if ("no_users".equals(gwb.b(this.a, "babel_user_to_allow_wifi_calling_for", "tycho_users"))) {
                 glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, wifi calls disabled for all users by gservices", new Object[0]);
             } else {
@@ -319,32 +319,32 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, outgoing wifi calls disabled by gservices", new Object[0]);
                 } else if (!gfj.a(this.b.d()) && dgg.a().n()) {
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, another hangout is in progress", new Object[0]);
-                } else if (!this.b.f().l()) {
+                } else if (!this.b.f().l()) { //bad phone number
                     r4 = "Babel_telephony";
                     r5 = "TeleSetupController.isWifiCallPossible, invalid phone number: ";
                     r0 = String.valueOf(gwb.G(this.b.f().e()));
                     glk.c(r4, r0.length() != 0 ? r5.concat(r0) : new String(r5), new Object[0]);
-                } else if (this.b.f().m() && !g.a("babel_wifi_call_google_voice_app_integration_enabled", false)) {
+                } else if (this.b.f().m() && !g.a("babel_wifi_call_google_voice_app_integration_enabled", false)) { //no google voice
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, Google Voice app integration disabled by gservices", new Object[0]);
-                } else if (geb.c.b(this.a) && !g.a("babel_international_wifi_call_allowed", true)) {
+                } else if (geb.c.b(this.a) && !g.a("babel_international_wifi_call_allowed", true)) { //is international region and no international calls allowed
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, wifi calling while international not allowed", new Object[0]);
-                } else if (geb.c.a(this.a) && geb.c.a() == 2 && !g.a("babel_roaming_wifi_call_allowed", true)) {
+                } else if (geb.c.a(this.a) && geb.c.a() == 2 && !g.a("babel_roaming_wifi_call_allowed", true)) { //roaming~
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, wifi calling while roaming not allowed", new Object[0]);
                 } else if (!this.b.f().n() || g.a("babel_voicemail_wifi_call_allowed", true)) {
                     r0 = this.b.f().c();
-                    if (geb.c.b(this.a) && glq.d(gwb.H(), r0)) {
+                    if (geb.c.b(this.a) && glq.d(gwb.H(), r0)) { //international and is emergency number w/ preference for no emergency on wifi
                         r4 = "Babel_telephony";
                         r5 = "TeleSetupController.isWifiCallPossible, emergency number cannot be on wifi when outside the US : ";
                         r0 = String.valueOf(r0);
                         glk.c(r4, r0.length() != 0 ? r5.concat(r0) : new String(r5), new Object[0]);
-                    } else if (this.b.v()) {
+                    } else if (this.b.v()) { //if cell network chosen manually checks for wifi?
                         glk.c("Babel_telephony", "TeleSetupController.shouldAllowRing, network was was choosen manually, only checking for Wi-Fi connection", new Object[0]);
-                        if (geb.b.a) {
+                        if (geb.b.a) { //is connected to wifi
                             z = true;
                             if (z) {
-                                if (e) {
+                                if (e) {//ask each call kick in
                                     glk.c("Babel_telephony", "TeleSetupController.performWifiChooserWithCellState, ask each call is enabled", new Object[0]);
-                                    if (geb.a.a()) {
+                                    if (geb.a.a()) { //cell state has no service
                                         glk.c("Babel_telephony", "TeleSetupController.performWifiChooserWithCellState, no cell service, forcing wifi", new Object[0]);
                                     } else {
                                         a(new ghw(), "wifi_chooser");
@@ -359,14 +359,18 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
                             return;
                         }
                         glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, not connected to wifi", new Object[0]);
-                    } else {
-                        this.y = gcw.a(this.a, this.b.f().d(), false, geb.b);
-                        if (this.y != null) {
+                    } else { //no issues/special ocnditions so testing normally
+                        this.y = gcw.a(this.a, this.b.f().d(), false, geb.b); //experiment if it exists for this
+                        if (this.y != null) {//returns true if it is a wifi call experiment
                             glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, in Wi-Fi calling experiment", new Object[0]);
                             z = true;
                         } else {
                             r0 = this.b.f().f();
+
                             if (gwb.a(this.a, geb.c, geb.a, geb.b, r0) || gwb.a(this.a, geb.c, geb.a, geb.b)) {
+                                //gwb.a(Context, network cell (gec), gcm (cell state), gfv (wifi), gcg.f().f()) || gwb.a(Contect, gcm, gec, gfv)
+                                //allow 3G call or LTE call
+
                                 if (b(geb) || glq.d(this.a, r0)) {
                                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, falling back to cellular data", new Object[0]);
                                     this.b.c(true);

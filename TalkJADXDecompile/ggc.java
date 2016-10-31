@@ -37,10 +37,10 @@ public final class ggc {
 
     public boolean c() {
         boolean z = false;
-        if (!TextUtils.isEmpty(i())) {
+        if (!TextUtils.isEmpty(i())) { //tycho account does have a name/exists => true
             z = true;
         }
-        return m().getBoolean("wifi_calling_enabled", z);
+        return m().getBoolean("wifi_calling_enabled", z); //otherwise check preferences for wifi call enabled
     }
 
     public boolean d() {
