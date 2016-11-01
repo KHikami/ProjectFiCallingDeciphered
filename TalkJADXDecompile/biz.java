@@ -41,10 +41,11 @@ final class biz implements biw {
         return icb.a(this.c.getContentResolver(), str, str2);
     }
 
+    //used to calculate thresholds
     public int a(String str, int i) {
-        a(str);
+        a(str); //checks if string is in proper format (throws Illegal Argument Exception otherwise)
         c();
-        return icb.a(this.c.getContentResolver(), str, i);
+        return icb.a(this.c.getContentResolver(), str, i); //icb.a(ContentResolver for Context, String, int)
     }
 
     public long a(String str, long j) {

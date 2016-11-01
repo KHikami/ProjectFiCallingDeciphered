@@ -95,6 +95,7 @@ public class icb {
         return a(contentResolver, str, null);
     }
 
+    //creates hashmap e/fills it up
     public static Map<String, String> a(ContentResolver contentResolver, String... strArr) {
         a();
         Cursor query = contentResolver.query(b, null, null, strArr, null);
@@ -115,9 +116,10 @@ public class icb {
         a();
         Map a = a(contentResolver, strArr);
         synchronized (icb.class) {
-            b(contentResolver);
+            b(contentResolver);//initialize e
             g = strArr;
-            for (Entry entry : a.entrySet()) {
+            for (Entry entry : a.entrySet()) { //for each item in Map generated from a, store it for e
+                //basically a hard copy
                 e.put(entry.getKey(), entry.getValue());
             }
         }
@@ -134,14 +136,14 @@ public class icb {
     }
 
     public static int a(ContentResolver contentResolver, String str, int i) {
-        String a = a(contentResolver, str, null);
+        String a = a(contentResolver, str, null); //grab string associated with str using a(contentResolver, String, String)
         if (a != null) {
             try {
-                i = Integer.parseInt(a);
+                i = Integer.parseInt(a); //grab the value stored in the map as an integer
             } catch (NumberFormatException e) {
             }
         }
-        return i;
+        return i; //otherwise return the given default value
     }
 
     public static long a(ContentResolver contentResolver, String str, long j) {
