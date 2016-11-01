@@ -7,12 +7,12 @@ import java.util.Iterator;
 
 public final class gee {
     final Context a;
-    final gcq b;
+    final gcq b; //call connection
     final long c;
     boolean d;
-    private final geu e;
-    private final gcs f;
-    private final gey g;
+    private final geu e; //TeleSetupController
+    private final gcs f; //disconect call listener
+    private final gey g; //wifi or cell caller
 
     public gee(Context context, gcq gcq) {
         this.a = context;
@@ -20,7 +20,7 @@ public final class gee {
         this.f = new gcs(this);
         gcq.a(this.f);
         this.g = new gey(this);
-        this.e = new geu(context, gcq, this.g, new gbx());
+        this.e = new geu(context, gcq, this.g, new gbx()); //new TeleSetupController
         this.c = SystemClock.elapsedRealtime();
     }
 
