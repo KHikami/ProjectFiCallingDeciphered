@@ -5,6 +5,7 @@ import android.telecom.DisconnectCause;
 import android.telecom.TelecomManager;
 import android.text.TextUtils;
 
+// Determines if call can be handed off
 final class gdc implements gcd {
     boolean a;
     private final Context b;
@@ -13,7 +14,7 @@ final class gdc implements gcd {
     private final gcc e;
     private gcc f;
     private gcq g;
-    private int h;
+    private int h;  // reason for handoffWiFiToCellular
     private int i;
     private int j;
     private DisconnectCause k;
@@ -21,8 +22,11 @@ final class gdc implements gcd {
     private Handler m;
     private final Runnable n;
 
+    // gcq contains info about Connection state and logs Connection events
+    // i: reason for handoff, 3 == network loss
     static void a(Context context, gcq gcq, int i) {
         glk.c("Babel_telephony", "TeleHandoffController.handoffWifiToCellular, reason: " + i, new Object[0]);
+        // gcq.j() returns a gcc object (either gel or gfj)
         if (!a(context, gcq.j(), false, i, gcq.v())) {
             return;
         }
@@ -108,35 +112,54 @@ final class gdc implements gcd {
         return a(this.b, this.e, this.l, this.h, this.c.v());
     }
 
+    // isHandoffPossible
+    //   z: handoff_complete
+    //   i: 
+    //   z2: manual_network_selection
     public static boolean a(Context context, gcc gcc, boolean z, int i, boolean z2) {
+        // gwb.P(context) returns true if we have permission to handoff
         if (!gwb.P(context)) {
             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, no permissions", new Object[0]);
             return false;
+        
+        // gcc.d() returns 2 if it is a gfj child (which implements gcc)
+        // gcc.d() returns 1 if it is a gel child (which implements gcc)
+        // gwb.R(context) checks capabilities for making cell calls
+        
+        // If gcc is not a gfj object OR our context says we have the capability (permission) to make cell calls...
         } else if (gcc.d() != 2 || gwb.R(context)) {
             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible", new Object[0]);
+            // If handoff is complete...
             if (z) {
                 glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, handoff is already complete", new Object[0]);
                 return false;
+            // Else if this is an LTE_fallback_call...
             } else if (gcc.a().w()) {
                 glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, handoff not allowed for LTE fallback calls", new Object[0]);
                 return false;
             } else {
                 biw g = gwb.g(context);
                 switch (i) {
+                    // Cases 1,5,6,7,9,10: this is a network optimization handoff
                     case wi.j /*1*/:
                     case wi.p /*5*/:
                     case wi.s /*6*/:
                     case wi.q /*7*/:
                     case wi.n /*9*/:
                     case wi.dr /*10*/:
+                        // If emergency_call...
                         if (glq.d(gwb.H(), gcc.a().f().c())) {
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, emergency call, handoff for network optimization not allowed", new Object[0]);
                             return false;
+                        // If manual_network_selection...
                         } else if (z2) {
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, network optimizing handoff disabled when calling network was choosen manually", new Object[0]);
                             return false;
+                        // 
                         } else if (i == 10) {
-                            boolean a = g.a("babel_activity_handoff_allowed", true);
+                            // I think 'a' will always be true
+                            boolean a = g.a("babel_activity_handoff_allowed", true);\
+                            // Always sets to "allowed."???
                             String str = a ? "allowed." : "not allowed.";
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, activity recognition handoff is %s", str);
                             return a;
@@ -182,6 +205,7 @@ final class gdc implements gcd {
                     return false;
                 }
             }
+        // No capability to make cell calls
         } else {
             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, can't make cell calls", new Object[0]);
             return false;
@@ -205,6 +229,8 @@ final class gdc implements gcd {
         }
     }
 
+    // z: is_handoff_complete
+    // i: 
     void a(boolean z, int i) {
         if (!this.l) {
             this.l = true;

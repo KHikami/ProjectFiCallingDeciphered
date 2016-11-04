@@ -8310,10 +8310,13 @@ public class gwb implements gub {
         return ((ehz) jyn.a(context, ehz.class)).a("android.permission.ACCESS_COARSE_LOCATION");
     }
 
+    // Check capabilities for making cell calls
     public static boolean R(Context context) {
+        // vN always false, this is probably for debugging
         if (vN) {
             return true;
         }
+        // Get the phoneAccount and return true if capabilities have a 1 at bit 0th position
         PhoneAccount phoneAccount = ((TelecomManager) context.getSystemService("telecom")).getPhoneAccount(J(context));
         return (phoneAccount == null || (phoneAccount.getCapabilities() & 1) == 0) ? false : true;
     }

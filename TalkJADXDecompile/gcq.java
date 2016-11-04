@@ -10,6 +10,9 @@ import com.google.api.client.http.HttpStatusCodes;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+// Connection represents a phone call or connection to a remote endpoint that
+// caries voice and/or video traffic
+// https://developer.android.com/reference/android/telecom/Connection.html
 public final class gcq extends Connection {
     private static final IntentFilter c;
     private static int d;
@@ -35,7 +38,7 @@ public final class gcq extends Connection {
     private BroadcastReceiver u;
     private gcs v;
     private boolean w;
-    private boolean x;
+    private boolean x; // LTE_fallback_call
     private gcw y;
     private gco z;
 

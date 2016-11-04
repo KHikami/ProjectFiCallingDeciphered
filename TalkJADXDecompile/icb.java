@@ -21,8 +21,8 @@ public class icb {
     static {
         a = Uri.parse("content://com.google.android.gsf.gservices");
         b = Uri.parse("content://com.google.android.gsf.gservices/prefix");
-        c = Pattern.compile("^(1|true|t|on|yes|y)$", 2);
-        d = Pattern.compile("^(0|false|f|off|no|n)$", 2);
+        c = Pattern.compile("^(1|true|t|on|yes|y)$", 2);    // 2 corresponds to flag CASE_INSENSITIVE
+        d = Pattern.compile("^(0|false|f|off|no|n)$", 2);   // 2 corresponds to flag CASE_INSENSITIVE
         g = new String[0];
         h = null;
     }
@@ -41,7 +41,6 @@ public class icb {
         }
     }
 
-    // Called by biz
     public static String a(ContentResolver contentResolver, String str, String str2) {
         a();
         synchronized (icb.class) {
@@ -158,13 +157,17 @@ public class icb {
     }
 
     public static boolean a(ContentResolver contentResolver, String str, boolean z) {
+        // I think this will always be null because of the 3rd parameter
         Object a = a(contentResolver, str, null);
+        // If a is null or nothing, return the default
         if (a == null || a.equals("")) {
             return z;
         }
+        // Found a true/yes/1
         if (c.matcher(a).matches()) {
             return true;
         }
+        // Found a false/no/0
         if (d.matcher(a).matches()) {
             return false;
         }

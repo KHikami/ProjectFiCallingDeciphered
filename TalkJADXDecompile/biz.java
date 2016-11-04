@@ -8,7 +8,7 @@ final class biz implements biw {
     private static final mks<String> a;
     private final String b;
     private final Context c;
-    private final Object d;
+    private final Object d; // Lock
     private boolean e;
     private final List<Runnable> f;
 
@@ -57,7 +57,7 @@ final class biz implements biw {
     public boolean a(String str, boolean z) {
         a(str);
         c();
-        return icb.a(this.c.getContentResolver(), str, z);
+        return icb.a(this.c.getContentResolver(), str, z);  // I think this will always return z (see explanation in icb)
     }
 
     public void a(Runnable runnable) {
@@ -91,7 +91,7 @@ final class biz implements biw {
         icb.b(this.c.getContentResolver(), this.b);
         synchronized (this.d) {
             this.e = true;
-            this.d.notifyAll();
+            this.d.notifyAll(); // Wake up all threads waiting on lock d
         }
         b();
     }
