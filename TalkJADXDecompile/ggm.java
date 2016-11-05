@@ -1,9 +1,9 @@
 import android.app.PendingIntent;
 
-class ggm implements ggn, Runnable {
+class ggm implements ggn, Runnable { //this seems to handle actions to be fed into dialer?
     final PendingIntent a;
     final ggl b;
-    final /* synthetic */ ggk c;
+    final /* synthetic */ ggk c; //connection to Dialer
 
     ggm() {
     }

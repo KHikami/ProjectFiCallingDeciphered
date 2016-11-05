@@ -12,9 +12,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public final class ggk implements ServiceConnection {
+public final class ggk implements ServiceConnection { //TeleInCallUiController (connects to dialer?)
     static final Intent a;
-    final List<ggm> b;
+    final List<ggm> b;//list of actions to be sent to dialer (Pending Intents)
     final Handler c;
     private final Context d;
     private gso e;

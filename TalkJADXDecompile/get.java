@@ -3,7 +3,7 @@ import android.telephony.CellInfo;
 import android.telephony.CellInfoCdma;
 import android.telephony.TelephonyManager;
 
-public final class get {
+public final class get { //used by gdx to create gec (nextwork status)
     static final int[] a;
 
     static {
