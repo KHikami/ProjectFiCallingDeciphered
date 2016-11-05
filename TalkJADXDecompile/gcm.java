@@ -1,13 +1,15 @@
 import java.util.Objects;
 
-public final class gcm {
-    public final int a; //serviceState (should be 0 to be good?)
-    public final int b; //signalLevelPercentage
-    public final int c; // phoneType
+public final class gcm { //created by gck
+    public final int a; //serviceState (0 = in Service, 1 = out of service, 2= emergency, 3 = powered off)
+    public final int b; //signalLevelPercentage (0, 25, 50, 75, 100, -1 (by default))
+    //-1 => undefined signal
+    public final int c; // phoneType (from telephony manager)
     public final String d; //networkOperator
     public final int e;//networkType
     public final int f; //systemID
 
+    //new cell with service state, signal strength, phonetype, network operatior, network type, system ID
     gcm(int i, int i2, int i3, String str, int i4, int i5) {
         this.a = i;
         this.b = i2;

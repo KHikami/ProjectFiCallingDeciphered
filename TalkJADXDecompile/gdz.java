@@ -1,7 +1,9 @@
 import android.content.Context;
 import com.google.android.gms.herrevad.PredictedNetworkQuality;
 
-final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable {
+final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //seems to be a multi cell evaluator
+    //evaluates & creates the related WiFi, Network, Cell, and TeleStunPing objects
+
     private final Context a;
     private gea b; //some interface??? => if no this, timeout occurred
     private gui c; // guj
@@ -29,7 +31,7 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable {
         glk.c("Babel_telephony", "TeleNetworkSelectionUtils.fetchState", new Object[0]);
         this.g = new gec(this.a, get.a(this.a)); //new cell network state
         this.f = gfq.a(this.a); //creates new wifi cell
-        gck.a(this.a, this); //no idea what this does... gck.a(Context,gcl) (seems to be modifying this object???)
+        gck.a(this.a, this); //gck.a(Context, gcl) => uses gcn to listen if SimState is ready
         gwb.a(this.a, (ggq) this);// gwb.a(Context,ggq) => calls TychoAccount is on home network???
         this.c = new guj(this.a).a(hat.b).b();//new guj(Context) with a method call to a(hat.b).b()
         //hat.b is a new network quality API fed in a list of objects and a gue??? (called gtz)

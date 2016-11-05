@@ -8,13 +8,14 @@ import android.telephony.TelephonyManager;
 import java.lang.reflect.Method;
 import java.util.List;
 
-public final class gck {
-    private static int a;
+public final class gck { //evaluates signal strength into new values
+    private static int a; //pre-associated level?
 
     static {
         a = -1;
     }
 
+    //creates a new gcm with Service State, signal strength level, and context's telephony manager
     static gcm a(Context context, int i, int i2) {
         TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService("phone");
         int i3 = -1;
@@ -30,13 +31,14 @@ public final class gck {
 
     public static void a(Context context, gcl gcl) {
         TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService("phone");
-        if (telephonyManager.getSimState() == 5) {
-            PhoneStateListener gcn = new gcn(context, gcl);
-            telephonyManager.listen(gcn, 257);
-            telephonyManager.listen(gcn, 0);
+        if (telephonyManager.getSimState() == 5) { //SimState is ready
+            PhoneStateListener gcn = new gcn(context, gcl);//create cell signal listener
+            telephonyManager.listen(gcn, 257); //listen for service state change and listen for signal strength
+            telephonyManager.listen(gcn, 0); //stop listening for updates
             return;
         }
-        gcl.a(a(context, 2, -1));
+        gcl.a(a(context, 2, -1));//gdz.a(new cell state with signal level of service state of emergency only and -1 as signal strength level)
+        //log this cell state using gdz and then clean up this eval
     }
 
     public static CellInfo a(Context context) {
@@ -55,7 +57,7 @@ public final class gck {
         return null;
     }
 
-    private static int a(int i) {
+    private static int a(int i) { //returns level associated with signal strngth
         switch (i) {
             case wi.w /*0*/:
                 return 0;
@@ -72,7 +74,7 @@ public final class gck {
         }
     }
 
-    static int a(SignalStrength signalStrength) {
+    static int a(SignalStrength signalStrength) { //returns the related level as long as a is -1 (possibly a might be a pre-associated level?)
         if (a != -1) {
             return a(a);
         }
