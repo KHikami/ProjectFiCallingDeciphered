@@ -16,13 +16,18 @@ final class gdb implements gdf {
         this.c = gdc;
     }
 
+    // Called by gdc.b(Context, gcq, int)
     void a() {
+        // Log start of handoff
         glk.c("Babel_telephony", "TeleHandoffCellularToWifi.startHandoff", new Object[0]);
+        // If handoff is not possible...
         if (!this.c.f()) {
             this.c.a(false, 224);
+        // If there is already a wifi call...
         } else if (this.b.n()) {
             glk.c("Babel_telephony", "TeleHandoffCellularToWifi.startHandoff, wifi call already exists", new Object[0]);
             this.c.a(false, 221);
+        // Otherwise handoff is possible and no wifi call currently exists
         } else {
             gcq a = this.c.a();
             int b = this.c.b();
@@ -63,10 +68,14 @@ final class gdb implements gdf {
     }
 
     public void b() {
+        // gdc c
+        // If new Connection state is STATE_DISCONNECTED...
         if (this.c.c() == 6) {
             this.c.a(false, 0);
+        // If new Connection state is STATE_ACTIVE or old Connection state is STATE_DISCONNECTED...
         } else if (this.c.c() == 4 || this.c.b() == 6) {
             this.c.a(true, 0);
+        // If mysterious boolean is true, then... TODO
         } else if (this.c.d()) {
             this.c.a(false, (int) HttpStatusCodes.STATUS_CODE_NOT_MODIFIED);
         }

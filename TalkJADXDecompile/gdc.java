@@ -6,6 +6,8 @@ import android.telecom.TelecomManager;
 import android.text.TextUtils;
 
 // Determines if call can be handed off
+// I think this is the handoff object, such that...
+// if there is a gdc object, then there is a handoff pending (in progress?)
 final class gdc implements gcd {
     boolean a;
     private final Context b;
@@ -15,8 +17,8 @@ final class gdc implements gcd {
     private gcc f;
     private gcq g;
     private int h;  // reason for handoffWiFiToCellular
-    private int i;
-    private int j;  // set in onDisconnected and in onTeleCallStateChanged
+    private int i;  // Old Connection state constant (during a transition)
+    private int j;  // New Connection state constant (during a transition)  // set in onDisconnected and in onTeleCallStateChanged
     private DisconnectCause k;
     private boolean l;
     private Handler m;
@@ -52,18 +54,25 @@ final class gdc implements gcd {
         gdg.a();
     }
 
+    // Logs reason for handing off from cell to wifi, and then do something... TODO
+    //   context: 
+    //   gcq: 
+    //   i: reason for handoff
     static void b(Context context, gcq gcq, int i) {
         glk.c("Babel_telephony", "TeleHandoffController.handoffCellularToWifi, reason: " + i, new Object[0]);
+        // If not isHandoffPossible... return early
         if (!a(context, gcq.j(), false, i, gcq.v())) {
             return;
         }
+        // If there is a gdc object associated with gcq, then there is a handoff pending (in progress?)...
+        // so log it and then return early
         if (gcq.k() != null) {
             glk.c("Babel_telephony", "TeleHandoffController.handoffCellularToWifi, handoff pending, skipping", new Object[0]);
             return;
         }
         gdb gdb = new gdb(context, dgg.a());
-        gdb.a(new gdc(context, gcq, gdb, i));
-        gdb.a();
+        gdb.a(new gdc(context, gcq, gdb, i));   // Sets gdb's c object to gdc
+        gdb.a();    // TODO
     }
 
     static boolean a(Context context) {
@@ -90,10 +99,12 @@ final class gdc implements gcd {
         return this.c;
     }
 
+    // Get old Connection state
     int b() {
         return this.i;
     }
 
+    // Get new Connection state
     int c() {
         return this.j;
     }
@@ -112,6 +123,7 @@ final class gdc implements gcd {
         a(false, 219);
     }
 
+    // Wrapper for isHandoffPossible
     boolean f() {
         return a(this.b, this.e, this.l, this.h, this.c.v());
     }
@@ -236,7 +248,7 @@ final class gdc implements gcd {
 
     // onHandOffComplete
     // z: is_handoff_complete
-    // i: 
+    // i: some sort of state (TODO). Ranges from 0, 210-228 (seen in gdb)
     void a(boolean z, int i) {
         if (!this.l) {
             this.l = true;
@@ -277,11 +289,16 @@ final class gdc implements gcd {
         }
     }
 
+    // Update old or new Connection state
     public final void a(gcc gcc, int i) {
         glk.c("Babel_telephony", "TeleHandoffController.onTeleCallStateChanged", new Object[0]);
+        // If not disconnected...
         if (i != 6) {
+            // Update i or j Connection state depending on which gcc you have
+            // I'm guessing this.e is the old gcc state object...
             if (gcc == this.e) {
                 this.i = i;
+            // and this.f is the new gcc state object...
             } else if (gcc == this.f) {
                 this.j = i;
             }
@@ -289,27 +306,38 @@ final class gdc implements gcd {
         }
     }
 
+    // Set old or new Connection state to disconnected
     public final void a(gcc gcc, DisconnectCause disconnectCause) {
         glk.c("Babel_telephony", "TeleHandoffController.onDisconnected", new Object[0]);
         if (gcc == this.e) {
+            // STATE_DISCONNECTED
             this.i = 6;                 // set to 6
         } else if (gcc == this.f) {
+            // STATE_DISCONNECTED
             this.j = 6;                 // set to 6 on disconnect
         }
         this.k = disconnectCause;
         g();
     }
 
+    // Print to log transition from old state to new state
     void g() {
-        String valueOf = String.valueOf(Connection.stateToString(this.i));
-        String valueOf2 = String.valueOf(Connection.stateToString(this.j));
+        // Find Connection state constants here:
+        // https://developer.android.com/reference/android/telecom/Connection.html
+        String valueOf = String.valueOf(Connection.stateToString(this.i));  // Old call state
+        String valueOf2 = String.valueOf(Connection.stateToString(this.j)); // New call state
         glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf).length() + 74) + String.valueOf(valueOf2).length()).append("TeleHandoffController.checkHandoffComplete, oldCallState: ").append(valueOf).append(", newCallState: ").append(valueOf2).toString(), new Object[0]);
+        // d is a gdf object, but since gdf is just an interface, it must be either gdb or gdg
         this.d.b();
     }
 
     private void a(int i) {
+        // this.c is a gcq object
+        // If the state of our Connection doesn't match, then update it
         if (this.c.getState() != i) {
             switch (i) {
+                // These functions don't appear in gcq because they are implemented by the parent class Connection
+                // https://developer.android.com/reference/android/telecom/Connection.html
                 case wi.l /*2*/:
                     this.c.setRinging();
                 case wi.z /*3*/:

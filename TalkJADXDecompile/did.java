@@ -10,6 +10,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+// WiFi call object?
+
 public final class did extends fip implements gia<fln> {
     private static final boolean c;
     private boolean A;

@@ -24,7 +24,7 @@ public final class gcq extends Connection {
     private final gef g;
     private final String h;
     private final long i;
-    private gdc j;
+    private gdc j;      // Handoff object
     private boolean k;
     private boolean l;
     private String m;
@@ -137,6 +137,7 @@ public final class gcq extends Connection {
         A();
     }
 
+    // Return the handoff object of this class
     gdc k() {
         return this.j; // type gdc
     }

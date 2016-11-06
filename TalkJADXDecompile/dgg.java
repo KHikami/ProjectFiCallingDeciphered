@@ -31,7 +31,7 @@ public class dgg {
     itl n;
     dgb o;
     Handler p;
-    did q;
+    did q;  // wifi_call_object
     private final itw r;
     private iri t;
     private boolean u;
@@ -257,6 +257,7 @@ public class dgg {
         return this.e != null;
     }
 
+    // wifi_call_exists
     public boolean n() {
         return this.q != null;
     }

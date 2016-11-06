@@ -14,9 +14,19 @@ public final class gef { //is the phone remapper! tries to call the destination 
     private final ConnectionRequest b;
     private final boolean c;
     private gec d; //current Network Carrier
-    private String e;
-    private int f;
+    private String e;   // proxy_number?
+    private int f;  // Connection state? 
     private boolean g;
+
+    // Connection state constants
+    // https://developer.android.com/reference/android/telecom/Connection.html
+    // 0 = STATE_INITIALIZING
+    // 1 = STATE_NEW
+    // 2 = STATE_RINGING
+    // 3 = STATE_DIALING
+    // 4 = STATE_ACTIVE
+    // 5 = STATE_HOLDING
+    // 6 = STATE_DISCONNECTED
 
     public gef(TeleConnectionService teleConnectionService, ConnectionRequest connectionRequest, gec gec, boolean z) {
         this.a = teleConnectionService;
@@ -25,13 +35,15 @@ public final class gef { //is the phone remapper! tries to call the destination 
         this.c = z;
     }
 
+    // Set the Connection state
     void a(int i) {
         this.f = i;
-    } //sets f to be the value of whatever is passed...
+    }
 
+    // Get the Connection state
     int a() {
         return this.f;
-    } //returns f
+    }
 
     void a(String str) {
         this.e = str;
