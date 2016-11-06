@@ -12,11 +12,17 @@ import com.google.android.apps.hangouts.telephony.TeleConnectionService;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+* Class that includes logic for inducing handoff from WiFi to Cell.
+*
+*   - in b(), driving and biking thresholds defined.
+*
+**/
 public final class gfj implements gcc, gcf, gfg, gfr {
     final Context a;
     final String b;
     gcq c;
-    did d;
+    did d;  // from Talk apk, not to be confused with same named one in Dialer
     int e;
     boolean f;
     String g;
@@ -222,6 +228,8 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
+    // disconnectForHandoff
+    // i: reasoncode, i2: new call code
     public void a(int i, int i2) {
         glk.c("Babel_telephony", "TeleWifiCall.disconnectForHandoff, handoffReason + " + i + ", new call code: " + i2, new Object[0]);
         if (i2 == 0) {
@@ -237,6 +245,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
+    // updateStatusHints
     public void b() {
         if (this.c != null) {
             int i;
@@ -300,11 +309,13 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         return this.g;
     }
 
+    // performManualHandoff
+    // reason code 2 appears linked to the manual handoff
     public void c() {
         String valueOf = String.valueOf(this.c);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 35).append("TeleWifiCall.performManualHandoff, ").append(valueOf).toString(), new Object[0]);
-        c(2);
-        gdc.a(this.a, this.c, 2);
+        c(2);   
+        gdc.a(this.a, this.c, 2);   // this.c = type gcq
     }
 
     public void a(boolean z) {
@@ -348,6 +359,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 29).append("TeleWifiCall.onStopDtmfTone, ").append(valueOf).toString(), new Object[0]);
     }
 
+    // onDisconnect
     public void g() {
         String valueOf = String.valueOf(this.c);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 27).append("TeleWifiCall.onDisconnect, ").append(valueOf).toString(), new Object[0]);
@@ -445,7 +457,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
         glk.c(str, valueOf, new Object[0]);
         boolean a = gwb.a(this.a, "babel_activity_handoff_allowed", true);
-        int a2 = gwb.a(this.a, "babel_biking_handoff_confidence_percentage_threshold", 75);
+        int a2 = gwb.a(this.a, "babel_biking_handoff_confidence_percentage_threshold", 75);     // what are the units?
         int a3 = gwb.a(this.a, "babel_driving_handoff_confidence_percentage_threshold", 75);
         int i3;
         if (i == 1 && i2 >= a2) {
@@ -467,6 +479,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
+    // onWifiStateChanged
     public void a(gfv gfv) {
         if (s()) {
             String valueOf = String.valueOf(gfv);
@@ -475,10 +488,12 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             return;
         }
         int networkType = ((TelephonyManager) this.a.getSystemService("phone")).getNetworkType();
-        if (this.c == null) {
+
+
+        if (this.c == null) { // this.c type gcq, represents a connection - so this means ~ there is no ongoing connection/call
             valueOf = String.valueOf(this.c);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 48).append("TeleWifiCall.onWifiStateChanged, no connection, ").append(valueOf).toString(), new Object[0]);
-        } else if (!gfv.a) {
+        } else if (!gfv.a) { 
             c(3);
             gdc.a(this.a, this.c, 3);
         } else if (!gwb.a(this.a, this.c.h(), gfv, networkType)) {
@@ -517,6 +532,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
+    // triggerNetworkSwitch
     boolean d(boolean z) {
         glk.c("Babel_telephony", "TeleWifiCall.triggerNetworkSwitch, disconnectCall " + z, new Object[0]);
         if (this.c == null || this.d == null) {
@@ -592,6 +608,8 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         return true;
     }
 
+    // handoffToCircuitSwitched (WiFi to cell)
+    // i : reasoncode
     private void e(int i) {
         if (this.c == null) {
             String valueOf = String.valueOf(this.c);
@@ -605,7 +623,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             gwb.f(2901);
         }
         c(i);
-        gdc.a(this.a, this.c, i);
+        gdc.a(this.a, this.c, i);       // attempts to handOff
     }
 
     private void e(boolean z) {
@@ -641,6 +659,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
+    // passed in reasoncode in a() onWifiStateChanged
     void c(int i) {
         if (this.d != null && this.d.p() != null) {
             this.d.p().i().b(i);

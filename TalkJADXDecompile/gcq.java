@@ -138,7 +138,7 @@ public final class gcq extends Connection {
     }
 
     gdc k() {
-        return this.j;
+        return this.j; // type gdc
     }
 
     void a(gdc gdc) {

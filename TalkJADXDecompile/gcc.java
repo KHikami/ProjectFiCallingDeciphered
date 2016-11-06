@@ -7,7 +7,7 @@ public interface gcc {
 
     void a(int i);
 
-    void a(int i, int i2);
+    void a(int i, int i2);      // TODO see line 268 in gdc.java, needed to decipher the meaning of i parameter
 
     void a(AudioState audioState);
 

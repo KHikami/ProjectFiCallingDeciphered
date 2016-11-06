@@ -16,7 +16,7 @@ final class gdc implements gcd {
     private gcq g;
     private int h;  // reason for handoffWiFiToCellular
     private int i;
-    private int j;
+    private int j;  // set in onDisconnected and in onTeleCallStateChanged
     private DisconnectCause k;
     private boolean l;
     private Handler m;
@@ -27,17 +27,20 @@ final class gdc implements gcd {
     static void a(Context context, gcq gcq, int i) {
         glk.c("Babel_telephony", "TeleHandoffController.handoffWifiToCellular, reason: " + i, new Object[0]);
         // gcq.j() returns a gcc object (either gel or gfj)
-        if (!a(context, gcq.j(), false, i, gcq.v())) {
+        if (!a(context, gcq.j(), false, i, gcq.v())) {          // if (!isHandoffPossible(...))
             return;
         }
+
+        // isHandoffPossible returned true
+
         if (gcq.k() != null) {
             if (i == 3) {
                 glk.c("Babel_telephony", "TeleHandoffController.handoffWifiToCellular, notify handoff about network loss", new Object[0]);
-                gdc k = gcq.k();
-                if (k.h != 3) {
-                    k.h = 3;
-                    if (k.f != null) {
-                        k.a(true, 0);
+                gdc k = gcq.k();    // gcq returns type of gdc (this class)
+                if (k.h != 3) {     // checks to see if the handoff reason was not already set
+                    k.h = 3;        // set handoff reason
+                    if (k.f != null) {  // Where is k.f (type gcc) initialized??
+                        k.a(true, 0);   // onHandOffComplete
                     }
                 }
             }
@@ -99,6 +102,7 @@ final class gdc implements gcd {
         return this.a;
     }
 
+    // cancelHandoffAndEndCall
     void e() {
         glk.c("Babel_telephony", "TeleHandoffController.cancelHandoffAndEndCall", new Object[0]);
         if (this.f != null) {
@@ -212,6 +216,7 @@ final class gdc implements gcd {
         }
     }
 
+    // onHandOffStarted
     void a(gcc gcc) {
         String valueOf = String.valueOf(gcc);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 52).append("TeleHandoffController.onHandoffStarted, theNewCall: ").append(valueOf).toString(), new Object[0]);
@@ -229,6 +234,7 @@ final class gdc implements gcd {
         }
     }
 
+    // onHandOffComplete
     // z: is_handoff_complete
     // i: 
     void a(boolean z, int i) {
@@ -259,7 +265,7 @@ final class gdc implements gcd {
                     this.c.b(this.f);
                 }
                 a(this.j);
-                this.e.a(this.h, i);
+                this.e.a(this.h, i);  // (int, int)
             } else {
                 a(this.i);
                 this.e.b();
@@ -286,9 +292,9 @@ final class gdc implements gcd {
     public final void a(gcc gcc, DisconnectCause disconnectCause) {
         glk.c("Babel_telephony", "TeleHandoffController.onDisconnected", new Object[0]);
         if (gcc == this.e) {
-            this.i = 6;
+            this.i = 6;                 // set to 6
         } else if (gcc == this.f) {
-            this.j = 6;
+            this.j = 6;                 // set to 6 on disconnect
         }
         this.k = disconnectCause;
         g();
