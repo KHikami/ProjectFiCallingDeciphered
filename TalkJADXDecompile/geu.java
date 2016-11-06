@@ -6,7 +6,7 @@ import android.text.TextUtils;
 import com.google.android.apps.hangouts.telephony.ui.TeleSetupActivity;
 import java.util.Locale;
 
-public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
+public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {//TeleSetupController
     private final gbx A;
     private String B;
     final Context a;
@@ -17,16 +17,16 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
     public ggz f;
     boolean g;
     geb h;
-    private final gey i;
+    private final gey i; //TeleOutgoingCallRequeset
     private final ghr j;
-    private final int k;
+    private final int k; //if z true => becomes 2. else becomes 3. default is 1.
     private jzp l;
     private jmj m;
     private int n;
     private dr o;
     private String p;
     private boolean q;
-    private boolean r;
+    private boolean r;//setup already in progress
     private boolean s;
     private bko t;
     private String u;
@@ -38,7 +38,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
 
     geu(Context context, gcq gcq, gey gey, gbx gbx) {
         this.c = gwb.aL();
-        this.d = new gev(this);
+        this.d = new gev(this); //new temp timeout object
         this.n = 1;
         iil.b("Expected non-null", (Object) gcq);
         this.a = context;
@@ -82,26 +82,27 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {
         this.r = true;
         Context context = this.a;
         iil.b("Expected non-null", (Object) this);
-        Intent intent = new Intent(context, TeleSetupActivity.class);
+        Intent intent = new Intent(context, TeleSetupActivity.class); //creates a new TeleSetupActivity Intent
         intent.putExtra("controller", new gkn((Object) this));
-        if (d()) {
+        if (d()) { //if k is 1
             intent.addFlags(1342210048);
         }
-        if (d()) {
+        if (d()) { //if k is 1
             this.x = new ggl(this.a, this, intent);
-            ggk a = this.b.d().a();
-            if (a.a((Object) this)) {
-                this.w = a.a(intent, this.x);
+            ggk a = this.b.d().a();//gbq.d().a() => runnable.d().a()??? (returns a ggk)
+            if (a.a((Object) this)) { //context, method that takes an object???
+                this.w = a.a(intent, this.x);//context.a(intent, object)
             }
-            if (this.w == null) {
+            if (this.w == null) { //if w not filled
                 glk.e("Babel_telephony", "TeleSetupController.createSetupActivity, unable to show dialog on top of in-call UI", new Object[0]);
-                this.x.a();
+                this.x.a();//dialog call back error
                 return;
             }
             glk.c("Babel_telephony", "TeleSetupController.createSetupActivity, wifi call waiting for dialog", new Object[0]);
+            //needs dialog to be created...
             return;
         }
-        this.a.startActivity(intent);
+        this.a.startActivity(intent); //start TeleSetupActivity
     }
 
     public void a(jzp jzp, jmj jmj) {
