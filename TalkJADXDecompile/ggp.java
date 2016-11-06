@@ -3,7 +3,7 @@ import android.content.Context;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 
-public final class ggp implements ServiceConnection {
+public final class ggp implements ServiceConnection { //for TeleTychoController... so don't pay attention to this
     private final Context a;
     private ggq b;
 

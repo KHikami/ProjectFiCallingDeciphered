@@ -9,10 +9,10 @@ import hax;
 public class PredictedNetworkQuality extends AbstractSafeParcelable {
     public static final Creator<PredictedNetworkQuality> CREATOR;
     final int a;
-    public int b;
-    public int c;
-    public long d;
-    public long e;
+    public int b; //network type
+    public int c;//predicted Latency (micro seconds0
+    public long d; //predicted down throughput (bps)
+    public long e;// predicted up throughput (bps)
 
     static {
         CREATOR = new hax();

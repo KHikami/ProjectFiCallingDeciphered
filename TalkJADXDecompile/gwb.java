@@ -8099,6 +8099,7 @@ public class gwb implements gub {
             glk.c("Babel_telephony", "TeleUtils.isGoogleVoiceRequest, no extras", new Object[0]);
             return false;
         }
+        //is default gateway provider package google voice?
         CharSequence string = connectionRequest.getExtras().getString("android.telecom.extra.GATEWAY_PROVIDER_PACKAGE");
         String str = "Babel_telephony";
         String str2 = "TeleUtils.isGoogleVoiceRequest, gatewayProviderPackage: ";
