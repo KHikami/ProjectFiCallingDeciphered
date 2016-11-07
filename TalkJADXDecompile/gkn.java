@@ -16,7 +16,7 @@ public final class gkn<T> implements Parcelable {
 
     public T a() {
         return this.a.a;
-    }
+    }//gkp.a => returns class that gkp is based on
 
     public int describeContents() {
         return 0;

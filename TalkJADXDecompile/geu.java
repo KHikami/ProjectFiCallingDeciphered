@@ -16,7 +16,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     public ghc e;
     public ggz f;
     boolean g;
-    geb h;
+    geb h; //used for cell service?
     private final gey i; //TeleOutgoingCallRequeset
     private final ghr j;
     private final int k; //Start Reason: if setupAccountReady true => becomes 2. else becomes 3. default is 1.
@@ -29,7 +29,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     private String p;
     private boolean q;
     private boolean r;//setup already in progress
-    private boolean s;
+    private boolean s;//using wifi for calls
     private bko t;
     private String u;
     private gei v;
@@ -548,7 +548,6 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
                         iil.a("Expected condition to be true", d());
                         new gdz(this.a, new gew(this)).a(); //creates a new TeleNetworkSelectionUtils
                         //using gdz(Context, new gew(context)'s a())
-                        //
                     case wi.l /*2*/:
                         m(); //advance to next step
                     case wi.z /*3*/:
@@ -598,56 +597,56 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
                     m();//move to next step!
                     return;
                 }
-                e(gwb.vs);//e given large int again....
-                this.e = new ghc(this.t.g(), new ghe(this));
-                this.e.a(this.a);
-            case wi.p /*5*/:
-                if (this.t == null) {
+                e(gwb.vs);//e given large int again... seems to print the progress???
+                this.e = new ghc(this.t.g(), new ghe(this)); //create a new ghc(bko.g(), new ghe(geu))
+                this.e.a(this.a);//ghc.a(Context)
+            case wi.p /*5*/: //setup google voice tos??? (not too sure what this is)
+                if (this.t == null) {//if no bko => status unknown... invalid state
                     i2 = 0;
                 } else {
-                    i2 = this.t.I();
+                    i2 = this.t.I(); //grabs int regarding google voice availability... (repeat from case 4?)
                 }
                 switch (i2) {
                     case wi.w /*0*/:
                         glk.d("Babel_telephony", "TeleSetupController.performGoogleVoiceTos, status is UNKNOWN", new Object[0]);
-                        if (d()) {
+                        if (d()) {//tries to resolve status? (tests if can skip?)
                             a(false);
                             m();
                             return;
                         }
-                        b(gwb.vv);
+                        b(gwb.vv);//error
                     case wi.j /*1*/:
                         glk.c("Babel_telephony", "TeleSetupController.performGoogleVoiceTos, status is ALLOWED", new Object[0]);
-                        m();
-                    case wi.l /*2*/:
+                        m();//move to next step
+                    case wi.l /*2*/://complete other actions on todo list
                         glk.c("Babel_telephony", "TeleSetupController.performGoogleVoiceTos, status is NEED_TOS", new Object[0]);
-                        if (d()) {
-                            a(false);
-                            m();
+                        if (d()) {//if k == 1
+                            a(false);//modify related gcg
+                            m(); //move to next step & quit
                             return;
                         }
                         a(new ghs(), "tos");
                     case wi.z /*3*/:
                         glk.d("Babel_telephony", "TeleSetupController.performGoogleVoiceTos, status is BLOCKED", new Object[0]);
-                        if (d()) {
-                            a(false);
+                        if (d()) { //if k == 1
+                            a(false);//same logic from i2 == 2
                             m();
                             return;
                         }
-                        b(gwb.vw);
+                        b(gwb.vw);//a different error
                     default:
                         iil.a("Unknown voice calling status: " + this.t.I());
-                        if (d()) {
-                            a(false);
+                        if (d()) { //if k==1
+                            a(false);//same logic from i2 == 2
                             m();
                             return;
                         }
                         b(gwb.vv);
                 }
-            case wi.s /*6*/:
-                if (!d()) {
+            case wi.s /*6*/: //create hangout id
+                if (!d()) {//k != 1
                     i = 0;
-                } else if (!this.s) {
+                } else if (!this.s) {//not use wifi
                     glk.a("Babel_telephony", "TeleSetupController.shouldCreateHangoutId not using wifi for calls", new Object[0]);
                     i = 0;
                 } else if (this.h == null || this.h.a == null || this.h.a.a()) {
@@ -661,11 +660,11 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
                     glk.c("Babel_telephony", "TeleSetupController.performCreateHangoutId, Creating hangoutId...", new Object[0]);
                     irl gex = new gex(this);
                     gex.b();
-                    this.A.a(this.a).a(this.t.a(), gex);
+                    this.A.a(this.a).a(this.t.a(), gex);//gbx.a(context).a(bko.a(),gex)
                     return;
                 }
-                m();
-            case wi.q /*7*/:
+                m();//next step
+            case wi.q /*7*/: //get proxy number
                 if (d()) {
                     gef f = this.b.f();
                     if (f.p()) {
@@ -692,7 +691,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
                     return;
                 }
                 m();
-            case wi.m /*8*/:
+            case wi.m /*8*/: //finish!
                 if (!this.s) {
                     i = 2;
                 }
@@ -705,6 +704,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     }
 
     //advance to next step valuator
+    //(uses recursion to advance the setup???) r()-> m() -> r() -> m() -> etc.... that's kind of inconvenient...
     public void m() {
         String valueOf = String.valueOf(c(this.n));
         String valueOf2 = String.valueOf(c(this.n + 1));
@@ -807,6 +807,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
         this.c.removeCallbacks(this.d);
     }
 
+    //sets is going to use wifi call
     public void a(boolean z) {
         this.s = z;
         if (!d()) {

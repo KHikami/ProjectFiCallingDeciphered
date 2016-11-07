@@ -39,8 +39,8 @@ public class TeleConnectionService extends ConnectionService {
         String valueOf = String.valueOf(connectionRequest);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 59).append("TeleConnectionService.onCreateOutgoingConnection, request: ").append(valueOf).toString(), new Object[0]);
         Context applicationContext = getApplicationContext();
-        Connection gcq = new gcq(new gef(this, connectionRequest, new gec(this, get.a(this)), false));
-        new gee(applicationContext, gcq).a();
+        Connection gcq = new gcq(new gef(this, connectionRequest, new gec(this, get.a(this)), false));//new connection
+        new gee(applicationContext, gcq).a();//new teleOutgoingCallRequest
         return gcq;
     }
 

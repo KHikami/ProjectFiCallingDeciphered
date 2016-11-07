@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import android.text.TextUtils.SimpleStringSplitter;
 import java.util.Iterator;
 
-public final class gee {
+public final class gee { //TeleOutgoingCallRequest
     final Context a;
     final gcq b; //call connection
     final long c;
@@ -26,8 +26,8 @@ public final class gee {
 
     public void a() {
         this.b.c();
-        if (!d()) {
-            this.e.b();
+        if (!d()) {//not a blacklisted blocked number
+            this.e.b();//starts the setup (more like does the entire setup)
         } else if (!this.d) {
             glk.c("Babel_telephony", "TeleOutgoingCallRequest.blockCall", new Object[0]);
             this.b.setDisconnected(new DisconnectCause(1, "invalid or blocked number"));
@@ -46,11 +46,11 @@ public final class gee {
     void c() {
         if (!this.d) {
             this.d = true;
-            this.e.c();
-            this.g.c();
-            this.f.b();
-            this.b.a(null);
-            this.b.d().a().b(this);
+            this.e.c();//geu.d(3)
+            this.g.c();//gey.c()
+            this.f.b();//gcs.b()
+            this.b.a(null);//gcg.a(Object?)
+            this.b.d().a().b(this);//gcg.d().a().b(gee)
             if (this.b.getState() == 6) {
                 this.b.destroy();
             }

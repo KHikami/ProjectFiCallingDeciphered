@@ -11,10 +11,10 @@ public class gey { //TellOutgoingCallRequest
     public void a(bko bko, String str) {
         if (this.a != null) {
             gee gee = this.a;
-            gee.b.b(bko.a());
-            gee.b.a(bko.g());
-            TeleConnectionService d = gee.b.d();
-            String f = gee.b.f().f();
+            gee.b.b(bko.a());//gcq.b(bko.a())
+            gee.b.a(bko.g());//gcq.b.a(bko.g())
+            TeleConnectionService d = gee.b.d();//gcq.d()
+            String f = gee.b.f().f();//gcq.f().f()
             if (glq.a(gwb.H(), gee.b.f().e())) {
                 f = glq.b(gwb.H(), f);
             }
@@ -32,7 +32,7 @@ public class gey { //TellOutgoingCallRequest
             dgg a2 = dgg.a();
             if (a2.t() && gfj.a(d)) {
                 gfj.a(d, gee.b);
-                str2 = String.valueOf(gee.b);
+                str2 = String.valueOf(gee.b);//call connection
                 glk.c("Babel_telephony", new StringBuilder(String.valueOf(str2).length() + 67).append("TeleOutgoingCallRequest.startWifiCall, inviting to existing hangout").append(str2).toString(), new Object[0]);
                 a2.b(singletonList);
                 gfp.a(d, gee.b);
@@ -66,14 +66,14 @@ public class gey { //TellOutgoingCallRequest
                     a2.s().f("tycho_network_auto");
                 }
             }
-            gcc gfj = new gfj(gee.a, null, null, false);
-            gee.b.a(gfj);
+            gcc gfj = new gfj(gee.a, null, null, false);//new gfj(Context, null, null, false)
+            gee.b.a(gfj);//gcq.a(gcc)
             gfj.a(a2.s());
-            gee.b.setDialing();
+            gee.b.setDialing();//set gcq dialing
             if (gee.b.f().n()) {
                 gee.b.setAddress(gee.b.f().i().getAddress(), 1);
             }
-            gee.c();
+            gee.c();//calls related controller methods (see gee.c() and decipher)
             this.a = null;
         }
     }
@@ -82,7 +82,7 @@ public class gey { //TellOutgoingCallRequest
         if (this.a != null) {
             gee gee = this.a;
             if (gwb.a(gee.a, "babel_remote_connection_allowed", true)) {
-                Context d = gee.b.d();
+                Context d = gee.b.d();//gcq.d()
                 RemoteConnection createRemoteOutgoingConnection = d.createRemoteOutgoingConnection(gwb.J(d), gee.b.e());
                 if (createRemoteOutgoingConnection == null) {
                     glk.e("Babel_telephony", "TeleOutgoingCallRequest.startCellularCall, unable to create remote connection", new Object[0]);

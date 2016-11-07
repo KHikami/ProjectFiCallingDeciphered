@@ -55,5 +55,9 @@ public class TeleSetupActivity extends jzp implements ghp {
 
     private gho h() {
         return (gho) ((gkn) getIntent().getParcelableExtra("controller")).a();
+        // (gho) ((gkn)(Activity.getIntent().getParceableExtra("controller")))'s method a()
+        //(gho) gkn.a() => returns class gkn is based on (type cast to gho)
+        //(gho) (Intent.getParceableExtra("controller")
+        //=> in summary, typecasts resulting controller to be gho
     }
 }
