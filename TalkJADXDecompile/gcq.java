@@ -348,9 +348,9 @@ public final class gcq extends Connection {
         String valueOf = String.valueOf(this);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 29).append("TeleConnection.onStateChanged").append(valueOf).toString(), new Object[0]);
         if (this.b != null) {
-            this.b.a(i);
+            this.b.a(i);//gcc.a(i)
         }
-        for (gcu a : this.f) {
+        for (gcu a : this.f) {//for every gcu, run a(gcq,int)
             a.a(this, i);
         }
         A();

@@ -17,7 +17,7 @@ public final class gee { //TeleOutgoingCallRequest
     public gee(Context context, gcq gcq) {
         this.a = context;
         this.b = gcq;
-        this.f = new gcs(this);
+        this.f = new gcs(this);//new disconnect call listener
         gcq.a(this.f);
         this.g = new gey(this);
         this.e = new geu(context, gcq, this.g, new gbx()); //new TeleSetupController
