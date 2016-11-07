@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.text.TextUtils;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public final class ggc {
+public final class ggc { //TelePreferences
     public static CopyOnWriteArrayList<gge> a;
     private final Context b;
 
@@ -32,7 +32,9 @@ public final class ggc {
 
     public void a(int i) {
         iil.a();
-        a("account_name_v2", fde.a(this.b, i));
+        a("account_name_v2", fde.a(this.b, i));//a(String, fde.a(Context, int))
+        //a(String, String) or a(String, null) if i == -1
+        //removes or adds the related account string to ongoing array or account names
     }
 
     public boolean c() {
@@ -151,7 +153,7 @@ public final class ggc {
         String valueOf = String.valueOf(glk.b(str2));
         glk.c("Babel_telephony", new StringBuilder((String.valueOf(str).length() + 47) + String.valueOf(valueOf).length()).append("TelePreferences.updatePrefValue, key: ").append(str).append(", value: ").append(valueOf).toString(), new Object[0]);
         if (TextUtils.isEmpty(str2)) {
-            m().edit().remove(str).apply();
+            m().edit().remove(str).apply();//remove account string
         } else {
             m().edit().putString(str, str2).apply();
         }

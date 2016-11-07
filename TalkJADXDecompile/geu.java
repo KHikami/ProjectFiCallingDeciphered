@@ -7,10 +7,10 @@ import com.google.android.apps.hangouts.telephony.ui.TeleSetupActivity;
 import java.util.Locale;
 
 public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {//TeleSetupController
-    private final gbx A;
+    private final gbx A; //new iri(Context)
     private String B;
     final Context a;
-    final gcq b;
+    final gcq b; //Phone Connection
     final Handler c;
     final Runnable d;
     public ghc e;
@@ -19,10 +19,12 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     geb h;
     private final gey i; //TeleOutgoingCallRequeset
     private final ghr j;
-    private final int k; //if z true => becomes 2. else becomes 3. default is 1.
+    private final int k; //Start Reason: if setupAccountReady true => becomes 2. else becomes 3. default is 1.
+    //if 1 => not initialized => results in creation of a new gdz if n is 1
     private jzp l;
     private jmj m;
-    private int n;
+    private int n; //Setup step code. default value is 1 (gets incremented & modified as it goes through method r())
+    //refer to c(int) for codes map to what
     private dr o;
     private String p;
     private boolean q;
@@ -34,10 +36,12 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     private ggn w;
     private ggl x;
     private gcw y;
-    private boolean z;
+    private boolean z;//setupAccount is Ready!
 
+    // (protected constructor)
+    // given Context, Phone Connection, Outgoing Call Request, iri creator? => new Tele Setup Controller
     geu(Context context, gcq gcq, gey gey, gbx gbx) {
-        this.c = gwb.aL();
+        this.c = gwb.aL(); //related handler
         this.d = new gev(this); //new temp timeout object
         this.n = 1;
         iil.b("Expected non-null", (Object) gcq);
@@ -49,18 +53,22 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
         this.A = gbx;
     }
 
+    //public constructor => creates a new Tele Setup Controller (for everyone else)
+    //creates a new TeleSetupController given context, (ghr implementer) and a boolean z
     public geu(Context context, ghr ghr, boolean z) {
         this.c = gwb.aL();
         this.d = new gev(this);
         this.n = 1;
         this.a = context;
-        this.b = null;
-        this.i = null;
+        this.b = null; //no Phone connection
+        this.i = null;//assume no outgoing call request
         this.j = ghr;
         this.k = z ? 3 : 2;
         this.A = null;
     }
 
+    //executes start step of TeleSetupController
+    //protected => can be seen within package
     void b() {
         r();
     }
@@ -215,7 +223,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
         String b = gwb.b(this.a, "babel_user_to_allow_wifi_calling_for", "tycho_users");
         String str = "Babel_telephony";
         String str2 = "TeleSetupController.chooseWifiOrCellular, selectedAccount: ";
-        String valueOf = String.valueOf(gwb.J(this.t));
+        String valueOf = String.valueOf(gwb.J(this.t));//grab account for bko
         glk.c(str, valueOf.length() != 0 ? str2.concat(valueOf) : new String(str2), new Object[0]);
         if (this.t != null) {
             m();
@@ -493,19 +501,19 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     }
 
     private void p() {
-        ggc a = ggc.a(this.a);
-        int b = a.b();
+        ggc a = ggc.a(this.a); //creates a new ggc(Context) (basically account name)
+        int b = a.b();//grabs if bko object exists
         if (b == -1) {
-            this.u = ggc.a(this.a).i();
+            this.u = ggc.a(this.a).i();//sets tycho account name (if exists)
             String str = "Babel_telephony";
             String str2 = "TeleSetupController.setSelectedAccount accountName:";
             String valueOf = String.valueOf(this.u);
             glk.c(str, valueOf.length() != 0 ? str2.concat(valueOf) : new String(str2), new Object[0]);
         }
-        if (b != -1) {
-            this.t = fde.e(b);
-            if (this.t == null) {
-                a.a(-1);
+        if (b != -1) {//otherwise
+            this.t = fde.e(b);//fde.e(int) => returns a bko
+            if (this.t == null) { //if no bko
+                a.a(-1);//remove account from ongoing list of available accounts
             }
         }
     }
@@ -525,40 +533,49 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
         this.m.a(new jmu().a().a(this.u));
     }
 
+    //start setup!
     private void r() {
         int i = 1;
         iil.b("Expected condition to be false", this.q);
         String valueOf;
         int i2;
-        switch (this.n) {
-            case wi.j /*1*/:
+        switch (this.n) { //based on value of n
+            case wi.j /*1*/: //start setup
+                //k is start reason
                 glk.c("Babel_telephony", "TeleSetupController.performStartStep, startReason: " + this.k, new Object[0]);
                 switch (this.k) {
                     case wi.j /*1*/:
                         iil.a("Expected condition to be true", d());
-                        new gdz(this.a, new gew(this)).a();
+                        new gdz(this.a, new gew(this)).a(); //creates a new TeleNetworkSelectionUtils
+                        //using gdz(Context, new gew(context)'s a())
+                        //
                     case wi.l /*2*/:
-                        m();
+                        m(); //advance to next step
                     case wi.z /*3*/:
-                        a(new ggu(), "account_chooser");
+                        a(new ggu(), "account_chooser");//a(dr, String)
+                        //checks fragment display? (whatever that means...)
                     default:
-                        iil.a("unknown start reason: " + this.k);
-                        b(gwb.vv);
+                        iil.a("unknown start reason: " + this.k); //bad start reason
+                        b(gwb.vv); //b(2131361840)
+                        //error code it seems...
                 }
-            case wi.l /*2*/:
-                p();
+            case wi.l /*2*/://n = 2 (account select step)
+                p();//account updater
                 m();
-            case wi.z /*3*/:
+            case wi.z /*3*/://n = 3 => setup Account
                 boolean z = this.t != null && fde.j(this.t.g());
+                //z is have bko and fde.j(account id from bko) => account name (for id) and has bko
                 glk.c("Babel_telephony", "TeleSetupController.performSetupAccount, isReady: " + z, new Object[0]);
-                if (!gwb.H(this.a)) {
+                if (!gwb.H(this.a)) {//can't setup account if not connected to internet
                     glk.c("Babel_telephony", "TeleSetupController.performSetupAccount, not connected to internet", new Object[0]);
-                    z = true;
+                    z = true;//hijacked z to be true
                 }
-                if (z) {
-                    o();
+                if (z) { //if have bko & account name or no wifi => setup account done?
+                    o(); //advances to next step if all good
                     return;
                 }
+
+                //otherwise create account/setup
                 valueOf = String.valueOf(this.t);
                 String str = this.u;
                 glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf).length() + 65) + String.valueOf(str).length()).append("TeleSetupController.setupOrLogin, selectedAccount:").append(valueOf).append(" , accountName:").append(str).toString(), new Object[0]);
@@ -570,18 +587,18 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
                 } else {
                     q();
                 }
-            case wi.h /*4*/:
-                if (this.t == null) {
+            case wi.h /*4*/://update google voice status
+                if (this.t == null) {//bko exists
                     i2 = 0;
                 } else {
-                    i2 = this.t.I();
+                    i2 = this.t.I();//grabs int regarding google voice availability
                 }
                 glk.c("Babel_telephony", "TeleSetupController.performUpdateGoogleVoiceStatus, status: " + i2, new Object[0]);
-                if (i2 != 0 || (d() && !this.s)) {
-                    m();
+                if (i2 != 0 || (d() && !this.s)) {//google voice available? (not 0 or k is 1 and not s)
+                    m();//move to next step!
                     return;
                 }
-                e(gwb.vs);
+                e(gwb.vs);//e given large int again....
                 this.e = new ghc(this.t.g(), new ghe(this));
                 this.e.a(this.a);
             case wi.p /*5*/:
@@ -687,18 +704,20 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
         }
     }
 
+    //advance to next step valuator
     public void m() {
         String valueOf = String.valueOf(c(this.n));
         String valueOf2 = String.valueOf(c(this.n + 1));
         glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf).length() + 41) + String.valueOf(valueOf2).length()).append("TeleSetupController.advanceNextStep, ").append(valueOf).append(" -> ").append(valueOf2).toString(), new Object[0]);
         valueOf = "Babel_telephony";
         valueOf2 = "selectedAccount: ";
-        String valueOf3 = String.valueOf(gwb.J(this.t));
+        String valueOf3 = String.valueOf(gwb.J(this.t));//gwb.J(Object) => tells logger to print bko to string
         glk.c(valueOf, valueOf3.length() != 0 ? valueOf2.concat(valueOf3) : new String(valueOf2), new Object[0]);
-        this.n++;
-        r();
+        this.n++;//advance step code by 1
+        r();//call r() again! (note: r() calls this if n was 1 and k = 2)
     }
 
+    //maps code to step id
     private static String c(int i) {
         switch (i) {
             case wi.j /*1*/:
@@ -821,47 +840,50 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     }
 
     public void b(int i) {
-        int i2 = gwb.vy;
+        int i2 = gwb.vy;//2131361839
         ghf ghf = null;
-        if (this.l != null) {
-            ghf = (ghf) this.l.J_().a("message");
+        if (this.l != null) {//if jzp not null
+            ghf = (ghf) this.l.J_().a("message");//grab related message from ed object
         }
-        if (ghf == null) {
+        if (ghf == null) {//if first statement did not execute
             String string = this.a.getString(i2);
             String string2 = this.a.getString(i);
-            dr ghf2 = new ghf();
+            dr ghf2 = new ghf();//creates a new ghf (type casts it to dr)
             ghf2.setArguments(new Bundle());
-            ghf2.b(string);
-            ghf2.c(string2);
+            ghf2.b(string);// creates extra title intent
+            ghf2.c(string2);//creates extra text intent
             a(ghf2, "message");
             return;
         }
-        ghf.b(this.a.getString(i2));
-        ghf.c(this.a.getString(i));
+        ghf.b(this.a.getString(i2));//grabs Context for string 2131361839 (stored somewhere in the application...)
+        ghf.c(this.a.getString(i)); //grabs Context for string 2131361840
     }
 
+    //modifies the display it seems (using a fragment)
     private void a(dr drVar, String str) {
-        if (this.l == null) {
-            this.o = drVar;
-            this.p = str;
+        if (this.l == null) {//not given a jzp
+            this.o = drVar; //set o to be passed dr object (ggu)
+            this.p = str;//give p given string (account chooser from r())
             n();
             return;
         }
-        this.o = null;
-        this.p = null;
-        ed J_ = this.l.J_();
-        dr a = J_.a(16908290);
-        if (a == null || !str.equals(a.getTag())) {
+        this.o = null; //reset dr object if l not null
+        this.p = null;// reset string
+        ed J_ = this.l.J_();//call method J? (no such method => lost name from decompile...)
+        //returns some object that implements ed
+        dr a = J_.a(16908290);//returns a dr object
+        if (a == null || !str.equals(a.getTag())) {//no associated dr object or string doesn't match dr's tag
             String valueOf = String.valueOf(drVar);
             glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf).length() + 51) + String.valueOf(str).length()).append("TeleSetupController.showFragment, fragment: ").append(valueOf).append(", tag: ").append(str).toString(), new Object[0]);
             ew a2 = J_.a();
-            if (a != null) {
+            if (a != null) { //so in the case that the string doesn't match dr's tag
                 a2.a(17432576, 17432577);
             }
             a2.b(16908290, drVar, str);
             a2.a();
             return;
         }
+        //so if there is a dr object and string does match dr tag => fragment already displayed
         String str2 = "Babel_telephony";
         String str3 = "TeleSetupController.showFragment, already displaying fragment: ";
         String valueOf2 = String.valueOf(str);

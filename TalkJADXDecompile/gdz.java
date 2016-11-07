@@ -1,7 +1,8 @@
 import android.content.Context;
 import com.google.android.gms.herrevad.PredictedNetworkQuality;
 
-final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //seems to be a multi cell evaluator
+final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkSelectionUtils
+    //seems to be a multi cell evaluator
     //evaluates & creates the related WiFi, Network, Cell, and TeleStunPing objects
 
     private final Context a;
