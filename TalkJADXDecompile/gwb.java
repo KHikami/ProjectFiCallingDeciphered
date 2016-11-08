@@ -8398,7 +8398,7 @@ public class gwb implements gub {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, LTE outgoing call allowed by default", new Object[0]);
             return true;
         } else if (a(context, gec.c(), false)) {
-            //so by the time I get here, we've already determined we do not have internet? => can make VoLTE
+            //so by the time I get here, we've already determined we have internet & are connected to LTE but no wifi => can make VoLTE
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall,on carrier where we support voip calling over LTE, carrierId: " + gec.c(), new Object[0]);
             return true;
         } else {

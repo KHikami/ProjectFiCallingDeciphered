@@ -43,7 +43,8 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkS
         this.k = new gfa(this.a, this);// creates new tele stun ping object
         this.k.a();
         gwb.a((Runnable) this, (long) gwb.a(this.a, "babel_network_selection_state_fetch_timeout_millis", 1000));
-        //Handler.postDelayed(Runnable, long)
+        //first calls gwb.a(context, string, int) => checks if there's a biw related?
+        // Handler.postDelayed(Runnable, long)
     }
 
     private geb b() {
