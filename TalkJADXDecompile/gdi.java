@@ -1,5 +1,6 @@
 import android.telecom.PhoneAccountHandle;
 
+// prepares account handoff from wifi to cellular?
 final class gdi implements gcl {
     final /* synthetic */ PhoneAccountHandle a;
     final /* synthetic */ gdg b;

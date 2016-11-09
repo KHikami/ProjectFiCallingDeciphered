@@ -160,10 +160,11 @@ final class gel implements gcc {
         return this.c.a();
     }
 
+    // wifi experiment?
     public void a(gcw gcw) {
         String valueOf = String.valueOf(gcw);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 47).append("TeleRemoteCall.maybeAddExperiment, experiment: ").append(valueOf).toString(), new Object[0]);
-        this.c.a(gcw);
+        this.c.a(gcw); // calls geo method
     }
 
     public void a(AudioState audioState) {

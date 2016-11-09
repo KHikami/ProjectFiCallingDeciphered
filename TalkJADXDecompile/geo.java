@@ -64,7 +64,7 @@ final class geo implements gcd {
 
     void a(gcw gcw) {
         this.n = gcw;
-    }
+    } // sets gcw..why?
 
     String a() {
         return this.c;

@@ -24,6 +24,7 @@ final class gdc implements gcd {
     private Handler m;
     private final Runnable n;
 
+    // checks network conditions and initiates wifi to cell handoff
     // gcq contains info about Connection state and logs Connection events
     // i: reason for handoff, 3 == network loss
     static void a(Context context, gcq gcq, int i) {
@@ -50,8 +51,8 @@ final class gdc implements gcd {
             return;
         }
         gdg gdg = new gdg(context, (TelecomManager) gcq.d().getSystemService("telecom"));
-        gdg.a(new gdc(context, gcq, gdg, i));
-        gdg.a();
+        gdg.a(new gdc(context, gcq, gdg, i)); // call to set gdg's gdc
+        gdg.a(); // *********call to initiate wifi to cell handoff procedure*********
     }
 
     // Logs reason for handing off from cell to wifi, and then do something... TODO
@@ -237,12 +238,12 @@ final class gdc implements gcd {
         this.f = gcc;
         this.f.a((gcd) this);
         this.g = new gcq(this.e.a().f(), this.e.a().i());
-        this.g.setDialing();
-        this.g.b(this.f);
-        if (this.h == 3) {
-            a(true, 0);
+        this.g.setDialing(); // setDialing() does not exist in gcq? (need to find subclass?)
+        this.g.b(this.f); // set geo's gcw
+        if (this.h == 3) { // if reason for handoffWiFiToCellular
+            a(true, 0); // handoffcomplete
         } else {
-            g();
+            g(); // print to log
         }
     }
 
@@ -262,12 +263,12 @@ final class gdc implements gcd {
             }
             if (this.g != null) {
                 if (z && !TextUtils.isEmpty(this.g.n())) {
-                    this.c.a(this.g.n());
+                    this.c.a(this.g.n()); // updates final gcq's m - what is m?
                 }
                 this.g.b(null);
                 this.g = null;
             }
-            this.c.a(null);
+            this.c.a(null); // resets final gcq's m to null, regardless of setting it above?
             this.m.removeCallbacks(this.n);
             if (z) {
                 if (this.f != null) {

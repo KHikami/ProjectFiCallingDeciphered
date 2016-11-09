@@ -39,7 +39,7 @@ public final class gcq extends Connection {
     private gcs v;
     private boolean w; // manual_network_selection?
     private boolean x; // LTE_fallback_call
-    private gcw y;
+    private gcw y; // waat is this?
     private gco z;
 
     static {
@@ -120,18 +120,19 @@ public final class gcq extends Connection {
         return this.b;
     } // return class that implements gcc (e.g. gel/gfj)
 
+    // part of handoff procedure
     void b(gcc gcc) {
         String valueOf = String.valueOf(this.b);
         String valueOf2 = String.valueOf(gcc);
         glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf).length() + 28) + String.valueOf(valueOf2).length()).append("TeleConnection.setCall, ").append(valueOf).append(" -> ").append(valueOf2).toString(), new Object[0]);
         if (this.b != null) {
-            this.b.a(null); // if gcc is not null, call mutating method, void return type
+            this.b.a(null); // if gcc (gel) is not null, pass null as gcw
         }
         this.b = gcc;
         if (this.b != null) {
             this.b.a(this);
             if (this.y != null) {
-                this.b.a(this.y);
+                this.b.a(this.y); // pass gwc
             }
         }
         A();
@@ -235,6 +236,7 @@ public final class gcq extends Connection {
         this.s.append(j);
     }
 
+    // register and unregister receiver with context
     private void A() {
         Context d = d();
         int i = (this.b == null || getState() != 4) ? 0 : 1;

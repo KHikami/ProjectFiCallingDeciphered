@@ -24,6 +24,7 @@ final class gdg implements gdf {
         this.b = gdc;
     }
 
+    // initiate wifi to cell handoff
     void a() {
         PhoneAccountHandle defaultOutgoingPhoneAccount;
         glk.c("Babel_telephony", "TeleHandoffWifiToCellular.startHandoff", new Object[0]);
@@ -53,7 +54,7 @@ final class gdg implements gdf {
                     this.b.a(false, 221);
                     return;
                 }
-                gck.a(this.a, new gdi(this, defaultOutgoingPhoneAccount));
+                gck.a(this.a, new gdi(this, defaultOutgoingPhoneAccount)); // gck -> gcl(gdi) = handoff?
                 return;
             }
             String str = "Babel_telephony";
@@ -64,10 +65,11 @@ final class gdg implements gdf {
         }
     }
 
+    // handoff from wifi to T-Mobile..where is sprint?
     public void b() {
         if (this.b.b() == 6) {
             this.b.a(true, 0);
-        } else if (this.b.c() == 4 && a(2)) {
+        } else if (this.b.c() == 4 && a(2)) { // if connection state = STATE_ACTIVE & ...
             glk.c("Babel_telephony", "TeleHandoffWifiToCellular.checkHandoffComplete, handoff is complete - carrier is T-Mobile and new call is active.", new Object[0]);
             gwb.f(2981);
             this.b.a(true, 0);
@@ -78,10 +80,12 @@ final class gdg implements gdf {
         }
     }
 
+    //
     private boolean a(int i) {
         return this.b.a().f().b().c() == i;
     }
 
+    // handoff - makes connection to called number from wifi?
     void a(PhoneAccountHandle phoneAccountHandle) {
         glk.c("Babel_telephony", "TeleHandoffWifiToCellular.callHandoffNumber", new Object[0]);
         gcq a = this.b.a();
