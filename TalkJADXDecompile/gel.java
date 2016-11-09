@@ -43,6 +43,7 @@ final class gel implements gcc {
         }
     }
 
+    //
     public void a(gcd gcd) {
         this.b.add(gcd);
     }
@@ -150,6 +151,7 @@ final class gel implements gcc {
         this.g = z;
     }
 
+    // identifier among gcc implementers
     public int d() {
         return 1;
     }

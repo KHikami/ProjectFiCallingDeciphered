@@ -306,7 +306,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 @Deprecated
-public class gwb implements gub {
+public class gwb implements gub { // gub is empty, and extends intterface gua, which is also empty?
     public static final int A = 2130772199;
     public static final int Aa = 2131363318;
     public static final int Ab = 2131363317;

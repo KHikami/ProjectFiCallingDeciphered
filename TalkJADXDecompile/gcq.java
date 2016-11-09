@@ -37,7 +37,7 @@ public final class gcq extends Connection {
     private String t;
     private BroadcastReceiver u;
     private gcs v;
-    private boolean w;
+    private boolean w; // manual_network_selection?
     private boolean x; // LTE_fallback_call
     private gcw y;
     private gco z;
@@ -118,14 +118,14 @@ public final class gcq extends Connection {
 
     public gcc j() {
         return this.b;
-    }
+    } // return class that implements gcc (e.g. gel/gfj)
 
     void b(gcc gcc) {
         String valueOf = String.valueOf(this.b);
         String valueOf2 = String.valueOf(gcc);
         glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf).length() + 28) + String.valueOf(valueOf2).length()).append("TeleConnection.setCall, ").append(valueOf).append(" -> ").append(valueOf2).toString(), new Object[0]);
         if (this.b != null) {
-            this.b.a(null);
+            this.b.a(null); // if gcc is not null, call mutating method, void return type
         }
         this.b = gcc;
         if (this.b != null) {
@@ -366,7 +366,7 @@ public final class gcq extends Connection {
 
     public boolean v() {
         return this.w;
-    }
+    } // returns some bool val
 
     public void b(boolean z) {
         this.w = z;

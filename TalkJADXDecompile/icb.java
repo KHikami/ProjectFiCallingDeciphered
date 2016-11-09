@@ -44,10 +44,10 @@ public class icb {
     public static String a(ContentResolver contentResolver, String str, String str2) {
         a();
         synchronized (icb.class) {
-            b(contentResolver);
+            b(contentResolver); // call to instantiate e and f if e is null
             Object obj = f;
             String str3;
-            if (e.containsKey(str)) {   // If hashmap contains str...
+            if (e.containsKey(str)) {   // If hashmap contains str, store value with that key and eventually return
                 str3 = (String) e.get(str);
                 if (str3 != null) {
                     str2 = str3;
@@ -157,9 +157,9 @@ public class icb {
     }
 
     public static boolean a(ContentResolver contentResolver, String str, boolean z) {
-        // I think this will always be null because of the 3rd parameter
+        // Will return a string with the associated value in hashmap e, if str is a retrievable key
         Object a = a(contentResolver, str, null);
-        // If a is null or nothing, return the default
+        // If a is null or an empty string, return the default bool
         if (a == null || a.equals("")) {
             return z;
         }

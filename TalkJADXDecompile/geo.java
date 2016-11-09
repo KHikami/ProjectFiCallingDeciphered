@@ -10,6 +10,7 @@ import java.util.Locale;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
+// Implements gcd. not sure if important
 final class geo implements gcd {
     private static gep o;
     private final Context a;

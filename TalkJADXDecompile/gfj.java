@@ -301,6 +301,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
+    // identifier between gcc implementers
     public int d() {
         return 2;
     }
