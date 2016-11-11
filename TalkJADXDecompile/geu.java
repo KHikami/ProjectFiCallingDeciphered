@@ -714,7 +714,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
         String valueOf3 = String.valueOf(gwb.J(this.t));//gwb.J(Object) => tells logger to print bko to string
         glk.c(valueOf, valueOf3.length() != 0 ? valueOf2.concat(valueOf3) : new String(valueOf2), new Object[0]);
         this.n++;//advance step code by 1
-        r();//call r() again! (note: r() calls this if n was 1 and k = 2)
+        r();//call r() again!
     }
 
     //maps code to step id
