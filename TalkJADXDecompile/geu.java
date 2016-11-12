@@ -15,7 +15,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     final Runnable d;
     public ghc e;
     public ggz f;
-    boolean g;
+    boolean g;//used by gew to do something with geb
     geb h; //used for cell service?
     private final gey i; //TeleOutgoingCallRequeset
     private final ghr j;
