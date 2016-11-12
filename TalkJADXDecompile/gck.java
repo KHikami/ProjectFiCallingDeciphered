@@ -34,6 +34,7 @@ public final class gck { //evaluates signal strength into new values
         if (telephonyManager.getSimState() == 5) { //SimState is ready
             PhoneStateListener gcn = new gcn(context, gcl);//create cell signal listener
             telephonyManager.listen(gcn, 257); //listen for service state change and listen for signal strength
+            //the int represents flags to set to 1 in this case => service state change and signal strength
             telephonyManager.listen(gcn, 0); //stop listening for updates
             return;
         }

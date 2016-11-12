@@ -6,10 +6,10 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkS
     //evaluates & creates the related WiFi, Network, Cell, and TeleStunPing objects
 
     private final Context a;
-    private gea b; //some interface??? => if no this, timeout occurred
+    private gea b; //is a network status updater (holds the calling TeleUtilsSetup object
     private gui c; // guj
     private gcm d; //nework provider status
-    private boolean e; //is on Cell state
+    private boolean e; //has Cell state
     private gfv f; //wifi cell
     private gec g; //cell network status
     private boolean h; //is on Home Network (for voice)
@@ -51,11 +51,12 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkS
         return new geb(this.d, this.f, this.g, this.i, this.l, this.m, this.o);
     }
 
+    //store gcm as my gcm!
     public void a(gcm gcm) {
         String valueOf = String.valueOf(gcm);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 50).append("TeleNetworkSelectionUtils.onCellState, cellState: ").append(valueOf).toString(), new Object[0]);
         this.d = gcm;
-        this.e = true;
+        this.e = true;//have cell state becomes true
         c();
     }
 
@@ -63,7 +64,7 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkS
         glk.c("Babel_telephony", "TeleNetworkSelectionUtils.onHomeVoiceNetworkResult, success: " + z + ", isOnHomeVoiceNetwork: " + z2, new Object[0]);
         int a = z ? z2 ? 2 : 1 : get.a(this.a);
         this.g = new gec(this.a, a);
-        this.h = true;
+        this.h = true;//have network status becomes true
         c();
     }
 
@@ -71,22 +72,22 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkS
         String valueOf = String.valueOf(haw.a());
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 53).append("TeleNetworkSelectionUtils.onResult, network quality: ").append(valueOf).toString(), new Object[0]);
         this.i = haw.a();
-        this.j = true;
-        this.c.d();
+        this.j = true;//finished!
+        this.c.d();//gui.d()
         c();
     }
 
     public void run() {
         if (this.b != null) { //if no gea object time out occurred.
             glk.c("Babel_telephony", "TeleNetworkSelectionUtils.run, fetching state timeout", new Object[0]);
-            this.o = true;
+            this.o = true;//state timeout
             c();
         }
     }
 
     public void a(boolean z, long j) {
         glk.c("Babel_telephony", "TeleNetworkSelectionUtils.onPingComplete, wasSuccessful: " + z + ", latencyMillis: " + j, new Object[0]);
-        this.n = true;
+        this.n = true;//Ping successful!
         this.k = null;// reset stun ping object
         this.l = z;//l stores if ping were successful
         this.m = j;//m stores latency amount
@@ -96,18 +97,19 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkS
     private void c() { //resets all the fields it seems? (or at least most of the fields. Seems to be done for cleanup...)
         gwb.aJ();
         Object obj = (this.e && this.h && this.j && this.n) ? 1 : null;
-        if (this.b == null) {
+        //obj is have cell state, have network state, am finished, and ping successful
+        if (this.b == null) {//do I have a geu mapper? If not => return.
             return;
         }
-        if (obj != null || this.o) {
+        if (obj != null || this.o) {//obj is 1 or I timed out
             gwb.b((Runnable) this);
-            gea gea = this.b;
-            this.b = null;
+            gea gea = this.b;//grab a "soft copy" of the geu mapper (this is gew btw)
+            this.b = null;//destroy original
             if (this.k != null) {
                 this.k.b();
                 this.k = null;
             }
-            gea.a(b());
+            gea.a(b());//gew.a(geb)
         }
     }
 }
