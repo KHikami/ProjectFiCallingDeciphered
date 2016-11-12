@@ -7,6 +7,8 @@ import android.text.TextUtils;
 import java.util.Locale;
 import java.util.Objects;
 
+// current_network_carrier object
+
 public final class gec implements Parcelable { //refered to as network status in gwb
     public static final Creator<gec> CREATOR;
     private final int a;    // Roaming status (1 = roaming, 2 = not roaming, otherwise unknown)
@@ -106,15 +108,20 @@ public final class gec implements Parcelable { //refered to as network status in
         return i;
     }
 
+    // Returns roaming status (2 = roaming, 1 = not roaming, 3 = unknown or default)
+    //   either by inferring from what network we are on, or by just looking at this.a
     public int a() {
         int c = c();
+        // If we are not on T-Mobile and not on Sprint, OR we are roaming...
         if ((c != 2 && c != 1) || this.a == 1) {
             //simOperator is not 2 and not 1 or int given at construction is 1
             return 2;
         }
+        // Not roaming
         if (this.a == 2) {
             return 1;
         }
+        // Unknown status
         return 3;
     }
 
@@ -157,7 +164,7 @@ public final class gec implements Parcelable { //refered to as network status in
         if (this.c.equals(Locale.US.getCountry())) {
             return 1; //if ISO is US => 1
         }
-        return 2; //default is 2
+        return 2; //default is 2 (must be international ISO)
     }
 
     public static gec a(gfz gfz) {
@@ -191,6 +198,7 @@ public final class gec implements Parcelable { //refered to as network status in
         parcel.writeString(this.c);
     }
 
+    // Returns true if we have a US ISO, AND babel_hutch_experience_for_us is false (when looked up in context hashmap)
     public boolean a(Context context) {
         if (gwb.a(context, "babel_hutch_experience_for_us", false) || e() != 1) {
             //if I have an ISO or passes gwb.a(context, string, false) => false
@@ -199,6 +207,7 @@ public final class gec implements Parcelable { //refered to as network status in
         return true;
     }
 
+    // Returns true if we have an international ISO, OR babel_hutch_experience_for_us is true (when looked up in context hashmap)
     public boolean b(Context context) {
         if (gwb.a(context, "babel_hutch_experience_for_us", false) || e() == 2) {
             //if ISO is US or passes gwb.a(context, string, false) => true

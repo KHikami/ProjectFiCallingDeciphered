@@ -76,7 +76,11 @@ final class gdc implements gcd {
         gdb.a();    // TODO
     }
 
+    // Lookup if manual handoff allowed using context
+    // Returns false by default if key/value pair not found
     static boolean a(Context context) {
+        // gwb.g gets a biw (biz implements) from the context
+        // Then use biz to lookup string as a key for context hashmap, or return default boolean if not a key
         return gwb.g(context).a("babel_manual_handoff_allowed", false);
     }
 
@@ -131,7 +135,7 @@ final class gdc implements gcd {
 
     // isHandoffPossible
     //   z: handoff_complete
-    //   i: 
+    //   i: handoff_reason (only used to check for i == 10 in this function)
     //   z2: manual_network_selection
     public static boolean a(Context context, gcc gcc, boolean z, int i, boolean z2) {
         // gwb.P(context) returns true if we have permission to handoff
@@ -139,8 +143,8 @@ final class gdc implements gcd {
             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, no permissions", new Object[0]);
             return false;
         
-        // gcc.d() returns 2 if it is a gfj child (which implements gcc)
-        // gcc.d() returns 1 if it is a gel child (which implements gcc)
+        // gcc.d() returns 2 if it is a gfj child (which implements gcc). gfj might be a wifi related object
+        // gcc.d() returns 1 if it is a gel child (which implements gcc). gel might be a cell related object
         // gwb.R(context) checks capabilities for making cell calls
         
         // If gcc is not a gfj object OR our context says we have the capability (permission) to make cell calls...
@@ -172,51 +176,67 @@ final class gdc implements gcd {
                         } else if (z2) {
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, network optimizing handoff disabled when calling network was choosen manually", new Object[0]);
                             return false;
-                        // 
+                        // Only place 'i' is used
                         } else if (i == 10) {
-                            // I think 'a' will always be true
-                            boolean a = g.a("babel_activity_handoff_allowed", true);\
-                            // Always sets to "allowed."???
+                            // g is a biz object
+                            // g.a uses the str to lookup a value in the context hashmap, or returns the given default bool if not a key
+                            boolean a = g.a("babel_activity_handoff_allowed", true);
+                            // Convert bool value to string allowed or not allowed, for logging purposes
                             String str = a ? "allowed." : "not allowed.";
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, activity recognition handoff is %s", str);
                             return a;
+                        // Means that gcc is a gfj child (which implements gcc)
                         } else if (gcc.d() == 2) {
+                            // Check context hashmap using string as key, if it's value is false... (meaning WIFI network optimizing handoff not allowed)
                             if (!g.a("babel_wifi_network_optimizing_handoff_allowed", true)) {
                                 glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, handoff for wifi network optimization not allowed", new Object[0]);
                                 return false;
                             }
+                        // CELL network optimizing handoff not allowed
                         } else if (!g.a("babel_cell_network_optimizing_handoff_allowed", true)) {
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, handoff for cell network optimization not allowed", new Object[0]);
                             return false;
                         }
                         break;
+                    // In manual handoff mode???
                     case wi.l /*2*/:
+                        // If manual handoff allowed not allowed (or key/value pair not found in context hashmap)
                         if (!a(context)) {
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, manual handoff not allowed", new Object[0]);
                             return false;
                         }
                         break;
+                    // 
                     case wi.z /*3*/:
+                        // gcc is a gfj child (which implements gcc)
                         if (gcc.d() == 2) {
+                            // If we cannot handoff when wifi is lost...
                             if (!g.a("babel_handoff_on_wifi_loss_allowed", true)) {
                                 glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, handoff on wifi loss not allowed", new Object[0]);
                                 return false;
                             }
+                        // Otherwise gcc is a gel child (which implements gcc), AND IF handoff is NOT allowed on cell loss...
                         } else if (!g.a("babel_handoff_on_cell_loss_allowed", true)) {
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, handoff on cell loss not allowed", new Object[0]);
                             return false;
                         }
                         break;
+                    // Unknown handoff reason 'i'
                     default:
                         glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, unknown handoff reason: " + i, new Object[0]);
                         return false;
                 }
+                // gcc.a returns a gcq object
+                // gcq.h returns the current_network_carrier object (gec)
                 gec h = gcc.a().h();
+                // If this is an international ISO, AND international handoffs are NOT allowed...
                 if (h.b(context) && !g.a("babel_international_handoff_allowed", false)) {
                     glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, handoff while international not allowed", new Object[0]);
                     return false;
+                // If we are not roaming, OR roaming handoff is allowed...
                 } else if (h.a() == 1 || g.a("babel_roaming_handoff_allowed", true)) {
                     return true;
+                // Otherwise we are roaming AND roaming handoff is not allowed...
                 } else {
                     glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, handoff while roaming not allowed", new Object[0]);
                     return false;

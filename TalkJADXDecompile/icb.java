@@ -156,6 +156,8 @@ public class icb {
         return j;
     }
 
+    // Lookup str in the context hashmap, and return the boolean value found if str is a valid key
+    // Otherwise just return default boolean z
     public static boolean a(ContentResolver contentResolver, String str, boolean z) {
         // Will return a string with the associated value in hashmap e, if str is a retrievable key
         Object a = a(contentResolver, str, null);
