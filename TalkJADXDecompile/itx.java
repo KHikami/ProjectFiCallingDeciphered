@@ -1,6 +1,7 @@
 import android.util.Log;
 
-public final class itx {
+public final class itx { //a different kind of logger it seems. Logs based on severity! (versus glk only reports messages)
+    //this adds severity status to the message
     public static itz a;
     public static int b;
 
@@ -60,21 +61,21 @@ public final class itx {
         }
     }
 
-    private static int b() {
+    private static int b() { //checks if string is loggable as associated log issue
         String str = "vclib";
         if (Log.isLoggable(str, 2)) {
-            return 2;
+            return 2;//is verbose mode (no problems just helpful output)
         }
         if (Log.isLoggable(str, 3)) {
-            return 3;
+            return 3;//is debug issue
         }
         if (Log.isLoggable(str, 4)) {
-            return 4;
+            return 4;//is info issue
         }
         if (Log.isLoggable(str, 5)) {
-            return 5;
+            return 5;//is warning severity
         }
-        return 6;
+        return 6; //is error severity
     }
 
     public static boolean a() {

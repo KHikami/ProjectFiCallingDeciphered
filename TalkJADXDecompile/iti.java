@@ -1,6 +1,6 @@
 import android.content.Context;
 
-public final class iti {
+public final class iti {//URL for hangouts???
     private String a;
     private itj b;
 

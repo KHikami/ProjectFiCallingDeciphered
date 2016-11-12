@@ -6,8 +6,8 @@ public final class bko {
     private final jcf a;
     private final bbm b;
     private final fzw c;
-    private final String d;
-    private final boolean e;
+    private final String d;//SMS string?
+    private final boolean e;//is d SMS
     private edo f;
 
     public bko(jcf jcf, bbm bbm, fzw fzw, String str) {

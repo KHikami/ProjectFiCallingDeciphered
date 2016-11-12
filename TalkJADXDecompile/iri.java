@@ -2,33 +2,33 @@ import android.content.Context;
 import android.content.ServiceConnection;
 import android.os.AsyncTask;
 
-public final class iri {
-    private static boolean h;
+public final class iri {//used for hangout id creation.
+    private static boolean h;//has account mapper perhaps?
     final Context a;
-    iti b;
+    iti b; //URL for connection?
     ijn c;
     ikc d;
-    final ServiceConnection e;
-    private final iko f;
-    private final iiv g;
+    final ServiceConnection e;//new call service connection for the hangouts session
+    private final iko f;//hangouts support checker
+    private final iiv g;//stores the account mapper for hangouts
 
     static {
         h = false;
     }
 
     public iri(Context context) {
-        this.e = new irj(this);
+        this.e = new irj(this);//creates a related service connection for hangout session (not worth looking into)
         this.a = context;
-        this.f = new iko();
+        this.f = new iko();//hash set that takes into account the hardware etc. for hangouts
         if (!this.f.a(context)) {
-            itx.a(6, "vclib", "Hangouts not supported by this device");
+            itx.a(6, "vclib", "Hangouts not supported by this device");//error! hangouts not supported by device
         }
         if (!h) {
-            jyn.b(this.a).a(iiv.class, new iiv());
+            jyn.b(this.a).a(iiv.class, new iiv());//creates an Account mapper for the session if h not true yet.
             h = true;
         }
         this.g = (iiv) jyn.b(context).a(iiv.class);
-        this.b = new iti(context);
+        this.b = new iti(context);//URL for connection???
     }
 
     public void a(iti iti) {
@@ -47,7 +47,7 @@ public final class iri {
         a();
     }
 
-    void a() {
+    void a() {//disconnects the call service
         if (this.d != null) {
             try {
                 this.d.a();
@@ -59,7 +59,7 @@ public final class iri {
         }
     }
 
-    public void a(String str, irl irl) {
+    public void a(String str, irl irl) {//used in creating a hangout id
         new irm(this, this.g.a(str), irl).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
     }
 

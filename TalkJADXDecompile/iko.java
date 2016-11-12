@@ -5,7 +5,8 @@ import com.google.api.client.http.HttpStatusCodes;
 import java.util.HashSet;
 import java.util.Set;
 
-public final class iko {
+public final class iko { //Hangouts Support Checker (not exactly interesting for us since it's primarily checking
+    //hardware specs for hangouts it seems...
     private static final Set<String> a;
     private static final iud b;
     private static final iud c;

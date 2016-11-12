@@ -34,7 +34,6 @@ public class TeleConnectionService extends ConnectionService {
     public TeleConnectionService() {
         this.a = new ggk(this);
     }
-
     public Connection onCreateOutgoingConnection(PhoneAccountHandle phoneAccountHandle, ConnectionRequest connectionRequest) {
         String valueOf = String.valueOf(connectionRequest);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 59).append("TeleConnectionService.onCreateOutgoingConnection, request: ").append(valueOf).toString(), new Object[0]);
