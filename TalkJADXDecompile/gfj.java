@@ -102,6 +102,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         a(new DisconnectCause(i2, valueOf.length() != 0 ? str.concat(valueOf) : new String(str)));
     }
 
+    // Set hangout state
     void a(did did) {
         String valueOf = String.valueOf(did);
         String valueOf2 = String.valueOf(this.c);

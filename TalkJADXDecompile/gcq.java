@@ -28,9 +28,9 @@ public final class gcq extends Connection {
     private boolean k;
     private boolean l;
     private String m;
-    private String n;
+    private String n;   // Account name
     private int o;
-    private String p;
+    private String p;   // Hangout id
     private String q;
     private String r;
     private StringBuilder s;
@@ -179,10 +179,12 @@ public final class gcq extends Connection {
         this.m = str;
     }
 
+    // Get account name
     public String o() {
         return this.n;
     }
 
+    // Set account name
     void b(String str) {
         this.n = str;
     }
@@ -195,10 +197,12 @@ public final class gcq extends Connection {
         this.o = i;
     }
 
+    // Get hangout id
     public String q() {
         return this.p;
     }
 
+    // Set hangout id
     void c(String str) {
         this.p = str;
     }

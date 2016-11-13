@@ -7934,12 +7934,15 @@ public class gwb implements gub { // gub is empty, and extends intterface gua, w
         return true;
     }
 
+    // Check that we are connected to network on Wifi
     public static boolean I(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService("connectivity");
         if (connectivityManager == null) {
             return false;
         }
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        // If we have network info AND it says we are connected AND network is type 1 (TYPE_WIFI)
+        // https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_WIFI
         if (activeNetworkInfo != null && activeNetworkInfo.isConnected() && activeNetworkInfo.getType() == 1) {
             return true;
         }

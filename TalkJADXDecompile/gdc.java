@@ -36,7 +36,9 @@ final class gdc implements gcd {
 
         // isHandoffPossible returned true
 
+        // If there is a handoff object (gdc)... This means a handoff is pending.
         if (gcq.k() != null) {
+            // If reason for handoff is: network loss (3)
             if (i == 3) {
                 glk.c("Babel_telephony", "TeleHandoffController.handoffWifiToCellular, notify handoff about network loss", new Object[0]);
                 gdc k = gcq.k();    // gcq returns type of gdc (this class)
@@ -50,14 +52,15 @@ final class gdc implements gcd {
             glk.c("Babel_telephony", "TeleHandoffController.handoffWifiToCellular, handoff pending, skipping", new Object[0]);
             return;
         }
+        // Only gets here if there was no pending handoff
         gdg gdg = new gdg(context, (TelecomManager) gcq.d().getSystemService("telecom"));
         gdg.a(new gdc(context, gcq, gdg, i)); // call to set gdg's gdc
         gdg.a(); // *********call to initiate wifi to cell handoff procedure*********
     }
 
     // Logs reason for handing off from cell to wifi, and then do something... TODO
-    //   context: 
-    //   gcq: 
+    //   context: context for call
+    //   gcq: call object
     //   i: reason for handoff
     static void b(Context context, gcq gcq, int i) {
         glk.c("Babel_telephony", "TeleHandoffController.handoffCellularToWifi, reason: " + i, new Object[0]);
@@ -267,9 +270,11 @@ final class gdc implements gcd {
         }
     }
 
-    // onHandOffComplete
-    // z: is_handoff_complete
-    // i: some sort of state (TODO). Ranges from 0, 210-228 (seen in gdb)
+    // onHandoffComplete
+    //   z: is_handoff_complete
+    //   i: HTTP status code
+    // https://developer.android.com/reference/org/apache/http/HttpStatus.html
+    // Many status codes are probably for internal use only (extended from normal REST codes)
     void a(boolean z, int i) {
         if (!this.l) {
             this.l = true;
