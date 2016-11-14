@@ -11,11 +11,11 @@ import android.text.TextUtils;
 final class gdc implements gcd {
     boolean a;
     private final Context b;
-    private final gcq c;
+    private final gcq c;    // Connection object before the handoff (cannot be changed, so declared final)
     private final gdf d;
     private final gcc e;
     private gcc f;
-    private gcq g;
+    private gcq g;  // This is created when handoff actually occurs, inferring that it is the new Connection object
     private int h;  // reason for handoffWiFiToCellular
     private int i;  // Old Connection state constant (during a transition)
     private int j;  // New Connection state constant (during a transition)  // set in onDisconnected and in onTeleCallStateChanged
@@ -58,7 +58,7 @@ final class gdc implements gcd {
         gdg.a(); // *********call to initiate wifi to cell handoff procedure*********
     }
 
-    // Logs reason for handing off from cell to wifi, and then do something... TODO
+    // Logs reason for handing off from cell to wifi, and then try to do the handoff using gdb
     //   context: context for call
     //   gcq: call object
     //   i: reason for handoff
@@ -76,7 +76,7 @@ final class gdc implements gcd {
         }
         gdb gdb = new gdb(context, dgg.a());
         gdb.a(new gdc(context, gcq, gdb, i));   // Sets gdb's c object to gdc
-        gdb.a();    // TODO
+        gdb.a();    // Decide if handoff can be started, or if it is not possible
     }
 
     // Lookup if manual handoff allowed using context
