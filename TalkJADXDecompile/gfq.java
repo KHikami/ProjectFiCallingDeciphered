@@ -8,7 +8,7 @@ import android.net.NetworkRequest.Builder;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 
-final class gfq {
+final class gfq {//Wifi Cell creator?
     static final boolean a;
     final Context b;
     gfr c;
@@ -22,10 +22,11 @@ final class gfq {
     }
 
     static gfv a(Context context) {
-        if (!gwb.I(context)) {
+        if (!gwb.I(context)) {//if not have wifi network and wifi network info => create new default wifi cell
             return new gfv(false, 0, 0);
         }
         WifiInfo connectionInfo = ((WifiManager) context.getSystemService("wifi")).getConnectionInfo();
+        //uses wifiManager to create new wifi cell
         return new gfv(true, WifiManager.calculateSignalLevel(connectionInfo.getRssi(), 100), connectionInfo.getLinkSpeed());
     }
 

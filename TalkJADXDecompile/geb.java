@@ -5,10 +5,11 @@ final class geb {
     final gfv b; //Wifi Cell
     final gec c; //Network Cell
     final PredictedNetworkQuality d;
-    final boolean e;
-    final long f;
+    final boolean e;//last ping was successful
+    final long f; //last recorded ping latency
     final boolean g; //didTimeout
 
+    //created by gdz
     geb(gcm gcm, gfv gfv, gec gec, PredictedNetworkQuality predictedNetworkQuality, boolean z, long j, boolean z2) {
         this.a = gcm;
         this.b = gfv;

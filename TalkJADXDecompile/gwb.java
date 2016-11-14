@@ -306,7 +306,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 @Deprecated
-public class gwb implements gub { // gub is empty, and extends intterface gua, which is also empty?
+public class gwb implements gub { // gub is empty, and extends interface gua, which is also empty?
     public static final int A = 2130772199;
     public static final int Aa = 2131363318;
     public static final int Ab = 2131363317;
@@ -8637,7 +8637,7 @@ public class gwb implements gub { // gub is empty, and extends intterface gua, w
 
     public static void a(Context context, ggq ggq) {
         glk.c("Babel_telephony", "TeleTychoController.isOnHomeVoiceNetwork", new Object[0]);
-        a(context, new ggp(context, ggq));
+        a(context, new ggp(context, ggq));//creates a new ggp and feeds it into a(context, Service Connection)
     }
 
     public static void U(Context context) {
@@ -8654,7 +8654,7 @@ public class gwb implements gub { // gub is empty, and extends intterface gua, w
         }
     }
 
-    public static void a(Context context, ServiceConnection serviceConnection) {
+    public static void a(Context context, ServiceConnection serviceConnection) {//new intent to bind the tycho account strings
         Intent intent = new Intent("com.google.android.apps.tycho.IVoiceService").setPackage("com.google.android.apps.tycho");
         glk.c("Babel_telephony", "TeleTychoController.bindService, calling bind service", new Object[0]);
         if (!context.bindService(intent, serviceConnection, 1)) {
@@ -13369,7 +13369,7 @@ public class gwb implements gub { // gub is empty, and extends intterface gua, w
     }
 
     public static Handler aL() {
-        if (Ae == null) {
+        if (Ae == null) {//grabs stored Handler  if one exists. Else creates a new Handler
             Ae = new Handler(Looper.getMainLooper());
         }
         return Ae;
@@ -13385,7 +13385,7 @@ public class gwb implements gub { // gub is empty, and extends intterface gua, w
     }
 
     public static void a(Runnable runnable, long j) {
-        aL().postDelayed(runnable, j);
+        aL().postDelayed(runnable, j);//Handler.postDelayed(runnable,j)
     }
 
     public static void b(Runnable runnable) {

@@ -44,7 +44,9 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkS
         this.k.a();
         gwb.a((Runnable) this, (long) gwb.a(this.a, "babel_network_selection_state_fetch_timeout_millis", 1000));
         //first calls gwb.a(context, string, int) => checks if there's a biw related?
-        // Handler.postDelayed(Runnable, long)
+        //returns 1000 if no biw was found. Otherwise retrieves from the biw found the long related to babel_network_selection_state_fetch_timeout_mllis
+        // Handler.postDelayed(Runnable, long) (gwb.a(Runnable, long))
+        //delays gdz.run() by the amount found in long
     }
 
     private geb b() {
