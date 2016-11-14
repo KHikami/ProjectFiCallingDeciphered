@@ -9,9 +9,10 @@ import com.google.android.apps.hangouts.telephony.TeleConnectionService;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+// logic for inducing handoff from cell to wifi
 final class gel implements gcc {
     final Context a;
-    final List<gcd> b;
+    final List<gcd> b; // list of handoff objects?
     final geo c;
     gcq d;
     gem e;
@@ -43,11 +44,11 @@ final class gel implements gcc {
         }
     }
 
-    //
     public void a(gcd gcd) {
         this.b.add(gcd);
     }
 
+    // remove handoff object from list
     public void b(gcd gcd) {
         this.b.remove(gcd);
     }
@@ -70,6 +71,7 @@ final class gel implements gcc {
         }
     }
 
+    // disconnect for handoff from cell to wifi
     public void a(int i, int i2) {
         glk.c("Babel_telephony", "TeleRemoteCall.disconnectForHandoff, handoffReason: " + i + ", new call code: " + i2, new Object[0]);
         g();
@@ -140,11 +142,13 @@ final class gel implements gcc {
         }
     }
 
+    // perform manual handoff from cell to wifi
+    // reason code 2 = manual handoff
     public void c() {
         String valueOf = String.valueOf(this.d);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 37).append("TeleRemoteCall.performManualHandoff, ").append(valueOf).toString(), new Object[0]);
         this.c.a(2);
-        gdc.b(this.a, this.d, 2);
+        gdc.b(this.a, this.d, 2); // initiate cell to wifi handoff - manual handoff
     }
 
     public void a(boolean z) {

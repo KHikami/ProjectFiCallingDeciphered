@@ -2,6 +2,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
+// initiate manual handoff cell to wifi?
 final class gct extends BroadcastReceiver {
     private final gcq a;
 

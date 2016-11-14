@@ -311,13 +311,13 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         return this.g;
     }
 
-    // performManualHandoff
+    // performManualHandoff from wifi to cell
     // reason code 2 appears linked to the manual handoff
     public void c() {
         String valueOf = String.valueOf(this.c);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 35).append("TeleWifiCall.performManualHandoff, ").append(valueOf).toString(), new Object[0]);
         c(2);   
-        gdc.a(this.a, this.c, 2);   // this.c = type gcq
+        gdc.a(this.a, this.c, 2);   // initiate wifi to cell handoff - manual handoff
     }
 
     public void a(boolean z) {
@@ -497,10 +497,10 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 48).append("TeleWifiCall.onWifiStateChanged, no connection, ").append(valueOf).toString(), new Object[0]);
         } else if (!gfv.a) { 
             c(3);
-            gdc.a(this.a, this.c, 3);
+            gdc.a(this.a, this.c, 3); // intiate wifi to cell handoff due to network loss
         } else if (!gwb.a(this.a, this.c.h(), gfv, networkType)) {
             c(1);
-            gdc.a(this.a, this.c, 1);
+            gdc.a(this.a, this.c, 1); // initiate wifi to cell handoff due to ...
         }
     }
 
@@ -625,7 +625,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             gwb.f(2901);
         }
         c(i);
-        gdc.a(this.a, this.c, i);       // attempts to handOff
+        gdc.a(this.a, this.c, i);       // initiate wifi to cell handoff
     }
 
     private void e(boolean z) {

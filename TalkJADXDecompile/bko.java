@@ -2,6 +2,7 @@ import android.text.TextUtils;
 import java.util.ArrayList;
 import java.util.Map;
 
+// Google service user account? (gaia id shared betw services)
 public final class bko {
     private final jcf a;
     private final bbm b;

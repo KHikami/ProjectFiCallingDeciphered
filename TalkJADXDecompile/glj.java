@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
+// handles/calculates system time?
 public final class glj {
     private static long a;
     private static long b;

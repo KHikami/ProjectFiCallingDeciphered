@@ -49,7 +49,7 @@ final class gdg implements gdf {
             int b = this.b.b();
             if (b == 3 || b == 4) {
                 int size = a.d().getAllConnections().size();
-                if (size > 1) {
+                if (size > 1) { // cannot handoff if more than one call is currently active?
                     glk.c("Babel_telephony", "TeleHandoffWifiToCellular.startHandoff, call count: " + size + ", fail handoff", new Object[0]);
                     this.b.a(false, 221);
                     return;
@@ -91,7 +91,7 @@ final class gdg implements gdf {
         gcq a = this.b.a();
         ConnectionRequest connectionRequest = new ConnectionRequest(phoneAccountHandle, gwb.F(a.n()), Bundle.EMPTY);
         if (a(1)) {
-            gwb.aL().postDelayed(this.d, (long) gwb.a(this.a, "babel_handoff_sprint_timeout_millis", 4000));
+            gwb.aL().postDelayed(this.d, (long) gwb.a(this.a, "babel_handoff_sprint_timeout_millis", 4000)); // handoff from wifi to Sprint?
         }
         Context d = a.d();
         RemoteConnection createRemoteOutgoingConnection = d.createRemoteOutgoingConnection(gwb.J(d), connectionRequest);
@@ -113,6 +113,6 @@ final class gdg implements gdf {
     }
 
     public void c() {
-        gwb.aL().removeCallbacks(this.d);
+        gwb.aL().removeCallbacks(this.d); // remove runnable (check handoff for wifi to Sprint) callback from handler
     }
 }

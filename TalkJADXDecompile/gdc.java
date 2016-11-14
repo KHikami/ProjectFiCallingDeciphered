@@ -20,13 +20,13 @@ final class gdc implements gcd {
     private int i;  // Old Connection state constant (during a transition)
     private int j;  // New Connection state constant (during a transition)  // set in onDisconnected and in onTeleCallStateChanged
     private DisconnectCause k;
-    private boolean l;
+    private boolean l; // wifi to cell handoff complete?
     private Handler m;
     private final Runnable n;
 
     // checks network conditions and initiates wifi to cell handoff
     // gcq contains info about Connection state and logs Connection events
-    // i: reason for handoff, 3 == network loss
+    // i: reason for handoff, 2 = manual handoff, 3 = network loss
     static void a(Context context, gcq gcq, int i) {
         glk.c("Babel_telephony", "TeleHandoffController.handoffWifiToCellular, reason: " + i, new Object[0]);
         // gcq.j() returns a gcc object (either gel or gfj)
@@ -42,8 +42,8 @@ final class gdc implements gcd {
             if (i == 3) {
                 glk.c("Babel_telephony", "TeleHandoffController.handoffWifiToCellular, notify handoff about network loss", new Object[0]);
                 gdc k = gcq.k();    // gcq returns type of gdc (this class)
-                if (k.h != 3) {     // checks to see if the handoff reason was not already set
-                    k.h = 3;        // set handoff reason
+                if (k.h != 3) {     // checks to see if the handoff reason is not network loss
+                    k.h = 3;        // set handoff reason to network loss
                     if (k.f != null) {  // Where is k.f (type gcc) initialized??
                         k.a(true, 0);   // onHandOffComplete
                     }
@@ -279,14 +279,14 @@ final class gdc implements gcd {
         if (!this.l) {
             this.l = true;
             glk.c("Babel_telephony", String.format("TeleHandoffController.onHandoffComplete(%b, %s)", new Object[]{Boolean.valueOf(z), Integer.valueOf(i)}), new Object[0]);
-            this.e.b((gcd) this);
-            if (this.f != null) {
-                this.f.b((gcd) this);
-                if (!z) {
-                    this.f.a(this.h, i);
+            this.e.b((gcd) this); // remove this handoff object from list?
+            if (this.f != null) { // if gcc is not null
+                this.f.b((gcd) this); // remove this handoff object from list?
+                if (!z) { // if handoff is not complete
+                    this.f.a(this.h, i); // disconnect for handoff with non-final gcc
                 }
             }
-            if (this.g != null) {
+            if (this.g != null) { // if gcq is not null
                 if (z && !TextUtils.isEmpty(this.g.n())) {
                     this.c.a(this.g.n()); // updates final gcq's m - what is m?
                 }
@@ -295,7 +295,7 @@ final class gdc implements gcd {
             }
             this.c.a(null); // resets final gcq's m to null, regardless of setting it above?
             this.m.removeCallbacks(this.n);
-            if (z) {
+            if (z) { // if handiff is complete
                 if (this.f != null) {
                     gcc gcc = this.f;
                     gcc.a(true);
@@ -303,12 +303,12 @@ final class gdc implements gcd {
                     this.c.b(this.f);
                 }
                 a(this.j);
-                this.e.a(this.h, i);  // (int, int)
+                this.e.a(this.h, i);  // disconnect for handoff with final gcc
             } else {
                 a(this.i);
                 this.e.b();
                 if (this.h == 3) {
-                    this.e.a(this.h, i);
+                    this.e.a(this.h, i); // disconnect for handoff with final gcc
                 }
             }
             this.d.c();
