@@ -26,7 +26,7 @@ public final class guj {
     private gul m;
     private Looper n;
     private gtp o;
-    private guc<? extends hca, hcb> p;
+    private guc<? extends hca, hcb> p;//hby
     private final ArrayList<guk> q;
     private final ArrayList<gul> r;
 
@@ -36,12 +36,12 @@ public final class guj {
         this.h = new ky();
         this.j = new ky();
         this.l = -1;
-        this.o = gtp.a;
-        this.p = hbx.c;
+        this.o = gtp.a;//new gtp that's created on construction?
+        this.p = hbx.c;//new hby
         this.q = new ArrayList();
         this.r = new ArrayList();
         this.i = context;
-        this.n = context.getMainLooper();
+        this.n = context.getMainLooper();//thread looper for app
         this.f = context.getPackageName();
         this.g = context.getClass().getName();
     }

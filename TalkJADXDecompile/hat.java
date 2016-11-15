@@ -7,7 +7,8 @@ public final class hat {
     static {
         d = new gue((byte) 0);
         a = new hau();
-        b = new gtz("NetworkQuality.API", a, d);
+        b = new gtz("NetworkQuality.API", a, d);//new gtz(String,hau, gue)
+        //seems to be an API list/builder map for Network Quality
         c = new hav(b);
     }
 }
