@@ -3,7 +3,7 @@ import android.content.Context;
 import android.content.Intent;
 import java.util.Locale;
 
-final class gfu extends BroadcastReceiver {
+final class gfu extends BroadcastReceiver {//TeleWifiMonitor.receiver
     final /* synthetic */ gfq a;
 
     gfu(gfq gfq) {

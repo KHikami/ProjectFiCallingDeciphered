@@ -8,10 +8,10 @@ import java.util.TimeZone;
 
 // handles/calculates system time?
 public final class glj {
-    private static long a;
-    private static long b;
-    private static long c;
-    private static long d;
+    private static long a;// (in millis)
+    private static long b;//start time? (in realtime)
+    private static long c;// (in millis)
+    private static long d;//offset? (in realtime)
 
     static {
         a = -1;

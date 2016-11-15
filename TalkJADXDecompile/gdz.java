@@ -62,6 +62,7 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkS
         c();
     }
 
+    //should be called by gwb?
     public void a(boolean z, boolean z2) {
         glk.c("Babel_telephony", "TeleNetworkSelectionUtils.onHomeVoiceNetworkResult, success: " + z + ", isOnHomeVoiceNetwork: " + z2, new Object[0]);
         int a = z ? z2 ? 2 : 1 : get.a(this.a);
@@ -87,6 +88,7 @@ final class gdz implements gcl, gfb, ggq, guq<haw>, Runnable { //is TeleNetworkS
         }
     }
 
+    //called by gfa upon post complete of the ping
     public void a(boolean z, long j) {
         glk.c("Babel_telephony", "TeleNetworkSelectionUtils.onPingComplete, wasSuccessful: " + z + ", latencyMillis: " + j, new Object[0]);
         this.n = true;//Ping successful!
