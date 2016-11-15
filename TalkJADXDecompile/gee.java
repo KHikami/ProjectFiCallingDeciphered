@@ -25,7 +25,7 @@ public final class gee { //TeleOutgoingCallRequest
     }
 
     public void a() {
-        this.b.c();
+        this.b.c();//gcq.c()
         if (!d()) {//not a blacklisted blocked number
             this.e.b();//starts the setup (more like does the entire setup)
         } else if (!this.d) {
@@ -58,7 +58,7 @@ public final class gee { //TeleOutgoingCallRequest
     }
 
     private boolean d() {
-        String c = this.b.f().c();
+        String c = this.b.f().c();//gcq.f().c()
         if (TextUtils.isEmpty(c)) {
             glk.c("Babel_telephony", "TeleOutgoingCallRequest.isBlockedNumber, no phone number.", new Object[0]);
             return false;

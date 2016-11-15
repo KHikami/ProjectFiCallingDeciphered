@@ -81,7 +81,7 @@ public final class gcq extends Connection {
     }
 
     void c() {
-        this.g.a(2);
+        this.g.a(2);//gef.a(2) (set connection state to phone number to 2 (Connected?)
     }
 
     public TeleConnectionService d() {
