@@ -37,7 +37,7 @@ public final class gcq extends Connection {
     private String t;
     private BroadcastReceiver u;
     private gcs v;
-    private boolean w; // manual_network_selection?
+    private boolean w; // need to perform manual_network_selection flag
     private boolean x; // LTE_fallback_call
     private gcw y; // waat is this?
     private gco z;
@@ -85,7 +85,7 @@ public final class gcq extends Connection {
     }
 
     public TeleConnectionService d() {
-        return this.g.j();
+        return this.g.j();//gef.j() (returns the teleconnection service related to the TelePhoneNumber)
     }
 
     ConnectionRequest e() {
@@ -374,6 +374,7 @@ public final class gcq extends Connection {
         return this.w;
     } // returns some bool val
 
+    //sets manually do network selection per call flag to passed boolean. Called by geu
     public void b(boolean z) {
         this.w = z;
     }

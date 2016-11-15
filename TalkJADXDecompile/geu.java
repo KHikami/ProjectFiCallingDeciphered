@@ -29,7 +29,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     private String p;
     private boolean q;
     private boolean r;//setup already in progress
-    private boolean s;//using wifi for calls
+    private boolean s;//used wifi for call
     private bko t;
     private String u;
     private gei v;
@@ -297,7 +297,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
 
     public void l() {
         glk.c("Babel_telephony", "TeleSetupController.onMessageDone", new Object[0]);
-        d(3);
+        d(3);//runnable (3)
     }
 
     void b(String str) {
@@ -306,15 +306,17 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
 
     void a(geb geb) {
         boolean z;
-        this.h = geb;
-        boolean e = ggc.a(this.a).e();//ggc.a(Context).e() => (new ggc object).e() => grabs the preference for asking each call
-        this.b.b(e);
-        if (!gwb.R(this.a)) {
-            this.b.b(true);
+        this.h = geb;//save given grouper of network status, cell state, wifi state, etc.
+        boolean e = ggc.a(this.a).e();//ggc.a(Context).e() => (new ggc object).e() => grabs the preference for asking each call for network selection
+        this.b.b(e);//gcq.b(preference of ask each call) => stores into gcq to ask each call
+
+        if (!gwb.R(this.a)) {//!gwb.R(Context) => I do not have Phone Manager Capabilities or Phone Account is null
+            this.b.b(true);//gcq.b(true) => sets to manually do network selection to true
         }
+
         glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible", new Object[0]);
-        iil.b("Expected non-null", geb.b);
-        iil.b("Expected non-null", geb.c);
+        iil.b("Expected non-null", geb.b);//check wifi cell exists else error
+        iil.b("Expected non-null", geb.c);//check Network cell exists else error
         if (geb.a == null) { //have cell state?
             glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, no cell state, didTimeout: " + geb.g, new Object[0]);
         } else if (!gwb.P(this.a)) { //gwb.P(Context) checks for permissions
@@ -326,7 +328,8 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
                 biw g = gwb.g(this.a);
                 if (!g.a("babel_outgoing_wifi_calls_allowed", true)) {
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, outgoing wifi calls disabled by gservices", new Object[0]);
-                } else if (!gfj.a(this.b.d()) && dgg.a().n()) {
+                } else if (!gfj.a(this.b.d()) && dgg.a().n()) {//gfj.a(gcq.d()) & dgg.a().n()
+                    //=> gfj.a(TeleconnectionService)& dgg.n() => checks if connection already exists successfully & it is a wifi call
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, another hangout is in progress", new Object[0]);
                 } else if (!this.b.f().l()) { //bad phone number
                     r4 = "Babel_telephony";
@@ -334,14 +337,26 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
                     r0 = String.valueOf(gwb.G(this.b.f().e()));
                     glk.c(r4, r0.length() != 0 ? r5.concat(r0) : new String(r5), new Object[0]);
                 } else if (this.b.f().m() && !g.a("babel_wifi_call_google_voice_app_integration_enabled", false)) { //no google voice
+                    //qcq.f().m() & !biw.a(String,boolean) => gef.m() & check if gservices allow google voice for phone
+                    //is google voice request & google voice integration is not allowed
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, Google Voice app integration disabled by gservices", new Object[0]);
-                } else if (geb.c.b(this.a) && !g.a("babel_international_wifi_call_allowed", true)) { //is international region and no international calls allowed
+                } else if (geb.c.b(this.a) && !g.a("babel_international_wifi_call_allowed", true)) {
+                    //gec.b(Context) && !biw.a(String,boolean)) =>
+                    // is currently receiving cell service from international ISO & check if international wifi calling available by gservices
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, wifi calling while international not allowed", new Object[0]);
                 } else if (geb.c.a(this.a) && geb.c.a() == 2 && !g.a("babel_roaming_wifi_call_allowed", true)) { //roaming~
+                    //gec.a(Context) & gec.a() == 2 & !biw.a(String,boolean)
+                    //=>(In the US or babel hutch experience allowed) & (on roaming not on T-mobile or sprint) & !(wifi calling on roaming allowed)
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, wifi calling while roaming not allowed", new Object[0]);
                 } else if (!this.b.f().n() || g.a("babel_voicemail_wifi_call_allowed", true)) {
-                    r0 = this.b.f().c();
-                    if (geb.c.b(this.a) && glq.d(gwb.H(), r0)) { //international and is emergency number w/ preference for no emergency on wifi
+                    //!gcq.f().n() or biw.a(String,boolean) => !gef.n() or biw.a(String,boolean)
+                    //=> (not calling self if no address provided or not voicemail address) or wifi calling allowed by gservices for phone
+
+                    r0 = this.b.f().c();//gef.c() => grab tel specific part of URI address for connection
+
+                    if (geb.c.b(this.a) && glq.d(gwb.H(), r0)) {
+                        //gec.b(Context) &glq.d(Context, URI type) =>
+                        //international and is emergency number w/ preference for no emergency on wifi
                         r4 = "Babel_telephony";
                         r5 = "TeleSetupController.isWifiCallPossible, emergency number cannot be on wifi when outside the US : ";
                         r0 = String.valueOf(r0);
@@ -815,8 +830,8 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
             return;
         }
         if (z) {
-            this.b.c();
-            this.b.x();
+            this.b.c();//gcq.c() sets connection state to 2
+            this.b.x();//gcq.x() log connection time?
             return;
         }
         this.b.b();

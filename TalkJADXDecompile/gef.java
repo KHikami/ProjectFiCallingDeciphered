@@ -321,14 +321,21 @@ public final class gef { //is the phone remapper! tries to call the destination 
         return (e == null || gwb.i(gwb.H(), e) == null) ? false : true;
     }
 
+    //called by geu
     boolean m() {
-        return gwb.a(this.b);
+        return gwb.a(this.b);//gwb.a(ConnectionRequest)
+        //checks if the connection request is a google voice request
     }
 
+    //called by geu
     boolean n() {
-        Uri address = this.b.getAddress();
+        Uri address = this.b.getAddress();//ConnectionRequest.getAddress
+        //if no address or if the address scheme is not voicemail => evaluate if the phone number is self?
         if (address == null || !"voicemail".equals(address.getScheme())) {
             return gwb.f(((TelephonyManager) this.a.getSystemService("phone")).getVoiceMailNumber(), e());
+            //gwb.f(String, String)
+            //feeds the phone service's voice mail number (as a string) and target's voice mail number (as a string)
+            //return I am calling myself (directing to own voicemail)
         }
         return true;
     }

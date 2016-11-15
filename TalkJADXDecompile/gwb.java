@@ -8102,7 +8102,8 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
             glk.c("Babel_telephony", "TeleUtils.isGoogleVoiceRequest, no extras", new Object[0]);
             return false;
         }
-        //is default gateway provider package google voice?
+        //Checks if the Connection request is from google voice with extra info
+        //returns true if it is
         CharSequence string = connectionRequest.getExtras().getString("android.telecom.extra.GATEWAY_PROVIDER_PACKAGE");
         String str = "Babel_telephony";
         String str2 = "TeleUtils.isGoogleVoiceRequest, gatewayProviderPackage: ";
@@ -8216,10 +8217,14 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         ((AudioManager) context.getSystemService("audio")).setMicrophoneMute(false);
     }
 
+    //evaluates if 2 phone addresses in the phone's current country are the same => calling self?
     public static boolean f(String str, String str2) {
         try {
-            String i = glq.i(H());
+            String i = glq.i(H());//glq.i(Context) => returns country of the phone
+            //seems to format based on the given country of the phone
             if (new glo(str, i).a(new glo(str2, i)) == jat.EXACT_MATCH) {
+                //create new glo object and compare with new glo object of 2nd string
+                //if they match in the same locale country format => same number! (return true)
                 return true;
             }
             return false;
@@ -8322,6 +8327,9 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         }
         // Get the phoneAccount and return true if capabilities have a 1 at bit 0th position
         PhoneAccount phoneAccount = ((TelecomManager) context.getSystemService("telecom")).getPhoneAccount(J(context));
+
+        //Phone Account has Connection Manager Capabilities (be able to make VoIP calls)
+        //returns true if the condition phoneAccount == null or no Connection Manager Capability is false
         return (phoneAccount == null || (phoneAccount.getCapabilities() & 1) == 0) ? false : true;
     }
 

@@ -155,6 +155,7 @@ public final class glq {
         return ehz.a("android.permission.READ_PHONE_STATE") || ehz.a("android.permission.READ_SMS");
     }
 
+    //return country string of phone
     public static String i(Context context) {
         if (!TextUtils.isEmpty(f)) {
             return f;

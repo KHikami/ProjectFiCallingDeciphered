@@ -198,7 +198,7 @@ public final class gec implements Parcelable { //refered to as network status in
         parcel.writeString(this.c);
     }
 
-    // Returns true if we have a US ISO, AND babel_hutch_experience_for_us is false (when looked up in context hashmap)
+    // Returns true if we have a US ISO, AND babel_hutch_experience_for_us is true (when looked up in context hashmap)
     public boolean a(Context context) {
         if (gwb.a(context, "babel_hutch_experience_for_us", false) || e() != 1) {
             //if I have an ISO or passes gwb.a(context, string, false) => false
@@ -207,10 +207,11 @@ public final class gec implements Parcelable { //refered to as network status in
         return true;
     }
 
-    // Returns true if we have an international ISO, OR babel_hutch_experience_for_us is true (when looked up in context hashmap)
+    // Returns true if we have an international ISO, OR babel_hutch_experience_for_us is false(when looked up in context hashmap)
     public boolean b(Context context) {
+        //in international area or gwb.a(Context,string,boolean)
+        //=> in international area or gservices do not allow bable hutch experience
         if (gwb.a(context, "babel_hutch_experience_for_us", false) || e() == 2) {
-            //if ISO is US or passes gwb.a(context, string, false) => true
             return true;
         }
         return false;
