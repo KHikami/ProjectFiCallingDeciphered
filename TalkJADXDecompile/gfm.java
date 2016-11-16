@@ -210,7 +210,7 @@ final class gfm extends itg {
         }
     }
 
-    public void a(lkq lkq) {
+    public void a(lkq lkq) { //prints packet stats
         if (lkq.d.length != 0) {
             String valueOf;
             String valueOf2;
@@ -250,25 +250,25 @@ final class gfm extends itg {
         }
     }
 
-    public void a(itm itm) {
-        int i = 5;
+    public void a(itm itm) { //related to channel quality, send/recv loss
+        int i = 5; //infrequent
         if (this.a.d != null && this.a.c != null) {
             lkl b = itm.b();
             if (b != null && b.b != null && b.a.equals(Integer.valueOf(0))) {
                 gfj gfj = this.a;
                 if (b.b.equals(Integer.valueOf(1))) {
-                    i = 6;
+                    i = 6; //somewhat common
                     gwb.f(2872);
                 } else if (b.b.equals(Integer.valueOf(0))) {
                     gwb.f(2870);
                 } else if (b.b.equals(Integer.valueOf(2))) {
-                    i = 7;
+                    i = 7; //somewhat common
                     gwb.f(2874);
                 } else if (b.b.equals(Integer.valueOf(5))) {
-                    i = 9;
+                    i = 9; //common, since lkl.b sets b to 5
                     gwb.f(2868);
                 } else if (b.b.equals(Integer.valueOf(4))) {
-                    i = 8;
+                    i = 8; //never appears in log
                 } else {
                     i = 8;
                 }
