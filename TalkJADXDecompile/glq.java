@@ -638,15 +638,20 @@ public final class glq {
     }
 
     public static boolean d(Context context, String str) {
-        return gls.a.g(str, i(context));
+
+        return gls.a.g(str, i(context));//new glq.g(str, i(Context)) => glq.g(string, string)
+        //glq.g(String, country string for context)
+        //tests if the string is a potential emergency number for the country
     }
 
+    //str = URI scheme/type, str2 = country string
+    //seems to see if the given str is a potential emergency number for the country
     private boolean g(String str, String str2) {
         String l;
         try {
-            glo a = a(str, str2, false);
-            l = Long.toString(a.c().b());
-            CharSequence f = a.f();
+            glo a = a(str, str2, false);//phone num instance
+            l = Long.toString(a.c().b());//glt.c().b()??? this doesn't make much sense since it leads to a
+            CharSequence f = a.f();//glt.f() (retrieves pattern)
             if (!TextUtils.isEmpty(f)) {
                 str2 = f;
             }

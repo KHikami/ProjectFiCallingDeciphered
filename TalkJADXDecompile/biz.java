@@ -54,9 +54,10 @@ final class biz implements biw {
         return icb.a(this.c.getContentResolver(), str, j);
     }
 
+
     public boolean a(String str, boolean z) {
-        a(str);
-        c();
+        a(str);//string in valid format
+        c();//trhead check
         return icb.a(this.c.getContentResolver(), str, z);  // Use str as a key in the context hashmap and get the boolean value, or just return z if not a key
     }
 

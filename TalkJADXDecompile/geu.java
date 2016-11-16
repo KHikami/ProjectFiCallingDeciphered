@@ -77,7 +77,7 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
         d(3);
     }
 
-    public boolean d() {
+    public boolean d() {//returns true if connection setup step is 1
         return this.k == 1;
     }
 
@@ -350,36 +350,36 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, wifi calling while roaming not allowed", new Object[0]);
                 } else if (!this.b.f().n() || g.a("babel_voicemail_wifi_call_allowed", true)) {
                     //!gcq.f().n() or biw.a(String,boolean) => !gef.n() or biw.a(String,boolean)
-                    //=> (not calling self if no address provided or not voicemail address) or wifi calling allowed by gservices for phone
+                    //=> (not calling self if no address provided or not voicemail address) or wifi calling allowed by gservices for phone (or default true)
 
                     r0 = this.b.f().c();//gef.c() => grab tel specific part of URI address for connection
 
                     if (geb.c.b(this.a) && glq.d(gwb.H(), r0)) {
-                        //gec.b(Context) &glq.d(Context, URI type) =>
+                        //gec.b(Context) &glq.d(Context, String) => (in international ISO or babel_hutch is false) & (number is potential emergency number for country)
                         //international and is emergency number w/ preference for no emergency on wifi
                         r4 = "Babel_telephony";
                         r5 = "TeleSetupController.isWifiCallPossible, emergency number cannot be on wifi when outside the US : ";
                         r0 = String.valueOf(r0);
                         glk.c(r4, r0.length() != 0 ? r5.concat(r0) : new String(r5), new Object[0]);
-                    } else if (this.b.v()) { //if cell network chosen manually checks for wifi?
+                    } else if (this.b.v()) { //network chosen manually(gcq.v())
                         glk.c("Babel_telephony", "TeleSetupController.shouldAllowRing, network was was choosen manually, only checking for Wi-Fi connection", new Object[0]);
-                        if (geb.b.a) { //is connected to wifi
+                        if (geb.b.a) { //is connected to wifi (gfv.a)
                             z = true;
-                            if (z) {
+                            if (z) {//not too sure what's the point of this if statement if z is just set to true prior...
                                 if (e) {//ask each call kick in
                                     glk.c("Babel_telephony", "TeleSetupController.performWifiChooserWithCellState, ask each call is enabled", new Object[0]);
                                     if (geb.a.a()) { //cell state has no service
                                         glk.c("Babel_telephony", "TeleSetupController.performWifiChooserWithCellState, no cell service, forcing wifi", new Object[0]);
                                     } else {
-                                        a(new ghw(), "wifi_chooser");
+                                        a(new ghw(), "wifi_chooser");//a(dr, String) => draw network selector and exit method
                                         return;
                                     }
                                 }
-                                a(true);
-                                m();
+                                a(true);//a(boolean) (can connect)
+                                m();//advance to next step
                             }
-                            a(false);
-                            m();
+                            a(false);//a(boolean)
+                            m();//advance to next step
                             return;
                         }
                         glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, not connected to wifi", new Object[0]);
@@ -389,17 +389,18 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
                             glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, in Wi-Fi calling experiment", new Object[0]);
                             z = true;
                         } else {
-                            r0 = this.b.f().f();
+                            r0 = this.b.f().f();//gcq.f().f() => gef.f() => Telephone Number in Country Context
 
                             if (gwb.a(this.a, geb.c, geb.a, geb.b, r0) || gwb.a(this.a, geb.c, geb.a, geb.b)) {
                                 //gwb.a(Context, network cell (gec), gcm (cell state), gfv (wifi), gcg.f().f()) || gwb.a(Contect, gcm, gec, gfv)
                                 //allow 3G call or LTE call
 
-                                if (b(geb) || glq.d(this.a, r0)) { //uses 3G???
+                                if (b(geb) || glq.d(this.a, r0)) { //data stream of selected network type was good (according to cache and last recorded ping)
+                                    // or glq.d(Context, String) => is potential emergency number
                                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, falling back to cellular data", new Object[0]);
-                                    this.b.c(true);
+                                    this.b.c(true);//gcq.c(true) => set LTE fallback call to true
                                     z = true;
-                                } else { //uses Lte???
+                                } else { //bad latency or not potential emergency number
                                     glk.c("Babel_telephony", "TeleSetupController.isWifiCallPossible, data network latency high", new Object[0]);
                                 }
                             } else if (gwb.b(this.a, this.b.h(), geb.a, geb.b, r0)) {
@@ -481,23 +482,28 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     //calculate ping stun latency
     private boolean b(geb geb) {
         String str;
-        if (geb.b.a) {
+        if (geb.b.a) {//is connected to WiFi (gfv.a)
             str = "wifi";
         } else {
-            str = gwb.v(geb.a.e);
+            str = gwb.v(geb.a.e);//gwb.v(gcm.e) => gwb.v(networkType(int))
+            //returns string about how the network works (e.g. CDMA, HSPA, etc.)
         }
         str = String.format(Locale.US, "_network_type_%s", new Object[]{str});
         Context context = this.a;
         String valueOf = String.valueOf("babel_stun_ping_latency_millis");
         str = String.valueOf(str);
+        //gwb.a(context, string, int)
+        //checks if the previous stun ping for given network type was recorded in cache else return 100
         long a = gwb.a(context, str.length() != 0 ? valueOf.concat(str) : new String(valueOf), 100);
         int i = geb.e ? (int) geb.f : -1;
+        //if ping successful => get ping latency else -1
         if (geb.g || !geb.e || geb.f > a) {
+            //if did timeout or ping was not successful or if -1 is greater than cache recorded value => Not a good network!
             glk.c("Babel_telephony", "TeleSetupController.hasAcceptableStunPingLatency, not acceptable, didTimeout: " + geb.g + ", wasStunPingSuccessful: " + geb.e + ", latency millis: " + geb.f, new Object[0]);
             a(2897, i);
             return false;
         }
-        a(2898, i);
+        a(2898, i);//ping good :)
         return true;
     }
 
@@ -826,16 +832,16 @@ public final class geu implements fne, gek, ggo, ggy, ghh, gho, ghv, ghy, jcc {/
     //sets is going to use wifi call
     public void a(boolean z) {
         this.s = z;
-        if (!d()) {
+        if (!d()) {//not k == 1
             return;
         }
-        if (z) {
+        if (z) {//if true, connect and log time
             this.b.c();//gcq.c() sets connection state to 2
             this.b.x();//gcq.x() log connection time?
             return;
         }
-        this.b.b();
-        this.b.y();
+        this.b.b();//not true => gcq.b() (sent connection state to 1 => state new)
+        this.b.y();//gcq.y() => stop connecting sound
     }
 
     private void e(int i) {

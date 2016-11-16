@@ -285,9 +285,9 @@ public final class gef { //is the phone remapper! tries to call the destination 
     }
 
     String f() {
-        String e = e();
+        String e = e();//voicemail number
         if (e != null) {
-            return gwb.i(gwb.H(), e);
+            return gwb.i(gwb.H(), e);//return number in Context's country
         }
         return null;
     }

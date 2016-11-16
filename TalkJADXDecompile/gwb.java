@@ -4076,6 +4076,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         return biw == null ? j : biw.a(str, j);
     }
 
+    //returns cache result if cache entry exists else returns boolean z as default value
     public static boolean a(Context context, String str, boolean z) {
 
         biw biw = (biw) jyn.b(context, biw.class);
@@ -8333,13 +8334,17 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         return (phoneAccount == null || (phoneAccount.getCapabilities() & 1) == 0) ? false : true;
     }
 
+    //takes boolean and tests the carrier int
     public static boolean a(Context context, int i, boolean z) {
-        if (z) {
+        if (z) {//if boolean passed is true (boolean stands for incoming)
             if (a(context, "babel_hutch_lte_incoming_enabled", false) && (i == 4 || i == 5)) {
+                //check if lte incoming is good with gservices else default is false and the carrier is either Hutchinson 3G or Hutchinson Telecom
                 return true;
             }
             return false;
         } else if ((a(context, "babel_hutch_lte_outgoing_enabled", true) && (i == 4 || i == 5)) || a(context, "babel_hutch_experience_for_us", false)) {
+            //check outgoing lte with gservice else default is true & carrier is Hutchinson 3G or Hutchinson Telecom
+            //or babel_hutch_experience is for U.S. is allowed (default is false)
             return true;
         } else {
             return false;
@@ -8347,17 +8352,16 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
     }
 
     public static boolean b(Context context, int i, boolean z) {
-        //only use found right now is given context, Sim Operator code, and a boolean that's hardcoded false or not
-        //when false, VoIP is favored over 3G
-        if (z) {
+        //given context, Sim Operator code, and is inbound?
+        if (z) {//is inbound
             // Sim operator codes 4 and 5 are international carriers (in UK and HK)
             if ((a(context, "babel_hutch_three_g_incoming_enabled", false) && (i == 4 || i == 5)) || a(context, "babel_hutch_3g_incoming_experience_for_us", false)) {
-                //not 3G inbound enabled and not receiving a 3G call
+                //(3G incoming okay with g servics and carriers are HK or UK) or (incoming_3G_for_US allowed)
                 return true;
             }
             return false;
         } else if ((a(context, "babel_hutch_three_g_outgoing_enabled", true) && (i == 4 || i == 5)) || a(context, "babel_hutch_3g_outgoing_experience_for_us", false)) {
-            //is 3G outbound enabled and sim operator code is 4 or 5 or not sending a 3G outgoing call???
+            //(3G outgoing okay with gservices, default true and carriers are HK or UK) or (outgoing 3G for US allowed by gservices)
             return true;
         } else {
             return false;
@@ -8402,14 +8406,17 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, not connected to internet", new Object[0]);
             return false;
         } else if (gec.c() == 2 && glq.d(H(), str) && a(context, "babel_lte_fallback_for_outgoing_tmobile_emergency_call", true)) {
-            //identifies T-mobile as #2,
+            //identifies T-mobile as #2
+            //carrier is T-mobile & phone is emergency number & (biw.a(context,string,bool) or true) => gservices allow this?
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, falling back to LTE for emergency call over T-Mobile", new Object[0]);
             return true;
         } else if (a(context, "babel_lte_outgoing_call_allowed", false)) {
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall, LTE outgoing call allowed by default", new Object[0]);
             return true;
-        } else if (a(context, gec.c(), false)) {
+        } else if (a(context, gec.c(), false)) {//check for context and carrier and for outgoing call
             //so by the time I get here, we've already determined we have internet & are connected to LTE but no wifi => can make VoLTE
+            //a(Context, int, boolean) => carriers Hutchinson 3G or Hutchinson Telecom allow incoming and outgoing with gservice approval
+            //otherwise if in US, is hutch experience allowed.
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoingLteCall,on carrier where we support voip calling over LTE, carrierId: " + gec.c(), new Object[0]);
             return true;
         } else {
@@ -8431,7 +8438,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoing3GCall, not connected to internet", new Object[0]);
             return false;
         } else if (b(context, gec.c(), false)) { //b(context,int,boolean) (boolean = is outbound)
-            //if sim operator type is 4 or 5 & I'm 3G outbound enabled & this is outbound=> allow outbound 3G call (ensures it isn't a 3G incoming call)
+            //if Carrier is Hutchinson 3G or Hutchinson Telecom & Gservices allow 3G call & this is outbound=> allow outbound 3G call (ensures it isn't a 3G incoming call)
             glk.c("Babel_telephony", "TeleWifiCallThreshold.shouldAllowOutgoing3GCall,on carrier where we support voip calling over 3G, carrierId: " + gec.c(), new Object[0]);
             return true;
         } else {

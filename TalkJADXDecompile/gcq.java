@@ -77,7 +77,7 @@ public final class gcq extends Connection {
     }
 
     void b() {
-        this.g.a(1);
+        this.g.a(1);//gef.a(1) => set connection state to 1 for PhoneNumber
     }
 
     void c() {
@@ -372,7 +372,7 @@ public final class gcq extends Connection {
 
     public boolean v() {
         return this.w;
-    } // returns some bool val
+    } // returns do manual network selection
 
     //sets manually do network selection per call flag to passed boolean. Called by geu
     public void b(boolean z) {
@@ -418,7 +418,7 @@ public final class gcq extends Connection {
         }
     }
 
-    public void y() {
+    public void y() {//give up on connecting
         String valueOf = String.valueOf(this);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 34).append("TeleConnection.stopConnectingSound").append(valueOf).toString(), new Object[0]);
         if (this.z != null) {
