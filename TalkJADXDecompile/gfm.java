@@ -3,6 +3,8 @@ import android.telecom.DisconnectCause;
 import android.telecom.RemoteConnection;
 import android.text.TextUtils;
 
+//monitors wifi calls and initiates wifi to cell handoffs related to wifi channel conditions; responsible for handoff reasons 5 to 9
+
 final class gfm extends itg {
     final /* synthetic */ gfj a;
 
@@ -210,7 +212,7 @@ final class gfm extends itg {
         }
     }
 
-    public void a(lkq lkq) { //prints packet stats
+    public void a(lkq lkq) { //prints packet stats; "onMediaStats" in call logs; called every second during a wifi call
         if (lkq.d.length != 0) {
             String valueOf;
             String valueOf2;

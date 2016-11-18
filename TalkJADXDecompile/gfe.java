@@ -7,6 +7,8 @@ import android.os.Bundle;
 import com.google.android.apps.hangouts.telephony.TeleActivityRecognitionService;
 import com.google.android.gms.common.ConnectionResult;
 
+//reports user activity; used for gathering information for wifi to cellular handoffs
+
 final class gfe implements guk, gul {
     gfg a;
     private final Context b;

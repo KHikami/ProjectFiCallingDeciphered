@@ -1,5 +1,7 @@
 import com.google.api.client.http.HttpStatusCodes;
 
+//maintains packet info (send/recv loss rate, jitter...) for wifi call; called for printing mediaStats
+
 public final class lkt extends nyx<lkt> {
     private static volatile lkt[] aA;
     public Integer A;

@@ -13,7 +13,9 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
-* Class that includes logic for inducing handoff from WiFi to Cell.
+ *
+* Class that includes logic for inducing handoff from WiFi to Cell. Monitors WiFi calls and is one of two classes (other is gfm) that calls gdc to initiate handoffs. Responsible for
+ * reasons 1,2 3 and 10.
 *
 *   - in b(), driving and biking thresholds defined.
 *
@@ -448,7 +450,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
-    public void b(int i, int i2) {
+    public void b(int i, int i2) { //initiates handoff for reason 10 (biking/driving)
         String str = "Babel_telephony";
         String str2 = "TeleWifiCall.onActivityTypeChanged, activityType: ";
         String valueOf = String.valueOf(gfe.b(i));
@@ -459,8 +461,8 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
         glk.c(str, valueOf, new Object[0]);
         boolean a = gwb.a(this.a, "babel_activity_handoff_allowed", true);
-        int a2 = gwb.a(this.a, "babel_biking_handoff_confidence_percentage_threshold", 75);     // what are the units?
-        int a3 = gwb.a(this.a, "babel_driving_handoff_confidence_percentage_threshold", 75);
+        int a2 = gwb.a(this.a, "babel_biking_handoff_confidence_percentage_threshold", 75);     // sets confidence percentage for biking; default is 75%
+        int a3 = gwb.a(this.a, "babel_driving_handoff_confidence_percentage_threshold", 75);    // sets confidence perentage for driving; default is 75%
         int i3;
         if (i == 1 && i2 >= a2) {
             if (a) {
@@ -469,7 +471,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
                 i3 = 2974;
             }
             gwb.f(i3);
-            e(10);
+            e(10); //handoff due to biking when device usually 75% or more sure user is biking
         } else if (i == 0 && i2 >= a3) {
             if (a) {
                 i3 = 2975;
@@ -477,7 +479,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
                 i3 = 2976;
             }
             gwb.f(i3);
-            e(10);
+            e(10); //handoff due to driving when device usually 75% or more sure user is in vehicle
         }
     }
 
@@ -492,15 +494,15 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         int networkType = ((TelephonyManager) this.a.getSystemService("phone")).getNetworkType();
 
 
-        if (this.c == null) { // this.c type gcq, represents a connection - so this means ~ there is no ongoing connection/call
+        if (this.c == null) { // becomes null on disconnect; when this.c type gcq, represents a connection - so this means ~ there is no ongoing connection/call
             valueOf = String.valueOf(this.c);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 48).append("TeleWifiCall.onWifiStateChanged, no connection, ").append(valueOf).toString(), new Object[0]);
         } else if (!gfv.a) { 
             c(3);
             gdc.a(this.a, this.c, 3); // intiate wifi to cell handoff due to network loss
-        } else if (!gwb.a(this.a, this.c.h(), gfv, networkType)) {
+        } else if (!gwb.a(this.a, this.c.h(), gfv, networkType)) { // isConnected && (signal level) > (wifi signal handoff) && (link speed) > (wifi link speed handoff)
             c(1);
-            gdc.a(this.a, this.c, 1); // initiate wifi to cell handoff due to ...
+            gdc.a(this.a, this.c, 1); // initiate wifi to cell handoff due to ... appears to be when gfj.a is call and the wifi signal/spped is good; error?
         }
     }
 

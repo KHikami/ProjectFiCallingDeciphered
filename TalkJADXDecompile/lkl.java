@@ -1,6 +1,6 @@
 public final class lkl extends nyx<lkl> {
     public Integer a;
-    public Integer b;
+    public Integer b; //value of int that determines wifi to cell handoff reasons 5 to 9
 
     public /* synthetic */ nzf a(nyt nyt) {
         return b(nyt);
@@ -37,7 +37,7 @@ public final class lkl extends nyx<lkl> {
         return b;
     }
 
-    private lkl b(nyt nyt) {
+    private lkl b(nyt nyt) { //used for determining wifi to cell handoff reasons 5 to 9
         while (true) {
             int a = nyt.a();
             switch (a) {
