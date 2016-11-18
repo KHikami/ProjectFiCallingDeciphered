@@ -1,0 +1,13 @@
+package p000;
+
+enum ovw {
+    NOT_STARTED,
+    STARTED,
+    REDIRECT_RECEIVED,
+    AWAITING_FOLLOW_REDIRECT,
+    AWAITING_READ,
+    READING,
+    ERROR,
+    COMPLETE,
+    CANCELLED
+}

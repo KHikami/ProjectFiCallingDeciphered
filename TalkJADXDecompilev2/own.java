@@ -1,0 +1,8 @@
+package defpackage;
+
+import java.security.cert.X509Certificate;
+import java.util.List;
+
+public interface own {
+    List<X509Certificate> a(X509Certificate[] x509CertificateArr, String str, String str2);
+}

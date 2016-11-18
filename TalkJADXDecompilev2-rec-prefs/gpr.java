@@ -1,0 +1,20 @@
+package p000;
+
+import android.animation.ObjectAnimator;
+import com.google.android.apps.hangouts.views.MessageListItemView;
+
+public final class gpr implements Runnable {
+    final /* synthetic */ MessageListItemView f15879a;
+
+    public gpr(MessageListItemView messageListItemView) {
+        this.f15879a = messageListItemView;
+    }
+
+    public void run() {
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f15879a.f7070a, "showPercentage", new float[]{1.0f, 0.0f});
+        ofFloat.setDuration((long) this.f15879a.getResources().getInteger(gwb.fC));
+        ofFloat.setInterpolator(new bbx(bcb.f2972a));
+        ofFloat.addListener(new gps(this));
+        ofFloat.start();
+    }
+}

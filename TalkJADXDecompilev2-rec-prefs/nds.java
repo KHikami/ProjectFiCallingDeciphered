@@ -1,0 +1,55 @@
+package p000;
+
+public final class nds extends nyx<nds> {
+    public Boolean f29576a;
+
+    public /* synthetic */ nzf m34461a(nyt nyt) {
+        return m34459b(nyt);
+    }
+
+    public nds() {
+        m34460d();
+    }
+
+    private nds m34460d() {
+        this.f29576a = null;
+        this.unknownFieldData = null;
+        this.cachedSize = -1;
+        return this;
+    }
+
+    public void m34462a(nyu nyu) {
+        if (this.f29576a != null) {
+            nyu.m37172a(1, this.f29576a.booleanValue());
+        }
+        super.a(nyu);
+    }
+
+    protected int m34463b() {
+        int b = super.b();
+        if (this.f29576a == null) {
+            return b;
+        }
+        this.f29576a.booleanValue();
+        return b + (nyu.m37154h(1) + 1);
+    }
+
+    private nds m34459b(nyt nyt) {
+        while (true) {
+            int a = nyt.m37099a();
+            switch (a) {
+                case 0:
+                    break;
+                case 8:
+                    this.f29576a = Boolean.valueOf(nyt.m37116i());
+                    continue;
+                default:
+                    if (!super.a(nyt, a)) {
+                        break;
+                    }
+                    continue;
+            }
+            return this;
+        }
+    }
+}
