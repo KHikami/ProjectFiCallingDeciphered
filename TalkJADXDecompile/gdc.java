@@ -13,14 +13,14 @@ final class gdc implements gcd {
     private final Context b;
     private final gcq c;    // Connection object before the handoff (cannot be changed, so declared final)
     private final gdf d;
-    private final gcc e;
-    private gcc f;
+    private final gcc e;    // Call object before the handoff
+    private gcc f;          // Call object after the handoff
     private gcq g;  // This is created when handoff actually occurs, inferring that it is the new Connection object
     private int h;  // reason for handoffWiFiToCellular
     private int i;  // Old Connection state constant (during a transition)
     private int j;  // New Connection state constant (during a transition)  // set in onDisconnected and in onTeleCallStateChanged
     private DisconnectCause k;
-    private boolean l; // wifi to cell handoff complete?
+    private boolean l; // handoff has run to completion (could have either failed or succeeded though)
     private Handler m;
     private final Runnable n;
 
@@ -76,7 +76,7 @@ final class gdc implements gcd {
         }
         gdb gdb = new gdb(context, dgg.a());
         gdb.a(new gdc(context, gcq, gdb, i));   // Sets gdb's c object to gdc
-        gdb.a();    // Start handoff if it is not possible
+        gdb.a();    // Start handoff if it is possible
     }
 
     // Lookup if manual handoff allowed using context
@@ -262,10 +262,10 @@ final class gdc implements gcd {
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 52).append("TeleHandoffController.onHandoffStarted, theNewCall: ").append(valueOf).toString(), new Object[0]);
         this.c.a(true);
         this.m.postDelayed(this.n, (long) gwb.a(this.b, "babel_handoff_timeout_millis", 30000));
-        this.f = gcc;
-        this.f.a((gcd) this);
-        this.g = new gcq(this.e.a().f(), this.e.a().i());
-        this.g.setDialing(); // setDialing() does not exist in gcq? (need to find subclass?)
+        this.f = gcc;   // Set post-handoff call object
+        this.f.a((gcd) this);   // Append this handoff to call object's history list
+        this.g = new gcq(this.e.a().f(), this.e.a().i());   // Create the new TeleConnection object (for post-handoff)
+        this.g.setDialing(); // setDialing() in gcq's parent class Connection
         this.g.b(this.f); // set geo's gcw
         if (this.h == 3) { // if reason for handoffWiFiToCellular
             a(true, 0); // handoffcomplete
@@ -280,39 +280,39 @@ final class gdc implements gcd {
     // https://developer.android.com/reference/org/apache/http/HttpStatus.html
     // Many status codes are probably for internal use only (extended from normal REST codes)
     void a(boolean z, int i) {
-        if (!this.l) {
+        if (!this.l) {  // This ensures that this method can only be run once (if it fails, it cannot retry with this same handoff object)
             this.l = true;
             glk.c("Babel_telephony", String.format("TeleHandoffController.onHandoffComplete(%b, %s)", new Object[]{Boolean.valueOf(z), Integer.valueOf(i)}), new Object[0]);
             this.e.b((gcd) this); // remove this handoff object from list?
             if (this.f != null) { // if gcc is not null
                 this.f.b((gcd) this); // remove this handoff object from list?
                 if (!z) { // if handoff is not complete
-                    this.f.a(this.h, i); // disconnect for handoff with non-final gcc
+                    this.f.a(this.h, i); // disconnect for handoff with non-final gcc (post-handoff call)
                 }
             }
-            if (this.g != null) { // if gcq is not null
-                if (z && !TextUtils.isEmpty(this.g.n())) {
-                    this.c.a(this.g.n()); // updates final gcq's m - what is m?
+            if (this.g != null) { // if post-handoff gcq is not null
+                if (z && !TextUtils.isEmpty(this.g.n())) {  // If handoff is complete and post-handoff gcq's handoff_number is not empty...
+                    this.c.a(this.g.n()); // Sets pre-handoff gcq's handoff_number with post-handoff gcq's handoff_number
                 }
-                this.g.b(null);
-                this.g = null;
+                this.g.b(null); // Clear out wifi_calling_account (assuming null was supposed to be a string)
+                this.g = null;  // Clear out post-handoff gcq
             }
-            this.c.a(null); // resets final gcq's m to null, regardless of setting it above?
+            this.c.a(null); // resets pre-handoff gcq's handoff_number to null, regardless of setting it above?
             this.m.removeCallbacks(this.n);
-            if (z) { // if handiff is complete
-                if (this.f != null) {
+            if (z) { // if handoff is complete
+                if (this.f != null) {   // If post-handoff call object is defined...
                     gcc gcc = this.f;
-                    gcc.a(true);
+                    gcc.a(true);    // Possibly set call's boolean that says if handed off or not?
                     this.m.postDelayed(new gde(this, gcc), 1000);
                     this.c.b(this.f);
                 }
-                a(this.j);
-                this.e.a(this.h, i);  // disconnect for handoff with final gcc
+                a(this.j);  // Set state of our call using post-handoff state 
+                this.e.a(this.h, i);  // disconnect for handoff with final gcc (pre-handoff call)
             } else {
-                a(this.i);
-                this.e.b();
-                if (this.h == 3) {
-                    this.e.a(this.h, i); // disconnect for handoff with final gcc
+                a(this.i);  // Set state of our call using pre-handoff state (because handoff failed)
+                this.e.b(); // Update status hints
+                if (this.h == 3) {  // If reason for handoff was network loss...
+                    this.e.a(this.h, i); // disconnect for handoff with final gcc (pre-handoff call)
                 }
             }
             this.d.c();

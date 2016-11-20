@@ -18,7 +18,7 @@ public class dhz implements Parcelable, Serializable {
     private String d;
     private String e;
     private final String f;
-    private final String g;
+    private final String g; // hangout_id
     private final String h;
     private final String i;
     private final Uri j;
