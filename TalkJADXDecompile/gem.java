@@ -8,6 +8,9 @@ import android.telecom.StatusHints;
 import java.util.ArrayList;
 import java.util.List;
 
+// Handler callbacks for certain events on a cell call object (gel)
+// https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html
+
 final class gem extends Callback {
     final /* synthetic */ gel a;
 
@@ -41,24 +44,38 @@ final class gem extends Callback {
         }
     }
 
+    // When cellular call is disconnected, try to...
+    // DisconnectCause constants found here: https://developer.android.com/reference/android/telecom/DisconnectCause.html
     public void onDisconnected(RemoteConnection remoteConnection, DisconnectCause disconnectCause) {
         String valueOf = String.valueOf(disconnectCause);
-        String valueOf2 = String.valueOf(this.a.d);
+        String valueOf2 = String.valueOf(this.a.d); // this.a.d is the call object's (gel) gcq object (TeleConnection)
         glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf).length() + 40) + String.valueOf(valueOf2).length()).append("TeleRemoteCall.onDisconnected, cause: ").append(valueOf).append(", ").append(valueOf2).toString(), new Object[0]);
+        
+        // If there is a gcq object associated with our cell call...
         if (this.a.d != null) {
-            this.a.d.a(this.a.d(), this.a.c.b());
+            // this.a.d() identifies either a gel object (1) or a gfj object (2)
+            // this.a.c.b() gets a time value from geo.b(), possibly the time since disconnection
+            this.a.d.a(this.a.d(), this.a.c.b());   // gcq.a(int, long) this appends a character tag and a time to gcq's stringbuilder
         }
+
+        // If there is a gcq (connection) object and there is NOT a gdc (handoff) object associated with our cell call...
         if (this.a.d != null && this.a.d.k() == null) {
+            // If disconnectionCause is ERROR AND gcq and its hangout_id are defined...
             if (disconnectCause.getCode() == 1 && this.a.o()) {
+                // Then we can handoff from cell to wifi
                 valueOf = String.valueOf(this.a.d);
                 glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 53).append("TeleRemoteCall.onDisconnected, handing off to wifi., ").append(valueOf).toString(), new Object[0]);
-                this.a.c.a(3);
-                gdc.b(this.a.a, this.a.d, 3);
+                this.a.c.a(3);  // I think this is setting the reason for handoff code on some ikh object (3 == network loss)
+                // ********************* Actual handoff performed right below here ***************************
+                gdc.b(this.a.a, this.a.d, 3);   // Perform handoff from cell to wifi, reason for handoff 3: network loss
+            // disconnectCause not ERROR or gcq/hangout_id were not defined
             } else {
-                this.a.d.setDisconnected(disconnectCause);
-                gwb.a(this.a.d, disconnectCause);
+                this.a.d.setDisconnected(disconnectCause);  // Sets gcq's state to disconnected (defined by parent class Connection)
+                gwb.a(this.a.d, disconnectCause);   // Log reason for disconnect if setting for collecting call feedback is true
             }
         }
+        // Depends on what is implmeneting gcd... (gdc, geg, geo)
+        // For a gdc object, set the disconnectCause and set the state to DISCONNECTED
         for (gcd a : this.a.b) {
             a.a(this.a, disconnectCause);
         }

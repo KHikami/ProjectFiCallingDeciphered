@@ -76,7 +76,7 @@ final class gdc implements gcd {
         }
         gdb gdb = new gdb(context, dgg.a());
         gdb.a(new gdc(context, gcq, gdb, i));   // Sets gdb's c object to gdc
-        gdb.a();    // Decide if handoff can be started, or if it is not possible
+        gdb.a();    // Start handoff if it is not possible
     }
 
     // Lookup if manual handoff allowed using context
@@ -188,7 +188,7 @@ final class gdc implements gcd {
                             String str = a ? "allowed." : "not allowed.";
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, activity recognition handoff is %s", str);
                             return a;
-                        // Means that gcc is a gfj child (which implements gcc)
+                        // Means that gcc is a gfj child (which implements gcc). This means call is over Wifi.
                         } else if (gcc.d() == 2) {
                             // Check context hashmap using string as key, if it's value is false... (meaning WIFI network optimizing handoff not allowed)
                             if (!g.a("babel_wifi_network_optimizing_handoff_allowed", true)) {
@@ -201,7 +201,7 @@ final class gdc implements gcd {
                             return false;
                         }
                         break;
-                    // In manual handoff mode???
+                    // 2: manual handoff mode
                     case wi.l /*2*/:
                         // If manual handoff allowed not allowed (or key/value pair not found in context hashmap)
                         if (!a(context)) {
@@ -209,9 +209,9 @@ final class gdc implements gcd {
                             return false;
                         }
                         break;
-                    // 
+                    // 3: network loss (our main use case)
                     case wi.z /*3*/:
-                        // gcc is a gfj child (which implements gcc)
+                        // gcc is a gfj child (which implements gcc). This means call is over Wifi.
                         if (gcc.d() == 2) {
                             // If we cannot handoff when wifi is lost...
                             if (!g.a("babel_handoff_on_wifi_loss_allowed", true)) {
@@ -219,6 +219,8 @@ final class gdc implements gcd {
                                 return false;
                             }
                         // Otherwise gcc is a gel child (which implements gcc), AND IF handoff is NOT allowed on cell loss...
+                        // gel child means call is over cellular signal
+                        // I looked in gservices database for this string, but no 'handoff' strings were found (assume it takes default)
                         } else if (!g.a("babel_handoff_on_cell_loss_allowed", true)) {
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, handoff on cell loss not allowed", new Object[0]);
                             return false;
@@ -328,7 +330,7 @@ final class gdc implements gcd {
             } else if (gcc == this.f) {
                 this.j = i;
             }
-            g();
+            g();    // Log transition from old to new state
         }
     }
 
@@ -343,7 +345,7 @@ final class gdc implements gcd {
             this.j = 6;                 // set to 6 on disconnect
         }
         this.k = disconnectCause;
-        g();
+        g();    // Log transition from old to new state
     }
 
     // Print to log transition from old state to new state

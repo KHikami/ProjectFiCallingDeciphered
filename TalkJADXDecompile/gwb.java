@@ -7961,6 +7961,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         return new PhoneAccountHandle(new ComponentName(context, TeleConnectionService.class), "hangouts");
     }
 
+    // Collects/logs disconnectCause info if setting for collecting call feedback is true
     public static void a(gcq gcq, DisconnectCause disconnectCause) {
         Integer num = null;
         boolean z = false;
@@ -8172,6 +8173,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         return null;
     }
 
+    // Hides number when writing to log
     public static char b(char c) {
         if (PhoneNumberUtils.is12Key(c)) {
             return '*';
@@ -8189,7 +8191,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         }
         StringBuilder stringBuilder = new StringBuilder(str.length());
         for (char b : str.toCharArray()) {
-            stringBuilder.append(b(b));
+            stringBuilder.append(b(b)); // Obfuscate number with '*' characters
         }
         return stringBuilder.toString();
     }

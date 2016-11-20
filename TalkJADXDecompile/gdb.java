@@ -2,7 +2,8 @@ import android.content.Context;
 import android.telecom.Connection;
 import com.google.api.client.http.HttpStatusCodes;
 
-// Checks if Cell to Wifi handoff is possible
+// Checks if Cell to Wifi handoff is possible, and then creates the Wifi call
+// and does the actual handoff
 
 final class gdb implements gdf {
     private final Context a;
@@ -19,7 +20,7 @@ final class gdb implements gdf {
         this.c = gdc;
     }
 
-    // Decides if handoff can be started, or if it is not possible
+    // Starts handoff if possible/allowed
     // Called by gdc.b(Context, gcq, int)
     void a() {
         // Log start of handoff
@@ -68,7 +69,8 @@ final class gdb implements gdf {
                 }
                 this.b.a(a3, false, null, true, gwb.a(gwb.H(), a2.f().f(), gwb.au(), false, null, null, 0), 85, true, 1, true, glj.b(), muo, a2.i());
                 this.b.v();
-                gcc gfj = new gfj(this.a, null, a2.j().e(), a2.g());    // Create a wifi call object
+                // ***************Create a wifi call object******************
+                gcc gfj = new gfj(this.a, null, a2.j().e(), a2.g());
                 gfj.a(this.b.s());  // this.b.s() gets a 'did' object, gfj.a sets hangout state
                 this.c.a(gfj);  // Procedure for handoff started (and logging)
             // Otherwise log that we are not connected to Wifi

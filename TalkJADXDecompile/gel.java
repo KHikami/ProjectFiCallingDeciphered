@@ -15,7 +15,7 @@ final class gel implements gcc {
     final List<gcd> b; // list of handoff objects?
     final geo c;
     gcq d;
-    gem e;
+    gem e;  // Callback handlers for certain Connection states
     private RemoteConnection f;
     private boolean g;
 
@@ -36,7 +36,7 @@ final class gel implements gcc {
         this.e = new gem(this);
         this.a = context;
         this.f = remoteConnection;
-        this.f.registerCallback(this.e);
+        this.f.registerCallback(this.e);    // Hook up all the gem callbacks for its RemoteConnection
         this.c = new geo(context, str, remoteConnection.getAddress(), str2, str3, z);
         a(this.c);
         if (!z && TextUtils.isEmpty(str)) {
@@ -274,7 +274,10 @@ final class gel implements gcc {
         return this.f;
     }
 
+    // Returns true if there is an associated TeleConnection obj AND hangout_id is defined (not empty string)
     boolean o() {
+        // this.d is gcq object
+        // this.d.q() returns hangout_id string
         return (this.d == null || TextUtils.isEmpty(this.d.q())) ? false : true;
     }
 }

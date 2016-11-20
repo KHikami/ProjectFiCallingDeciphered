@@ -27,7 +27,7 @@ public final class gcq extends Connection {
     private gdc j;      // Handoff object
     private boolean k;
     private boolean l;
-    private String m;
+    private String m;   // Phone number of the connection (might be specifically handoff phone number)
     private String n;   // Account name
     private int o;
     private String p;   // Hangout id
@@ -175,6 +175,7 @@ public final class gcq extends Connection {
         return this.m;
     }
 
+    // Sets connection's number (called by gfl.a(int, string))
     void a(String str) {
         this.m = str;
     }
@@ -235,9 +236,11 @@ public final class gcq extends Connection {
         return this.s.toString();
     }
 
+    // i: gel (1)  or gfj (2) identifier
+    // j: some kind of time (comes from geo.b())
     void a(int i, long j) {
-        this.s.append(i == 2 ? "w" : "c");
-        this.s.append(j);
+        this.s.append(i == 2 ? "w" : "c");  // Appends 'w' (wifi) if gjf obj or 'c' (cell) if gel obj
+        this.s.append(j);                   // Append time value
     }
 
     // register and unregister receiver with context
