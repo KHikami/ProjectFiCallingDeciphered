@@ -135,6 +135,7 @@ public final class glq {
         return c(context) && b(context);
     }
 
+    // Get device_number
     public static String f(Context context) {
         String g = g(context);
         if (TextUtils.isEmpty(g)) {
@@ -637,6 +638,7 @@ public final class glq {
         return false;
     }
 
+    // is_emergency_call
     public static boolean d(Context context, String str) {
 
         return gls.a.g(str, i(context));//new glq.g(str, i(Context)) => glq.g(string, string)

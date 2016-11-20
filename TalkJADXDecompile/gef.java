@@ -57,6 +57,7 @@ public final class gef { //is the phone remapper! tries to call the destination 
         this.d = gec;
     }
 
+    // Gets remote_party_number
     public String c() {
         boolean z;
         Uri uri;

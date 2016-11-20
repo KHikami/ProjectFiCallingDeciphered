@@ -8001,6 +8001,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         }
     }
 
+    // *********** Very useful for figuring out a lot of variables *************
     public static Bundle a(gcq gcq, DisconnectCause disconnectCause, int i) {
         Bundle bundle = new Bundle();
         if (gcq.u() != null) {
@@ -8072,6 +8073,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         return bundle;
     }
 
+    // Get google_corp_account
     public static String K(Context context) {
         Throwable e;
         try {

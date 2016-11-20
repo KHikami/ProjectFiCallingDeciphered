@@ -172,6 +172,8 @@ final class gdc implements gcd {
                     case wi.n /*9*/:
                     case wi.dr /*10*/:
                         // If emergency_call...
+                        // gwb.H() returns a Context
+                        // gcc.a() --> gcq.f() --> gef.c() --> remote_party_number
                         if (glq.d(gwb.H(), gcc.a().f().c())) {
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, emergency call, handoff for network optimization not allowed", new Object[0]);
                             return false;

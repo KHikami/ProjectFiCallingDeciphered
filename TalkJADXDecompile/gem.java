@@ -44,7 +44,7 @@ final class gem extends Callback {
         }
     }
 
-    // When cellular call is disconnected, try to...
+    // When RemoteConnection is disconnected, try to handoff to cellular
     // DisconnectCause constants found here: https://developer.android.com/reference/android/telecom/DisconnectCause.html
     public void onDisconnected(RemoteConnection remoteConnection, DisconnectCause disconnectCause) {
         String valueOf = String.valueOf(disconnectCause);
@@ -58,9 +58,9 @@ final class gem extends Callback {
             this.a.d.a(this.a.d(), this.a.c.b());   // gcq.a(int, long) this appends a character tag and a time to gcq's stringbuilder
         }
 
-        // If there is a gcq (connection) object and there is NOT a gdc (handoff) object associated with our cell call...
+        // If there is a gcq (connection) object and there is NOT a gdc (handoff) object associated with our cellular call...
         if (this.a.d != null && this.a.d.k() == null) {
-            // If disconnectionCause is ERROR AND gcq and its hangout_id are defined...
+            // If disconnectionCause is ERROR (1) AND gcq and its hangout_id are defined... (hangout_id may be causing this to fail)
             if (disconnectCause.getCode() == 1 && this.a.o()) {
                 // Then we can handoff from cell to wifi
                 valueOf = String.valueOf(this.a.d);

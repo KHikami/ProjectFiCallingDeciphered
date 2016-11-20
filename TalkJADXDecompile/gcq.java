@@ -22,18 +22,18 @@ public final class gcq extends Connection {
     private final Handler e;
     private final List<gcu> f;
     private final gef g;
-    private final String h;
+    private final String h; // participant_log_id
     private final long i;
     private gdc j;      // Handoff object
     private boolean k;
-    private boolean l;
-    private String m;   // Phone number of the connection (might be specifically handoff phone number)
-    private String n;   // Account name
+    private boolean l;  // local_disconnect
+    private String m;   // handoff_number
+    private String n;   // wifi_calling_account
     private int o;
-    private String p;   // Hangout id
-    private String q;
-    private String r;
-    private StringBuilder s;
+    private String p;   // hangout_id
+    private String q;   // callgrok_session_id
+    private String r;   // participant_id
+    private StringBuilder s;    // call_log
     private String t;
     private BroadcastReceiver u;
     private gcs v;
@@ -62,7 +62,7 @@ public final class gcq extends Connection {
             iub iub = new iub();
             str = iub.a();
         }
-        this.h = str;
+        this.h = str;   // participant_log_id
         setInitializing();
         setAddress(gef.h().getAddress(), 1); //returns connection request address and calls own method setAddress
         setConnectionCapabilities(66);
@@ -92,18 +92,24 @@ public final class gcq extends Connection {
         return this.g.i();
     }
 
+    // gef.c() gets remote_party_number
     public gef f() {
         return this.g;
     }
 
+    // call_direction
+    //   true: incoming
+    //   false: outgoing
     public boolean g() {
         return this.g.k();
     }
 
+    // gec.toString gets roaming_status
     public gec h() {
         return this.g.b();
     }
 
+    // Get participant_log_id
     public String i() {
         return this.h;
     }
@@ -116,6 +122,7 @@ public final class gcq extends Connection {
         this.v = gcs;
     }
 
+    // gcc.e() gets call_id
     public gcc j() {
         return this.b;
     } // return class that implements gcc (e.g. gel/gfj)
@@ -163,6 +170,7 @@ public final class gcq extends Connection {
         this.k = true;
     }
 
+    // Get local_disconnect
     public boolean m() {
         return this.l;
     }
@@ -171,21 +179,22 @@ public final class gcq extends Connection {
         this.l = true;
     }
 
+    // Get handoff_number
     public String n() {
         return this.m;
     }
 
-    // Sets connection's number (called by gfl.a(int, string))
+    // Set handoff_number (called by gfl.a(int, string))
     void a(String str) {
         this.m = str;
     }
 
-    // Get account name
+    // Get wifi_calling_account (seen in gdb.a() or gwb.a(gcq, DisconnectCause, int))
     public String o() {
         return this.n;
     }
 
-    // Set account name
+    // Set wifi_calling_account
     void b(String str) {
         this.n = str;
     }
@@ -198,28 +207,32 @@ public final class gcq extends Connection {
         this.o = i;
     }
 
-    // Get hangout id
+    // Get hangout_id
     public String q() {
         return this.p;
     }
 
-    // Set hangout id
+    // Set hangout_id
     void c(String str) {
         this.p = str;
     }
 
+    // Get callgrok_session_id
     public String r() {
         return this.q;
     }
 
+    // Set callgrok_session_id
     void d(String str) {
         this.q = str;
     }
 
+    // Get participant_id
     public String s() {
         return this.r;
     }
 
+    // Set participant_id
     void e(String str) {
         this.r = str;
     }
@@ -228,16 +241,19 @@ public final class gcq extends Connection {
         this.y = gcw;
     }
 
+    // gcw.toString() gets experiment_code
     public gcw t() {
         return this.y;
     }
 
+    // Get call_log
     public String u() {
         return this.s.toString();
     }
 
-    // i: gel (1)  or gfj (2) identifier
-    // j: some kind of time (comes from geo.b())
+    // Adds to call_log
+    //   i: gel (1)  or gfj (2) identifier
+    //   j: some kind of time (comes from geo.b())
     void a(int i, long j) {
         this.s.append(i == 2 ? "w" : "c");  // Appends 'w' (wifi) if gjf obj or 'c' (cell) if gel obj
         this.s.append(j);                   // Append time value

@@ -1,4 +1,5 @@
 public final class mup extends nyx<mup> {
+    // a, b, d map to "access_network_info" in gwb
     public Integer a;
     public String b;
     public Long c;

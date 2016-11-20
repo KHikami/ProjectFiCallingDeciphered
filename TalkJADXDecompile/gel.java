@@ -160,6 +160,7 @@ final class gel implements gcc {
         return 1;
     }
 
+    // Get call_id? (search gwb for call_id)
     public String e() {
         return this.c.a();
     }
