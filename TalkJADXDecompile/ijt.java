@@ -167,7 +167,7 @@ public final class ijt implements ilp {
 
     @Deprecated
     ikd a() {
-        gwb.aJ();
+        gwb.aJ();   // ensures on UI thread (else exception is thrown)
         return this.c;
     }
 

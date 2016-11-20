@@ -286,12 +286,15 @@ public final class did extends fip implements gia<fln> {
         return (ArrayList) this.s.clone();
     }
 
+    // expects either the ikd instance is null, or it has some string value
+    // equal to the one for this class (perhaps state?)
+    // either way, it returns null or the ikd instance
     public ikd p() {
         boolean z;
         ikd b = inx.a().b();
-        if (b == null || b.e().equals(this.j)) {
+        if (b == null || b.e().equals(this.j)) {  // compares 2 strings for equality
             z = true;
-        } else {
+        } else {            
             z = false;
         }
         iil.a("Expected condition to be true", z);

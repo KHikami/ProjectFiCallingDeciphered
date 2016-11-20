@@ -318,7 +318,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
     public void c() {
         String valueOf = String.valueOf(this.c);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 35).append("TeleWifiCall.performManualHandoff, ").append(valueOf).toString(), new Object[0]);
-        c(2);   
+        c(2);   // updates members in ikh instance, does nothing else
         gdc.a(this.a, this.c, 2);   // initiate wifi to cell handoff - manual handoff
     }
 
@@ -484,6 +484,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
     }
 
     // onWifiStateChanged
+    // essentially, when WiFi connection has changed from present to none or vice versa
     public void a(gfv gfv) {
         if (s()) {
             String valueOf = String.valueOf(gfv);
@@ -494,12 +495,19 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         int networkType = ((TelephonyManager) this.a.getSystemService("phone")).getNetworkType();
 
 
+        /**
+         * Checks in this order, and most likely when call is over WiFi only:
+         * given that WiFi state has changed (present, gone, or if signal changes):
+         * if there is no ongoing - do nothing, log the fact
+         * else if you are no longer connected to WiFi - handoff due to network loss (3)
+         * else if the WiFi signal has reached some threshold to allow handoff, see gwb line 8535
+        **/
         if (this.c == null) { // becomes null on disconnect; when this.c type gcq, represents a connection - so this means ~ there is no ongoing connection/call
             valueOf = String.valueOf(this.c);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 48).append("TeleWifiCall.onWifiStateChanged, no connection, ").append(valueOf).toString(), new Object[0]);
-        } else if (!gfv.a) { 
-            c(3);
-            gdc.a(this.a, this.c, 3); // intiate wifi to cell handoff due to network loss
+        } else if (!gfv.a) { // if not [isConnected]
+            c(3);                       // again updates members in ikh instance
+            gdc.a(this.a, this.c, 3);   // intiate wifi to cell handoff due to network loss
         } else if (!gwb.a(this.a, this.c.h(), gfv, networkType)) { // isConnected && (signal level) > (wifi signal handoff) && (link speed) > (wifi link speed handoff)
             c(1);
             gdc.a(this.a, this.c, 1); // initiate wifi to cell handoff due to ... appears to be when gfj.a is call and the wifi signal/spped is good; error?
@@ -627,7 +635,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             gwb.f(2901);
         }
         c(i);
-        gdc.a(this.a, this.c, i);       // initiate wifi to cell handoff
+        gdc.a(this.a, this.c, i);       // initiate wifi to cell handoff, this might be where reason 4 and others come from
     }
 
     private void e(boolean z) {
@@ -664,8 +672,13 @@ public final class gfj implements gcc, gcf, gfg, gfr {
     }
 
     // passed in reasoncode in a() onWifiStateChanged
+    // just updates ikh if it exists
     void c(int i) {
+        // check for null because this.d.p() (returns ikd) could have been null
         if (this.d != null && this.d.p() != null) {
+            // did.p() returns ikd
+            // ikd.i() returns ikh (handles statistics)
+            // ikh.b(reasonCode) simply sets ikh instance's member var to the integer
             this.d.p().i().b(i);
         }
     }

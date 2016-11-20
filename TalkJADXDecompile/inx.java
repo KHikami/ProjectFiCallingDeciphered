@@ -6,7 +6,7 @@ public final class inx {
     private static inx b;
     final List<ikf> a;
     private final ikf c;
-    private ijt d;
+    private ijt d;          // deals with a lot of hangout related variables
 
     static {
         b = new inx();
@@ -17,6 +17,7 @@ public final class inx {
         this.c = new ilc(this);
     }
 
+    // returns a new inx object (unmodified)
     public static inx a() {
         iil.b("Expected non-null", b);
         iil.a();
@@ -36,11 +37,11 @@ public final class inx {
     }
 
     public ikd b() {
-        iil.a();
+        iil.a();        // reconfirms running on main thread
         if (this.d == null) {
             return null;
         }
-        return this.d.a();
+        return this.d.a();  // deprecated call, but used
     }
 
     public void a(byte[] bArr) {

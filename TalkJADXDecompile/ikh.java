@@ -16,6 +16,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+/**
+ * Lot's of stats logging + processing.
+ *
+ * The f integer member stores the WiFi to cell reasoncode, but is not
+ * touched in this class. Perhaps it is checked elsewhere
+**/
 public final class ikh {
     final ikj a;
     final Map<String, ikk> b;

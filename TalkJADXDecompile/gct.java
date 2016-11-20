@@ -17,7 +17,7 @@ final class gct extends BroadcastReceiver {
             gcq gcq = this.a;
             String valueOf2 = String.valueOf(gcq.b);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf2).length() + 43).append("TeleConnection.performManualHandoff, call: ").append(valueOf2).toString(), new Object[0]);
-            if (!gdc.a(gcq.d())) {
+            if (!gdc.a(gcq.d())) { // gcq.d()  returns teleconnection service
                 glk.c("Babel_telephony", "TeleConnection.performManualHandoff, manual handoff not allowed", new Object[0]);
             } else if (gcq.b != null) {
                 gcq.b.c();
