@@ -20,21 +20,21 @@ final class gdb implements gdf {
         this.c = gdc;
     }
 
-    // Starts handoff if possible/allowed
+    // startHandoff: Starts handoff if possible/allowed
     // Called by gdc.b(Context, gcq, int)
     void a() {
         // Log start of handoff
         glk.c("Babel_telephony", "TeleHandoffCellularToWifi.startHandoff", new Object[0]);
         // If handoff is not possible...
         if (!this.c.f()) {
-            this.c.a(false, 224);
+            this.c.a(false, 224);   // onHandoffComplete
         // Or if there is already a wifi call...
         } else if (this.b.n()) {
             glk.c("Babel_telephony", "TeleHandoffCellularToWifi.startHandoff, wifi call already exists", new Object[0]);
             this.c.a(false, 221);
         // Otherwise handoff is possible and no wifi call currently exists
         } else {
-            gcq a = this.c.a();
+            gcq a = this.c.a(); // Get old TeleConnection object (pre-handoff)
             int b = this.c.b(); // Get old connection state
             // If old connection state is not STATE_ACTIVE...
             if (b != 4) {
@@ -60,7 +60,7 @@ final class gdb implements gdf {
             } else if (gwb.I(this.a)) {
                 // *********Conditions met for handing off to a wifi call************
                 glk.c("Babel_telephony", "TeleHandoffCellularToWifi.createWifiCall", new Object[0]);
-                gcq a2 = this.c.a();    // Get connection object
+                gcq a2 = this.c.a();    // Get connection object (pre-handoff)
                 dhz a3 = new dib(a2.o(), 1).a(2).e(a2.q()).h(a2.s()).a();
                 muo muo = new muo();
                 mup D = gwb.D(a2.d());  // a2.d() gets TeleConnectionService object
@@ -72,7 +72,7 @@ final class gdb implements gdf {
                 // ***************Create a wifi call object******************
                 gcc gfj = new gfj(this.a, null, a2.j().e(), a2.g());
                 gfj.a(this.b.s());  // this.b.s() gets a 'did' object, gfj.a sets hangout state
-                this.c.a(gfj);  // Procedure for handoff started (and logging)
+                this.c.a(gfj);  // onHandoffStarted, eventually calls onHandoffComplete(true, 0)
             // Otherwise log that we are not connected to Wifi
             } else {
                 glk.c("Babel_telephony", "TeleHandoffCellularToWifi.startHandoff, not connected to wifi", new Object[0]);

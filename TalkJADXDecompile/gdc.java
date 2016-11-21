@@ -151,6 +151,7 @@ final class gdc implements gcd {
         // gwb.R(context) checks capabilities for making cell calls
         
         // If gcc is not a gfj object OR our context says we have the capability (permission) to make cell calls...
+        // Basically means: we are either handing off to a Wifi call, OR we have the permissions to handoff to a Cell call
         } else if (gcc.d() != 2 || gwb.R(context)) {
             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible", new Object[0]);
             // If handoff is complete...
@@ -182,15 +183,15 @@ final class gdc implements gcd {
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, network optimizing handoff disabled when calling network was choosen manually", new Object[0]);
                             return false;
                         // Only place 'i' is used
-                        } else if (i == 10) {
+                        } else if (i == 10) {   // Reason 10: user moving fast (activity handoff)
                             // g is a biz object
                             // g.a uses the str to lookup a value in the context hashmap, or returns the given default bool if not a key
-                            boolean a = g.a("babel_activity_handoff_allowed", true);
+                            boolean a = g.a("babel_activity_handoff_allowed", true);    // This probably means user was moving fast (car or bicycle)
                             // Convert bool value to string allowed or not allowed, for logging purposes
                             String str = a ? "allowed." : "not allowed.";
                             glk.c("Babel_telephony", "TeleHandoffController.isHandoffPossible, activity recognition handoff is %s", str);
                             return a;
-                        // Means that gcc is a gfj child (which implements gcc). This means call is over Wifi.
+                        // Means that gcc is a gfj child (which implements gcc). This means pre-handoff call is over Wifi.
                         } else if (gcc.d() == 2) {
                             // Check context hashmap using string as key, if it's value is false... (meaning WIFI network optimizing handoff not allowed)
                             if (!g.a("babel_wifi_network_optimizing_handoff_allowed", true)) {
@@ -256,18 +257,18 @@ final class gdc implements gcd {
         }
     }
 
-    // onHandOffStarted
+    // onHandoffStarted
     void a(gcc gcc) {
         String valueOf = String.valueOf(gcc);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 52).append("TeleHandoffController.onHandoffStarted, theNewCall: ").append(valueOf).toString(), new Object[0]);
-        this.c.a(true);
+        this.c.a(true); // Sets a boolean in gcq to true
         this.m.postDelayed(this.n, (long) gwb.a(this.b, "babel_handoff_timeout_millis", 30000));
         this.f = gcc;   // Set post-handoff call object
         this.f.a((gcd) this);   // Append this handoff to call object's history list
         this.g = new gcq(this.e.a().f(), this.e.a().i());   // Create the new TeleConnection object (for post-handoff)
         this.g.setDialing(); // setDialing() in gcq's parent class Connection
         this.g.b(this.f); // set geo's gcw
-        if (this.h == 3) { // if reason for handoffWiFiToCellular
+        if (this.h == 3) { // if reason for handoffWiFiToCellular was network loss...
             a(true, 0); // handoffcomplete
         } else {
             g(); // print to log
@@ -358,7 +359,7 @@ final class gdc implements gcd {
         String valueOf2 = String.valueOf(Connection.stateToString(this.j)); // New call state
         glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf).length() + 74) + String.valueOf(valueOf2).length()).append("TeleHandoffController.checkHandoffComplete, oldCallState: ").append(valueOf).append(", newCallState: ").append(valueOf2).toString(), new Object[0]);
         // d is a gdf object, but since gdf is just an interface, it must be either gdb or gdg
-        this.d.b();
+        this.d.b(); // Decides if onHandoffComplete(true) or onHandoffComplete(false) according to the state transition
     }
 
     private void a(int i) {
