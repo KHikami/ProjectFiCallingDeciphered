@@ -29,6 +29,7 @@ public final class gck { //evaluates signal strength into new values
         return new gcm(i, i2, telephonyManager.getPhoneType(), telephonyManager.getNetworkOperator(), telephonyManager.getNetworkType(), i3);
     }
 
+    // Handsoff if SimState is not ready
     public static void a(Context context, gcl gcl) {
         TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService("phone");
         if (telephonyManager.getSimState() == 5) { //SimState is ready
@@ -38,7 +39,7 @@ public final class gck { //evaluates signal strength into new values
             telephonyManager.listen(gcn, 0); //stop listening for updates
             return;
         }
-        gcl.a(a(context, 2, -1));//gdz.a(new cell state with signal level of service state of emergency only and -1 as signal strength level)
+        gcl.a(a(context, 2, -1));//gdz or gdi.a(new cell state with signal level of service state of emergency only and -1 as signal strength level)
         //log this cell state using gdz and then clean up this eval
     }
 

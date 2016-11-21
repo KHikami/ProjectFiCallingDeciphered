@@ -281,7 +281,7 @@ public final class jyn { //being treated as a specific kind of binder...
         return list;
     }
 
-    //called by glq
+    //called by glq, and also gdi
     public static <T> T a(Context context, Class<T> cls) {
         return b(context).a((Class) cls);
     }

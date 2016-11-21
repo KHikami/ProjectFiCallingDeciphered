@@ -510,7 +510,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             gdc.a(this.a, this.c, 3);   // intiate wifi to cell handoff due to network loss
         } else if (!gwb.a(this.a, this.c.h(), gfv, networkType)) { // isConnected && (signal level) > (wifi signal handoff) && (link speed) > (wifi link speed handoff)
             c(1);
-            gdc.a(this.a, this.c, 1); // initiate wifi to cell handoff due to ... appears to be when gfj.a is call and the wifi signal/spped is good; error?
+            gdc.a(this.a, this.c, 1); // initiate wifi to cell handoff due to ... appears to be when gfj.a is call and the wifi signal/speed is good; error?
         }
     }
 

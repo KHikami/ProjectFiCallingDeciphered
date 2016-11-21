@@ -5340,6 +5340,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         return ((iih) jyn.a(H(), iih.class)).a(i);
     }
 
+    // Some kind of registration?
     public static void f(int i) {
         iie b = ((iih) jyn.a(H(), iih.class)).a().b().c().b();
         if (aI()) {
@@ -8134,6 +8135,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         }
     }
 
+    // returns number for handoff
     public static String M(Context context) {
         String str = null;
         if (a(context, "babel_use_from_number_for_handoff", true)) {

@@ -9,7 +9,7 @@ import android.text.TextUtils;
 // I think this is the handoff object, such that...
 // if there is a gdc object, then there is a handoff pending (in progress?)
 final class gdc implements gcd {
-    boolean a;
+    boolean a; // what is this?
     private final Context b;
     private final gcq c;    // Connection object before the handoff (cannot be changed, so declared final)
     private final gdf d;
@@ -22,7 +22,7 @@ final class gdc implements gcd {
     private DisconnectCause k;
     private boolean l; // handoff has run to completion (could have either failed or succeeded though)
     private Handler m;
-    private final Runnable n;
+    private final Runnable n; // callback for handoff timed out
 
     // checks network conditions and initiates wifi to cell handoff
     // gcq contains info about Connection state and logs Connection events
@@ -262,7 +262,7 @@ final class gdc implements gcd {
         String valueOf = String.valueOf(gcc);
         glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 52).append("TeleHandoffController.onHandoffStarted, theNewCall: ").append(valueOf).toString(), new Object[0]);
         this.c.a(true); // Sets a boolean in gcq to true
-        this.m.postDelayed(this.n, (long) gwb.a(this.b, "babel_handoff_timeout_millis", 30000));
+        this.m.postDelayed(this.n, (long) gwb.a(this.b, "babel_handoff_timeout_millis", 30000)); // handoff timed out
         this.f = gcc;   // Set post-handoff call object
         this.f.a((gcd) this);   // Append this handoff to call object's history list
         this.g = new gcq(this.e.a().f(), this.e.a().i());   // Create the new TeleConnection object (for post-handoff)
