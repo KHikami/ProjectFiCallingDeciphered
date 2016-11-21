@@ -21,7 +21,7 @@ public final class lkl extends nyx<lkl> {
             nyu.a(1, this.a.intValue());
         }
         if (this.b != null) {
-            nyu.a(2, this.b.intValue());
+            nyu.a(2, this.b.intValue()); //appears to perform byte-level checks on data
         }
         super.a(nyu);
     }

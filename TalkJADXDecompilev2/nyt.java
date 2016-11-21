@@ -1,5 +1,7 @@
 package defpackage;
 
+//appears to process byte data; probably deals with sent/received data packets
+
 public final class nyt {
     private final byte[] a;
     private int b;

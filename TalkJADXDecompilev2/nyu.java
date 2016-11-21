@@ -5,6 +5,8 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.ReadOnlyBufferException;
 
+//appears to process byte data related to sent/received data packets
+
 public final class nyu {
     private final ByteBuffer a;
 
@@ -41,7 +43,7 @@ public final class nyu {
         b(j);
     }
 
-    public void a(int i, int i2) {
+    public void a(int i, int i2) { // called by lkl.a(nyu nyu) to modify lkl.b
         i(i, 0);
         a(i2);
     }
@@ -118,7 +120,7 @@ public final class nyu {
         h(j);
     }
 
-    public void a(int i) {
+    public void a(int i) {//called by lkl.a via nyu.a with i = 2
         if (i >= 0) {
             i(i);
         } else {
@@ -546,7 +548,7 @@ public final class nyu {
         return (j << 1) ^ (j >> 63);
     }
 
-    public void i(int i, int i2) {
-        i((i << 3) | i2);
+    public void i(int i, int i2) { //called by nyu.a(int, int) passing i = i and i2 = 0
+        i((i << 3) | i2); // yields i(16)
     }
 }

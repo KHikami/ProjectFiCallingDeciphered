@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="945867c9-7657-4273-8307-d82644ddacb2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="945867c9-7657-4273-8307-d82644ddacb2" name="Default" comment="" />
     <ignored path="ProjectFiCallingDeciphered.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +26,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="102" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
-              <folding />
+              <folding>
+                <element signature="e#1971#1972#0" expanded="false" />
+                <element signature="e#2000#2001#0" expanded="false" />
+                <element signature="e#2250#2251#0" expanded="false" />
+                <element signature="e#2269#2270#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,16 +41,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-              <folding />
+              <folding>
+                <element signature="e#512#513#0" expanded="false" />
+                <element signature="e#541#542#0" expanded="false" />
+                <element signature="e#787#788#0" expanded="false" />
+                <element signature="e#806#807#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gfj.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gfj.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gfj.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="608" column="9" selection-start-line="608" selection-start-column="9" selection-end-line="608" selection-end-column="9" />
+            <state relative-caret-position="355">
+              <caret line="503" column="17" selection-start-line="503" selection-start-column="17" selection-end-line="503" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,7 +66,7 @@
       <file leaf-file-name="gfm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gfm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="75">
               <caret line="5" column="132" selection-start-line="5" selection-start-column="132" selection-end-line="5" selection-end-column="132" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,19 +80,34 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#196#197#0" expanded="false" />
+                <element signature="e#225#226#0" expanded="false" />
+                <element signature="e#245#246#0" expanded="false" />
+                <element signature="e#264#265#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gdc.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gdc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gdc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-720">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gwb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gwb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="14469" column="62" selection-start-line="14469" selection-start-column="62" selection-end-line="14469" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,7 +117,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding />
+              <folding>
+                <element signature="e#134#135#0" expanded="false" />
+                <element signature="e#160#161#0" expanded="false" />
+                <element signature="e#198#199#0" expanded="false" />
+                <element signature="e#224#225#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,7 +132,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#471#472#0" expanded="false" />
+                <element signature="e#500#501#0" expanded="false" />
+                <element signature="e#522#523#0" expanded="false" />
+                <element signature="e#551#552#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,9 +148,10 @@
             <state relative-caret-position="795">
               <caret line="61" column="21" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#185#186#0" expanded="false" />
+                <element signature="e#236#237#0" expanded="false" />
+                <element signature="e#327#328#0" expanded="false" />
+                <element signature="e#361#362#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -151,9 +185,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="y" value="53" />
-    <option name="width" value="1370" />
+    <option name="x" value="35" />
+    <option name="y" value="40" />
+    <option name="width" value="1424" />
     <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -211,7 +245,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="gdc&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gdc.java&#10;gfe&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfe.java&#10;lkt&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/lkt.java&#10;lkq&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/lkq.java&#10;gfj&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfj.java&#10;gfa&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfa.java&#10;nyx&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/nyx.java&#10;lfm&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/lfm.java&#10;gwb&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gwb.java&#10;jj&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/jj.java&#10;jlg&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/jlg.java&#10;itw&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/itw.java&#10;itg&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/itg.java&#10;itm&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/itm.java&#10;ijt&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/ijt.java&#10;dhs&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/dhs.java&#10;grk&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/grk.java&#10;nzf&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/nzf.java&#10;gcq&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gcq.java&#10;gfv.&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfv.java&#10;itn&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/itn.java&#10;iie&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/iie.java&#10;dil&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/dil.java&#10;wi&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/wi.java&#10;lkl&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/lkl.java&#10;gfm&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfm.java&#10;khl&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khl.java&#10;khk&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khk.java&#10;khj&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khe.java&#10;khf&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khf.java&#10;khe&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khe.java&#10;khd&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khd.java&#10;khc&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khc.java&#10;kgy&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/kgy.java&#10;kgx&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/kgx.java&#10;jbg&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/jbg.java&#10;gga&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gga.java&#10;gfz&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfz.java&#10;gfy&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfy.java&#10;gfx&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfx.java&#10;gfw&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfw.java&#10;b&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/b.java&#10;did&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/did.java&#10;iss&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/defpackage/iss.java&#10;kew&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/kew.java&#10;mav&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/defpackage/mav.java&#10;ijn&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/ijn.java&#10;dgl&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/dgl.java&#10;dgg&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/dgg.java&#10;aat&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/aat.java" />
+    <property name="SearchEverywhereHistoryKey" value="gwb&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gwb.java&#10;gdc&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gdc.java&#10;gfe&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfe.java&#10;lkt&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/lkt.java&#10;lkq&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/lkq.java&#10;gfj&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfj.java&#10;gfa&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfa.java&#10;nyx&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/nyx.java&#10;lfm&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/lfm.java&#10;jj&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/jj.java&#10;jlg&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/jlg.java&#10;itw&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/itw.java&#10;itg&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/itg.java&#10;itm&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/itm.java&#10;ijt&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/ijt.java&#10;dhs&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/dhs.java&#10;grk&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/grk.java&#10;nzf&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/nzf.java&#10;gcq&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gcq.java&#10;gfv.&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfv.java&#10;itn&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/itn.java&#10;iie&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/iie.java&#10;dil&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/dil.java&#10;wi&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/wi.java&#10;lkl&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/lkl.java&#10;gfm&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfm.java&#10;khl&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khl.java&#10;khk&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khk.java&#10;khj&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khe.java&#10;khf&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khf.java&#10;khe&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khe.java&#10;khd&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khd.java&#10;khc&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/khc.java&#10;kgy&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/kgy.java&#10;kgx&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/kgx.java&#10;jbg&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/jbg.java&#10;gga&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gga.java&#10;gfz&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfz.java&#10;gfy&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfy.java&#10;gfx&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfx.java&#10;gfw&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/gfw.java&#10;b&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/b.java&#10;did&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/did.java&#10;iss&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/defpackage/iss.java&#10;kew&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/kew.java&#10;mav&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/defpackage/mav.java&#10;ijn&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/ijn.java&#10;dgl&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/dgl.java&#10;dgg&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/dgg.java&#10;aat&#9;FILE&#9;file:///Users/jasonla/Desktop/ProjectFiCallingDeciphered/TalkJADXDecompile/aat.java" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -472,7 +506,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="53" width="1370" height="772" extended-state="0" />
+    <frame x="35" y="40" width="1424" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -490,7 +524,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.51508296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1557971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17257683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0042735045" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -832,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gwb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148135">
-          <caret line="12339" column="39" selection-start-line="12339" selection-start-column="39" selection-end-line="12339" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gfa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-915">
@@ -851,7 +878,7 @@
         <state relative-caret-position="45">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -860,7 +887,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#522#523#0" expanded="false" />
+            <element signature="e#551#552#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -869,9 +901,10 @@
         <state relative-caret-position="795">
           <caret line="61" column="21" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="false" />
+            <element signature="e#236#237#0" expanded="false" />
+            <element signature="e#327#328#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -880,7 +913,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#134#135#0" expanded="false" />
+            <element signature="e#160#161#0" expanded="false" />
+            <element signature="e#198#199#0" expanded="false" />
+            <element signature="e#224#225#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -889,7 +927,7 @@
         <state relative-caret-position="165">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -898,7 +936,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="102" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
-          <folding />
+          <folding>
+            <element signature="e#1971#1972#0" expanded="false" />
+            <element signature="e#2000#2001#0" expanded="false" />
+            <element signature="e#2250#2251#0" expanded="false" />
+            <element signature="e#2269#2270#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -906,26 +949,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gfj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="608" column="9" selection-start-line="608" selection-start-column="9" selection-end-line="608" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gfm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5" column="132" selection-start-line="5" selection-start-column="132" selection-end-line="5" selection-end-column="132" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#512#513#0" expanded="false" />
+            <element signature="e#541#542#0" expanded="false" />
+            <element signature="e#787#788#0" expanded="false" />
+            <element signature="e#806#807#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -934,14 +962,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#196#197#0" expanded="false" />
+            <element signature="e#225#226#0" expanded="false" />
+            <element signature="e#245#246#0" expanded="false" />
+            <element signature="e#264#265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gwb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="14469" column="62" selection-start-line="14469" selection-start-column="62" selection-end-line="14469" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gdc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gfm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="132" selection-start-line="5" selection-start-column="132" selection-end-line="5" selection-end-column="132" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TalkJADXDecompile/gfj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="503" column="17" selection-start-line="503" selection-start-column="17" selection-end-line="503" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
