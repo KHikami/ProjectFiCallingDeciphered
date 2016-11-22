@@ -8536,9 +8536,9 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
     // gfj line 511
     public static boolean a(Context context, gec gec, gfv gfv, int i) {
         gfo a = a(context, gec, i);
-        if (gfv.a(a.c, a.e)) {
-            return true;
-        }
+        if (gfv.a(a.c, a.e)) { 
+            return true; 
+        } // below never appears in call log; that's weird, since it would be printed if the connection were bad.
         Locale locale = Locale.US;
         String valueOf = String.valueOf(gec.toString());
         glk.c("Babel_telephony", String.format(locale, new StringBuilder(String.valueOf(valueOf).length() + 167).append("TeleWifiCallThreshold.hasGoodSignalForOngoingWifiCall, network status is: ").append(valueOf).append("wifi signal is: %s\nwhich is below wifi signal threshold: %d%% or link speed threshold: %dMbps").toString(), new Object[]{gfv, Integer.valueOf(a.c), Integer.valueOf(a.e)}), new Object[0]);
