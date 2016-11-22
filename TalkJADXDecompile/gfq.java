@@ -11,7 +11,7 @@ import android.net.wifi.WifiManager;
 final class gfq {//Wifi Cell creator?
     static final boolean a;
     final Context b;
-    gfr c;
+    gfr c; //gfj.a called if not null, which means connected to wifi
     gfv d;
     private BroadcastReceiver e;
     private NetworkCallback f;

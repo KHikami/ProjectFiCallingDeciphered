@@ -144,7 +144,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             this.m = null;
         }
         if (this.q != null) {
-            this.q.a();
+            this.q.a(); //calls gfq.a() to make gfq.c null
             this.q = null;
         }
         if (this.u != null) {
@@ -468,7 +468,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
-    public void a(gfv gfv) {
+    public void a(gfv gfv) { //called by gfu.onReceive
         if (s()) {
             String valueOf = String.valueOf(gfv);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 33).append("TeleWifiCall.onWifiStateChanged, ").append(valueOf).toString(), new Object[0]);
@@ -476,10 +476,10 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             return;
         }
         int networkType = ((TelephonyManager) this.a.getSystemService("phone")).getNetworkType();
-        if (this.c == null) {
+        if (this.c == null) { //call not connected
             valueOf = String.valueOf(this.c);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 48).append("TeleWifiCall.onWifiStateChanged, no connection, ").append(valueOf).toString(), new Object[0]);
-        } else if (!gfv.a) {
+        } else if (!gfv.a) { //not connected to wifi
             c(3);
             gdc.a(this.a, this.c, 3);
         } else if (!gwb.a(this.a, this.c.h(), gfv, networkType)) {

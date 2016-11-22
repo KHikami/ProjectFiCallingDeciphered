@@ -7,6 +7,8 @@ import com.google.android.libraries.hangouts.video.internal.Stats;
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 
+//calls gfm.a for wifi to cell transfer via ijt
+
 public final class ilq extends Handler {
     private ilp a;
 
@@ -22,7 +24,7 @@ public final class ilq extends Handler {
         this.a = ilp;
     }
 
-    public void handleMessage(Message message) {
+    public void handleMessage(Message message) { 
         boolean z = true;
         if (this.a != null) {
             Bundle data = message.getData();
@@ -85,7 +87,7 @@ public final class ilq extends Handler {
                 case wi.dM /*12*/:
                     this.a.c((byte[]) message.obj);
                 case wi.dD /*13*/:
-                    this.a.c(message.arg1);
+                    this.a.c(message.arg1); //calls gfm.a for wifi to cell handoff
                 case wi.g /*14*/:
                     this.a.d(message.arg1);
                 case wi.dJ /*15*/:

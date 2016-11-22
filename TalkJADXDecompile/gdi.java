@@ -22,8 +22,8 @@ final class gdi implements gcl {
             PhoneAccountHandle phoneAccountHandle = this.a;
             glk.c("Babel_telephony", "TeleHandoffWifiToCellular.prepareForHandoffUsingUpdateHandoffNumber", new Object[0]);
             gcq a = gdg.b.a(); // retrieves Connection
-            ((bhl) jyn.a(gdg.a, bhl.class)).a(new gfd(fde.e(a.p()), a.q(), a.s(), gwb.M(gdg.a))); // schedule service?
-            gdg.a(phoneAccountHandle); // call number
+            ((bhl) jyn.a(gdg.a, bhl.class)).a(new gfd(fde.e(a.p()), a.q(), a.s(), gwb.M(gdg.a))); // bhz.a(gfd) schedule service?
+            gdg.a(phoneAccountHandle); // call number on Sprint
         }
     }
 }

@@ -40,7 +40,7 @@ final class gel implements gcc {
         this.c = new geo(context, str, remoteConnection.getAddress(), str2, str3, z);
         a(this.c);
         if (!z && TextUtils.isEmpty(str)) {
-            gwb.O(context);
+            gwb.O(context); // Unmute microphone
         }
     }
 

@@ -486,7 +486,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
 
     // onWifiStateChanged
     // essentially, when WiFi connection has changed from present to none or vice versa
-    public void a(gfv gfv) {
+    public void a(gfv gfv) {//called by gfu.onReceive
         if (s()) {
             String valueOf = String.valueOf(gfv);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 33).append("TeleWifiCall.onWifiStateChanged, ").append(valueOf).toString(), new Object[0]);
@@ -511,7 +511,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             gdc.a(this.a, this.c, 3);   // intiate wifi to cell handoff due to network loss
         } else if (!gwb.a(this.a, this.c.h(), gfv, networkType)) { // isConnected && (signal level) > (wifi signal handoff) && (link speed) > (wifi link speed handoff)
             c(1);
-            gdc.a(this.a, this.c, 1); // initiate wifi to cell handoff due to ... appears to be when gfj.a is call and the wifi signal/spped is good; error?
+            gdc.a(this.a, this.c, 1); // called when not connected or one of thresholds reached
         }
     }
 

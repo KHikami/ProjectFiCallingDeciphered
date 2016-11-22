@@ -37,6 +37,8 @@ import java.util.concurrent.TimeUnit;
 import org.webrtc.voiceengine.AudioEffectsJB;
 import org.webrtc.voiceengine.WebRtcAudioUtils;
 
+//calls gfm.a to initiate a wifi to cell transfer; calls tracks sent/received packets somehow
+
 public final class ijt implements ilp {
     private static final long B;
     private static final String[][] d;
@@ -710,6 +712,7 @@ public final class ijt implements ilp {
     }
 
     public void a(String str, int i) {
+        gwb.aJ();
         gwb.aJ();
         if (f(str)) {
             for (ikf a : this.i) {

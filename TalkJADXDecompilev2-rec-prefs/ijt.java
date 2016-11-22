@@ -826,7 +826,7 @@ public final class ijt implements ilp {
     }
 
     public void mo3247c(int i) {
-        this.f17806f.m21973k().mo1540a(new itm(i));
+        this.f17806f.m21973k().mo1540a(new itm(i)); //calls gfm.a
     }
 
     public void mo3250d(int i) {
@@ -1173,7 +1173,7 @@ public final class ijt implements ilp {
 
     public void mo3255e(byte[] bArr) {
         try {
-            this.f17806f.m21973k().mo1540a(new itm((lkl) nzf.m1027a(new lkl(), bArr)));
+            this.f17806f.m21973k().mo1540a(new itm((lkl) nzf.m1027a(new lkl(), bArr))); //calls gfm.a
         } catch (Throwable e) {
             itx.m23286b("vclib", "Cannot parse Media Event.", e);
         }

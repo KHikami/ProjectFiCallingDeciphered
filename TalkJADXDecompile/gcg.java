@@ -3,6 +3,8 @@ import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
 import java.util.Locale;
 
+//monitors cell signal and provides notifications on signal change
+
 final class gcg extends PhoneStateListener {
     final /* synthetic */ gce a;
     private ServiceState b;
