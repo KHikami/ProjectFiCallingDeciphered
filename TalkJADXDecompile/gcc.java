@@ -27,7 +27,7 @@ public interface gcc {
 
     void b(boolean z);
 
-    void c();
+    void c();           // leads to manual handoff, see line 32 in gct
 
     int d();
 

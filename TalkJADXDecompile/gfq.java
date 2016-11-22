@@ -26,6 +26,7 @@ final class gfq {//Wifi Cell creator?
             return new gfv(false, 0, 0);
         }
         WifiInfo connectionInfo = ((WifiManager) context.getSystemService("wifi")).getConnectionInfo();
+
         //uses wifiManager to create new wifi cell
         return new gfv(true, WifiManager.calculateSignalLevel(connectionInfo.getRssi(), 100), connectionInfo.getLinkSpeed());
     }
@@ -34,6 +35,7 @@ final class gfq {//Wifi Cell creator?
         this.b = context;
     }
 
+    // binds the TeleWiFiMonitor receiver!!!!!
     void a(gfr gfr) {
         iil.a();
         this.c = gfr;
@@ -41,7 +43,7 @@ final class gfq {//Wifi Cell creator?
         intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         intentFilter.addAction("android.net.wifi.RSSI_CHANGED");
         this.e = new gfu(this);
-        this.b.registerReceiver(this.e, intentFilter);
+        this.b.registerReceiver(this.e, intentFilter);  // bound TeleWifiMonitor BR
         NetworkRequest build = new Builder().addTransportType(1).build();
         this.f = new gfs(this);
         try {

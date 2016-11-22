@@ -12,6 +12,12 @@ final class gfu extends BroadcastReceiver {//TeleWifiMonitor.receiver
         this.a = gfq;
     }
 
+    /**
+     * On receiving intent
+     *  - if connection state has changed
+     *      - update signal state
+     *      - call handoff method to check
+    **/
     public void onReceive(Context context, Intent intent) {
         if (gfq.a) {
             String str = "TeleWifiMonitor.Receiver.onReceive, action: ";

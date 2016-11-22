@@ -260,6 +260,7 @@ public final class gcq extends Connection {
     }
 
     // register and unregister receiver with context
+    // the receiver here is linked to manual handoff
     private void A() {
         Context d = d();
         int i = (this.b == null || getState() != 4) ? 0 : 1;

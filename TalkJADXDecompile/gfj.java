@@ -76,6 +76,8 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         return gcq.j() != null && gcq.j().d() == 2;
     }
 
+    // constructor
+    // 
     gfj(Context context, gfn gfn, String str, boolean z) {
         this.l = new CopyOnWriteArrayList();
         this.a = context;
@@ -192,6 +194,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
+    // called in constructor
     public void a(gcd gcd) {
         this.l.add(gcd);
     }
@@ -204,6 +207,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         return this.c;
     }
 
+    // one result of this function is to bind the TeleWiFiMonitor receiver!!!
     public void a(gcq gcq) {
         if (this.c != null && gcq == null) {
             this.c.a(d(), v());
@@ -218,7 +222,7 @@ public final class gfj implements gcc, gcf, gfg, gfr {
             }
             if (this.q == null) {
                 this.q = new gfq(this.c.d());
-                this.q.a((gfr) this);
+                this.q.a((gfr) this);       // bind TeleWiFiMonitor
             }
             if (this.r == null) {
                 this.r = new gce(this.a);
@@ -487,14 +491,18 @@ public final class gfj implements gcc, gcf, gfg, gfr {
     // onWifiStateChanged
     // essentially, when WiFi connection has changed from present to none or vice versa
     public void a(gfv gfv) {//called by gfu.onReceive
+
+        // check if ingoing/outgoing lte call, if so it does not handoff from WiFi to cell (i am pretty sure)
         if (s()) {
             String valueOf = String.valueOf(gfv);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 33).append("TeleWifiCall.onWifiStateChanged, ").append(valueOf).toString(), new Object[0]);
             t();
             return;
         }
+
         int networkType = ((TelephonyManager) this.a.getSystemService("phone")).getNetworkType();
 
+        // if you get to here and fail first if statement below, it is a WiFi call
 
         /**
          * Checks in this order, and most likely when call is over WiFi only:
@@ -522,13 +530,20 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         return this.d.p().f();
     }
 
-    private boolean s() {
+    // checks if cellular goodness
+    private boolean s() { 
+
+        // if no call ongoing
         if (this.d == null || this.c == null) {
             return false;
         }
+
+        // if this returns true, then no handoff
+        // this.c = gcq
         if (gwb.a(this.a, this.c.h().c(), this.c.g()) || gwb.b(this.a, this.c.h().c(), this.c.g())) {
-            return true;
+            return true;  
         }
+
         if (this.c.g()) {
             return gwb.a(this.a, "babel_lte_incoming_call_allowed", false);
         }
