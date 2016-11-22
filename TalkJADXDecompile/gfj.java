@@ -450,7 +450,8 @@ public final class gfj implements gcc, gcf, gfg, gfr {
         }
     }
 
-    public void b(int i, int i2) { //initiates handoff for reason 10 (biking/driving)
+    // initiates handoff for reason 10 (biking/driving)
+    public void b(int i, int i2) { 
         String str = "Babel_telephony";
         String str2 = "TeleWifiCall.onActivityTypeChanged, activityType: ";
         String valueOf = String.valueOf(gfe.b(i));
@@ -622,15 +623,20 @@ public final class gfj implements gcc, gcf, gfg, gfr {
 
     // handoffToCircuitSwitched (WiFi to cell)
     // i : reasoncode
+    // called in b(int, int) when confidence > 75% that you are in vehicle or otherwise mobile
+    // only called within this class since it is private
     private void e(int i) {
-        if (this.c == null) {
+        // if there is no call, do nothing
+        if (this.c == null) { 
             String valueOf = String.valueOf(this.c);
             glk.c("Babel_telephony", new StringBuilder(String.valueOf(valueOf).length() + 51).append("TeleWifiCall.handoffToCircuitSwitched, connection: ").append(valueOf).toString(), new Object[0]);
             return;
         }
+
+        // else there is an ongoing call (over WiFi)
         glk.c("Babel_telephony", "TeleWifiCall.handoffToCircuitSwitched, handoffReason: " + i, new Object[0]);
         if (this.c.w()) {
-            gwb.f(2904);
+            gwb.f(2904);    // hardcoded?, 5343 //TODO what does this do
         } else {
             gwb.f(2901);
         }

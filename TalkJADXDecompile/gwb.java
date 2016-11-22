@@ -5340,6 +5340,7 @@ public class gwb implements gub { // gub is empty, and extends interface gua, wh
         return ((iih) jyn.a(H(), iih.class)).a(i);
     }
 
+    // called in gfj when handing off due to movement (activity change)
     public static void f(int i) {
         iie b = ((iih) jyn.a(H(), iih.class)).a().b().c().b();
         if (aI()) {
