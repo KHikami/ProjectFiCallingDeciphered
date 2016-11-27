@@ -4,8 +4,8 @@ import com.google.api.client.http.HttpStatusCodes;
 
 public final class lkt extends nyx<lkt> {
     private static volatile lkt[] aA;
-    public Integer A;
-    public Integer B;
+    public Integer A; //vc available send bitrate
+    public Integer B; //vc available receive bitrate
     public Integer C;
     public Integer D;
     public Integer E;
@@ -31,8 +31,8 @@ public final class lkt extends nyx<lkt> {
     public Integer Y;
     public Integer Z;
     public Integer a;
-    public Float aa;
-    public Float ab;
+    public Float aa; //vr expand rate
+    public Float ab; //vr speech expand rate
     public Float ac;
     public Float ad;
     public Float ae;
@@ -57,19 +57,19 @@ public final class lkt extends nyx<lkt> {
     public Integer ax;
     public Integer ay;
     public Integer az;
-    public Integer b;
+    public Integer b;//vr packets fraction lost
     public Integer c;
     public Integer d;
-    public Integer e;
-    public Integer f;
-    public Long g;
-    public Integer h;
-    public Long i;
-    public Integer j;
+    public Integer e; //vr jitter
+    public Integer f; //vs rtt ms
+    public Long g; //vs bytes sent
+    public Integer h; //vs packets sent
+    public Long i; //vr bytes received
+    public Integer j; //vr packets received
     public Integer k;
     public Integer l;
     public Float m;
-    public Integer n;
+    public Integer n; //vr audio level
     public Integer o;
     public Integer p;
     public Integer q;
@@ -79,9 +79,9 @@ public final class lkt extends nyx<lkt> {
     public Float u;
     public Float v;
     public Float w;
-    public Integer x;
+    public Integer x; //vr jitter buffer
     public Integer y;
-    public Integer z;
+    public Integer z; //vr delay estimate
 
     public /* synthetic */ nzf a(nyt nyt) {
         return b(nyt);

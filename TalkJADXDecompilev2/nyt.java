@@ -66,7 +66,7 @@ public final class nyt {
         return w();
     }
 
-    public int f() {
+    public int f() { //used for setting value of lkt.b (% packets lost)
         return r();
     }
 

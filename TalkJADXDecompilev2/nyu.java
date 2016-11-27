@@ -43,7 +43,7 @@ public final class nyu {
         b(j);
     }
 
-    public void a(int i, int i2) { // called by lkl.a(nyu nyu) to modify lkl.b
+    public void a(int i, int i2) { // called by lkl.a(nyu nyu) to modify lkl.b; also modifies lkt.b (% packets lost)
         i(i, 0);
         a(i2);
     }

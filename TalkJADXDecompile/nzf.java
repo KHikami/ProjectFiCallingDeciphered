@@ -1,5 +1,7 @@
 import java.io.IOException;
 
+//data input/output
+
 public abstract class nzf {
     public static final int UNSET_ENUM_VALUE = Integer.MIN_VALUE;
     public volatile int cachedSize;

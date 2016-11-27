@@ -224,35 +224,35 @@ final class gfm extends itg {
             int a = gwb.a(lkt.a);
             int a2 = gwb.a(lkt.k);
             if (a2 == 1 && a == 1) {
-                valueOf = String.valueOf(lkt.i);
-                valueOf2 = String.valueOf(lkt.j);
-                valueOf3 = String.valueOf(lkt.b);
-                valueOf4 = String.valueOf(lkt.e);
-                valueOf5 = String.valueOf(lkt.x);
-                valueOf6 = String.valueOf(lkt.z);
-                String valueOf7 = String.valueOf(lkt.n);
-                String valueOf8 = String.valueOf(lkt.aa);
-                String valueOf9 = String.valueOf(lkt.ab);
+                valueOf = String.valueOf(lkt.i); //voice receiver bytes received
+                valueOf2 = String.valueOf(lkt.j); //packets received
+                valueOf3 = String.valueOf(lkt.b); //fraction_lost
+                valueOf4 = String.valueOf(lkt.e); //jitter
+                valueOf5 = String.valueOf(lkt.x); //jitter buffer
+                valueOf6 = String.valueOf(lkt.z); //delay estimate
+                String valueOf7 = String.valueOf(lkt.n); //audio level
+                String valueOf8 = String.valueOf(lkt.aa); //expand rate
+                String valueOf9 = String.valueOf(lkt.ab); //speech expand rate
                 glk.c("Babel_telephony", new StringBuilder(((((((((String.valueOf(valueOf).length() + 286) + String.valueOf(valueOf2).length()) + String.valueOf(valueOf3).length()) + String.valueOf(valueOf4).length()) + String.valueOf(valueOf5).length()) + String.valueOf(valueOf6).length()) + String.valueOf(valueOf7).length()) + String.valueOf(valueOf8).length()) + String.valueOf(valueOf9).length()).append("TeleWifiCall.onMediaStats, Voice receiver stats\nmediaStats bytes_rcvd: ").append(valueOf).append("\nmediaStats packets_rcvd:").append(valueOf2).append("\nmediaStats fraction_lost:").append(valueOf3).append("\nmediaStats jitter_ms:").append(valueOf4).append("\nmediaStats jitter_buffer_ms:").append(valueOf5).append("\nmediaStats delay_estimate_ms: ").append(valueOf6).append("\nmediaStats audio_level:").append(valueOf7).append("\nmediaStats expand_rate: ").append(valueOf8).append("\nmediaStats speech_expand_rate: ").append(valueOf9).append("\n").toString(), new Object[0]);
             }
             if (a2 == 0 && a == 1) {
-                valueOf = String.valueOf(lkt.g);
-                valueOf2 = String.valueOf(lkt.h);
-                valueOf3 = String.valueOf(lkt.b);
-                valueOf4 = String.valueOf(lkt.f);
-                valueOf5 = String.valueOf(lkt.e);
-                valueOf6 = String.valueOf(lkt.n);
+                valueOf = String.valueOf(lkt.g); //voice sender bytes sent
+                valueOf2 = String.valueOf(lkt.h); //packets sent
+                valueOf3 = String.valueOf(lkt.b); //fraction lost
+                valueOf4 = String.valueOf(lkt.f); //rtt ms
+                valueOf5 = String.valueOf(lkt.e); //jitter ms
+                valueOf6 = String.valueOf(lkt.n); //audio level
                 glk.c("Babel_telephony", new StringBuilder((((((String.valueOf(valueOf).length() + 191) + String.valueOf(valueOf2).length()) + String.valueOf(valueOf3).length()) + String.valueOf(valueOf4).length()) + String.valueOf(valueOf5).length()) + String.valueOf(valueOf6).length()).append("TeleWifiCall.onMediaStats, Voice sender stats\nmediaStats bytes_sent: ").append(valueOf).append("\nmediaStats packets_sent: ").append(valueOf2).append("\nmediaStats fraction_lost: ").append(valueOf3).append("\nmediaStats rtt_ms: ").append(valueOf4).append("\nmediaStats jitter_ms: ").append(valueOf5).append("\nmediaStats audio_level: ").append(valueOf6).append("\n").toString(), new Object[0]);
             }
             if (a2 == 2 && a == 2) {
-                String valueOf10 = String.valueOf(lkt.B);
-                String valueOf11 = String.valueOf(lkt.A);
+                String valueOf10 = String.valueOf(lkt.B); //voice connection available receive bitrate
+                String valueOf11 = String.valueOf(lkt.A); //available send bitrate
                 glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf10).length() + 125) + String.valueOf(valueOf11).length()).append("TeleWifiCall.onMediaStats, Voice connection stats\nmediaStats available_receive_bitrate: ").append(valueOf10).append("\nmediaStats available_send_bitrate: ").append(valueOf11).append("\n").toString(), new Object[0]);
             }
         }
     }
 
-    public void a(itm itm) { //related to channel quality, send/recv loss
+    public void a(itm itm) { //related to channel quality, send/recv loss; called every second sometimes
         int i = 5; //infrequent
         if (this.a.d != null && this.a.c != null) {
             lkl b = itm.b();

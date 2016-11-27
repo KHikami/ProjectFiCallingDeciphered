@@ -1,3 +1,5 @@
+//parent classes related to data input/output; class probably peforms check on data
+
 public final class lkl extends nyx<lkl> {
     public Integer a;
     public Integer b; //value of int that determines wifi to cell handoff reasons 5 to 9

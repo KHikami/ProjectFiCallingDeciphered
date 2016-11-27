@@ -2,6 +2,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
+//activity monitor
 final class gff extends BroadcastReceiver {
     final /* synthetic */ gfe a;
 
@@ -13,7 +14,7 @@ final class gff extends BroadcastReceiver {
         iil.a();
         if (this.a.a != null) {
             glk.c("Babel_telephony", "TeleUserActivityMonitor.onReceive, activityType: %s confidenceLevel: %s", gfe.b(intent.getExtras().getInt("com.google.android.apps.hangouts.user_activity_type")), Integer.valueOf(intent.getExtras().getInt("com.google.android.apps.hangouts.user_activity_confidence")));
-            this.a.a.b(r0, r1);
+            this.a.a.b(r0, r1); //calls gfj.b to init wifi to cell handoff
         }
     }
 }
