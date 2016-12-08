@@ -62,7 +62,7 @@ final class gel implements gcc {
         String valueOf2 = String.valueOf(gcq);
         glk.c("Babel_telephony", new StringBuilder((String.valueOf(valueOf).length() + 34) + String.valueOf(valueOf2).length()).append("TeleRemoteCall.setConnection, ").append(valueOf).append(" -> ").append(valueOf2).toString(), new Object[0]);
         if (this.d != null && gcq == null) {
-            this.d.a(d(), this.c.b());
+            this.d.a(d(), this.c.b()); // pass in gcc identifier and
         }
         this.d = gcq;
         if (this.d != null) {

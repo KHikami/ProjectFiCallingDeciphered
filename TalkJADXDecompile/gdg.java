@@ -67,7 +67,7 @@ final class gdg implements gdf {
         }
     }
 
-    // complete handoff from wifi to T-Mobile
+    // determine if wifi to cell handoff was successful, based on old and new connection states
     public void b() {
         if (this.b.b() == 6) { // if old connection state is STATE_DISCONNECTED
             this.b.a(true, 0);
@@ -87,7 +87,7 @@ final class gdg implements gdf {
     // gdc -> gcq -> gef -> gec (network carrier) -> get int for current MCC/MNC number
     private boolean a(int i) { return this.b.a().f().b().c() == i; }
 
-    // handoff from wifi to cell (Sprint)
+    // handoff from wifi to cell
     void a(PhoneAccountHandle phoneAccountHandle) {
         glk.c("Babel_telephony", "TeleHandoffWifiToCellular.callHandoffNumber", new Object[0]);
         gcq a = this.b.a();
@@ -96,7 +96,7 @@ final class gdg implements gdf {
             gwb.aL().postDelayed(this.d, (long) gwb.a(this.a, "babel_handoff_sprint_timeout_millis", 4000)); // handoff from wifi to Sprint complete
         }
         Context d = a.d();
-        RemoteConnection createRemoteOutgoingConnection = d.createRemoteOutgoingConnection(gwb.J(d), connectionRequest);
+        RemoteConnection createRemoteOutgoingConnection = d.createRemoteOutgoingConnection(gwb.J(d), connectionRequest); // makes the outgoing call
         if (createRemoteOutgoingConnection == null) {
             this.b.a(false, 321); // handoff failed
             return;

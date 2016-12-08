@@ -1,6 +1,6 @@
 import android.telecom.PhoneAccountHandle;
 
-// prepares account handoff from wifi to cellular?
+// prepares phone account for handoff from wifi to cellular
 final class gdi implements gcl {
     final /* synthetic */ PhoneAccountHandle a;
     final /* synthetic */ gdg b;
@@ -23,7 +23,7 @@ final class gdi implements gcl {
             glk.c("Babel_telephony", "TeleHandoffWifiToCellular.prepareForHandoffUsingUpdateHandoffNumber", new Object[0]);
             gcq a = gdg.b.a(); // retrieves Connection
             ((bhl) jyn.a(gdg.a, bhl.class)).a(new gfd(fde.e(a.p()), a.q(), a.s(), gwb.M(gdg.a))); // bhz.a(gfd) schedule service?
-            gdg.a(phoneAccountHandle); // call number on Sprint
+            gdg.a(phoneAccountHandle); // call number on cell network
         }
     }
 }

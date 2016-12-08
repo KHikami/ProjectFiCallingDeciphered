@@ -9,7 +9,7 @@ import android.text.TextUtils;
 // I think this is the handoff object, such that...
 // if there is a gdc object, then there is a handoff pending (in progress?)
 final class gdc implements gcd {
-    boolean a; // what is this?
+    boolean a; // handoff timed out (set in gdd)
     private final Context b;
     private final gcq c;    // Connection object before the handoff (cannot be changed, so declared final)
     private final gdf d;
@@ -117,6 +117,7 @@ final class gdc implements gcd {
         return this.j;
     }
 
+    // get status of handoff timeout
     boolean d() {
         return this.a;
     }
@@ -266,7 +267,7 @@ final class gdc implements gcd {
         this.f = gcc;   // Set post-handoff call object
         this.f.a((gcd) this);   // Append this handoff to call object's history list
         this.g = new gcq(this.e.a().f(), this.e.a().i());   // Create the new TeleConnection object (for post-handoff)
-        this.g.setDialing(); // setDialing() in gcq's parent class Connection
+        this.g.setDialing(); // setDialing() in gcq's parent class Connection (set connection state to dialing)
         this.g.b(this.f); // set geo's gcw
         if (this.h == 3) { // if reason for handoffWiFiToCellular was network loss...
             a(true, 0); // handoffcomplete
@@ -316,7 +317,7 @@ final class gdc implements gcd {
                     this.e.a(this.h, i); // disconnect for handoff with final gcc (pre-handoff call)
                 }
             }
-            this.d.c();
+            this.d.c(); // remove callbacks
         }
     }
 
